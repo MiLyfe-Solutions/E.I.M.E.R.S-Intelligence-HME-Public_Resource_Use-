@@ -1,0 +1,25 @@
+{
+  "status": "PROPOSED_NOT_RUN",
+  "purpose": "Test a one-bit precision escalation on the measured one-halving-deficit cohort",
+  "parent": "3487011090801549639707 + 2^73*q, q >= 0",
+  "source_archive_sha256": "5c19f9c340acce3238c1c08c1970e32e0619f6e8b6fe97ba4ddc50a9356ee31f",
+  "selection": {
+    "q_bits": 26,
+    "prefix_length": 16,
+    "hypothetical_extra_halvings": 1
+  },
+  "selected_parent_cylinders": 1348864,
+  "selected_mass_of_segment33_parent": "5269/262144",
+  "terminal_q_bits": 27,
+  "maximum_immediate_children": 2697728,
+  "input_replay_valuation_budget": 30000000,
+  "new_successor_evaluation_budget": 5000000,
+  "max_post46_steps": 200,
+  "stop_rule": "Unchanged Gate14 exact-prefix/partial-halving rule; preserve every uncertified child and every unprocessed parent",
+  "acceptance": "Independently check new exact family witnesses and equality of input/output domain; no overlaps or omitted complement; rational mass conservation",
+  "expected_gain": "UNKNOWN_NOT_A_CLOSURE_PROMISE",
+  "strategy_optimality": "NOT_BENCHMARKED",
+  "gate15_formal_partial_halving_adapter": "REMAINS_OPEN",
+  "universal_collatz": "HOLD_UNPROVEN",
+  "production_authority": "HOLD"
+}

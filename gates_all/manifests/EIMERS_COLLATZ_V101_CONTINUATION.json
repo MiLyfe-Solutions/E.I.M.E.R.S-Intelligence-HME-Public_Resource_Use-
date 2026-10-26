@@ -1,0 +1,15 @@
+{
+  "scope": "NEW independent complete odd modulo 2^16 research frontier, NOT an extension of V100 Mac ledger",
+  "utc": "2026-10-10T07:04:29.798945+00:00",
+  "parent_classes": 2048,
+  "children": 32768,
+  "certificates": 29863,
+  "unresolved_classes": 2905,
+  "certified_measure": "29863/65536",
+  "unresolved_measure": "2905/65536",
+  "total_measure": "1/2",
+  "independent_lift_checks": 59726,
+  "partition_pass": true,
+  "theorem": "HOLD_UNPROVEN",
+  "source_sha256": "dd5b733034bc5c8d6d625b8cfb7985fe81c0a721ece2befdad51ed405435bee3"
+}

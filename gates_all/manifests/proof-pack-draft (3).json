@@ -1,0 +1,31 @@
+{
+  "id": "31511429-d2d2-499e-8de0-a2d8790f8fda",
+  "tenant": "demo-supplier",
+  "created_at": "2026-10-23T21:59:28.660708+00:00",
+  "template": "supplier_customer_request.v1",
+  "template_scope": "Example customer requirements; not a regulatory standard",
+  "status": "HOLD",
+  "issues": [
+    "MISSING:allergen_statement"
+  ],
+  "evidence": [
+    {
+      "kind": "specification",
+      "source": "synthetic_fixture",
+      "content": "SYNTHETIC EXAMPLE: specification",
+      "expected_sha256": "14e03521383e8e22a1844f62589bf603c3588a94d608d1988cd4145b428cb052",
+      "actual_sha256": "14e03521383e8e22a1844f62589bf603c3588a94d608d1988cd4145b428cb052",
+      "valid_until": "2099-01-01"
+    },
+    {
+      "kind": "supplier_questionnaire",
+      "source": "synthetic_fixture",
+      "content": "SYNTHETIC EXAMPLE: supplier_questionnaire",
+      "expected_sha256": "5e19e7f546bf0071174b1d1d55f9075feb3d07e562a10e823ad08bfa28b45a3b",
+      "actual_sha256": "5e19e7f546bf0071174b1d1d55f9075feb3d07e562a10e823ad08bfa28b45a3b",
+      "valid_until": "2099-01-01"
+    }
+  ],
+  "external_release": "HOLD",
+  "certification": false
+}

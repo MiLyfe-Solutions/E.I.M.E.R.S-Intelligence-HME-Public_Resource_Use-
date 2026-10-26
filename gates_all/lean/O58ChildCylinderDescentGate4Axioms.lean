@@ -1,0 +1,17 @@
+import CPOQ.O58ChildCylinderDescentGate4
+
+namespace CPOQ
+#print axioms o58_segment33_step47_v03_whole_cylinder_descent
+#print axioms o58_segment33_step47_v04_whole_cylinder_descent
+#print axioms o58_segment33_step47_v05_whole_cylinder_descent
+#print axioms o58_segment33_step47_v06_whole_cylinder_descent
+#print axioms o58_segment33_step47_v07_whole_cylinder_descent
+#print axioms o58_segment33_step47_v08_whole_cylinder_descent
+#print axioms o58_segment33_step47_v09_whole_cylinder_descent
+#print axioms o58_segment33_step47_v10_whole_cylinder_descent
+#print axioms o58_segment33_step47_v11_whole_cylinder_descent
+#print axioms o58_segment33_step47_v12_whole_cylinder_descent
+#print axioms o58_segment33_step47_deep_whole_cylinder_descent_bound
+#print axioms o58_segment33_step47_descent_status_complete
+
+end CPOQ

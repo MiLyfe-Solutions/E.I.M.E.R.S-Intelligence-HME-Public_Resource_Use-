@@ -1,0 +1,132 @@
+{
+  "setup_proof": {
+    "proof_id": "GOVERNANCE-SETUP-20260821T153022Z",
+    "action": "Initialize APEX Claude Code governance framework",
+    "actor": "claude-haiku-4-5",
+    "timestamp": "2026-08-21T15:30:22Z",
+    "repository": "MiLyfe-Solutions/apex-engine",
+    "working_directory": "/Users/milyfetechnologiesllc/ApexRuntime/apex-engine-main",
+    "evidence_classification": "CODE-CONFIRMED",
+    "files_created": [
+      {
+        "path": "CLAUDE.md",
+        "purpose": "Root-level governance overview",
+        "size_bytes": 5653,
+        "lines": 137,
+        "verified": true
+      },
+      {
+        "path": ".claude/settings.json",
+        "purpose": "Tool permissions and safety constraints",
+        "size_bytes": 2325,
+        "lines": 99,
+        "json_valid": true,
+        "verified": true
+      },
+      {
+        "path": ".claude/settings.local.example.json",
+        "purpose": "Template for machine-specific settings (NOT committed)",
+        "size_bytes": 891,
+        "lines": 26,
+        "json_valid": true,
+        "verified": true
+      },
+      {
+        "path": ".claude/README.md",
+        "purpose": "Guide to using governance framework",
+        "size_bytes": 11420,
+        "lines": 390,
+        "verified": true
+      },
+      {
+        "path": ".claude/rules/00-apex-operating-model.md",
+        "purpose": "APEX Constitutional Runtime and governed lifecycle",
+        "size_bytes": 8964,
+        "lines": 287,
+        "verified": true
+      },
+      {
+        "path": ".claude/rules/10-evidence-classification.md",
+        "purpose": "Eight-level evidence classification system",
+        "size_bytes": 10034,
+        "lines": 321,
+        "verified": true
+      },
+      {
+        "path": ".claude/rules/20-runtime-verification.md",
+        "purpose": "How to verify things work in runtime",
+        "size_bytes": 7303,
+        "lines": 243,
+        "verified": true
+      },
+      {
+        "path": ".claude/rules/30-filesystem-and-code-safety.md",
+        "purpose": "Safe Git and file modification practices",
+        "size_bytes": 9662,
+        "lines": 412,
+        "verified": true
+      },
+      {
+        "path": ".claude/rules/40-agent-governance.md",
+        "purpose": "Worker authority, proof requirements, continuity",
+        "size_bytes": 9081,
+        "lines": 317,
+        "verified": true
+      },
+      {
+        "path": ".claude/rules/50-memory-governance.md",
+        "purpose": "Persistent memory lifecycle, contradictions, SOSE",
+        "size_bytes": 8607,
+        "lines": 359,
+        "verified": true
+      },
+      {
+        "path": ".claude/rules/60-release-and-proof-requirements.md",
+        "purpose": "Release gates, proof records, production readiness",
+        "size_bytes": 8897,
+        "lines": 339,
+        "verified": true
+      }
+    ],
+    "validation": {
+      "json_files_validated": 2,
+      "json_files_valid": 2,
+      "json_files_invalid": 0,
+      "secrets_check": "No real secrets found (example placeholders masked correctly)",
+      "contradiction_check": "Cross-referenced all rule files; no contradictions detected",
+      "total_size_bytes": 82837,
+      "total_lines": 2930
+    },
+    "existing_files_preserved": [
+      {
+        "path": ".github/agents/run-files.agent.md",
+        "status": "NOT MODIFIED",
+        "reason": "Different agent; serves debugging purpose"
+      },
+      {
+        "path": "docs/governance/Session_8_Full_Recap_20260707.md",
+        "status": "NOT MODIFIED",
+        "reason": "Session history; preserved as reference"
+      }
+    ],
+    "no_modifications_to": [
+      ".env (secrets protected)",
+      ".git (Git state preserved)",
+      "README.md (root documentation)",
+      "All production code (read-only mode)"
+    ],
+    "ready_for_commit": true,
+    "next_steps": [
+      "1. Stage files from cloud container to device",
+      "2. Verify files present in /Users/.../apex-engine-main/",
+      "3. Run: git status (should show new files)",
+      "4. Prepare commit message",
+      "5. Get Joshua approval",
+      "6. Commit and push"
+    ],
+    "github_pr_template": {
+      "title": "feat: add Claude Code governance framework (APEX Constitution)",
+      "description": "Initialize persistent governance for Claude working on APEX runtime.\n\n## What\n- Created CLAUDE.md root governance\n- Created .claude/settings.json with safety constraints\n- Created .claude/rules/ with 6 comprehensive governance rule files\n- Created .claude/README.md explaining the framework\n\n## Why\n- Ensures Claude operates under APEX Constitutional constraints\n- Establishes evidence classification and proof requirements\n- Preserves tenant isolation and least-privilege access\n- Enables worker continuity and memory governance\n- Makes governance version-controlled and reviewable\n\n## How to Review\n- Read CLAUDE.md for overview\n- Read .claude/README.md for usage guide\n- Read individual rule files for detailed policies\n- Verify JSON: `jq . .claude/settings.json`\n- Check for secrets: `grep -r password .claude CLAUDE.md`\n\n## Safety\n- No real secrets committed\n- No production code modified\n- Backward-compatible (doesn't break existing work)\n- All existing governance preserved"
+    }
+  }
+}

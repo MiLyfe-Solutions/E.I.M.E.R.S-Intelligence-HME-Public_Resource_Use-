@@ -1,0 +1,9 @@
+{
+  "entity": "Facility",
+  "rls": {
+    "read": { "tenant_id": "{{user.data.tenant_id}}" },
+    "create": { "user_condition": { "role": "admin" } },
+    "update": { "tenant_id": "{{user.data.tenant_id}}" },
+    "delete": { "user_condition": { "role": "admin" } }
+  }
+}

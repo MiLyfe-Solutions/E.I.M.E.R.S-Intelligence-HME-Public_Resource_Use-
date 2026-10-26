@@ -1,0 +1,175 @@
+{
+  "title": "Aetheria Nexus 3D Volumetric Proof-Pack",
+  "timestamp": "2026-10-04T05:27:08.249Z",
+  "governingEngine": "E.I.M.E.R.S. Deterministic PLC Kernel",
+  "coordinates": [
+    {
+      "coordinate": "[1, 1, 1]",
+      "label": "Q3 Financial Ledger",
+      "category": "Financials",
+      "status": "GOVERNED",
+      "physics": {
+        "stabilityScore": 0.0024,
+        "safetyThreshold": 0.625,
+        "gap": 0.6226,
+        "gapPct": 99.616,
+        "adjacentStress": 0
+      },
+      "merkleSeal": "SIMULATION_SEAL_1"
+    },
+    {
+      "coordinate": "[2, 1, 1]",
+      "label": "Inventory Supply Chain",
+      "category": "Logistics",
+      "status": "GOVERNED",
+      "physics": {
+        "stabilityScore": 0.00456,
+        "safetyThreshold": 0.75,
+        "gap": 0.74544,
+        "gapPct": 99.392,
+        "adjacentStress": 0.00216
+      },
+      "merkleSeal": "SIMULATION_SEAL_2"
+    },
+    {
+      "coordinate": "[3, 1, 1]",
+      "label": "Q4 Marketing Pipeline",
+      "category": "Growth",
+      "status": "WARNING",
+      "physics": {
+        "stabilityScore": 0.0144,
+        "safetyThreshold": 0.16666666666666666,
+        "gap": 0.15226666666666666,
+        "gapPct": 91.36,
+        "adjacentStress": 0
+      },
+      "merkleSeal": "SIMULATION_SEAL_3"
+    },
+    {
+      "coordinate": "[4, 1, 1]",
+      "label": "CircuitGate Governance",
+      "category": "Compliance",
+      "status": "GOVERNED",
+      "physics": {
+        "stabilityScore": 0.00241,
+        "safetyThreshold": 5,
+        "gap": 4.99759,
+        "gapPct": 99.95179999999999,
+        "adjacentStress": 0.00216
+      },
+      "merkleSeal": "SIMULATION_SEAL_4"
+    },
+    {
+      "coordinate": "[1, 2, 1]",
+      "label": "Enterprise Payroll Ledger",
+      "category": "Financials",
+      "status": "GOVERNED",
+      "physics": {
+        "stabilityScore": 0.0036,
+        "safetyThreshold": 0.5555555555555556,
+        "gap": 0.5519555555555555,
+        "gapPct": 99.35199999999999,
+        "adjacentStress": 0
+      },
+      "merkleSeal": "SIMULATION_SEAL_5"
+    },
+    {
+      "coordinate": "[2, 3, 1]",
+      "label": "Global Distribution Network",
+      "category": "Logistics",
+      "status": "CRITICAL",
+      "physics": {
+        "stabilityScore": 0.0576,
+        "safetyThreshold": 0.052083333333333336,
+        "gap": -0.005516666666666663,
+        "gapPct": -10.591999999999992,
+        "adjacentStress": 0
+      },
+      "merkleSeal": "SIMULATION_SEAL_6"
+    },
+    {
+      "coordinate": "[3, 0, 2]",
+      "label": "Chaos Twin Sales Forecast",
+      "category": "Growth",
+      "status": "GOVERNED",
+      "physics": {
+        "stabilityScore": 0.002,
+        "safetyThreshold": 1.4999999999999998,
+        "gap": 1.4979999999999998,
+        "gapPct": 99.86666666666667,
+        "adjacentStress": 0
+      },
+      "merkleSeal": "SIMULATION_SEAL_7"
+    },
+    {
+      "coordinate": "[4, 2, 0]",
+      "label": "Historical Baseline Audit",
+      "category": "Compliance",
+      "status": "GOVERNED",
+      "physics": {
+        "stabilityScore": 0.00004,
+        "safetyThreshold": 20,
+        "gap": 19.99996,
+        "gapPct": 99.99980000000001,
+        "adjacentStress": 0
+      },
+      "merkleSeal": "SIMULATION_SEAL_8"
+    },
+    {
+      "coordinate": "[1, 1, 1]",
+      "label": "APAC Capital Expenses",
+      "category": "Financials",
+      "status": "GOVERNED",
+      "physics": {
+        "stabilityScore": 0.0009,
+        "safetyThreshold": 2.2222222222222223,
+        "gap": 2.221322222222222,
+        "gapPct": 99.95949999999999,
+        "adjacentStress": 0
+      },
+      "merkleSeal": "SUB_SEAL_FIN_1"
+    },
+    {
+      "coordinate": "[2, 1, 1]",
+      "label": "Venture Seed Reserves",
+      "category": "Financials",
+      "status": "GOVERNED",
+      "physics": {
+        "stabilityScore": 0.0004,
+        "safetyThreshold": 6.25,
+        "gap": 6.2496,
+        "gapPct": 99.9936,
+        "adjacentStress": 0
+      },
+      "merkleSeal": "SUB_SEAL_FIN_2"
+    },
+    {
+      "coordinate": "[1, 1, 1]",
+      "label": "GDPR Data Ledger Audits",
+      "category": "Compliance",
+      "status": "GOVERNED",
+      "physics": {
+        "stabilityScore": 0.00015,
+        "safetyThreshold": 10,
+        "gap": 9.99985,
+        "gapPct": 99.9985,
+        "adjacentStress": 0
+      },
+      "merkleSeal": "SUB_SEAL_COMP_1"
+    },
+    {
+      "coordinate": "[2, 1, 1]",
+      "label": "SOC2 Trust Principles",
+      "category": "Compliance",
+      "status": "WARNING",
+      "physics": {
+        "stabilityScore": 0.0049499999999999995,
+        "safetyThreshold": 0.4545454545454546,
+        "gap": 0.4495954545454546,
+        "gapPct": 98.91099999999999,
+        "adjacentStress": 0
+      },
+      "merkleSeal": "SUB_SEAL_COMP_2"
+    }
+  ]
+}

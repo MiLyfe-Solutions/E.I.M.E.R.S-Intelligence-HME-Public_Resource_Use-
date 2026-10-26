@@ -1,0 +1,5 @@
+import CPOQ.O58ActualPathAffineEndpointGate9
+#print axioms CPOQ.continuationWordData_const_eq_affineConst
+#print axioms CPOQ.actualAccelPath_affine_endpoint
+#print axioms CPOQ.actualAccelPath_affine_endpoint_from_wordData
+#print axioms CPOQ.actualAccelPath_to_gate6_bound_and_affine_endpoint

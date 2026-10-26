@@ -1,0 +1,38 @@
+{
+  "gate": "O58 Child Cylinder Descent Gate 4 v1",
+  "immediate_exact_branches": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "deep_branch": "q=2444 mod4096, valuation>=13",
+  "immediate_mass": "1/4",
+  "adaptive_depth": 20,
+  "adaptive_summary": {
+    "immediate_step47_certified_mass": "1/4",
+    "immediate_step47_certified_percent": 25.0,
+    "adaptive_additional_certified_mass": "652427/1048576",
+    "adaptive_additional_certified_percent": 62.22028732299805,
+    "total_bounded_arithmetic_certified_mass": "914571/1048576",
+    "total_bounded_arithmetic_certified_percent": 87.22028732299805,
+    "unresolved_mass_at_qbits20": "134005/1048576",
+    "unresolved_percent_at_qbits20": 12.779712677001953,
+    "adaptive_leaf_count": 169087,
+    "adaptive_descending_leaf_count": 35082,
+    "adaptive_unresolved_leaf_count": 134005,
+    "max_q_bits": 20,
+    "max_accelerated_step_checked": 140,
+    "status_immediate": "PREPARED_FOR_LEAN_LOCAL_REPLAY",
+    "status_adaptive": "EXACT_ARITHMETIC_CHECKED",
+    "universal_collatz": "HOLD_UNPROVEN"
+  },
+  "note": "Immediate Gate4 Lean source is prepared but requires user local Lean replay. Adaptive 87.220287% is exact-arithmetic checked only, not yet kernel-rechecked.",
+  "universal_collatz": "HOLD_UNPROVEN"
+}

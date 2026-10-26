@@ -1,0 +1,28 @@
+{
+  "gate": "10",
+  "name": "Final Int Budget Composition",
+  "status": "CANDIDATE_PENDING_USER_LEAN_REPLAY_V2",
+  "universal_status": "HOLD_UNPROVEN",
+  "purpose": "Compose actual accelerated path + Gate7 normalized bound + Gate9 exact affine endpoint into Gate5 strict descent budget guards.",
+  "adaptive_budget_classes": 11,
+  "adaptive_descending_leaves": 35082,
+  "additional_certified_mass": "652427/1048576",
+  "combined_gate4_plus_adaptive_mass": "914571/1048576",
+  "files_sha256": {
+    "O58FinalIntBudgetCompositionGate10.lean": "061a3a9724abd537fd5ab746c872b21df8547ac94ad2cbf7407657c2ff8d0b6a",
+    "O58FinalIntBudgetCompositionGate10Axioms.lean": "eaa50d243afd28dde98f3d8c6fe95e35f4170960ef43fe88862d731150ac03d0",
+    "O58ActualPathAffineEndpointGate9.lean": "6597702206fd9647ffbc1371454183ff8dd8c19112b3b5ef3d6fe9972b48116c",
+    "O58ActualPathPositiveContinuationGate8.lean": "1bc771853a3a6bf0bc5c560ee05437ad73e3c51546f80a87b53c895f8d76d66c",
+    "O58PositiveWordBoundGate7.lean": "cd58fffe236cb5888cb019173f3faac918cfcdde2d85245eb5c3dc33cbacc18f",
+    "O58PathBudgetBridgeGate6.lean": "b0f93dd3e294ed76a64d119077e800f04bdf9aea6b15f2a3f6dd5183d126f212",
+    "O58AdaptiveCompressionGate5.lean": "37bd9703ec5d4c724b1f7f144eb7e058109bd1d93a0bbba066157ec8ac34d2f0",
+    "O58ActualPathWitness001.lean": "c5bbebce7a06767bbb07dd23afa00cb6443c14396b966084a0100e8d77f252ff",
+    "audit_gate10.py": "0c662e96a13afe6963702ab8df5b9a458f6fffff14608b236bcfe4de3eb98229",
+    "adaptive_frontier_depth20.csv": "2f5d843650ed42ada19a9ee60a7f42e2717a15ad2fb2a5f9d0620b655416ce5e",
+    "adaptive_leaf_to_budget_guard.csv": "86431026f8cca9e0910d90456af05e9408de2dfce7eab899e13a15fbbfea3be7",
+    "budget_guard_summary.csv": "2f2a1e5c05abe0bc7a2b7cdccf5cfd8e61209c3bb03cbd4953900e7bed35056d",
+    "run_O58FinalIntBudgetCompositionGate10_v2.sh": "ca58743f4462f53a9d6393bc5f0d27e78988c8fc632e6e322f551248920a1e6b"
+  },
+  "revision": "v2",
+  "repair": "Explicit omega parity proof for seg33x46 q; corrected Nat.pow_pos call shape; updated deprecated nat cast nonneg lemma."
+}

@@ -1,0 +1,40 @@
+{
+  "gate": "O58 Actual Path Positive Continuation Gate 8",
+  "version": 2,
+  "universal_status": "HOLD_UNPROVEN",
+  "patch_scope": [
+    "replace boolean != with propositional \u2260 for nonempty path hypotheses",
+    "remove redundant explicit generalizing hodd; Lean generalizes it automatically"
+  ],
+  "gate7_status": "FROZEN_LEAN_KERNEL_RECHECKED",
+  "files": {
+    "O58ActualPathPositiveContinuationGate8.lean": {
+      "sha256": "1bc771853a3a6bf0bc5c560ee05437ad73e3c51546f80a87b53c895f8d76d66c",
+      "bytes": 4715
+    },
+    "O58ActualPathPositiveContinuationGate8Axioms.lean": {
+      "sha256": "febfce20053bf7f33c28e259a4467c75147a3962fd233225bc9155a8db38010e",
+      "bytes": 398
+    },
+    "O58ActualPathWitness001.lean": {
+      "sha256": "c5bbebce7a06767bbb07dd23afa00cb6443c14396b966084a0100e8d77f252ff",
+      "bytes": 32987
+    },
+    "O58PositiveWordBoundGate7.lean": {
+      "sha256": "cd58fffe236cb5888cb019173f3faac918cfcdde2d85245eb5c3dc33cbacc18f",
+      "bytes": 5033
+    },
+    "O58PathBudgetBridgeGate6.lean": {
+      "sha256": "b0f93dd3e294ed76a64d119077e800f04bdf9aea6b15f2a3f6dd5183d126f212",
+      "bytes": 2131
+    },
+    "audit_gate8.py": {
+      "sha256": "c15e890f03a9f3c9d87b4797e4a89e72075530928b208a71dc48d195a17170fa",
+      "bytes": 988
+    },
+    "run_O58ActualPathPositiveContinuationGate8_v2.sh": {
+      "sha256": "be1d7c93c91bf8171c6e2bff0bfaf3308115d4c1500c3bf98bd71a801540a577",
+      "bytes": 1943
+    }
+  }
+}

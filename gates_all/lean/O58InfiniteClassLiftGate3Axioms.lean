@@ -1,0 +1,18 @@
+import CPOQ.O58InfiniteClassLiftGate3
+
+#print axioms CPOQ.o58_segment33_step47_branch_v01
+#print axioms CPOQ.o58_segment33_step47_branch_v02
+#print axioms CPOQ.o58_segment33_step47_branch_v03
+#print axioms CPOQ.o58_segment33_step47_branch_v04
+#print axioms CPOQ.o58_segment33_step47_branch_v05
+#print axioms CPOQ.o58_segment33_step47_branch_v06
+#print axioms CPOQ.o58_segment33_step47_branch_v07
+#print axioms CPOQ.o58_segment33_step47_branch_v08
+#print axioms CPOQ.o58_segment33_step47_branch_v09
+#print axioms CPOQ.o58_segment33_step47_branch_v10
+#print axioms CPOQ.o58_segment33_step47_branch_v11
+#print axioms CPOQ.o58_segment33_step47_branch_v12
+#print axioms CPOQ.o58_segment33_step47_deep_branch
+#print axioms CPOQ.o58_segment33_step47_residue_partition_depth12
+#print axioms CPOQ.o58_segment33_step47_complete_depth12
+#print axioms CPOQ.o58_segment33_prefix46_and_step47_partition

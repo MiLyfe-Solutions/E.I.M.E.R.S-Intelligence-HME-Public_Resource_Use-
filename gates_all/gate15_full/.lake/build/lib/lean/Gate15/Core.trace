@@ -1,0 +1,30 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["633fdcfea233e0bb.olean"],
+  "m": false,
+  "i": "dc26ab39ad15be0e.ilean",
+  "c": "03d1295ed43665b9.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/milyfetechnologiesllc/Downloads/gate15/.lake/build/lib/lean /Users/milyfetechnologiesllc/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /Users/milyfetechnologiesllc/Downloads/gate15/Gate15/Core.lean -o /Users/milyfetechnologiesllc/Downloads/gate15/.lake/build/lib/lean/Gate15/Core.olean -i /Users/milyfetechnologiesllc/Downloads/gate15/.lake/build/lib/lean/Gate15/Core.ilean -c /Users/milyfetechnologiesllc/Downloads/gate15/.lake/build/ir/Gate15/Core.c --setup /Users/milyfetechnologiesllc/Downloads/gate15/.lake/build/ir/Gate15/Core.setup.json --json",
+   "level": "trace"}],
+ "inputs":
+ [["deps",
+   [["gate15/Gate15:extraDep", [["@gate15:extraDep", "00000000000006bb"]]],
+    ["imports", "00000000000006bb"]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.35.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+   "407ce514b71d5a10"],
+  ["/Users/milyfetechnologiesllc/Downloads/gate15/Gate15/Core.lean",
+   "34c0d2f41b8ee209"],
+  ["options", "00000000000006bb"],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Gate15.Core", "d4f93ed2b6c713db"],
+  ["Package.id?: (some gate15)", "ec392222d56bfd17"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "cfe88711e00e2bba"}

@@ -1,0 +1,88 @@
+{
+  "artifact": "CPOQ O5/8 Infinite-Class Lift Gate 2",
+  "version": "v1",
+  "target_segment_guard": 33,
+  "source_cylinder": {
+    "r": "3487011090801549639707",
+    "modulus_bits": 73,
+    "modulus": "9444732965739290427392"
+  },
+  "maximal_common_prefix": {
+    "accelerated_steps": 46,
+    "valuation_word": [
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      2,
+      4,
+      3,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      2,
+      3,
+      4,
+      3,
+      1
+    ],
+    "valuation_sum": 72,
+    "status": "EXACT_ARITHMETIC_CHECKED"
+  },
+  "observed_witness_audit": {
+    "witness_count": 311,
+    "all_match_prefix46": true
+  },
+  "precision_obstruction": {
+    "step": 47,
+    "q0_valuation": 3,
+    "q1_valuation": 1,
+    "reason": "same mod-2^73 source cylinder branches at step 47",
+    "status": "EXPLICIT_COUNTEREXAMPLE"
+  },
+  "precision_rule": {
+    "current_bits": 73,
+    "prefix_sum": 72,
+    "full_segment_reported_S": 86,
+    "minimum_bits_to_force_a_word_with_sum_86_if_word_is_known": "at least 87 bits (requires S < b)"
+  },
+  "formal_targets": {
+    "prefix46": "o58_segment33_full_cylinder_prefix46",
+    "obstruction": "o58_segment33_precision73_not_step47_uniform",
+    "status": "LEAN_SOURCE_PREPARED_REQUIRES_LOCAL_REPLAY"
+  },
+  "full_54_step_cylinder": "REFUTED_AT_73_BIT_PRECISION_AS_A_SINGLE_UNIFORM_WORD",
+  "next_obligation": "Refine Segment 33 beyond 73 bits and classify the step-47 branches; do not promote a 54-step whole-cylinder word without sufficient precision.",
+  "universal_collatz": "HOLD_UNPROVEN"
+}

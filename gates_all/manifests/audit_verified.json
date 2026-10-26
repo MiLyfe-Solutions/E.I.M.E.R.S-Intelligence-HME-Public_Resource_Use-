@@ -1,0 +1,130 @@
+{
+  "continuation128": {
+    "checked_families": 24,
+    "families_disjoint": true,
+    "file_sha256": "475177908979adc6e3923e365ce1faec0917b592985ad071bdf676630f6a1fd3",
+    "parent_b": 37,
+    "parent_r": 118140960795,
+    "precision_range": [
+      70,
+      112
+    ],
+    "unique_residue_mod8": [
+      3
+    ]
+  },
+  "native_governance_enforcement": "UNVERIFIED",
+  "overlap": {
+    "continuation128": {
+      "parent_bits": 37,
+      "parent_mod8": 3,
+      "parent_residue": 118140960795
+    },
+    "pairwise_disjoint": {
+      "continuation128_vs_seven_mod_eight": true,
+      "v185_vs_continuation128": true,
+      "v185_vs_seven_mod_eight": true
+    },
+    "scope": "Only three displayed branches. Does not determine historical novelty relative to other certificate ledgers.",
+    "seven_mod_eight": {
+      "new_certificates": 8921,
+      "parent_bits": 3,
+      "parent_residue": 7
+    },
+    "v185": {
+      "bits": 37,
+      "residue": 55863935003,
+      "residue_mod8": 3,
+      "source_status": "reported Lean theorem from archived research handoff; not independently kernel-rechecked this audit"
+    }
+  },
+  "production_authority": "HOLD",
+  "schema": "eimers.collatz.cross_branch_independent_audit.v1",
+  "seven_mod_eight": {
+    "certified_prefix_depth_range": [
+      3,
+      13
+    ],
+    "coverage": {
+      "baseline": [
+        412687,
+        524288
+      ],
+      "final": [
+        834295,
+        1048576
+      ],
+      "new": [
+        8921,
+        1048576
+      ],
+      "unresolved": [
+        214281,
+        1048576
+      ]
+    },
+    "cycle_accounting": {
+      "attempts": 33989,
+      "evaluations": 500000,
+      "new_found": 8921,
+      "stages_verified": 25,
+      "unattempted": 189213
+    },
+    "evidence_status": "INDEPENDENT_EXACT_ARITHMETIC_CHECKED",
+    "independent_mutations_rejected": [
+      "valuation",
+      "affine",
+      "descent",
+      "endpoint",
+      "precision",
+      "lower_bound"
+    ],
+    "input_hashes": {
+      "new_certificates_json": "9b7d87e5a5352580396cad79fe406a83e1d61a9b6ce48569e0a2c459e73af115",
+      "summary_json": "5201f42d0ab2cb8ae39740193838439d37106d2d7dcd26c15fdbfacfe50b9099",
+      "unresolved_leaves_json": "020796e92e477d8d70aff04adf17433ee8e2c8cefe32b2798aa154d12ed85a43"
+    },
+    "limits": {
+      "adaptive_search_from_source_reexecuted": false,
+      "baseline_source_bytes_provided": false,
+      "historical_novelty": false,
+      "lean_recheck": false,
+      "native_governor": "UNVERIFIED",
+      "original_3808_baseline_certificate_paths_independently_replayed": false,
+      "production_authority": "HOLD",
+      "universal_convergence": "HOLD_UNPROVEN"
+    },
+    "manifest": {
+      "archived_script_pinned_by_manifest": false,
+      "archived_script_sha256": "1008d2bfa9e998e48dbe4fb51bbcb291afa412a9beebc4faa22b8ca7007fff99",
+      "files": 30,
+      "status": "PASS"
+    },
+    "new_certificates_at_bits": [
+      23
+    ],
+    "new_certificates_checked": 8921,
+    "partition_at_23_bits": {
+      "baseline_sibling_closure": true,
+      "disjoint_complete": true,
+      "new_certified_cells": 8921,
+      "reported_baseline_certified_cells_inferred_from_complement": 825374,
+      "total_7mod8_cells": 1048576,
+      "unresolved_cells": 214281
+    }
+  },
+  "source_archives": {
+    "continuation128": {
+      "archive_sha256": "2ae2c63a09e370612d07d7f5ad0d7f3096f2b569b4fb414c77f75f5092447a09",
+      "checked_members": 28,
+      "status": "PASS"
+    },
+    "seven_mod_eight": {
+      "archive_sha256": "65bc98a49b27f729b89233a89a447dc2fce3da6ddbf673f74c37cfc5c194ed97",
+      "checked_members": 32,
+      "status": "PASS"
+    }
+  },
+  "status": "PASS_SCOPED_EXACT_AUDIT",
+  "universal_status": "HOLD_UNPROVEN"
+}

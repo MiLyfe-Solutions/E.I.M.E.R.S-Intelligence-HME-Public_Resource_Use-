@@ -1,0 +1,97 @@
+{
+  "events": 100000000000,
+  "mismatch": 0,
+  "hold": 99993751458,
+  "watch": 4096277,
+  "review": 1953801,
+  "scout": 158464,
+  "auto_pick": 40000,
+  "seconds": 242.821342,
+  "chunks": [
+    {
+      "chunk": 0,
+      "start": 0,
+      "events": 10000000000,
+      "seal": "f7fffff7fffdf00f",
+      "seconds": 24.643551,
+      "throughput": 405785676.825
+    },
+    {
+      "chunk": 1,
+      "start": 10000000000,
+      "events": 10000000000,
+      "seal": "7f7ffffffffef00f",
+      "seconds": 24.695865,
+      "throughput": 404926082.664
+    },
+    {
+      "chunk": 2,
+      "start": 20000000000,
+      "events": 10000000000,
+      "seal": "ffffdffffffdb00f",
+      "seconds": 23.004875,
+      "throughput": 434690475.218
+    },
+    {
+      "chunk": 3,
+      "start": 30000000000,
+      "events": 10000000000,
+      "seal": "7ffffffffffff00f",
+      "seconds": 23.867953,
+      "throughput": 418971840.147
+    },
+    {
+      "chunk": 4,
+      "start": 40000000000,
+      "events": 10000000000,
+      "seal": "ffbffffffffbf00f",
+      "seconds": 24.973898,
+      "throughput": 400418071.351
+    },
+    {
+      "chunk": 5,
+      "start": 50000000000,
+      "events": 10000000000,
+      "seal": "ff7fffffffffb00f",
+      "seconds": 24.10932,
+      "throughput": 414777361.66
+    },
+    {
+      "chunk": 6,
+      "start": 60000000000,
+      "events": 10000000000,
+      "seal": "ffffeffffffff00f",
+      "seconds": 24.590472,
+      "throughput": 406661565.842
+    },
+    {
+      "chunk": 7,
+      "start": 70000000000,
+      "events": 10000000000,
+      "seal": "ffdffffffffff00f",
+      "seconds": 22.581297,
+      "throughput": 442844353.675
+    },
+    {
+      "chunk": 8,
+      "start": 80000000000,
+      "events": 10000000000,
+      "seal": "ffffffffbffbb00f",
+      "seconds": 24.511686,
+      "throughput": 407968665.535
+    },
+    {
+      "chunk": 9,
+      "start": 90000000000,
+      "events": 10000000000,
+      "seal": "fffeffbfffdff00f",
+      "seconds": 25.842425,
+      "throughput": 386960588.013
+    }
+  ],
+  "violation_mask": "0000000000000000",
+  "aggregate_seal_xor": "0861304840214000",
+  "effective_throughput": 411825415.24706674,
+  "decision": "PASS",
+  "policy": "v0.8.6 bracket-governed full-lineup product governor"
+}

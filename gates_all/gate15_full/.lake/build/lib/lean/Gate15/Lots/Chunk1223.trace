@@ -1,0 +1,32 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["36dead2e3caf281a.olean"],
+  "m": false,
+  "i": "3b13f5f8ba15c74f.ilean",
+  "c": "9a09189ca011a8fd.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/milyfetechnologiesllc/Downloads/gate15/.lake/build/lib/lean /Users/milyfetechnologiesllc/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /Users/milyfetechnologiesllc/Downloads/gate15/Gate15/Lots/Chunk1223.lean -o /Users/milyfetechnologiesllc/Downloads/gate15/.lake/build/lib/lean/Gate15/Lots/Chunk1223.olean -i /Users/milyfetechnologiesllc/Downloads/gate15/.lake/build/lib/lean/Gate15/Lots/Chunk1223.ilean -c /Users/milyfetechnologiesllc/Downloads/gate15/.lake/build/ir/Gate15/Lots/Chunk1223.c --setup /Users/milyfetechnologiesllc/Downloads/gate15/.lake/build/ir/Gate15/Lots/Chunk1223.setup.json --json",
+   "level": "trace"}],
+ "inputs":
+ [["deps",
+   [["gate15/Gate15:extraDep", [["@gate15:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Gate15.Core transitive imports (legacy)", "00000000000006bb"],
+      ["Gate15.Core:importAllArts", "608bd6be9fdb28f1"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.35.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+   "407ce514b71d5a10"],
+  ["/Users/milyfetechnologiesllc/Downloads/gate15/Gate15/Lots/Chunk1223.lean",
+   "daf218c86f45eb4a"],
+  ["options", "00000000000006bb"],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Gate15.Lots.Chunk1223", "de78aad1a1dfa5f4"],
+  ["Package.id?: (some gate15)", "ec392222d56bfd17"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "7a23fac860ed08d5"}

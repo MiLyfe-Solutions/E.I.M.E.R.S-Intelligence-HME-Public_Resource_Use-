@@ -1,0 +1,6 @@
+import CPOQ.O58InfiniteClassLiftGate2
+
+#print axioms CPOQ.o58_segment33_full_cylinder_prefix46
+#print axioms CPOQ.o58_segment33_step47_q0
+#print axioms CPOQ.o58_segment33_step47_q1
+#print axioms CPOQ.o58_segment33_precision73_not_step47_uniform

@@ -1,0 +1,43 @@
+{
+  "schema": "APEX_HANDOFF_V2_2",
+  "created_at": "2026-10-12T04:18:39.535Z",
+  "project": "Receiving Module",
+  "context": {},
+  "decisions": [
+    {
+      "time": "2026-10-12T04:17:16.496Z",
+      "scope": "read",
+      "action": "Build a complete, real-time SQF Edition 9 & FSMA Rule 204 compliant Critical Control Point (CCP) and Electronic Batch Recording (EBR) operating system. \n\nThe system must satisfy the following integrated modules:\n1. APEX Vision Circuit Integration: Ingest high-speed RTSP camera streams from 12 processing lines to monitor metal detector rejection loops, tamper-evident seal integrity, and allergen sanitation validation via real-time bounding box telemetry. Trigger hard-stop interlocks on line PLCs if three consecutive non-conformances occur.\n2. FSMA Rule 204 Key Data Elements (KDEs) & Critical Tracking Events (CTEs): Auto-generate and cryptographically hash digital chain-of-custody ledgers for high-risk foods (HRFs) across receiving, transformation, and shipping, publishing immutable ASN records to a local PostgreSQL ledger with zero token waste.\n3. Multi-Agent Governance Committee: Implement a pre-inference governance filter running under E.I.M.E.R.S. standards where no batch release certificate can be authorized without simultaneous automated sign-off from QA, Maintenance, and Sanitation agents—enforcing zero self-certification and hard-stopping ambiguous sensor inputs into a quarantine hold state.\n4. Live Operator UX: A React/Next.js dashboard with role-based access control displaying live OEE, active CCP deviation alerts, and a voice-command override log authenticated via local Ollama Llama 3.3 execution.",
+      "decision": "ALLOW_LOCAL_CANDIDATE",
+      "reason": "Only local candidate generation permitted; external calls not made",
+      "upstream_llm_called": false,
+      "upstream_tokens_used": 0,
+      "claim_level": "LOCAL_RULE_EVALUATION",
+      "external_execution": false
+    },
+    {
+      "time": "2026-10-12T04:17:22.449Z",
+      "scope": "read",
+      "action": "Build a complete, real-time SQF Edition 9 & FSMA Rule 204 compliant Critical Control Point (CCP) and Electronic Batch Recording (EBR) operating system. \n\nThe system must satisfy the following integrated modules:\n1. APEX Vision Circuit Integration: Ingest high-speed RTSP camera streams from 12 processing lines to monitor metal detector rejection loops, tamper-evident seal integrity, and allergen sanitation validation via real-time bounding box telemetry. Trigger hard-stop interlocks on line PLCs if three consecutive non-conformances occur.\n2. FSMA Rule 204 Key Data Elements (KDEs) & Critical Tracking Events (CTEs): Auto-generate and cryptographically hash digital chain-of-custody ledgers for high-risk foods (HRFs) across receiving, transformation, and shipping, publishing immutable ASN records to a local PostgreSQL ledger with zero token waste.\n3. Multi-Agent Governance Committee: Implement a pre-inference governance filter running under E.I.M.E.R.S. standards where no batch release certificate can be authorized without simultaneous automated sign-off from QA, Maintenance, and Sanitation agents—enforcing zero self-certification and hard-stopping ambiguous sensor inputs into a quarantine hold state.\n4. Live Operator UX: A React/Next.js dashboard with role-based access control displaying live OEE, active CCP deviation alerts, and a voice-command override log authenticated via local Ollama Llama 3.3 execution.",
+      "decision": "ALLOW_LOCAL_CANDIDATE",
+      "reason": "Only local candidate generation permitted; external calls not made",
+      "upstream_llm_called": false,
+      "upstream_tokens_used": 0,
+      "claim_level": "LOCAL_RULE_EVALUATION",
+      "external_execution": false
+    },
+    {
+      "time": "2026-10-12T04:18:37.041Z",
+      "scope": "build",
+      "action": "Build a complete, real-time SQF Edition 9 & FSMA Rule 204 compliant Critical Control Point (CCP) and Electronic Batch Recording (EBR) operating system. \n\nThe system must satisfy the following integrated modules:\n1. APEX Vision Circuit Integration: Ingest high-speed RTSP camera streams from 12 processing lines to monitor metal detector rejection loops, tamper-evident seal integrity, and allergen sanitation validation via real-time bounding box telemetry. Trigger hard-stop interlocks on line PLCs if three consecutive non-conformances occur.\n2. FSMA Rule 204 Key Data Elements (KDEs) & Critical Tracking Events (CTEs): Auto-generate and cryptographically hash digital chain-of-custody ledgers for high-risk foods (HRFs) across receiving, transformation, and shipping, publishing immutable ASN records to a local PostgreSQL ledger with zero token waste.\n3. Multi-Agent Governance Committee: Implement a pre-inference governance filter running under E.I.M.E.R.S. standards where no batch release certificate can be authorized without simultaneous automated sign-off from QA, Maintenance, and Sanitation agents—enforcing zero self-certification and hard-stopping ambiguous sensor inputs into a quarantine hold state.\n4. Live Operator UX: A React/Next.js dashboard with role-based access control displaying live OEE, active CCP deviation alerts, and a voice-command override log authenticated via local Ollama Llama 3.3 execution.",
+      "decision": "HOLD",
+      "reason": "Founder confirmation required for candidate preparation",
+      "upstream_llm_called": false,
+      "upstream_tokens_used": 0,
+      "claim_level": "LOCAL_RULE_EVALUATION",
+      "external_execution": false
+    }
+  ],
+  "oracle_verdict": "UNVERIFIED_UNLESS_IMPORTED",
+  "deployment": "NOT_EXECUTED"
+}

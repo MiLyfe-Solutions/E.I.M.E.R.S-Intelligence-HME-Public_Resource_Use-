@@ -1,0 +1,7 @@
+{
+  "gate": 7,
+  "name": "O58 Positive Word Normalized Constant Bound",
+  "status_before_kernel_replay": "EXACT_ARITHMETIC_CHECKED",
+  "universal_collatz": "HOLD_UNPROVEN",
+  "next": "CONNECT_ACTUAL_CONTINUATION_WORD_TO_POSITIVE_CONTINUATION_CERTIFICATE"
+}

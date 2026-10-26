@@ -1,0 +1,37 @@
+{
+  "id": "1180ae50-c922-42d7-ac66-93f2b4e21529",
+  "tenant": "demo-supplier",
+  "created_at": "2026-10-13T22:50:59.274672+00:00",
+  "template": "supplier_customer_request.v1",
+  "template_scope": "Example customer requirements; not a regulatory standard",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "issues": [],
+  "evidence": [
+    {
+      "kind": "specification",
+      "source": "synthetic_fixture",
+      "content": "SYNTHETIC EXAMPLE: specification",
+      "expected_sha256": "14e03521383e8e22a1844f62589bf603c3588a94d608d1988cd4145b428cb052",
+      "actual_sha256": "14e03521383e8e22a1844f62589bf603c3588a94d608d1988cd4145b428cb052",
+      "valid_until": "2099-01-01"
+    },
+    {
+      "kind": "allergen_statement",
+      "source": "synthetic_fixture",
+      "content": "SYNTHETIC EXAMPLE: allergen_statement",
+      "expected_sha256": "42491a66b8e8aac1427df5c161a4adad7ae3b3060ef5b3be23b0d38ed0ea95ef",
+      "actual_sha256": "42491a66b8e8aac1427df5c161a4adad7ae3b3060ef5b3be23b0d38ed0ea95ef",
+      "valid_until": "2099-01-01"
+    },
+    {
+      "kind": "supplier_questionnaire",
+      "source": "synthetic_fixture",
+      "content": "SYNTHETIC EXAMPLE: supplier_questionnaire",
+      "expected_sha256": "5e19e7f546bf0071174b1d1d55f9075feb3d07e562a10e823ad08bfa28b45a3b",
+      "actual_sha256": "5e19e7f546bf0071174b1d1d55f9075feb3d07e562a10e823ad08bfa28b45a3b",
+      "valid_until": "2099-01-01"
+    }
+  ],
+  "external_release": "HOLD",
+  "certification": false
+}

@@ -1,0 +1,13 @@
+{
+  "artifact": "CPOQ_O58_Cohort3168_ExhaustiveAudit_v2",
+  "source_artifact_sha256": "2d4aad1a20be5f95983aedcd3b4b7605ff8e8fe0bed11c9c842376a83711af00",
+  "witness_count": 3168,
+  "segment_count": 69,
+  "axiom_audit_scope": "generic transport theorem plus all 3168 cohort target-margin theorems",
+  "expected_allowed_axioms_if_any": ["propext", "Quot.sound"],
+  "source_hygiene_forbidden": ["native_decide", "sorry", "sorryAx", "admit", "custom axiom declarations"],
+  "authorization_guard_compression_factor": 45.91304347826087,
+  "universal_collatz": "HOLD_UNPROVEN",
+  "local_container_lean_replay": "NOT_RUN_NO_LEAN_TOOLCHAIN_DETECTED",
+  "required_user_replay": "bash run_O58Cohort3168_exhaustive.sh"
+}

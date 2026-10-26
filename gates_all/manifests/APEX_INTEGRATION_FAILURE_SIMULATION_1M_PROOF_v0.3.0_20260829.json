@@ -1,0 +1,62 @@
+{
+  "system": "APEX Integration & Failure Simulation Laboratory",
+  "version": "0.3.0",
+  "extends": "APEX Manufacturing Digital Twin & Scenario Laboratory v0.2.0",
+  "ruleset": "HUMAN_REVIEW_REQUIRED",
+  "evidence_level": "TESTED",
+  "decision": "PASS",
+  "scenario_runs": 1000000,
+  "oracle_mismatches": 0,
+  "invariant_violations": 0,
+  "fault_classes_exercised": "15/15",
+  "missing_fault_classes": [],
+  "fault_injection_counts": {
+    "NETWORK_REQUEST_DROP": 32104,
+    "AUTH_FAIL": 4739,
+    "TENANT_ATTACK": 4596,
+    "STALE_POLICY": 5009,
+    "EVENT_OUT_OF_ORDER": 34436,
+    "DB_CRASH_PRECOMMIT": 16109,
+    "DB_CRASH_POSTCOMMIT_PREACK": 14765,
+    "NETWORK_ACK_LOSS": 23305,
+    "DUPLICATE_WRITE": 43181,
+    "ERP_FAILURE": 23075,
+    "INVENTORY_FAILURE": 21239,
+    "ACCOUNTING_FAILURE": 24213,
+    "PROCUREMENT_FAILURE": 27002,
+    "TRACEABILITY_FAILURE": 18880,
+    "RETENTION_FAILURE": 17224
+  },
+  "unique_fault_combinations": 670,
+  "recovery_journeys": 222897,
+  "replay_operations": 249250,
+  "quarantined_out_of_order_events": 34006,
+  "duplicate_writes_prevented": 80069,
+  "adapter_retry_operations": 129768,
+  "authoritative_commits": 985732,
+  "release_commits": 985732,
+  "final_states": {
+    "RELEASED": 985732,
+    "HOLD": 14268
+  },
+  "final_reasons": {
+    "CLEAR": 985732,
+    "AUTH_FAIL": 4739,
+    "STALE_POLICY": 4957,
+    "TENANT_ATTACK": 4572
+  },
+  "duration_seconds": 13.334333,
+  "throughput_per_second": 74994.38,
+  "campaign_digest_sha256": "ace8bf320b1f7de2529b9e6db88ae17b046e7e53ca12ab602c3536942a9a22b8",
+  "spec_sha256": "aa5bcdd85ad14906009d026bba40cdc0aa2eeede473644a3036cab61ccc92739",
+  "source_sha256": {
+    "oracle.py": "d3b7e2fd15fdbe5f8557c68794d673d39e8f3d48ca81f17c4614ca2383f4bf50",
+    "runtime.py": "8b29d15acab68901f4e9864301b35acff82c06705fe945d338eecd9a5b494dcf",
+    "run_campaign.py": "8610bda578aedac1533744dcfe3ef726282bbf976c587fd849d062eb47b18889"
+  },
+  "first_mismatches": [],
+  "authority": "HUMAN_REVIEW_REQUIRED",
+  "production_authority_granted": false,
+  "proof_hash_sha256": "531a881304c2cf53b2fa5fa3a294c31ef908bc8f8f4c8cf56a40859ec67d1ec3",
+  "campaign": "integration_twin_1788053216678_20260829_1000000"
+}

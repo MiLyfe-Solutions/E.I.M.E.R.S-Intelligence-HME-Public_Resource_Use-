@@ -1,0 +1,41 @@
+{
+  "baseline_fit_min": 200,
+  "classified": 272,
+  "decision": "HOLD_NO_INDEPENDENT_CONFIRMATION",
+  "evaluation_period": "2025-2025",
+  "examples": 768,
+  "feature_contract": "EXISTING_PRE_GAME_TEAM_DISCIPLINE_REFEREE_FEATURES_ONLY",
+  "high": {
+    "mae": 9.598272627602356,
+    "n": 72,
+    "rmse": 11.721746090619725,
+    "tail_rate": 0.1111111111111111
+  },
+  "limitations": [
+    "2025 HAS ALREADY BEEN EXAMINED IN PRIOR EXPERIMENTS",
+    "NO LIVE INJURIES_PACE_OR_WEATHER",
+    "NO SOURCE EVENT TIMESTAMP PROVENANCE AUDIT",
+    "NO LIVE MODEL OR UI CHANGE"
+  ],
+  "low": {
+    "mae": 10.971765113112351,
+    "n": 200,
+    "rmse": 14.009911892790157,
+    "tail_rate": 0.165
+  },
+  "mode": "READ_ONLY_CANDIDATE",
+  "promotion_authority": false,
+  "qualified_for_tri_node_review": false,
+  "risk_fit_min": 96,
+  "rmse_ratio": 0.8366752182540149,
+  "schema": "eimers.integrated_volatility_shadow.v1",
+  "source_event_timestamps_independently_verified": false,
+  "source_sha256": {
+    "cache/schedules.csv": "4eb48e2e9674a7072b1253308ddf70d7939ce83214be1804a92be2b85a07b88a",
+    "data/penalty_team_game.csv": "fb261997c35bef2e6ca68ed11d741e49452190a44a06a38a75d1db13b91779ff",
+    "historical_replay.py": "809c6472ef3b948d4061633ee8862ee23bb46ed89965156842f79d82321ffb6c"
+  },
+  "tail_ratio": 0.6734006734006733,
+  "temporal_leakage_reported": 0,
+  "withheld": []
+}

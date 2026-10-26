@@ -1,0 +1,90 @@
+{
+  "generated_utc": "2026-10-12T05:45:57.302960+00:00",
+  "archives": [
+    {
+      "file": "APEX_AI_KPI_V3_SOURCE_20260902_011832(1).zip",
+      "sha256": "3992d091836190bccfa867b8dd6d7e2d602bcfa81a2b2fc48fcd9354a2a6410b",
+      "entries": 3,
+      "unsafe_paths": 0,
+      "archive_test": "PASS"
+    },
+    {
+      "file": "APEX_ATOMICITY_PROOF_DEPENDENCIES_20260822T181652Z(1).zip",
+      "sha256": "d62311d184d942081f24fe3d7e9970ac20a674d7a64f34ceb664e48aaf33a181",
+      "entries": 19,
+      "unsafe_paths": 0,
+      "archive_test": "PASS"
+    },
+    {
+      "file": "APEX_EVIDENCE_20260826T231655Z.zip",
+      "sha256": "78fa33ffed8a0fd49f6b68d80dc4e9adfa666e2b4ef120fffd45529e75fb8460",
+      "entries": 39,
+      "unsafe_paths": 0,
+      "archive_test": "PASS"
+    },
+    {
+      "file": "APEX_FDA_PART117_CANDIDATE_PROOF_RESULTS.zip",
+      "sha256": "d2dccd0af79c7879358d0e1b67aef0c0735ab26c70ac02236907bae81b66c3cf",
+      "entries": 7,
+      "unsafe_paths": 0,
+      "archive_test": "PASS"
+    },
+    {
+      "file": "APEX_FDS_RUNTIME_PROOF_RESULTS.zip",
+      "sha256": "274ae550f65f59e2c56f465c54071b2e157116c7e13c6efcd1bf7e9841a504a3",
+      "entries": 7,
+      "unsafe_paths": 0,
+      "archive_test": "PASS"
+    },
+    {
+      "file": "APEX_FORWARD_IDEMPOTENCY_CANDIDATE_PROOF_RESULTS.zip",
+      "sha256": "b279de75b47d6a7590f790d306cf5ede90c4db2444c840efac4a1eb593df4f88",
+      "entries": 18,
+      "unsafe_paths": 0,
+      "archive_test": "PASS"
+    },
+    {
+      "file": "APEX_GOVERNED_CANDIDATE_RUNTIME_VALIDATION_V8_3_1_20260831T191354Z.zip",
+      "sha256": "76bded58f8c3e72a3f4d5389697175bb2fdf5992879a5fbc917c194b98ab0e66",
+      "entries": 6,
+      "unsafe_paths": 0,
+      "archive_test": "PASS"
+    },
+    {
+      "file": "APEX_RUNTIME_RECONSTRUCTION_V8_2_1_20260830T223008Z.zip",
+      "sha256": "58434c56e526c00c082c3da557fb0d52cdad07a7420cc04ef6ea00fde270647a",
+      "entries": 3,
+      "unsafe_paths": 0,
+      "archive_test": "PASS"
+    },
+    {
+      "file": "APEX_UNIVERSAL_GATEWAY_CANONICAL_PROOF_20260829T185102Z.zip",
+      "sha256": "64f64cc527ccf2265403fb6ed93e9d2bf12c7f6f524db35c8a17fb866a61242e",
+      "entries": 22,
+      "unsafe_paths": 0,
+      "archive_test": "PASS"
+    },
+    {
+      "file": "auto_bundle_RUNTIME_and_FILES(1).zip",
+      "sha256": "d70c83591bd20f2e4489ebeec2164ec3565ed93a04c62292972f46e2b0c5ac63",
+      "entries": 288,
+      "unsafe_paths": 0,
+      "archive_test": "PASS"
+    },
+    {
+      "file": "sose.zip",
+      "sha256": "7ba278c3c60ada1f0169e281367404e803f488401d8f6a9d8aeaabc5d25f59cd",
+      "entries": 5,
+      "unsafe_paths": 0,
+      "archive_test": "PASS"
+    },
+    {
+      "file": "sqf_final_rc_20260821T222242Z.zip",
+      "sha256": "22b325261013d8a9291029d7bf6a98da332014ff5557b417f456b071b8d8d5d3",
+      "entries": 710,
+      "unsafe_paths": 0,
+      "archive_test": "PASS"
+    }
+  ],
+  "database_info": "Valid SQLite; 1 user/system tables; sample names: audit_log"
+}

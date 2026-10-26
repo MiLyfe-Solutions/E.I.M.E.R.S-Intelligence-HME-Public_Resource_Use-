@@ -1,0 +1,10 @@
+import CPOQ.O58ActualPathWitness001
+
+#print axioms CPOQ.o58_witness001_source_actual_path
+#print axioms CPOQ.o58_witness001_target_actual_path
+#print axioms CPOQ.o58_witness001_source_affine_block
+#print axioms CPOQ.o58_witness001_target_affine_block
+#print axioms CPOQ.o58_witness001_source_margin_from_actual_path
+#print axioms CPOQ.o58_witness001_actual_path_to_cpoq_target_margin
+#print axioms CPOQ.o58_witness001_cpoq_transport_to_actual_target_descent
+#print axioms CPOQ.o58_witness001_actual_path_cpoq_descent_end_to_end

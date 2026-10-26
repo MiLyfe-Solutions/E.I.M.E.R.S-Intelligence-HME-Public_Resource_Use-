@@ -1,0 +1,680 @@
+{
+  "method": "exact exhaustive parity words up to 8 operations for targets 5,10,13,20,40; independent replay of candidate words",
+  "merger_groups": 36,
+  "merger_examples": [
+    {
+      "target": 5,
+      "steps": 2,
+      "paths": [
+        {
+          "source": 20,
+          "word": "EE",
+          "path": [
+            20,
+            10,
+            5
+          ],
+          "odd": 0,
+          "even": 2,
+          "B": 0
+        },
+        {
+          "source": 3,
+          "word": "OE",
+          "path": [
+            3,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 1,
+          "B": 1
+        }
+      ]
+    },
+    {
+      "target": 5,
+      "steps": 3,
+      "paths": [
+        {
+          "source": 40,
+          "word": "EEE",
+          "path": [
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 0,
+          "even": 3,
+          "B": 0
+        },
+        {
+          "source": 6,
+          "word": "EOE",
+          "path": [
+            6,
+            3,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 2,
+          "B": 2
+        }
+      ]
+    },
+    {
+      "target": 5,
+      "steps": 4,
+      "paths": [
+        {
+          "source": 80,
+          "word": "EEEE",
+          "path": [
+            80,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 0,
+          "even": 4,
+          "B": 0
+        },
+        {
+          "source": 13,
+          "word": "OEEE",
+          "path": [
+            13,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 3,
+          "B": 1
+        },
+        {
+          "source": 12,
+          "word": "EEOE",
+          "path": [
+            12,
+            6,
+            3,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 3,
+          "B": 4
+        }
+      ]
+    },
+    {
+      "target": 5,
+      "steps": 5,
+      "paths": [
+        {
+          "source": 160,
+          "word": "EEEEE",
+          "path": [
+            160,
+            80,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 0,
+          "even": 5,
+          "B": 0
+        },
+        {
+          "source": 26,
+          "word": "EOEEE",
+          "path": [
+            26,
+            13,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 4,
+          "B": 2
+        },
+        {
+          "source": 24,
+          "word": "EEEOE",
+          "path": [
+            24,
+            12,
+            6,
+            3,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 4,
+          "B": 8
+        }
+      ]
+    },
+    {
+      "target": 5,
+      "steps": 6,
+      "paths": [
+        {
+          "source": 320,
+          "word": "EEEEEE",
+          "path": [
+            320,
+            160,
+            80,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 0,
+          "even": 6,
+          "B": 0
+        },
+        {
+          "source": 53,
+          "word": "OEEEEE",
+          "path": [
+            53,
+            160,
+            80,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 5,
+          "B": 1
+        },
+        {
+          "source": 52,
+          "word": "EEOEEE",
+          "path": [
+            52,
+            26,
+            13,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 5,
+          "B": 4
+        },
+        {
+          "source": 48,
+          "word": "EEEEOE",
+          "path": [
+            48,
+            24,
+            12,
+            6,
+            3,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 5,
+          "B": 16
+        }
+      ]
+    },
+    {
+      "target": 5,
+      "steps": 7,
+      "paths": [
+        {
+          "source": 640,
+          "word": "EEEEEEE",
+          "path": [
+            640,
+            320,
+            160,
+            80,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 0,
+          "even": 7,
+          "B": 0
+        },
+        {
+          "source": 106,
+          "word": "EOEEEEE",
+          "path": [
+            106,
+            53,
+            160,
+            80,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 6,
+          "B": 2
+        },
+        {
+          "source": 104,
+          "word": "EEEOEEE",
+          "path": [
+            104,
+            52,
+            26,
+            13,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 6,
+          "B": 8
+        },
+        {
+          "source": 17,
+          "word": "OEEOEEE",
+          "path": [
+            17,
+            52,
+            26,
+            13,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 2,
+          "even": 5,
+          "B": 7
+        },
+        {
+          "source": 96,
+          "word": "EEEEEOE",
+          "path": [
+            96,
+            48,
+            24,
+            12,
+            6,
+            3,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 6,
+          "B": 32
+        }
+      ]
+    },
+    {
+      "target": 5,
+      "steps": 8,
+      "paths": [
+        {
+          "source": 1280,
+          "word": "EEEEEEEE",
+          "path": [
+            1280,
+            640,
+            320,
+            160,
+            80,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 0,
+          "even": 8,
+          "B": 0
+        },
+        {
+          "source": 213,
+          "word": "OEEEEEEE",
+          "path": [
+            213,
+            640,
+            320,
+            160,
+            80,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 7,
+          "B": 1
+        },
+        {
+          "source": 212,
+          "word": "EEOEEEEE",
+          "path": [
+            212,
+            106,
+            53,
+            160,
+            80,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 7,
+          "B": 4
+        },
+        {
+          "source": 35,
+          "word": "OEOEEEEE",
+          "path": [
+            35,
+            106,
+            53,
+            160,
+            80,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 2,
+          "even": 6,
+          "B": 5
+        },
+        {
+          "source": 208,
+          "word": "EEEEOEEE",
+          "path": [
+            208,
+            104,
+            52,
+            26,
+            13,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 7,
+          "B": 16
+        },
+        {
+          "source": 34,
+          "word": "EOEEOEEE",
+          "path": [
+            34,
+            17,
+            52,
+            26,
+            13,
+            40,
+            20,
+            10,
+            5
+          ],
+          "odd": 2,
+          "even": 6,
+          "B": 14
+        },
+        {
+          "source": 192,
+          "word": "EEEEEEOE",
+          "path": [
+            192,
+            96,
+            48,
+            24,
+            12,
+            6,
+            3,
+            10,
+            5
+          ],
+          "odd": 1,
+          "even": 7,
+          "B": 64
+        }
+      ]
+    },
+    {
+      "target": 10,
+      "steps": 1,
+      "paths": [
+        {
+          "source": 20,
+          "word": "E",
+          "path": [
+            20,
+            10
+          ],
+          "odd": 0,
+          "even": 1,
+          "B": 0
+        },
+        {
+          "source": 3,
+          "word": "O",
+          "path": [
+            3,
+            10
+          ],
+          "odd": 1,
+          "even": 0,
+          "B": 1
+        }
+      ]
+    },
+    {
+      "target": 10,
+      "steps": 2,
+      "paths": [
+        {
+          "source": 40,
+          "word": "EE",
+          "path": [
+            40,
+            20,
+            10
+          ],
+          "odd": 0,
+          "even": 2,
+          "B": 0
+        },
+        {
+          "source": 6,
+          "word": "EO",
+          "path": [
+            6,
+            3,
+            10
+          ],
+          "odd": 1,
+          "even": 1,
+          "B": 2
+        }
+      ]
+    },
+    {
+      "target": 10,
+      "steps": 3,
+      "paths": [
+        {
+          "source": 80,
+          "word": "EEE",
+          "path": [
+            80,
+            40,
+            20,
+            10
+          ],
+          "odd": 0,
+          "even": 3,
+          "B": 0
+        },
+        {
+          "source": 13,
+          "word": "OEE",
+          "path": [
+            13,
+            40,
+            20,
+            10
+          ],
+          "odd": 1,
+          "even": 2,
+          "B": 1
+        },
+        {
+          "source": 12,
+          "word": "EEO",
+          "path": [
+            12,
+            6,
+            3,
+            10
+          ],
+          "odd": 1,
+          "even": 2,
+          "B": 4
+        }
+      ]
+    },
+    {
+      "target": 10,
+      "steps": 4,
+      "paths": [
+        {
+          "source": 160,
+          "word": "EEEE",
+          "path": [
+            160,
+            80,
+            40,
+            20,
+            10
+          ],
+          "odd": 0,
+          "even": 4,
+          "B": 0
+        },
+        {
+          "source": 26,
+          "word": "EOEE",
+          "path": [
+            26,
+            13,
+            40,
+            20,
+            10
+          ],
+          "odd": 1,
+          "even": 3,
+          "B": 2
+        },
+        {
+          "source": 24,
+          "word": "EEEO",
+          "path": [
+            24,
+            12,
+            6,
+            3,
+            10
+          ],
+          "odd": 1,
+          "even": 3,
+          "B": 8
+        }
+      ]
+    },
+    {
+      "target": 10,
+      "steps": 5,
+      "paths": [
+        {
+          "source": 320,
+          "word": "EEEEE",
+          "path": [
+            320,
+            160,
+            80,
+            40,
+            20,
+            10
+          ],
+          "odd": 0,
+          "even": 5,
+          "B": 0
+        },
+        {
+          "source": 53,
+          "word": "OEEEE",
+          "path": [
+            53,
+            160,
+            80,
+            40,
+            20,
+            10
+          ],
+          "odd": 1,
+          "even": 4,
+          "B": 1
+        },
+        {
+          "source": 52,
+          "word": "EEOEE",
+          "path": [
+            52,
+            26,
+            13,
+            40,
+            20,
+            10
+          ],
+          "odd": 1,
+          "even": 4,
+          "B": 4
+        },
+        {
+          "source": 48,
+          "word": "EEEEO",
+          "path": [
+            48,
+            24,
+            12,
+            6,
+            3,
+            10
+          ],
+          "odd": 1,
+          "even": 4,
+          "B": 16
+        }
+      ]
+    }
+  ],
+  "family_checks": 500,
+  "fixed_target_uniqueness": "For a fixed word and endpoint, affine inversion determines at most one positive source",
+  "status": "EXACT_ARITHMETIC_CHECKED; no Lean verification; universal HOLD_UNPROVEN"
+}

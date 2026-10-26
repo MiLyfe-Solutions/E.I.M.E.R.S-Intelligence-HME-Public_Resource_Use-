@@ -1,0 +1,100 @@
+{
+  "total": 15,
+  "passed": 15,
+  "failed": 0,
+  "results": [
+    {
+      "scenario": "1_approve",
+      "passed": true,
+      "provider_called": true,
+      "status_code": 200
+    },
+    {
+      "scenario": "2_reject",
+      "passed": true,
+      "provider_called": false,
+      "status_code": 403
+    },
+    {
+      "scenario": "3_evidence_required",
+      "passed": true,
+      "provider_called": false,
+      "status_code": 403
+    },
+    {
+      "scenario": "4_queued",
+      "passed": true,
+      "provider_called": false,
+      "status_code": 403
+    },
+    {
+      "scenario": "5_approve_after_evidence",
+      "passed": true,
+      "first_blocked": true,
+      "second_allowed": true,
+      "status_code_1": 403,
+      "status_code_2": 200
+    },
+    {
+      "scenario": "6_reject_after_evidence",
+      "passed": true,
+      "provider_called": false,
+      "status_code": 403
+    },
+    {
+      "scenario": "7_immutable_accepted",
+      "passed": true,
+      "final_status": "accepted"
+    },
+    {
+      "scenario": "8_rejected_blocked",
+      "passed": true,
+      "provider_called": false,
+      "status_code": 403
+    },
+    {
+      "scenario": "9_queued_blocked",
+      "passed": true,
+      "provider_called": false,
+      "status_code": 403
+    },
+    {
+      "scenario": "10_missing_decision",
+      "passed": true,
+      "provider_called": false,
+      "status_code": 403
+    },
+    {
+      "scenario": "11_wrong_tenant",
+      "passed": true,
+      "provider_called": false,
+      "status_code": 403
+    },
+    {
+      "scenario": "12_wrong_customer",
+      "passed": true,
+      "provider_called": false,
+      "status_code": 403
+    },
+    {
+      "scenario": "13_stale_decision",
+      "passed": true,
+      "first_allowed": true,
+      "second_blocked": true,
+      "status_code_1": 200,
+      "status_code_2": 403
+    },
+    {
+      "scenario": "14_broker_unavailable",
+      "passed": true,
+      "provider_called": false,
+      "status_code": 403
+    },
+    {
+      "scenario": "15_malformed_decision",
+      "passed": true,
+      "provider_called": false,
+      "status_code": 403
+    }
+  ]
+}

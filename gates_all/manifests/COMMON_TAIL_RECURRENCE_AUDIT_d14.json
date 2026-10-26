@@ -1,0 +1,42 @@
+{
+  "status": "EXACT_ARITHMETIC_RECURRENCE_AUDIT_PASS",
+  "witness_count": 3168,
+  "failed_count": 0,
+  "bad_examples": [],
+  "identity": "deltaC = 3^tail_steps * deltaC45 with tail_steps = k-45",
+  "all_common_tail_required": true,
+  "all_same_kS_required": true,
+  "tail_step_distribution": {
+    "1": 6,
+    "2": 6,
+    "3": 12,
+    "4": 30,
+    "5": 54,
+    "6": 138,
+    "7": 258,
+    "8": 678,
+    "9": 1986
+  },
+  "kS_class_counts": {
+    "k46_S73": 6,
+    "k47_S75": 6,
+    "k48_S77": 12,
+    "k49_S78": 30,
+    "k50_S80": 54,
+    "k51_S81": 138,
+    "k52_S83": 258,
+    "k53_S85": 678,
+    "k54_S86": 1986
+  },
+  "pair_counts": {
+    "6049_48569": 528,
+    "6049_49768": 528,
+    "6049_65540": 528,
+    "48569_49768": 528,
+    "48569_65540": 528,
+    "49768_65540": 528
+  },
+  "source_sha256": "4650954dac6650a9480b6dd77c1b29d8290a05eae4950187c7c38fd0fee791ea",
+  "universal_collatz": "HOLD_UNPROVEN",
+  "lean_kernel_check": "NOT_PERFORMED"
+}

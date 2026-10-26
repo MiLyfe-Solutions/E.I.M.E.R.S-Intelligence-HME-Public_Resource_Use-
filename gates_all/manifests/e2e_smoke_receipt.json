@@ -1,0 +1,39 @@
+{
+  "schema": "eimers.ai360.rc1.smoke.v1",
+  "release": "RC1_LOCAL",
+  "tenant_id": "ten_a4177219e5ef438285bd",
+  "facility_id": "fac_9ccf903b9767435b9303",
+  "audit_id": "aud_9de24fb366364f2f832e",
+  "finding_count": 4,
+  "decisions": [
+    {
+      "finding_id": "find_b8205541660147b9b1fd",
+      "requirement_id": "DEMO-FSP-001",
+      "decision": "ESCALATE",
+      "receipt_hash": "b856b4f1050324d9acd03988331467862e39e60320244802558b01207769fbe2"
+    },
+    {
+      "finding_id": "find_1653c029008e4292ac09",
+      "requirement_id": "DEMO-SUP-001",
+      "decision": "ALLOW",
+      "receipt_hash": "4f592d129a7174e57449919b80d1e30ca23e285530a4045efbe4f93baefeb59d"
+    },
+    {
+      "finding_id": "find_5939c46c41a146e984d7",
+      "requirement_id": "DEMO-SAN-001",
+      "decision": "ALLOW",
+      "receipt_hash": "8108a8b73a8f1cc27f187867ff28ed4865349abdd582467e01bf56927206ddc5"
+    },
+    {
+      "finding_id": "find_0e00e0307ea2421abfd5",
+      "requirement_id": "DEMO-TRC-001",
+      "decision": "HOLD",
+      "receipt_hash": "b863190fbdff755623d6357118e991ead50b51eacb3e1c1fffb83b5d69796558"
+    }
+  ],
+  "sose_receipt_hash": "0a78ecdd1b824563e198d94571d37195bc952f9fcc7476d20f01edcf6ac8c147",
+  "readiness_demo_percent": 75,
+  "human_review_queue_count": 1,
+  "truth_boundary": "Readiness is a bounded demo metric over the bundled generic control library, not a compliance determination.",
+  "receipt_sha256": "911b083193d51f46d139bb1e147cbf85f8b4221f93e5acd870f7365622aff4e9"
+}

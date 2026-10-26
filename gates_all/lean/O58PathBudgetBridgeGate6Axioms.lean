@@ -1,0 +1,3 @@
+import CPOQ.O58PathBudgetBridgeGate6
+#print axioms CPOQ.continuation_budget_bridge
+#print axioms CPOQ.continuation_budget_bridge_from_components

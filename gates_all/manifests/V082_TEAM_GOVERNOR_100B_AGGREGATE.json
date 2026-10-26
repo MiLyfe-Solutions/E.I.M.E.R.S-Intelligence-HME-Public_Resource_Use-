@@ -1,0 +1,116 @@
+{
+  "events": 100000000000,
+  "mismatch": 0,
+  "hold": 99885022129,
+  "watch": 67022696,
+  "review": 40722787,
+  "scout": 6021219,
+  "auto_pick": 1211169,
+  "seconds": 301.849334,
+  "violations": {
+    "violation_roster_present": 0,
+    "violation_scoring_supported": 0,
+    "violation_duplicate_request": 0,
+    "violation_duplicate_roster": 0,
+    "violation_evidence_floor": 0,
+    "violation_unresolved_identity": 0,
+    "violation_candidate_authority": 0,
+    "violation_positive_improvement": 0,
+    "violation_market_fresh": 0,
+    "violation_college_to_pro": 0,
+    "violation_pro_to_college": 0,
+    "violation_injury_guard": 0,
+    "violation_calibration_guard": 0,
+    "violation_market_conflict": 0,
+    "violation_chaos_flip": 0,
+    "violation_chaos_stability": 0,
+    "violation_rolling_red": 0,
+    "violation_availability_proven": 0,
+    "violation_pro_no_autopick": 0,
+    "violation_no_external_action": 0
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "start": 0,
+      "events": 10000000000,
+      "seal": "267aa91bf3d46dcb",
+      "seconds": 30.188417,
+      "throughput": 331252881.645
+    },
+    {
+      "index": 1,
+      "start": 10000000000,
+      "events": 10000000000,
+      "seal": "23e6eccb484ea381",
+      "seconds": 29.449682,
+      "throughput": 339562245.611
+    },
+    {
+      "index": 2,
+      "start": 20000000000,
+      "events": 10000000000,
+      "seal": "23ba18e2a66fdefa",
+      "seconds": 30.440182,
+      "throughput": 328513145.991
+    },
+    {
+      "index": 3,
+      "start": 30000000000,
+      "events": 10000000000,
+      "seal": "fcea5d51c1e01dfa",
+      "seconds": 30.133093,
+      "throughput": 331861053.892
+    },
+    {
+      "index": 4,
+      "start": 40000000000,
+      "events": 10000000000,
+      "seal": "b091de387029d340",
+      "seconds": 30.660922,
+      "throughput": 326148054.209
+    },
+    {
+      "index": 5,
+      "start": 50000000000,
+      "events": 10000000000,
+      "seal": "5df3c50d83e268e3",
+      "seconds": 30.429527,
+      "throughput": 328628177.018
+    },
+    {
+      "index": 6,
+      "start": 60000000000,
+      "events": 10000000000,
+      "seal": "dffc0968409e2082",
+      "seconds": 30.800861,
+      "throughput": 324666249.41
+    },
+    {
+      "index": 7,
+      "start": 70000000000,
+      "events": 10000000000,
+      "seal": "1a63dec6ea66e719",
+      "seconds": 30.381144,
+      "throughput": 329151532.91
+    },
+    {
+      "index": 8,
+      "start": 80000000000,
+      "events": 10000000000,
+      "seal": "d33afac09bad16cc",
+      "seconds": 29.799685,
+      "throughput": 335574012.886
+    },
+    {
+      "index": 9,
+      "start": 90000000000,
+      "events": 10000000000,
+      "seal": "1c8423044d05456c",
+      "seconds": 29.565821,
+      "throughput": 338228387.403
+    }
+  ],
+  "throughput_effective": 331291106.97325575,
+  "aggregate_sha256": "c3e52c7bbdbf1d8e6152e76b05ca97191479cd335e6f8bd40b49e9303d5c59cf"
+}

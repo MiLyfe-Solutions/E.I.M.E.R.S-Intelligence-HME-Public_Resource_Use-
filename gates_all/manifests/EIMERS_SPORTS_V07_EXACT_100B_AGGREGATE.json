@@ -1,0 +1,35 @@
+{
+  "events": 100000000000,
+  "oracle_sut_mismatches": 0,
+  "future_leak_violations": 0,
+  "canonical_source_violations": 0,
+  "evidence_gate_violations": 0,
+  "calibration_guard_violations": 0,
+  "chaos_stability_violations": 0,
+  "chaos_flip_violations": 0,
+  "market_guard_violations": 0,
+  "ambiguity_guard_violations": 0,
+  "hold": 97401027873,
+  "watch": 2593239408,
+  "shadow": 5732719,
+  "aggregate_seal": "6c4078d6ef3da625",
+  "chunks": 10,
+  "total_compute_seconds": 59.969664,
+  "effective_events_per_sec": 1667509759.601121,
+  "mutation_campaign": "11/11 DETECTED",
+  "policy_thresholds": {
+    "evidence_floor": 80,
+    "calibration_stability_floor": 80,
+    "chaos_stability_floor": 80,
+    "ambiguity_band_percent": [
+      40,
+      60
+    ],
+    "market_conflict": "WATCH",
+    "market_stale": "WATCH",
+    "market_missing": "WATCH",
+    "future_or_canonical_source_failure": "HOLD"
+  },
+  "decision": "PASS",
+  "proof_sha256": "72d4d80492782ae6c35e231babc2bdfd81f46059a94ea7cae9b263638de16df2"
+}

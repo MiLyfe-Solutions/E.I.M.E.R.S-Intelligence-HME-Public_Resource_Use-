@@ -1,0 +1,32 @@
+{
+  "id": "pp_2f9a",
+  "requestId": "req_87",
+  "intent": "Add coverage gate to CI",
+  "decision": "CONDITIONAL",
+  "verification": "VERIFIED",
+  "repo": "apex-build-os",
+  "commit": "a91f3c",
+  "createdAt": "2026-06-08T10:42:00Z",
+  "tools": [
+    "OpenAI gpt-5.5",
+    "vitest",
+    "GitHub"
+  ],
+  "commands": [
+    "npm test"
+  ],
+  "testResults": "142/142 passed",
+  "outputHashes": [
+    "sha256:9f2c…a41"
+  ],
+  "ledgerRange": "1038-1042",
+  "approvals": [
+    "ap_311"
+  ],
+  "errors": [],
+  "connections": [
+    "openai (ai:complete)",
+    "github (repo:read)"
+  ],
+  "evidence": "VERIFIED"
+}

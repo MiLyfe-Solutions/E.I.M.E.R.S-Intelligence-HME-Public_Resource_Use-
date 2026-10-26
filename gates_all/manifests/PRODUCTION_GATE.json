@@ -1,0 +1,103 @@
+{
+  "timestamp_utc": "2026-10-06T07:57:10.679677+00:00",
+  "runtime_release_decision": "APPROVE_PRODUCTION_RUNTIME_SHADOW_ONLY",
+  "prediction_authority": "SHADOW_ONLY",
+  "autonomous_financial_or_wagering_authority": "DENIED",
+  "runtime_checks": [
+    {
+      "name": "100B exact event count",
+      "status": "PASS",
+      "evidence": "proof/EIMERS_SPORTS_100B_AGGREGATE.json",
+      "detail": null
+    },
+    {
+      "name": "100B oracle/SUT mismatches",
+      "status": "PASS",
+      "evidence": "proof/EIMERS_SPORTS_100B_AGGREGATE.json",
+      "detail": null
+    },
+    {
+      "name": "100B invariant violations",
+      "status": "PASS",
+      "evidence": "proof/EIMERS_SPORTS_100B_AGGREGATE.json",
+      "detail": null
+    },
+    {
+      "name": "Mutation controls 8/8 detected",
+      "status": "PASS",
+      "evidence": "proof/EIMERS_SPORTS_MUTATION_RESULT.txt",
+      "detail": null
+    },
+    {
+      "name": "Rolling Oracle available",
+      "status": "PASS",
+      "evidence": "proof/rolling_backtest/proof.json",
+      "detail": null
+    },
+    {
+      "name": "Calibrator improves later blind probability error",
+      "status": "PASS",
+      "evidence": "proof/calibration_oracle.json",
+      "detail": null
+    },
+    {
+      "name": "Historical oracle no future leakage",
+      "status": "PASS",
+      "evidence": "proof/wr_holdout_2024_to_2025/proof.json",
+      "detail": null
+    },
+    {
+      "name": "Decision ledger chain valid",
+      "status": "PASS",
+      "evidence": "proof/decision_ledger.jsonl",
+      "detail": null
+    },
+    {
+      "name": "Prospective ledger chain valid",
+      "status": "PASS",
+      "evidence": "proof/prospective_ledger.jsonl",
+      "detail": null
+    },
+    {
+      "name": "Automated test suite",
+      "status": "PASS",
+      "evidence": "proof/prod_step07_adversarial_tests.txt",
+      "detail": "25 passed"
+    },
+    {
+      "name": "Production-like HTTP runtime proof",
+      "status": "PASS",
+      "evidence": "proof/prod_step06b_runtime_proof.txt",
+      "detail": null
+    },
+    {
+      "name": "Model artifact present",
+      "status": "PASS",
+      "evidence": "artifacts/wr_top24_shadow.joblib",
+      "detail": null
+    },
+    {
+      "name": "Calibrator artifact present",
+      "status": "PASS",
+      "evidence": "artifacts/wr_top24_isotonic.joblib",
+      "detail": null
+    },
+    {
+      "name": "Feature profile present",
+      "status": "PASS",
+      "evidence": "artifacts/wr_top24_feature_profile.json",
+      "detail": null
+    }
+  ],
+  "predictive_authority_blockers": [
+    "CALIBRATION_ECE_ABOVE_PRODUCTION_GATE",
+    "SOURCE_POPULATION_INCOMPLETE",
+    "PROSPECTIVE_2026_OUTCOME_EVIDENCE_PENDING",
+    "MARKET_BASELINE_COMPARISON_INCOMPLETE",
+    "PLAYER_DNA_HISTORY_INCOMPLETE"
+  ],
+  "evidence_level": "Runtime Verified",
+  "docker_build": "NOT_RUN_DOCKER_BINARY_UNAVAILABLE",
+  "deployment_authorized": false,
+  "receipt_sha256": "3d3bae20c952afb57d65ac4327f19dc04f21cc48a3a4715d9240f066e2d9eee8"
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "APEX-EVIDENCE-INTAKE-PAYLOAD-1.0",
+  "dataset_id": "DS-2026-M&A-P&L-BASELINE-01",
+  "entity": "Example Manufacturing Co.",
+  "period_horizon": "FY2024-FY2026 (Monthly & Annual Consolidated)",
+  "currency": "USD",
+  "materiality_threshold": {
+    "revenue_pct": 1.0,
+    "ebitda_pct": 5.0
+  },
+  "comparisons_supported": [
+    "Actual vs Prior Year (YoY)",
+    "Actual vs Budget",
+    "Monthly Trend Analysis",
+    "Consolidated Roll-up with Intercompany Eliminations"
+  ],
+  "data_rows": [
+    {"Period": "FY2024-Q1", "Revenue": 12500000, "COGS": 7450000, "Gross_Profit": 5050000, "Gross_Margin_Pct": 40.40, "SGA_Total": 3800000, "SGA_Logistics": 710000, "EBITDA_Reported": 1250000, "EBITDA_Adjusted": 1400000},
+    {"Period": "FY2024-Q2", "Revenue": 13100000, "COGS": 8100000, "Gross_Profit": 5000000, "Gross_Margin_Pct": 38.17, "SGA_Total": 3950000, "SGA_Logistics": 750000, "EBITDA_Reported": 1050000, "EBITDA_Adjusted": 1200000},
+    {"Period": "FY2024-Q3", "Revenue": 13400000, "COGS": 8600000, "Gross_Profit": 4800000, "Gross_Margin_Pct": 35.82, "SGA_Total": 4100000, "SGA_Logistics": 950000, "EBITDA_Reported": 700000, "EBITDA_Adjusted": 1100000},
+    {"Period": "FY2024-Q4", "Revenue": 13400000, "COGS": 9410000, "Gross_Profit": 3990000, "Gross_Margin_Pct": 29.78, "SGA_Total": 4250000, "SGA_Logistics": 996000, "EBITDA_Reported": -260000, "EBITDA_Adjusted": 996000},
+    {"Period": "FY2025-Q1", "Revenue": 14100000, "COGS": 9100000, "Gross_Profit": 5000000, "Gross_Margin_Pct": 35.46, "SGA_Total": 4350000, "SGA_Logistics": 960000, "EBITDA_Reported": 650000, "EBITDA_Adjusted": 950000},
+    {"Period": "FY2025-Q2", "Revenue": 14300000, "COGS": 9400000, "Gross_Profit": 4900000, "Gross_Margin_Pct": 34.27, "SGA_Total": 4800000, "SGA_Logistics": 1412000, "EBITDA_Reported": 100000, "EBITDA_Adjusted": 812000},
+    {"Period": "FY2025-Q3", "Revenue": 14600000, "COGS": 9800000, "Gross_Profit": 4800000, "Gross_Margin_Pct": 32.88, "SGA_Total": 4500000, "SGA_Logistics": 1000000, "EBITDA_Reported": 300000, "EBITDA_Adjusted": 700000},
+    {"Period": "FY2025-Q4", "Revenue": 15100000, "COGS": 9990000, "Gross_Profit": 5110000, "Gross_Margin_Pct": 33.84, "SGA_Total": 4750000, "SGA_Logistics": 1073000, "EBITDA_Reported": 360000, "EBITDA_Adjusted": 860000},
+    {"Period": "FY2026-Q1", "Revenue": 15200000, "COGS": 10100000, "Gross_Profit": 5100000, "Gross_Margin_Pct": 33.55, "SGA_Total": 5150000, "SGA_Logistics": 1396000, "EBITDA_Reported": -50000, "EBITDA_Adjusted": 646000},
+    {"Period": "FY2026-Q2", "Revenue": 15400000, "COGS": 10200000, "Gross_Profit": 5200000, "Gross_Margin_Pct": 33.77, "SGA_Total": 4700000, "SGA_Logistics": 940000, "EBITDA_Reported": 500000, "EBITDA_Adjusted": 740000},
+    {"Period": "FY2026-Q3", "Revenue": 15500000, "COGS": 10350000, "Gross_Profit": 5150000, "Gross_Margin_Pct": 33.23, "SGA_Total": 4700000, "SGA_Logistics": 950000, "EBITDA_Reported": 450000, "EBITDA_Adjusted": 700000},
+    {"Period": "FY2026-Q4", "Revenue": 15700000, "COGS": 10500000, "Gross_Profit": 5200000, "Gross_Margin_Pct": 33.12, "SGA_Total": 4762000, "SGA_Logistics": 1050000, "EBITDA_Reported": 438000, "EBITDA_Adjusted": 654000}
+  ],
+  "anomaly_registry": [
+    {"Event_ID": "GMC-001", "Type": "Gross Margin Compression", "Period": "FY2024-Q3/Q4", "Driver": "Input Cost Inflation (Steel/Resin)", "Impact_Bps": -120},
+    {"Event_ID": "GMC-002", "Type": "Gross Margin Compression", "Period": "FY2025-Q1/Q2", "Driver": "Contractual Price Freeze Lag", "Impact_Bps": -85},
+    {"Event_ID": "LXS-001", "Type": "Logistics SG&A Spike", "Period": "FY2024-Q3/Q4", "Driver": "Carrier Peak Season Surcharges", "Magnitude": "+$524k"},
+    {"Event_ID": "LXS-002", "Type": "Logistics SG&A Spike", "Period": "FY2025-Q2", "Driver": "Port Strike / Expedited Freight", "Magnitude": "+$1,452k"}
+  ]
+}

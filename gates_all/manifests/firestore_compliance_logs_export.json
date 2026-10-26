@@ -1,0 +1,42 @@
+[
+  {
+    "id": "comp-101",
+    "timestamp": "11:52 PM",
+    "category": "pii_protection",
+    "severity": "critical",
+    "summary": "Prevented child SSN & street address disclosure",
+    "details": "SafetyGuard intercepted an outgoing query containing address patterns. Redacted before reaching LLM context.",
+    "status": "resolved",
+    "actor": "SafetyGuard Engine v3.8"
+  },
+  {
+    "id": "comp-102",
+    "timestamp": "11:29 PM",
+    "category": "parental_rule",
+    "severity": "high",
+    "summary": "Bedtime screen-time curfew enforced (20:30)",
+    "details": "MiLyfe Kids AI switched to gentle wind-down bedtime story mode per parent rule configuration.",
+    "status": "resolved",
+    "actor": "Parent Rule: Joshua Eimers"
+  },
+  {
+    "id": "comp-103",
+    "timestamp": "10:39 PM",
+    "category": "model_guardrail",
+    "severity": "medium",
+    "summary": "Veo 3 fast video prompt safety verification",
+    "details": "User prompt analyzed against child-safe video content filters. Approved with rating G/Family.",
+    "status": "resolved",
+    "actor": "Veo Safety Filter"
+  },
+  {
+    "id": "comp-104",
+    "timestamp": "09:34 PM",
+    "category": "access_control",
+    "severity": "low",
+    "summary": "Firebase Admin Authentication verified",
+    "details": "Authenticated via Firebase Auth credentials joshua@eimersbusiness.com with super_admin privileges.",
+    "status": "resolved",
+    "actor": "Firebase Auth"
+  }
+]

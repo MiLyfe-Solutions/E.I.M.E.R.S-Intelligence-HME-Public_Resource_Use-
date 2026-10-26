@@ -1,0 +1,147 @@
+{
+  "actor_scope": {
+    "role": "GLOBAL_ADMIN",
+    "tenant_id": "*"
+  },
+  "assistant": {
+    "assistant_authority": "ADVISE_AND_VERIFY_ONLY",
+    "assistant_name": "APEX Guided Setup Assistant",
+    "generated_at": "2026-08-23T06:08:43.277710Z",
+    "latest_record": {
+      "attempt_type": "RELEASE_ATTEMPT",
+      "company_id": "DIALYSIS-COMPANY-TEMPLATE",
+      "created_at": "2026-08-22T02:09:30.239604Z",
+      "execution_status": "SCHEDULE_PROPOSAL_HOLD",
+      "location_id": "MI-DIALYSIS-CLINIC-TEMPLATE",
+      "memory_receipt_sha256_present": false,
+      "memory_receipt_status": "ALREADY_MIRRORED",
+      "modality": "IN_CENTER",
+      "patient_census": 1,
+      "proof_pack_id": "PROOF-PACK-ab2898f6930dd13501964674",
+      "proof_sha256": "da77c14d2309371f1a461a0eee865da1ad64a76de9932bc367f49bce4f789279",
+      "record_id": "UIRUN-B3936E84CA4AA7E9CADAEFDB",
+      "release_gate": "HOLD",
+      "schedule_id": "SCHEDULE-D70493EEA83F89B8188C6DF0",
+      "shift_date": "2026-08-20",
+      "tenant_id": "MI-DIALYSIS-TENANT-TEMPLATE"
+    },
+    "legal_compliance_status": "NOT_DETERMINED_BY_SOFTWARE",
+    "next_action": {
+      "action_label": "Open clinics and policies",
+      "action_view": "locations",
+      "explanation": "Replace the built-in template with the clinic's company, tenant, region, location, and policy binding.",
+      "record_id": "UIRUN-B3936E84CA4AA7E9CADAEFDB",
+      "status": "HOLD",
+      "step_id": "CLINIC-CONFIGURATION",
+      "title": "Clinic and tenant configuration"
+    },
+    "passed_steps": 1,
+    "proof_verification_receipt": {
+      "calculated_sha256": "da77c14d2309371f1a461a0eee865da1ad64a76de9932bc367f49bce4f789279",
+      "claimed_sha256": "da77c14d2309371f1a461a0eee865da1ad64a76de9932bc367f49bce4f789279",
+      "details": {
+        "claimed_matches_calculated": true,
+        "claimed_matches_schedule_record": true,
+        "core_verification_status": "VERIFIED",
+        "non_phi_evidence_only": true
+      },
+      "proof_pack_id": "PROOF-PACK-ab2898f6930dd13501964674",
+      "receipt_id": "UI-PROOF-RECEIPT-46378183D169EF78BE1AA269",
+      "record_id": "UIRUN-B3936E84CA4AA7E9CADAEFDB",
+      "tenant_id": "MI-DIALYSIS-TENANT-TEMPLATE",
+      "verification_status": "VERIFIED",
+      "verified_at": "2026-08-23T05:24:38.804249Z",
+      "verified_by": "USR-AE7453752A7A5984BF8E3FD9"
+    },
+    "self_approval_permitted": false,
+    "setup_status": "ACTION_REQUIRED",
+    "steps": [
+      {
+        "action_label": "Open clinics and policies",
+        "action_view": "locations",
+        "explanation": "Replace the built-in template with the clinic's company, tenant, region, location, and policy binding.",
+        "record_id": "UIRUN-B3936E84CA4AA7E9CADAEFDB",
+        "status": "HOLD",
+        "step_id": "CLINIC-CONFIGURATION",
+        "title": "Clinic and tenant configuration"
+      },
+      {
+        "action_label": "Review policy setup",
+        "action_view": "locations",
+        "explanation": "The clinic must approve the active policy, current authority sources, effective date, review date, and next review date.",
+        "record_id": "UIRUN-B3936E84CA4AA7E9CADAEFDB",
+        "status": "HOLD",
+        "step_id": "POLICY-ATTESTATION",
+        "title": "Clinic-owned policy attestation"
+      },
+      {
+        "action_label": "Open identity setup",
+        "action_view": "integrations",
+        "explanation": "Configure the trusted identity verifier, then supply externally signed tenant and clinic assertions.",
+        "record_id": "UIRUN-B3936E84CA4AA7E9CADAEFDB",
+        "status": "HOLD",
+        "step_id": "TENANT-AUTHORIZATION",
+        "title": "Trusted clinic identity"
+      },
+      {
+        "action_label": "Build corrected proposal",
+        "action_view": "new-schedule",
+        "explanation": "Create a new proposal with every required role represented by qualified, current, pseudonymous roster evidence.",
+        "record_id": "UIRUN-B3936E84CA4AA7E9CADAEFDB",
+        "status": "HOLD",
+        "step_id": "ROLE-COVERAGE",
+        "title": "Qualified staffing evidence"
+      },
+      {
+        "action_label": "Review memory connection",
+        "action_view": "integrations",
+        "explanation": "The broker reported persistence, but the returned receipt is missing its record SHA-256. Complete receipt readback before treating memory evidence as complete.",
+        "record_id": "UIRUN-B3936E84CA4AA7E9CADAEFDB",
+        "status": "HOLD",
+        "step_id": "MEMORY-RECEIPT",
+        "title": "Persistent memory receipt"
+      },
+      {
+        "action_label": "Open approval submission",
+        "action_view": "schedules",
+        "explanation": "Upload a clinic-signed non-PHI bundle whose release approval matches the exact schedule scope hash.",
+        "record_id": "UIRUN-B3936E84CA4AA7E9CADAEFDB",
+        "status": "HOLD",
+        "step_id": "CLINIC-RELEASE",
+        "title": "Exact-scope clinic approval"
+      },
+      {
+        "action_label": "Open archive setup",
+        "action_view": "integrations",
+        "explanation": "Configure the approved HTTPS/WORM archive and require a signed receipt with API readback for this Proof Pack.",
+        "record_id": "UIRUN-B3936E84CA4AA7E9CADAEFDB",
+        "status": "HOLD",
+        "step_id": "PROOF-ARCHIVE",
+        "title": "Approved immutable archive"
+      },
+      {
+        "action_label": "Verify latest Proof Pack",
+        "action_view": "setup-assistant",
+        "explanation": "The assistant compares the claimed hash, calculated hash, and schedule record hash, then saves a verification receipt.",
+        "record_id": "UIRUN-B3936E84CA4AA7E9CADAEFDB",
+        "status": "PASS",
+        "step_id": "PROOF-INTEGRITY",
+        "title": "Proof Pack integrity"
+      }
+    ],
+    "technical_progress_percent": 12,
+    "total_steps": 8
+  },
+  "bundle_sha256": "4590dcaccca0eeb1b18d32c6f15f888a284eeeb646e89bda53ba9de138f1f3ae",
+  "environment_scope": "LOCAL_CLINIC_INTERFACE_NON_PHI",
+  "evidence_type": "APEX_DIALYSIS_GUIDED_SETUP_EVIDENCE",
+  "generated_at": "2026-08-23T06:08:43.277730Z",
+  "product_version": "153.2.2",
+  "schema_version": "1.0.0",
+  "system": "APEX Dialysis Compliance + Auto Scheduler",
+  "truth_boundary": {
+    "assistant_may_approve_or_release": false,
+    "clinic_release_authority": "EXTERNAL_AUTHORIZED_CLINIC",
+    "legal_compliance_status": "NOT_DETERMINED_BY_SOFTWARE"
+  }
+}

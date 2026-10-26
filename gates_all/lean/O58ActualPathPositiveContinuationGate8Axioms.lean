@@ -1,0 +1,8 @@
+import CPOQ.O58ActualPathPositiveContinuationGate8
+
+#print axioms CPOQ.actualExactAccelStep_valuation_positive
+#print axioms CPOQ.continuationWordData_sum
+#print axioms CPOQ.continuationWordData_to_positiveContinuation
+#print axioms CPOQ.actualAccelPath_to_continuationWordData
+#print axioms CPOQ.actualAccelPath_to_positiveContinuation
+#print axioms CPOQ.actualAccelPath_to_gate6_normalized_bound

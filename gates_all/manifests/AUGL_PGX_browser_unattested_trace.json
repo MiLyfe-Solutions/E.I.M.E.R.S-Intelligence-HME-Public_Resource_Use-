@@ -1,0 +1,24 @@
+{
+  "environment": "LOCAL_BROWSER_WASM",
+  "model_sha256": "5bf37be962bcf87a4d99e17e96a1d98af32fcf00d82a9d55a6218b6d5a554ab8",
+  "wasm_sha256_packaged": "8fdb1d3b30913ade737ec399c1884d79135c9014051ac5495d9e17fc19350c5d",
+  "mathematical_proof": "LEAN_KERNEL_NOT_CHECKED_HERE",
+  "compiler_correctness": "UNVERIFIED",
+  "refinement": "UNVERIFIED",
+  "external_authority": "DENIED",
+  "production_authority": "HOLD",
+  "receipt_integrity": "VOLATILE_BROWSER_OUTPUT_NOT_SIGNED",
+  "decision": "OBSERVED_SHADOW_COMPLETED",
+  "reason": "Wasm computation reached work=0; not a Lean proof.",
+  "final_state": {
+    "work": 0,
+    "phase": false
+  },
+  "observed_steps": 14,
+  "host_imports": 0,
+  "budget": 14,
+  "initial_state": {
+    "work": 7,
+    "phase": false
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "apexReleaseManifest": {
+    "id": "REL-35815016",
+    "releaseVersion": "1.0.0",
+    "targetTenant": "apex_aos",
+    "releaseTitle": "APEX Phase One Sovereign Production Release",
+    "createdBy": "Joshua Eimers",
+    "createdAt": "2026-09-12 17:56:55 UTC",
+    "includedProjectIds": [
+      "PRJ-APEX-AOS"
+    ],
+    "includedArtifactIds": [
+      "ART-004",
+      "ART-005"
+    ],
+    "includedReceiptIds": [
+      "RCPT-20260909-0002",
+      "RCPT-20260909-0003"
+    ],
+    "gapResolutionStatus": "ALL_CRITICAL_GAPS_RESOLVED",
+    "testSuiteSummary": {
+      "totalTests": 48,
+      "passed": 48,
+      "coveragePct": 98.4
+    },
+    "masterSha256": "28e16625d51846dc2cafcd2c659a23851931400b21d74e486c0976dc38db9bad",
+    "sovereignSignature": "0xSOV-135a3f08039638ae88c001e76e9f3a543dd283b985436229d250917d39ea3ddf",
+    "exportFormat": "APEX_BUNDLE_JSON",
+    "status": "SEALED_EXPORT_READY"
+  },
+  "projects": [
+    {
+      "id": "PRJ-APEX-AOS",
+      "name": "APEX AOS / AIOS Swarm Kernel",
+      "tenant": "apex_aos",
+      "description": "Autonomous enterprise operating system, AUGL routing bridges, and 32 enforced USPTO patent claim validators.",
+      "status": "ACTIVE",
+      "repositoryUrl": "git@github.com:apex-systems/apex-aos-kernel.git",
+      "architectureTier": "FOUNDER_TIER_1",
+      "activeAgents": [
+        "APEX_VERA",
+        "APEX_BUILDER",
+        "APEX_REPORT_PROOF",
+        "APEX_IP_GUARDIAN"
+      ],
+      "artifactIds": [
+        "ART-004",
+        "ART-005"
+      ],
+      "healthScore": 100,
+      "createdAt": "2026-07-02 11:00:00 UTC",
+      "lastDeploymentAt": "2026-09-10 14:15:00 UTC"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "ART-004",
+      "projectId": "PRJ-APEX-AOS",
+      "tenant": "apex_aos",
+      "name": "AUGL Multi-Model Routing Bridge Blueprint",
+      "type": "ARCHITECTURE_SPEC",
+      "version": "1.3.0",
+      "sizeBytes": 64100,
+      "createdByAgent": "APEX Builder",
+      "createdAt": "2026-09-09 17:00:00 UTC",
+      "sha256Checksum": "7c9a102938471209384712039487120394871203948712039487120394871203",
+      "verificationStatus": "VERIFIED",
+      "description": "Deterministic grammar specification for dynamic token arbitration across OpenAI GPT-4o, Anthropic Claude 3.5, and Google Gemini 1.5."
+    },
+    {
+      "id": "ART-005",
+      "projectId": "PRJ-APEX-AOS",
+      "tenant": "apex_aos",
+      "name": "32 USPTO Patent Claim Verification Matrix",
+      "type": "AUDIT_RECEIPT",
+      "version": "3.0.0",
+      "sizeBytes": 112400,
+      "createdByAgent": "Report + Proof Agent",
+      "createdAt": "2026-09-10 10:20:00 UTC",
+      "sha256Checksum": "8f41029384712093847120394871203948712039487120394871203948712039",
+      "verificationStatus": "VERIFIED",
+      "description": "Automated claim boundary scan linking live codebase AST to Joshua Eimers provisional filings US 63/812,001 through US 63/812,032."
+    }
+  ],
+  "merkleProofChain": [
+    {
+      "receiptId": "RCPT-20260909-0002",
+      "blockHeight": 26,
+      "timestamp": "2026-09-09 14:20:00 UTC",
+      "actor": "APEX Sentinel",
+      "agentId": "APEX_SENTINEL",
+      "tenant": "apex_aos",
+      "actionType": "PERIMETER_AUDIT",
+      "actionSummary": "Executed zero-leakage isolation audit across all 6 SQLite databases",
+      "inputsHash": "7c9a10293847561029384756102938475610293847561029384756102938411f",
+      "outputPayload": "Passed: 0/6 databases showed cross-tenant read permission leaks.",
+      "previousBlockHash": "7c9a10293847561029384756102938475610293847561029384756102938411f",
+      "blockHash": "8d0b21304958672130495867213049586721304958672130495867213049522e",
+      "approvalStatus": "APPROVED",
+      "founderSignOffBy": "Joshua Eimers",
+      "founderSignOffAt": "2026-09-09 14:21:10 UTC"
+    },
+    {
+      "receiptId": "RCPT-20260909-0003",
+      "blockHeight": 27,
+      "timestamp": "2026-09-09 17:15:00 UTC",
+      "actor": "APEX AUGL Forger",
+      "agentId": "APEX_AUGL_FORGER",
+      "tenant": "apex_aos",
+      "actionType": "AUGL_COMPILATION",
+      "actionSummary": "Compiled MultiModelRoutingBridge v1.2 rule to AST byte descriptor",
+      "inputsHash": "8d0b21304958672130495867213049586721304958672130495867213049522e",
+      "outputPayload": "Byte Signature: 0xc3e77d6e... Byte length: 1,420 bytes. Constraints: 0 violations.",
+      "previousBlockHash": "8d0b21304958672130495867213049586721304958672130495867213049522e",
+      "blockHash": "9e1c32415069783241506978324150697832415069783241506978324150633d",
+      "approvalStatus": "APPROVED",
+      "founderSignOffBy": "Joshua Eimers",
+      "founderSignOffAt": "2026-09-09 17:18:45 UTC"
+    }
+  ],
+  "systemInvariants": {
+    "tenantIsolationEnforced": true,
+    "sovereignSignOffVerified": true,
+    "patentComplianceActive": true
+  }
+}

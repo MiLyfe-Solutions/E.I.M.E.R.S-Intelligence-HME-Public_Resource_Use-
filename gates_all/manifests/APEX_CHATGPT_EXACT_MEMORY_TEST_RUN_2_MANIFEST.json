@@ -1,0 +1,24 @@
+{
+  "run": "ChatGPT Exact Memory Test Run 2",
+  "date": "2026-08-08",
+  "model": "GPT-5.6 Sol",
+  "memory_source": "1. Read First.xlsx",
+  "memory_source_sha256": "d554f7386f6bbc43d7d780ef5c33b7159d8d9aae73fd5fdebbccceaf6b83eb85",
+  "test_source": "APEX_MEMORY_RECALL_BLIND_MULTI_AI_TEST.xlsx",
+  "question_count": 61101,
+  "question_sequence_sha256": "5a6f11169cecd916f72faa67a67e4c2c7dc2a96a4a0140cb3da8119af95e891e",
+  "answered_count": 61101,
+  "blank_answers": 0,
+  "answer_generation_basis": "1. Read First.xlsx only; current/superseded/evidence rules applied; answer-key workbook not used to generate answers.",
+  "governing_priority": [
+    "SYSTEM AUTHORITY",
+    "USER AUTHORITY",
+    "PROJECT DIRECTIVE",
+    "FLOW CONTROL",
+    "REQUIRED REFERENCES",
+    "LIVE STATE",
+    "USER MESSAGE"
+  ],
+  "output_file": "APEX_CHATGPT_EXACT_MEMORY_TEST_RUN_2_CURRENT_TRUTH_20260808.xlsx",
+  "output_sha256": "42f7181e410c1b5c053f95d35f63a43a5002b951c491683c699eec2799498415"
+}

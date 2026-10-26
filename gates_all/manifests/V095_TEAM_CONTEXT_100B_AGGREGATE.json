@@ -1,0 +1,61 @@
+{
+  "release": "E.I.M.E.R.S. Sports Intelligence Local v0.9.5",
+  "campaign": "Team Probability Twin + Player Context 100B Governor",
+  "events": 100000000000,
+  "chunks": 10,
+  "mismatch": 0,
+  "violation_mask_or": 0,
+  "hold": 96093750000,
+  "watch": 3902435320,
+  "scout": 2861010,
+  "shadow": 953670,
+  "seconds": 49.048529,
+  "effective_rate": 2038797126.8210714,
+  "chunk_seals": [
+    "004a81163557f57c",
+    "004a8159c197f586",
+    "004a819d4dd7f59a",
+    "004a81c4da17f59a",
+    "004a811d6657f57c",
+    "004a8160f297f586",
+    "004a81a47ed7f59a",
+    "004a81b00b17f59a",
+    "004a81249757f57c",
+    "004a81682397f586"
+  ],
+  "mutation_divergence_counts": [
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    73728,
+    10,
+    40,
+    8192,
+    8192,
+    40,
+    8192,
+    10,
+    40
+  ],
+  "mutations_detected": 15,
+  "mutations_total": 15,
+  "state_table_bits": 20,
+  "state_classes": 1048576,
+  "exact_regressions": {
+    "team_probability_test": "PASS_LOW_EVIDENCE_WITHHELD",
+    "weekly_policy_test": "PASS",
+    "policy_tests": "PASS"
+  },
+  "implementation_change": "Win-probability proxy is withheld unless both teams have >=50/100 true weekly evidence; raw skill share remains diagnostic only.",
+  "notes": [
+    "100B layer repeatedly evaluates the exhaustive 20-factor Governor state table.",
+    "Exact JavaScript tests cover team probability, weekly board and uncertainty-preserving lineup math.",
+    "Team probability remains SHADOW_SKILL_PROXY_ONLY even after evidence gate passes.",
+    "No numerical home-field bonus until outcome-calibrated.",
+    "Team context may be used as bounded tri-node context; it is not yet fed numerically back into player scores."
+  ],
+  "aggregate_sha256": "8925a1514e70e725ac1bafcef40616f1b6d763ebbd76255c9f4885dfffc0c2ec"
+}

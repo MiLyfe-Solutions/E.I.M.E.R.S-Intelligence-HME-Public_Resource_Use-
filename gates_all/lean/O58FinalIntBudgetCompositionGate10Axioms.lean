@@ -1,0 +1,15 @@
+import CPOQ.O58FinalIntBudgetCompositionGate10
+#print axioms CPOQ.continuation_budget_bridge_int
+#print axioms CPOQ.o58_segment33_actual_path_to_int_budget
+#print axioms CPOQ.o58_segment33_actual_path_descent_l01
+#print axioms CPOQ.o58_segment33_actual_path_descent_l02
+#print axioms CPOQ.o58_segment33_actual_path_descent_l03
+#print axioms CPOQ.o58_segment33_actual_path_descent_l04
+#print axioms CPOQ.o58_segment33_actual_path_descent_l05
+#print axioms CPOQ.o58_segment33_actual_path_descent_l06
+#print axioms CPOQ.o58_segment33_actual_path_descent_l07
+#print axioms CPOQ.o58_segment33_actual_path_descent_l08
+#print axioms CPOQ.o58_segment33_actual_path_descent_l09
+#print axioms CPOQ.o58_segment33_actual_path_descent_l10
+#print axioms CPOQ.o58_segment33_actual_path_descent_l11
+#print axioms CPOQ.o58_segment33_actual_path_descent_l12

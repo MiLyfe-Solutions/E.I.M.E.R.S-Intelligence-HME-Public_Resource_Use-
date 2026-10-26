@@ -1,0 +1,18 @@
+{
+  "immediate_step47_certified_mass": "1/4",
+  "immediate_step47_certified_percent": 25.0,
+  "adaptive_additional_certified_mass": "652427/1048576",
+  "adaptive_additional_certified_percent": 62.22028732299805,
+  "total_bounded_arithmetic_certified_mass": "914571/1048576",
+  "total_bounded_arithmetic_certified_percent": 87.22028732299805,
+  "unresolved_mass_at_qbits20": "134005/1048576",
+  "unresolved_percent_at_qbits20": 12.779712677001953,
+  "adaptive_leaf_count": 169087,
+  "adaptive_descending_leaf_count": 35082,
+  "adaptive_unresolved_leaf_count": 134005,
+  "max_q_bits": 20,
+  "max_accelerated_step_checked": 140,
+  "status_immediate": "PREPARED_FOR_LEAN_LOCAL_REPLAY",
+  "status_adaptive": "EXACT_ARITHMETIC_CHECKED",
+  "universal_collatz": "HOLD_UNPROVEN"
+}

@@ -1,0 +1,29 @@
+{
+  "exported_at": "2026-08-09T21:55:27.859Z",
+  "baseline": [
+    {
+      "ai": "ChatGPT",
+      "score": 99.9885,
+      "pass": 61094,
+      "fail": 7,
+      "strength": "Broad governed recall",
+      "watch": "Worker Envelope exact priorities"
+    },
+    {
+      "ai": "Copilot 365",
+      "score": 97.9018,
+      "pass": 59819,
+      "fail": 1282,
+      "strength": "Indexed technical retrieval",
+      "watch": "Governance semantics / named controls"
+    },
+    {
+      "ai": "Base44 / WhatsApp",
+      "score": 99.9853,
+      "pass": 61092,
+      "fail": 9,
+      "strength": "Persistent cross-provider context",
+      "watch": "Exact circuit naming / hierarchy boundary"
+    }
+  ]
+}

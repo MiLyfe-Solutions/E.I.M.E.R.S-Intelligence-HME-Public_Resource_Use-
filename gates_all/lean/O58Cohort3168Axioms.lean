@@ -1,0 +1,14 @@
+import CPOQ.O58Cohort3168
+#print axioms CPOQ.segment_margin_transport_positive
+#print axioms CPOQ.o58_cohort_witness_0001_target_margin_positive
+#print axioms CPOQ.o58_cohort_witness_0528_target_margin_positive
+#print axioms CPOQ.o58_cohort_witness_0529_target_margin_positive
+#print axioms CPOQ.o58_cohort_witness_1056_target_margin_positive
+#print axioms CPOQ.o58_cohort_witness_1057_target_margin_positive
+#print axioms CPOQ.o58_cohort_witness_1584_target_margin_positive
+#print axioms CPOQ.o58_cohort_witness_1585_target_margin_positive
+#print axioms CPOQ.o58_cohort_witness_2112_target_margin_positive
+#print axioms CPOQ.o58_cohort_witness_2113_target_margin_positive
+#print axioms CPOQ.o58_cohort_witness_2640_target_margin_positive
+#print axioms CPOQ.o58_cohort_witness_2641_target_margin_positive
+#print axioms CPOQ.o58_cohort_witness_3168_target_margin_positive

@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "purpose": "Server-side adapter contract for APEX Multi-AI Native Arena. No provider secrets may be returned to the browser.",
+  "base_path": "/api/ai-arena",
+  "endpoints": [
+    {"path": "/openai", "provider": "OpenAI / ChatGPT"},
+    {"path": "/anthropic", "provider": "Anthropic / Claude"},
+    {"path": "/google", "provider": "Google / Gemini"},
+    {"path": "/apex", "provider": "A.V.I. / APEX Governed"}
+  ],
+  "request": {
+    "method": "POST",
+    "content_type": "application/json",
+    "body": {
+      "task": "string",
+      "blind": "boolean",
+      "require_proof": "boolean",
+      "fail_closed": "boolean",
+      "provider": "openai|anthropic|google|apex"
+    }
+  },
+  "response": {
+    "status": "SUCCESS|HOLD|FAILED",
+    "response": "string",
+    "model": "provider model/version actually used",
+    "metrics": {
+      "latency_ms": "number",
+      "input_tokens": "number|null",
+      "output_tokens": "number|null",
+      "tokens_total": "number",
+      "cost_usd": "number|null",
+      "alignment_pct": "number|null",
+      "drift_pct": "number|null",
+      "truth_score": "number|null",
+      "proof_score": "number|null",
+      "failure_pressure": "number|null"
+    },
+    "governance": "APPROVED|NEEDS_EVIDENCE|HUMAN_REVIEW|HELD|RED_BLOCKED|null",
+    "proof": {
+      "trace_id": "string",
+      "request_id": "string",
+      "response_hash": "sha256:string",
+      "memory_snapshot_hash": "sha256:string|null",
+      "evidence_classification": "Tested|Runtime Verified|Production Proven|other exact APEX ladder label"
+    }
+  },
+  "apex_requirements": [
+    "APEX governed endpoint must traverse the governed gateway/control-plane path, not call a provider directly.",
+    "APEX response must carry governance disposition and governed memory/proof provenance where applicable.",
+    "Missing required telemetry must fail closed as HOLD, never be rendered as LIVE.",
+    "Provider credentials remain server-side only.",
+    "The exact same task body is sent to each selected provider when blind=true.",
+    "Do not infer provider-billed cost from token counts unless the value is explicitly labeled estimated."
+  ]
+}

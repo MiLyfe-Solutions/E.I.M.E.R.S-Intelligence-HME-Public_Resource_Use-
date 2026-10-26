@@ -1,0 +1,77 @@
+{
+  "certificates": [
+    {
+      "id": "850ae137-9a83-49df-a52c-99a1ffc10fb0",
+      "owner": "Quality Manager",
+      "name": "SQF Practitioner Certificate",
+      "expires": "2026-11-01"
+    },
+    {
+      "id": "0d301a06-31d3-44b2-b7e6-74a1a2cb0c4d",
+      "owner": "Supplier - Imported Honey",
+      "name": "Supplier Approval / COA Program",
+      "expires": "2026-10-10"
+    }
+  ],
+  "lots": [
+    {
+      "id": "4d0853a7-0ffd-4689-9927-28cc63c9114a",
+      "item": "Imported Organic Honey Drum",
+      "lot": "HNY-DEMO-2407",
+      "location": "Warehouse A / Rack 3",
+      "manufactured": "2026-02-16",
+      "expires": "2026-11-05"
+    },
+    {
+      "id": "baab9f43-026f-4127-a277-06e51813bb03",
+      "item": "Finished Honey Bottle 16oz",
+      "lot": "FG-16OZ-1021",
+      "location": "FG Cooler / Bay 2",
+      "manufactured": "2025-12-08",
+      "expires": "2027-01-12"
+    }
+  ],
+  "notes": [],
+  "alerts": [
+    {
+      "id": "850ae137-9a83-49df-a52c-99a1ffc10fb0",
+      "type": "certificate",
+      "severity": "Watch",
+      "title": "SQF Practitioner Certificate Expiring Soon",
+      "detail": "Quality Manager expires 2026-11-01",
+      "owner": "Quality / Management"
+    },
+    {
+      "id": "0d301a06-31d3-44b2-b7e6-74a1a2cb0c4d",
+      "type": "certificate",
+      "severity": "Critical",
+      "title": "Supplier Approval / COA Program Expired",
+      "detail": "Supplier - Imported Honey expires 2026-10-10",
+      "owner": "Quality / Management"
+    },
+    {
+      "id": "4d0853a7-0ffd-4689-9927-28cc63c9114a",
+      "type": "lot",
+      "severity": "Watch",
+      "title": "Imported Organic Honey Drum lot HNY-DEMO-2407 Quality Review",
+      "detail": "22 days / 8% shelf life left at Warehouse A / Rack 3",
+      "owner": "Quality / Warehouse"
+    },
+    {
+      "id": "baab9f43-026f-4127-a277-06e51813bb03",
+      "type": "lot",
+      "severity": "Watch",
+      "title": "Finished Honey Bottle 16oz lot FG-16OZ-1021 Quality Review",
+      "detail": "90 days / 22% shelf life left at FG Cooler / Bay 2",
+      "owner": "Quality / Warehouse"
+    }
+  ],
+  "programs": {
+    "PCQI": 82,
+    "HACCP": 78,
+    "Food Defense": 69,
+    "FSVP": 88
+  },
+  "exportedAt": "2026-10-14T05:40:01.976Z",
+  "proofType": "APEX Live Food Safety Governor Export"
+}

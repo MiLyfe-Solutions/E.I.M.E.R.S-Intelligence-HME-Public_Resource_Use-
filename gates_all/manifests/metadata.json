@@ -1,0 +1,6 @@
+{
+  "name": "Apex A.I.Hub™",
+  "description": "Personal A.I. Workspace for work, home, school...life. Featuring persistent cognitive memory, Google Workspace, spatial mapping, unified social feed, and Veo photo-to-video animation.",
+  "requestFramePermissions": ["microphone", "geolocation", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

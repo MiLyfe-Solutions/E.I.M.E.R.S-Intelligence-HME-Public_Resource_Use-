@@ -1,0 +1,133 @@
+{
+  "source_sha256": "cf98aa24bc4d25fe50d12e3462f7e4c7571c08d84b4072a52baba91a75f4cf25",
+  "csv_sha256": "19fa9596a3507f10f4ffa134ace597a8cb770d3f8539c69ea5eb45d4bc379832",
+  "tested": 1000,
+  "failures": [],
+  "active_piece_histogram": {
+    "1": 1000
+  },
+  "sample": [
+    {
+      "row": 0,
+      "q_residue": "1376258",
+      "word_len": 10,
+      "affine_lines": 11,
+      "active_pieces": 1,
+      "active_indices": [
+        8
+      ],
+      "start_base": 24395385525776359203921298145,
+      "start_slope": 37173856807010963956659388416
+    },
+    {
+      "row": 1,
+      "q_residue": "1474562",
+      "word_len": 12,
+      "affine_lines": 13,
+      "active_pieces": 1,
+      "active_indices": [
+        8
+      ],
+      "start_base": 26137910063604998139389706977,
+      "start_slope": 37173856807010963956659388416
+    },
+    {
+      "row": 2,
+      "q_residue": "1933314",
+      "word_len": 12,
+      "affine_lines": 13,
+      "active_pieces": 1,
+      "active_indices": [
+        8
+      ],
+      "start_base": 34269691240138646504908948193,
+      "start_slope": 37173856807010963956659388416
+    },
+    {
+      "row": 3,
+      "q_residue": "1015810",
+      "word_len": 11,
+      "affine_lines": 12,
+      "active_pieces": 1,
+      "active_indices": [
+        8
+      ],
+      "start_base": 18006128887071349773870465761,
+      "start_slope": 37173856807010963956659388416
+    },
+    {
+      "row": 4,
+      "q_residue": "16386",
+      "word_len": 12,
+      "affine_lines": 13,
+      "active_pieces": 1,
+      "active_indices": [
+        8
+      ],
+      "start_base": 290462752480187263274975969,
+      "start_slope": 37173856807010963956659388416
+    },
+    {
+      "row": 5,
+      "q_residue": "1196034",
+      "word_len": 11,
+      "affine_lines": 12,
+      "active_pieces": 1,
+      "active_indices": [
+        8
+      ],
+      "start_base": 21200757206423854488895881953,
+      "start_slope": 37173856807010963956659388416
+    },
+    {
+      "row": 6,
+      "q_residue": "1654786",
+      "word_len": 12,
+      "affine_lines": 13,
+      "active_pieces": 1,
+      "active_indices": [
+        8
+      ],
+      "start_base": 29332538382957502854415123169,
+      "start_slope": 37173856807010963956659388416
+    },
+    {
+      "row": 7,
+      "q_residue": "376834",
+      "word_len": 12,
+      "affine_lines": 13,
+      "active_pieces": 1,
+      "active_indices": [
+        8
+      ],
+      "start_base": 6679719391185196693325808353,
+      "start_slope": 37173856807010963956659388416
+    },
+    {
+      "row": 8,
+      "q_residue": "1515522",
+      "word_len": 12,
+      "affine_lines": 13,
+      "active_pieces": 1,
+      "active_indices": [
+        10
+      ],
+      "start_base": 26863961954366931029168210657,
+      "start_slope": 37173856807010963956659388416
+    },
+    {
+      "row": 9,
+      "q_residue": "696322",
+      "word_len": 12,
+      "affine_lines": 13,
+      "active_pieces": 1,
+      "active_indices": [
+        10
+      ],
+      "start_base": 12342924139128273233598137057,
+      "start_slope": 37173856807010963956659388416
+    }
+  ],
+  "scope": "post46 accelerated segment only; q>=0; original ordinary-step peak and prior 46 steps not analyzed",
+  "status": "EXPLORATORY_EXACT_ARITHMETIC_NOT_NEW_THEOREM"
+}

@@ -1,0 +1,8 @@
+{
+  "gate": 6,
+  "scope": "generic algebraic path-to-budget bridge plus normalized-constant boundary and monotonicity audit",
+  "algebraic_bridge_status": "PREPARED_REQUIRES_LOCAL_LEAN_REPLAY",
+  "normalized_constant_status": "EXACT_ARITHMETIC_CHECKED",
+  "generic_combinatorial_lean_lemma": "OPEN",
+  "universal_collatz": "HOLD_UNPROVEN"
+}

@@ -1,0 +1,11 @@
+{
+  "algebraic_bridge_status": "PREPARED_REQUIRES_LOCAL_LEAN_REPLAY",
+  "gate": 6,
+  "generic_combinatorial_lean_lemma": "OPEN",
+  "normalized_constant_status": "EXACT_ARITHMETIC_CHECKED",
+  "notes": "Runner corrected to build CPOQ.O58PathBudgetBridgeGate6 before direct Lean and axiom audit; theorem source unchanged from v2.",
+  "repair": "replace invalid .mp projection with Nat.le_of_mul_le_mul_left cancellation",
+  "scope": "generic algebraic path-to-budget bridge plus normalized-constant boundary and monotonicity audit",
+  "universal_collatz": "HOLD_UNPROVEN",
+  "version": "v3"
+}

@@ -1,0 +1,9 @@
+{"plugins": [],
+ "package": "gate15",
+ "options": {},
+ "name": "Gate15.Lots.Chunk0509",
+ "isModule": false,
+ "importArts":
+ {"Gate15.Core":
+  [["/Users/milyfetechnologiesllc/Downloads/gate15/.lake/build/lib/lean/Gate15/Core.olean"]]},
+ "dynlibs": []}

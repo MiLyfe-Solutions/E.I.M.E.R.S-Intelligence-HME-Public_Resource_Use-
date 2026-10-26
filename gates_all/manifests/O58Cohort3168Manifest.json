@@ -1,0 +1,45 @@
+{
+  "status": "GENERATED_PENDING_USER_LEAN_REPLAY",
+  "witness_count": 3168,
+  "segment_count": 69,
+  "pair_modules": [
+    {
+      "module": "O58CohortPair01",
+      "source_root": 6049,
+      "target_root": 48569,
+      "count": 528
+    },
+    {
+      "module": "O58CohortPair02",
+      "source_root": 6049,
+      "target_root": 49768,
+      "count": 528
+    },
+    {
+      "module": "O58CohortPair03",
+      "source_root": 6049,
+      "target_root": 65540,
+      "count": 528
+    },
+    {
+      "module": "O58CohortPair04",
+      "source_root": 48569,
+      "target_root": 49768,
+      "count": 528
+    },
+    {
+      "module": "O58CohortPair05",
+      "source_root": 48569,
+      "target_root": 65540,
+      "count": 528
+    },
+    {
+      "module": "O58CohortPair06",
+      "source_root": 49768,
+      "target_root": 65540,
+      "count": 528
+    }
+  ],
+  "authorization_guard_compression_factor": 45.91304347826087,
+  "universal_collatz": "HOLD_UNPROVEN"
+}

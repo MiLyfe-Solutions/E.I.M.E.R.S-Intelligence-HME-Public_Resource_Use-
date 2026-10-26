@@ -1,0 +1,6639 @@
+{
+  "pack_type": "APEX Governed Proof Pack — Hospital Demo",
+  "version": "APEX-HOSPITAL-DEMO-1.0.0",
+  "classification": "DISPLAY PROOF ONLY / LOCAL SYNTHETIC SIMULATION",
+  "generated_at": "2026-08-07T01:04:32.178Z",
+  "facility": {
+    "name": "NorthStar Regional Medical Center",
+    "region": "Synthetic demonstration facility",
+    "baselineBoarders": 9,
+    "turnoverTarget": 45
+  },
+  "shift": "day",
+  "scenario": {
+    "censusDelta": 0,
+    "callOffRate": 4,
+    "arrivalWave": 18,
+    "proofStrength": 92,
+    "equipmentHolds": 3
+  },
+  "policy": {
+    "governor": {
+      "proofGate": 80,
+      "truthGate": 85,
+      "readinessGate": 78,
+      "olcSafe": 80,
+      "olcWarn": 85,
+      "criticalFailure": 7.5,
+      "driftGate": 4
+    },
+    "units": [
+      {
+        "code": "ICU",
+        "name": "Intensive Care",
+        "licensed": 24,
+        "baseCensus": 20,
+        "rnRatio": 2,
+        "pctRatio": 6,
+        "chargeRN": 1,
+        "unitClerk": 1,
+        "acuityWeight": 1.25,
+        "equipmentCap": 24,
+        "dischargeRate": 0.04,
+        "credentials": [
+          "RN",
+          "BLS",
+          "ACLS",
+          "ICU"
+        ]
+      },
+      {
+        "code": "SDU",
+        "name": "Stepdown",
+        "licensed": 32,
+        "baseCensus": 26,
+        "rnRatio": 3,
+        "pctRatio": 7,
+        "chargeRN": 1,
+        "unitClerk": 1,
+        "acuityWeight": 1.15,
+        "equipmentCap": 32,
+        "dischargeRate": 0.05,
+        "credentials": [
+          "RN",
+          "BLS",
+          "ACLS",
+          "STEPDOWN"
+        ]
+      },
+      {
+        "code": "TEL",
+        "name": "Telemetry",
+        "licensed": 48,
+        "baseCensus": 40,
+        "rnRatio": 4,
+        "pctRatio": 8,
+        "chargeRN": 1,
+        "unitClerk": 1,
+        "acuityWeight": 1.08,
+        "equipmentCap": 48,
+        "dischargeRate": 0.06,
+        "credentials": [
+          "RN",
+          "BLS",
+          "ACLS",
+          "TELE"
+        ]
+      },
+      {
+        "code": "MSN",
+        "name": "Med-Surg North",
+        "licensed": 52,
+        "baseCensus": 43,
+        "rnRatio": 5,
+        "pctRatio": 8,
+        "chargeRN": 1,
+        "unitClerk": 1,
+        "acuityWeight": 1,
+        "equipmentCap": 52,
+        "dischargeRate": 0.07,
+        "credentials": [
+          "RN",
+          "BLS",
+          "MEDSURG"
+        ]
+      },
+      {
+        "code": "MSS",
+        "name": "Med-Surg South",
+        "licensed": 52,
+        "baseCensus": 42,
+        "rnRatio": 5,
+        "pctRatio": 8,
+        "chargeRN": 1,
+        "unitClerk": 1,
+        "acuityWeight": 1,
+        "equipmentCap": 52,
+        "dischargeRate": 0.07,
+        "credentials": [
+          "RN",
+          "BLS",
+          "MEDSURG"
+        ]
+      },
+      {
+        "code": "SURG",
+        "name": "Surgical / Ortho",
+        "licensed": 40,
+        "baseCensus": 33,
+        "rnRatio": 5,
+        "pctRatio": 8,
+        "chargeRN": 1,
+        "unitClerk": 1,
+        "acuityWeight": 1.02,
+        "equipmentCap": 40,
+        "dischargeRate": 0.08,
+        "credentials": [
+          "RN",
+          "BLS",
+          "MEDSURG"
+        ]
+      },
+      {
+        "code": "WC",
+        "name": "Women & Children",
+        "licensed": 28,
+        "baseCensus": 23,
+        "rnRatio": 4,
+        "pctRatio": 8,
+        "chargeRN": 1,
+        "unitClerk": 1,
+        "acuityWeight": 1.05,
+        "equipmentCap": 28,
+        "dischargeRate": 0.06,
+        "credentials": [
+          "RN",
+          "BLS",
+          "PALS",
+          "WOMEN_CHILDREN"
+        ]
+      },
+      {
+        "code": "BH",
+        "name": "Behavioral Health",
+        "licensed": 24,
+        "baseCensus": 22,
+        "rnRatio": 6,
+        "pctRatio": 8,
+        "chargeRN": 1,
+        "unitClerk": 1,
+        "acuityWeight": 1,
+        "equipmentCap": 24,
+        "dischargeRate": 0.04,
+        "credentials": [
+          "RN",
+          "BLS",
+          "BEHAVIORAL"
+        ]
+      }
+    ],
+    "legal_notice": "Staff ratios are synthetic facility policy inputs, not universal legal requirements."
+  },
+  "governed_result": {
+    "decision": "CORRECT",
+    "title": "OLC-007 growth and streamlining review",
+    "summary": "Operating utilization is 93% of governed capacity. Preserve the recovery buffer and execute the ranked corrections.",
+    "licensed_beds": 300,
+    "physical_ready_capacity": 282,
+    "qualified_staff_capacity": 268,
+    "equipment_ready_capacity": 297,
+    "governed_capacity": 268,
+    "occupied": 249,
+    "available_now": 19,
+    "projected_available": 21,
+    "boarders": 12,
+    "readiness": 0.9721744186046511,
+    "truth_score": 0.95375
+  },
+  "governing_math": {
+    "governed_capacity": "C_g = sum(unit min(physical, staff, equipment, licensed))",
+    "olc_utilization": "U = occupied / governed capacity",
+    "eimers_failure": "F = N * D * V",
+    "failure_inputs": {
+      "N": 3.25,
+      "D": 0.929,
+      "V": 1.176,
+      "result": 3.55
+    },
+    "drift": "Drift = baseline deviation * impact * frequency * (1 - proof strength)",
+    "drift_inputs": {
+      "baseline_deviation": 14.41,
+      "impact": 1.6,
+      "frequency": 1.5,
+      "proof_strength": 0.92,
+      "result": 2.77
+    },
+    "readiness": "R = .30 staffing + .20 credentials + .20 physical + .15 equipment + .15 proof"
+  },
+  "unit_results": [
+    {
+      "code": "ICU",
+      "name": "Intensive Care",
+      "licensed": 24,
+      "baseCensus": 20,
+      "rnRatio": 2,
+      "pctRatio": 6,
+      "chargeRN": 1,
+      "unitClerk": 1,
+      "acuityWeight": 1.25,
+      "equipmentCap": 24,
+      "dischargeRate": 0.04,
+      "credentials": [
+        "RN",
+        "BLS",
+        "ACLS",
+        "ICU"
+      ],
+      "census": 20,
+      "admission": 2,
+      "discharge": 1,
+      "plannedCensus": 21,
+      "planningDemand": 26.3,
+      "rnDirect": 14,
+      "rnRequired": 15,
+      "pctRequired": 5,
+      "clerkRequired": 1,
+      "ready": 3,
+      "cleaning": 1,
+      "hold": 0,
+      "maintenance": 0,
+      "closed": 0,
+      "rnDirectAssigned": 14,
+      "chargeAssigned": 1,
+      "pctAssigned": 5,
+      "clerkAssigned": 1,
+      "rnCap": 22,
+      "pctCap": 24,
+      "staffCap": 22,
+      "physicalCap": 23,
+      "governedCap": 22,
+      "available": 2,
+      "utilization": 0.9090909090909091,
+      "route": "CORRECT",
+      "limiting": "Staff"
+    },
+    {
+      "code": "SDU",
+      "name": "Stepdown",
+      "licensed": 32,
+      "baseCensus": 26,
+      "rnRatio": 3,
+      "pctRatio": 7,
+      "chargeRN": 1,
+      "unitClerk": 1,
+      "acuityWeight": 1.15,
+      "equipmentCap": 32,
+      "dischargeRate": 0.05,
+      "credentials": [
+        "RN",
+        "BLS",
+        "ACLS",
+        "STEPDOWN"
+      ],
+      "census": 26,
+      "admission": 3,
+      "discharge": 1,
+      "plannedCensus": 28,
+      "planningDemand": 32.2,
+      "rnDirect": 11,
+      "rnRequired": 12,
+      "pctRequired": 5,
+      "clerkRequired": 1,
+      "ready": 3,
+      "cleaning": 1,
+      "hold": 1,
+      "maintenance": 1,
+      "closed": 0,
+      "rnDirectAssigned": 11,
+      "chargeAssigned": 1,
+      "pctAssigned": 5,
+      "clerkAssigned": 1,
+      "rnCap": 28,
+      "pctCap": 30,
+      "staffCap": 28,
+      "physicalCap": 29,
+      "governedCap": 28,
+      "available": 2,
+      "utilization": 0.9285714285714286,
+      "route": "CORRECT",
+      "limiting": "Staff"
+    },
+    {
+      "code": "TEL",
+      "name": "Telemetry",
+      "licensed": 48,
+      "baseCensus": 40,
+      "rnRatio": 4,
+      "pctRatio": 8,
+      "chargeRN": 1,
+      "unitClerk": 1,
+      "acuityWeight": 1.08,
+      "equipmentCap": 47,
+      "dischargeRate": 0.06,
+      "credentials": [
+        "RN",
+        "BLS",
+        "ACLS",
+        "TELE"
+      ],
+      "census": 40,
+      "admission": 3,
+      "discharge": 2,
+      "plannedCensus": 41,
+      "planningDemand": 44.3,
+      "rnDirect": 12,
+      "rnRequired": 13,
+      "pctRequired": 6,
+      "clerkRequired": 1,
+      "ready": 5,
+      "cleaning": 1,
+      "hold": 1,
+      "maintenance": 1,
+      "closed": 0,
+      "rnDirectAssigned": 12,
+      "chargeAssigned": 1,
+      "pctAssigned": 6,
+      "clerkAssigned": 1,
+      "rnCap": 44,
+      "pctCap": 44,
+      "staffCap": 44,
+      "physicalCap": 45,
+      "governedCap": 44,
+      "available": 4,
+      "utilization": 0.9090909090909091,
+      "route": "CORRECT",
+      "limiting": "Staff"
+    },
+    {
+      "code": "MSN",
+      "name": "Med-Surg North",
+      "licensed": 52,
+      "baseCensus": 43,
+      "rnRatio": 5,
+      "pctRatio": 8,
+      "chargeRN": 1,
+      "unitClerk": 1,
+      "acuityWeight": 1,
+      "equipmentCap": 51,
+      "dischargeRate": 0.07,
+      "credentials": [
+        "RN",
+        "BLS",
+        "MEDSURG"
+      ],
+      "census": 43,
+      "admission": 3,
+      "discharge": 3,
+      "plannedCensus": 43,
+      "planningDemand": 43,
+      "rnDirect": 9,
+      "rnRequired": 10,
+      "pctRequired": 6,
+      "clerkRequired": 1,
+      "ready": 7,
+      "cleaning": 1,
+      "hold": 0,
+      "maintenance": 1,
+      "closed": 0,
+      "rnDirectAssigned": 9,
+      "chargeAssigned": 1,
+      "pctAssigned": 6,
+      "clerkAssigned": 1,
+      "rnCap": 45,
+      "pctCap": 48,
+      "staffCap": 45,
+      "physicalCap": 50,
+      "governedCap": 45,
+      "available": 2,
+      "utilization": 0.9555555555555556,
+      "route": "CORRECT",
+      "limiting": "Staff"
+    },
+    {
+      "code": "MSS",
+      "name": "Med-Surg South",
+      "licensed": 52,
+      "baseCensus": 42,
+      "rnRatio": 5,
+      "pctRatio": 8,
+      "chargeRN": 1,
+      "unitClerk": 1,
+      "acuityWeight": 1,
+      "equipmentCap": 51,
+      "dischargeRate": 0.07,
+      "credentials": [
+        "RN",
+        "BLS",
+        "MEDSURG"
+      ],
+      "census": 42,
+      "admission": 3,
+      "discharge": 3,
+      "plannedCensus": 42,
+      "planningDemand": 42,
+      "rnDirect": 9,
+      "rnRequired": 10,
+      "pctRequired": 6,
+      "clerkRequired": 1,
+      "ready": 6,
+      "cleaning": 2,
+      "hold": 1,
+      "maintenance": 1,
+      "closed": 0,
+      "rnDirectAssigned": 9,
+      "chargeAssigned": 1,
+      "pctAssigned": 6,
+      "clerkAssigned": 1,
+      "rnCap": 45,
+      "pctCap": 48,
+      "staffCap": 45,
+      "physicalCap": 48,
+      "governedCap": 45,
+      "available": 3,
+      "utilization": 0.9333333333333333,
+      "route": "CORRECT",
+      "limiting": "Staff"
+    },
+    {
+      "code": "SURG",
+      "name": "Surgical / Ortho",
+      "licensed": 40,
+      "baseCensus": 33,
+      "rnRatio": 5,
+      "pctRatio": 8,
+      "chargeRN": 1,
+      "unitClerk": 1,
+      "acuityWeight": 1.02,
+      "equipmentCap": 40,
+      "dischargeRate": 0.08,
+      "credentials": [
+        "RN",
+        "BLS",
+        "MEDSURG"
+      ],
+      "census": 33,
+      "admission": 2,
+      "discharge": 3,
+      "plannedCensus": 32,
+      "planningDemand": 32.6,
+      "rnDirect": 7,
+      "rnRequired": 8,
+      "pctRequired": 5,
+      "clerkRequired": 1,
+      "ready": 4,
+      "cleaning": 1,
+      "hold": 1,
+      "maintenance": 1,
+      "closed": 0,
+      "rnDirectAssigned": 7,
+      "chargeAssigned": 1,
+      "pctAssigned": 5,
+      "clerkAssigned": 1,
+      "rnCap": 34,
+      "pctCap": 39,
+      "staffCap": 34,
+      "physicalCap": 37,
+      "governedCap": 34,
+      "available": 1,
+      "utilization": 0.9705882352941176,
+      "route": "CORRECT",
+      "limiting": "Staff"
+    },
+    {
+      "code": "WC",
+      "name": "Women & Children",
+      "licensed": 28,
+      "baseCensus": 23,
+      "rnRatio": 4,
+      "pctRatio": 8,
+      "chargeRN": 1,
+      "unitClerk": 1,
+      "acuityWeight": 1.05,
+      "equipmentCap": 28,
+      "dischargeRate": 0.06,
+      "credentials": [
+        "RN",
+        "BLS",
+        "PALS",
+        "WOMEN_CHILDREN"
+      ],
+      "census": 23,
+      "admission": 1,
+      "discharge": 1,
+      "plannedCensus": 23,
+      "planningDemand": 24.2,
+      "rnDirect": 7,
+      "rnRequired": 8,
+      "pctRequired": 4,
+      "clerkRequired": 1,
+      "ready": 3,
+      "cleaning": 0,
+      "hold": 1,
+      "maintenance": 1,
+      "closed": 0,
+      "rnDirectAssigned": 7,
+      "chargeAssigned": 1,
+      "pctAssigned": 4,
+      "clerkAssigned": 1,
+      "rnCap": 26,
+      "pctCap": 30,
+      "staffCap": 26,
+      "physicalCap": 26,
+      "governedCap": 26,
+      "available": 3,
+      "utilization": 0.8846153846153846,
+      "route": "CORRECT",
+      "limiting": "Physical"
+    },
+    {
+      "code": "BH",
+      "name": "Behavioral Health",
+      "licensed": 24,
+      "baseCensus": 22,
+      "rnRatio": 6,
+      "pctRatio": 8,
+      "chargeRN": 1,
+      "unitClerk": 1,
+      "acuityWeight": 1,
+      "equipmentCap": 24,
+      "dischargeRate": 0.04,
+      "credentials": [
+        "RN",
+        "BLS",
+        "BEHAVIORAL"
+      ],
+      "census": 22,
+      "admission": 1,
+      "discharge": 1,
+      "plannedCensus": 22,
+      "planningDemand": 22,
+      "rnDirect": 4,
+      "rnRequired": 5,
+      "pctRequired": 3,
+      "clerkRequired": 1,
+      "ready": 2,
+      "cleaning": 0,
+      "hold": 0,
+      "maintenance": 0,
+      "closed": 0,
+      "rnDirectAssigned": 4,
+      "chargeAssigned": 1,
+      "pctAssigned": 3,
+      "clerkAssigned": 1,
+      "rnCap": 24,
+      "pctCap": 24,
+      "staffCap": 24,
+      "physicalCap": 24,
+      "governedCap": 24,
+      "available": 2,
+      "utilization": 0.9166666666666666,
+      "route": "CORRECT",
+      "limiting": "Physical"
+    }
+  ],
+  "schedule": {
+    "authorized": false,
+    "authorization": null,
+    "required_posts": 149,
+    "assignments": [
+      {
+        "slot": {
+          "id": "SLOT-1",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Charge RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU",
+            "CHARGE"
+          ],
+          "critical": true,
+          "charge": true,
+          "hours": null
+        },
+        "employee_id": "EMP-0001",
+        "employee_name": "Avery Lee",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-2",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0007",
+        "employee_name": "Casey Lee",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-3",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0014",
+        "employee_name": "Rowan Lee",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-4",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0004",
+        "employee_name": "Taylor Lee",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-5",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0008",
+        "employee_name": "Drew Lee",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-6",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0005",
+        "employee_name": "Cameron Lee",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-7",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0012",
+        "employee_name": "Skyler Lee",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-8",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0002",
+        "employee_name": "Jordan Lee",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-9",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0016",
+        "employee_name": "Kendall Lee",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-10",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0006",
+        "employee_name": "Riley Lee",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-11",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0013",
+        "employee_name": "Hayden Lee",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-12",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0009",
+        "employee_name": "Parker Lee",
+        "labor_class": "Regular",
+        "shift_cost": 672,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-13",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0010",
+        "employee_name": "Reese Lee",
+        "labor_class": "Regular",
+        "shift_cost": 672,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-14",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0015",
+        "employee_name": "Emerson Lee",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-15",
+          "role": "RN",
+          "unit": "ICU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "ICU"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0178",
+        "employee_name": "Reese Martinez",
+        "labor_class": "Float",
+        "shift_cost": 708,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-16",
+          "role": "PCT",
+          "unit": "ICU",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0024",
+        "employee_name": "Devin Lee",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-17",
+          "role": "PCT",
+          "unit": "ICU",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0018",
+        "employee_name": "Sawyer Lee",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-18",
+          "role": "PCT",
+          "unit": "ICU",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0022",
+        "employee_name": "Sam Lee",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-19",
+          "role": "PCT",
+          "unit": "ICU",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0023",
+        "employee_name": "Jamie Lee",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-20",
+          "role": "PCT",
+          "unit": "ICU",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0020",
+        "employee_name": "Dakota Lee",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-21",
+          "role": "UNIT_CLERK",
+          "unit": "ICU",
+          "label": "Unit Clerk",
+          "credentials": [
+            "UNIT_CLERK"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0025",
+        "employee_name": "Avery Patel",
+        "labor_class": "Regular",
+        "shift_cost": 264,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-22",
+          "role": "RN",
+          "unit": "SDU",
+          "label": "Charge RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "STEPDOWN",
+            "CHARGE"
+          ],
+          "critical": true,
+          "charge": true,
+          "hours": null
+        },
+        "employee_id": "EMP-0028",
+        "employee_name": "Taylor Patel",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-23",
+          "role": "RN",
+          "unit": "SDU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "STEPDOWN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0031",
+        "employee_name": "Casey Patel",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-24",
+          "role": "RN",
+          "unit": "SDU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "STEPDOWN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0038",
+        "employee_name": "Rowan Patel",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-25",
+          "role": "RN",
+          "unit": "SDU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "STEPDOWN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0035",
+        "employee_name": "Quinn Patel",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-26",
+          "role": "RN",
+          "unit": "SDU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "STEPDOWN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0032",
+        "employee_name": "Drew Patel",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-27",
+          "role": "RN",
+          "unit": "SDU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "STEPDOWN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0036",
+        "employee_name": "Skyler Patel",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-28",
+          "role": "RN",
+          "unit": "SDU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "STEPDOWN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0033",
+        "employee_name": "Parker Patel",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-29",
+          "role": "RN",
+          "unit": "SDU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "STEPDOWN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0040",
+        "employee_name": "Kendall Patel",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-30",
+          "role": "RN",
+          "unit": "SDU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "STEPDOWN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0037",
+        "employee_name": "Hayden Patel",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-31",
+          "role": "RN",
+          "unit": "SDU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "STEPDOWN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0027",
+        "employee_name": "Morgan Patel",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-32",
+          "role": "RN",
+          "unit": "SDU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "STEPDOWN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0034",
+        "employee_name": "Reese Patel",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-33",
+          "role": "RN",
+          "unit": "SDU",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "STEPDOWN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0029",
+        "employee_name": "Cameron Patel",
+        "labor_class": "Regular",
+        "shift_cost": 672,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-34",
+          "role": "PCT",
+          "unit": "SDU",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0041",
+        "employee_name": "Finley Patel",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-35",
+          "role": "PCT",
+          "unit": "SDU",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0045",
+        "employee_name": "Alex Patel",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-36",
+          "role": "PCT",
+          "unit": "SDU",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0042",
+        "employee_name": "Sawyer Patel",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-37",
+          "role": "PCT",
+          "unit": "SDU",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0046",
+        "employee_name": "Sam Patel",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-38",
+          "role": "PCT",
+          "unit": "SDU",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0043",
+        "employee_name": "Blake Patel",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-39",
+          "role": "UNIT_CLERK",
+          "unit": "SDU",
+          "label": "Unit Clerk",
+          "credentials": [
+            "UNIT_CLERK"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0048",
+        "employee_name": "Devin Patel",
+        "labor_class": "Regular",
+        "shift_cost": 264,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-40",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Charge RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE",
+            "CHARGE"
+          ],
+          "critical": true,
+          "charge": true,
+          "hours": null
+        },
+        "employee_id": "EMP-0051",
+        "employee_name": "Morgan Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-41",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0058",
+        "employee_name": "Reese Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-42",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0055",
+        "employee_name": "Casey Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-43",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0062",
+        "employee_name": "Rowan Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-44",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0052",
+        "employee_name": "Taylor Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-45",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0056",
+        "employee_name": "Drew Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-46",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0063",
+        "employee_name": "Emerson Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-47",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0053",
+        "employee_name": "Cameron Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-48",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0060",
+        "employee_name": "Skyler Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-49",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0057",
+        "employee_name": "Parker Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-50",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0064",
+        "employee_name": "Kendall Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-51",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0054",
+        "employee_name": "Riley Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-52",
+          "role": "RN",
+          "unit": "TEL",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "ACLS",
+            "TELE"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0061",
+        "employee_name": "Hayden Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-53",
+          "role": "PCT",
+          "unit": "TEL",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0065",
+        "employee_name": "Finley Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-54",
+          "role": "PCT",
+          "unit": "TEL",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0072",
+        "employee_name": "Devin Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-55",
+          "role": "PCT",
+          "unit": "TEL",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0066",
+        "employee_name": "Sawyer Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-56",
+          "role": "PCT",
+          "unit": "TEL",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0069",
+        "employee_name": "Alex Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 336,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-57",
+          "role": "PCT",
+          "unit": "TEL",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0071",
+        "employee_name": "Jamie Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-58",
+          "role": "PCT",
+          "unit": "TEL",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0068",
+        "employee_name": "Dakota Garcia",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-59",
+          "role": "UNIT_CLERK",
+          "unit": "TEL",
+          "label": "Unit Clerk",
+          "credentials": [
+            "UNIT_CLERK"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0074",
+        "employee_name": "Jordan Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 264,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-60",
+          "role": "RN",
+          "unit": "MSN",
+          "label": "Charge RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG",
+            "CHARGE"
+          ],
+          "critical": true,
+          "charge": true,
+          "hours": null
+        },
+        "employee_id": "EMP-0076",
+        "employee_name": "Taylor Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-61",
+          "role": "RN",
+          "unit": "MSN",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0082",
+        "employee_name": "Reese Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-62",
+          "role": "RN",
+          "unit": "MSN",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0086",
+        "employee_name": "Rowan Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-63",
+          "role": "RN",
+          "unit": "MSN",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0083",
+        "employee_name": "Quinn Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-64",
+          "role": "RN",
+          "unit": "MSN",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0080",
+        "employee_name": "Drew Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-65",
+          "role": "RN",
+          "unit": "MSN",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0087",
+        "employee_name": "Emerson Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-66",
+          "role": "RN",
+          "unit": "MSN",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0077",
+        "employee_name": "Cameron Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-67",
+          "role": "RN",
+          "unit": "MSN",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0081",
+        "employee_name": "Parker Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-68",
+          "role": "RN",
+          "unit": "MSN",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0123",
+        "employee_name": "Morgan Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-69",
+          "role": "RN",
+          "unit": "MSN",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0106",
+        "employee_name": "Reese Williams",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-70",
+          "role": "PCT",
+          "unit": "MSN",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0093",
+        "employee_name": "Alex Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-71",
+          "role": "PCT",
+          "unit": "MSN",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0094",
+        "employee_name": "Sam Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-72",
+          "role": "PCT",
+          "unit": "MSN",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0089",
+        "employee_name": "Finley Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 336,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-73",
+          "role": "PCT",
+          "unit": "MSN",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0091",
+        "employee_name": "Blake Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-74",
+          "role": "PCT",
+          "unit": "MSN",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0116",
+        "employee_name": "Dakota Williams",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-75",
+          "role": "PCT",
+          "unit": "MSN",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0095",
+        "employee_name": "Jamie Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-76",
+          "role": "UNIT_CLERK",
+          "unit": "MSN",
+          "label": "Unit Clerk",
+          "credentials": [
+            "UNIT_CLERK"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0096",
+        "employee_name": "Devin Nguyen",
+        "labor_class": "Regular",
+        "shift_cost": 264,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-77",
+          "role": "RN",
+          "unit": "MSS",
+          "label": "Charge RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG",
+            "CHARGE"
+          ],
+          "critical": true,
+          "charge": true,
+          "hours": null
+        },
+        "employee_id": "EMP-0098",
+        "employee_name": "Jordan Williams",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-78",
+          "role": "RN",
+          "unit": "MSS",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0103",
+        "employee_name": "Casey Williams",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-79",
+          "role": "RN",
+          "unit": "MSS",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0100",
+        "employee_name": "Taylor Williams",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-80",
+          "role": "RN",
+          "unit": "MSS",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0107",
+        "employee_name": "Quinn Williams",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-81",
+          "role": "RN",
+          "unit": "MSS",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0104",
+        "employee_name": "Drew Williams",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-82",
+          "role": "RN",
+          "unit": "MSS",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0101",
+        "employee_name": "Cameron Williams",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-83",
+          "role": "RN",
+          "unit": "MSS",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0108",
+        "employee_name": "Skyler Williams",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-84",
+          "role": "RN",
+          "unit": "MSS",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0105",
+        "employee_name": "Parker Williams",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-85",
+          "role": "RN",
+          "unit": "MSS",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0102",
+        "employee_name": "Riley Williams",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-86",
+          "role": "RN",
+          "unit": "MSS",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0127",
+        "employee_name": "Casey Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-87",
+          "role": "PCT",
+          "unit": "MSS",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0113",
+        "employee_name": "Finley Williams",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-88",
+          "role": "PCT",
+          "unit": "MSS",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0114",
+        "employee_name": "Sawyer Williams",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-89",
+          "role": "PCT",
+          "unit": "MSS",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0111",
+        "employee_name": "Emerson Williams",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-90",
+          "role": "PCT",
+          "unit": "MSS",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0118",
+        "employee_name": "Sam Williams",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-91",
+          "role": "PCT",
+          "unit": "MSS",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0115",
+        "employee_name": "Blake Williams",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-92",
+          "role": "PCT",
+          "unit": "MSS",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0112",
+        "employee_name": "Kendall Williams",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-93",
+          "role": "UNIT_CLERK",
+          "unit": "MSS",
+          "label": "Unit Clerk",
+          "credentials": [
+            "UNIT_CLERK"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0120",
+        "employee_name": "Devin Williams",
+        "labor_class": "Regular",
+        "shift_cost": 264,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-94",
+          "role": "RN",
+          "unit": "SURG",
+          "label": "Charge RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG",
+            "CHARGE"
+          ],
+          "critical": true,
+          "charge": true,
+          "hours": null
+        },
+        "employee_id": "EMP-0121",
+        "employee_name": "Avery Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-95",
+          "role": "RN",
+          "unit": "SURG",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0124",
+        "employee_name": "Taylor Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-96",
+          "role": "RN",
+          "unit": "SURG",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0131",
+        "employee_name": "Quinn Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-97",
+          "role": "RN",
+          "unit": "SURG",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0128",
+        "employee_name": "Drew Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-98",
+          "role": "RN",
+          "unit": "SURG",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0125",
+        "employee_name": "Cameron Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-99",
+          "role": "RN",
+          "unit": "SURG",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0122",
+        "employee_name": "Jordan Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-100",
+          "role": "RN",
+          "unit": "SURG",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0126",
+        "employee_name": "Riley Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-101",
+          "role": "RN",
+          "unit": "SURG",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "MEDSURG"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0130",
+        "employee_name": "Reese Brown",
+        "labor_class": "Regular",
+        "shift_cost": 672,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-102",
+          "role": "PCT",
+          "unit": "SURG",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0137",
+        "employee_name": "Finley Brown",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-103",
+          "role": "PCT",
+          "unit": "SURG",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0138",
+        "employee_name": "Sawyer Brown",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-104",
+          "role": "PCT",
+          "unit": "SURG",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0135",
+        "employee_name": "Emerson Brown",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-105",
+          "role": "PCT",
+          "unit": "SURG",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0132",
+        "employee_name": "Skyler Brown",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-106",
+          "role": "PCT",
+          "unit": "SURG",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0133",
+        "employee_name": "Hayden Brown",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-107",
+          "role": "UNIT_CLERK",
+          "unit": "SURG",
+          "label": "Unit Clerk",
+          "credentials": [
+            "UNIT_CLERK"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0140",
+        "employee_name": "Dakota Brown",
+        "labor_class": "Regular",
+        "shift_cost": 264,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-108",
+          "role": "RN",
+          "unit": "WC",
+          "label": "Charge RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "PALS",
+            "WOMEN_CHILDREN",
+            "CHARGE"
+          ],
+          "critical": true,
+          "charge": true,
+          "hours": null
+        },
+        "employee_id": "EMP-0141",
+        "employee_name": "Alex Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-109",
+          "role": "RN",
+          "unit": "WC",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "PALS",
+            "WOMEN_CHILDREN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0147",
+        "employee_name": "Morgan Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-110",
+          "role": "RN",
+          "unit": "WC",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "PALS",
+            "WOMEN_CHILDREN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0144",
+        "employee_name": "Devin Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-111",
+          "role": "RN",
+          "unit": "WC",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "PALS",
+            "WOMEN_CHILDREN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0148",
+        "employee_name": "Taylor Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-112",
+          "role": "RN",
+          "unit": "WC",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "PALS",
+            "WOMEN_CHILDREN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0145",
+        "employee_name": "Avery Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-113",
+          "role": "RN",
+          "unit": "WC",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "PALS",
+            "WOMEN_CHILDREN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0142",
+        "employee_name": "Sam Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-114",
+          "role": "RN",
+          "unit": "WC",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "PALS",
+            "WOMEN_CHILDREN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0143",
+        "employee_name": "Jamie Brown",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-115",
+          "role": "RN",
+          "unit": "WC",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "PALS",
+            "WOMEN_CHILDREN"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0149",
+        "employee_name": "Cameron Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 672,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-116",
+          "role": "PCT",
+          "unit": "WC",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0157",
+        "employee_name": "Hayden Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-117",
+          "role": "PCT",
+          "unit": "WC",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0154",
+        "employee_name": "Reese Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-118",
+          "role": "PCT",
+          "unit": "WC",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0155",
+        "employee_name": "Quinn Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-119",
+          "role": "PCT",
+          "unit": "WC",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0152",
+        "employee_name": "Drew Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-120",
+          "role": "UNIT_CLERK",
+          "unit": "WC",
+          "label": "Unit Clerk",
+          "credentials": [
+            "UNIT_CLERK"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0158",
+        "employee_name": "Rowan Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 264,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-121",
+          "role": "RN",
+          "unit": "BH",
+          "label": "Charge RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "BEHAVIORAL",
+            "CHARGE"
+          ],
+          "critical": true,
+          "charge": true,
+          "hours": null
+        },
+        "employee_id": "EMP-0160",
+        "employee_name": "Kendall Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-122",
+          "role": "RN",
+          "unit": "BH",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "BEHAVIORAL"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0164",
+        "employee_name": "Dakota Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-123",
+          "role": "RN",
+          "unit": "BH",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "BEHAVIORAL"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0165",
+        "employee_name": "Alex Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-124",
+          "role": "RN",
+          "unit": "BH",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "BEHAVIORAL"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0162",
+        "employee_name": "Sawyer Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-125",
+          "role": "RN",
+          "unit": "BH",
+          "label": "Direct-care RN",
+          "credentials": [
+            "RN",
+            "BLS",
+            "BEHAVIORAL"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0166",
+        "employee_name": "Sam Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 576,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-126",
+          "role": "PCT",
+          "unit": "BH",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0171",
+        "employee_name": "Morgan Martinez",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-127",
+          "role": "PCT",
+          "unit": "BH",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0168",
+        "employee_name": "Devin Johnson",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-128",
+          "role": "PCT",
+          "unit": "BH",
+          "label": "Patient Care Technician",
+          "credentials": [
+            "PCT",
+            "BLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0172",
+        "employee_name": "Taylor Martinez",
+        "labor_class": "Regular",
+        "shift_cost": 288,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-129",
+          "role": "UNIT_CLERK",
+          "unit": "BH",
+          "label": "Unit Clerk",
+          "credentials": [
+            "UNIT_CLERK"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0174",
+        "employee_name": "Riley Martinez",
+        "labor_class": "Regular",
+        "shift_cost": 264,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-130",
+          "role": "RESPIRATORY_THERAPIST",
+          "unit": "HOSPITAL",
+          "label": "Respiratory Therapist",
+          "credentials": [
+            "RT",
+            "BLS",
+            "ACLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0232",
+        "employee_name": "Kendall Wilson",
+        "labor_class": "Regular",
+        "shift_cost": 528,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-131",
+          "role": "RESPIRATORY_THERAPIST",
+          "unit": "HOSPITAL",
+          "label": "Respiratory Therapist",
+          "credentials": [
+            "RT",
+            "BLS",
+            "ACLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0233",
+        "employee_name": "Finley Wilson",
+        "labor_class": "Regular",
+        "shift_cost": 528,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-132",
+          "role": "RESPIRATORY_THERAPIST",
+          "unit": "HOSPITAL",
+          "label": "Respiratory Therapist",
+          "credentials": [
+            "RT",
+            "BLS",
+            "ACLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0234",
+        "employee_name": "Sawyer Wilson",
+        "labor_class": "Regular",
+        "shift_cost": 528,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-133",
+          "role": "RESPIRATORY_THERAPIST",
+          "unit": "HOSPITAL",
+          "label": "Respiratory Therapist",
+          "credentials": [
+            "RT",
+            "BLS",
+            "ACLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0231",
+        "employee_name": "Emerson Wilson",
+        "labor_class": "Regular",
+        "shift_cost": 528,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-134",
+          "role": "RESPIRATORY_THERAPIST",
+          "unit": "HOSPITAL",
+          "label": "Respiratory Therapist",
+          "credentials": [
+            "RT",
+            "BLS",
+            "ACLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0228",
+        "employee_name": "Skyler Wilson",
+        "labor_class": "Regular",
+        "shift_cost": 528,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-135",
+          "role": "RESPIRATORY_THERAPIST",
+          "unit": "HOSPITAL",
+          "label": "Respiratory Therapist",
+          "credentials": [
+            "RT",
+            "BLS",
+            "ACLS"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0235",
+        "employee_name": "Blake Wilson",
+        "labor_class": "Regular",
+        "shift_cost": 528,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-136",
+          "role": "EVS",
+          "unit": "HOSPITAL",
+          "label": "EVS Turnover",
+          "credentials": [
+            "EVS_TRAINED"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0236",
+        "employee_name": "Dakota Wilson",
+        "labor_class": "Regular",
+        "shift_cost": 168,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-137",
+          "role": "EVS",
+          "unit": "HOSPITAL",
+          "label": "EVS Turnover",
+          "credentials": [
+            "EVS_TRAINED"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0243",
+        "employee_name": "Morgan Miller",
+        "labor_class": "Regular",
+        "shift_cost": 168,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-138",
+          "role": "EVS",
+          "unit": "HOSPITAL",
+          "label": "EVS Turnover",
+          "credentials": [
+            "EVS_TRAINED"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0240",
+        "employee_name": "Devin Wilson",
+        "labor_class": "Regular",
+        "shift_cost": 168,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-139",
+          "role": "EVS",
+          "unit": "HOSPITAL",
+          "label": "EVS Turnover",
+          "credentials": [
+            "EVS_TRAINED"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0247",
+        "employee_name": "Casey Miller",
+        "labor_class": "Regular",
+        "shift_cost": 168,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-140",
+          "role": "EVS",
+          "unit": "HOSPITAL",
+          "label": "EVS Turnover",
+          "credentials": [
+            "EVS_TRAINED"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0239",
+        "employee_name": "Jamie Wilson",
+        "labor_class": "Regular",
+        "shift_cost": 210,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-141",
+          "role": "EVS",
+          "unit": "HOSPITAL",
+          "label": "EVS Turnover",
+          "credentials": [
+            "EVS_TRAINED"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0244",
+        "employee_name": "Taylor Miller",
+        "labor_class": "Regular",
+        "shift_cost": 168,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-142",
+          "role": "EVS",
+          "unit": "HOSPITAL",
+          "label": "EVS Turnover",
+          "credentials": [
+            "EVS_TRAINED"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0241",
+        "employee_name": "Avery Miller",
+        "labor_class": "Regular",
+        "shift_cost": 168,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-143",
+          "role": "TRANSPORT",
+          "unit": "HOSPITAL",
+          "label": "Patient Transport",
+          "credentials": [
+            "PATIENT_TRANSPORT"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0253",
+        "employee_name": "Hayden Miller",
+        "labor_class": "Regular",
+        "shift_cost": 176,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-144",
+          "role": "TRANSPORT",
+          "unit": "HOSPITAL",
+          "label": "Patient Transport",
+          "credentials": [
+            "PATIENT_TRANSPORT"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0250",
+        "employee_name": "Reese Miller",
+        "labor_class": "Regular",
+        "shift_cost": 176,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-145",
+          "role": "TRANSPORT",
+          "unit": "HOSPITAL",
+          "label": "Patient Transport",
+          "credentials": [
+            "PATIENT_TRANSPORT"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0254",
+        "employee_name": "Rowan Miller",
+        "labor_class": "Regular",
+        "shift_cost": 176,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-146",
+          "role": "TRANSPORT",
+          "unit": "HOSPITAL",
+          "label": "Patient Transport",
+          "credentials": [
+            "PATIENT_TRANSPORT"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0251",
+        "employee_name": "Quinn Miller",
+        "labor_class": "Regular",
+        "shift_cost": 176,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-147",
+          "role": "TRANSPORT",
+          "unit": "HOSPITAL",
+          "label": "Patient Transport",
+          "credentials": [
+            "PATIENT_TRANSPORT"
+          ],
+          "critical": false,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0248",
+        "employee_name": "Drew Miller",
+        "labor_class": "Regular",
+        "shift_cost": 176,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-148",
+          "role": "BED_MANAGER",
+          "unit": "HOSPITAL",
+          "label": "Bed Flow Manager",
+          "credentials": [
+            "RN",
+            "BED_MANAGEMENT"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0256",
+        "employee_name": "Kendall Miller",
+        "labor_class": "Regular",
+        "shift_cost": 696,
+        "proof": "VERIFIED"
+      },
+      {
+        "slot": {
+          "id": "SLOT-149",
+          "role": "BED_MANAGER",
+          "unit": "HOSPITAL",
+          "label": "Bed Flow Manager",
+          "credentials": [
+            "RN",
+            "BED_MANAGEMENT"
+          ],
+          "critical": true,
+          "charge": false,
+          "hours": null
+        },
+        "employee_id": "EMP-0257",
+        "employee_name": "Finley Miller",
+        "labor_class": "Regular",
+        "shift_cost": 696,
+        "proof": "VERIFIED"
+      }
+    ],
+    "gaps": []
+  },
+  "bed_state": [
+    {
+      "id": "ICU-01",
+      "unit": "ICU",
+      "number": 1,
+      "status": "occupied",
+      "patient": "PX-5924",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-02",
+      "unit": "ICU",
+      "number": 2,
+      "status": "occupied",
+      "patient": "PX-1781",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-03",
+      "unit": "ICU",
+      "number": 3,
+      "status": "occupied",
+      "patient": "PX-9162",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-04",
+      "unit": "ICU",
+      "number": 4,
+      "status": "occupied",
+      "patient": "PX-1067",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-05",
+      "unit": "ICU",
+      "number": 5,
+      "status": "occupied",
+      "patient": "PX-8448",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-06",
+      "unit": "ICU",
+      "number": 6,
+      "status": "occupied",
+      "patient": "PX-4305",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-07",
+      "unit": "ICU",
+      "number": 7,
+      "status": "occupied",
+      "patient": "PX-2686",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-08",
+      "unit": "ICU",
+      "number": 8,
+      "status": "occupied",
+      "patient": "PX-2495",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-09",
+      "unit": "ICU",
+      "number": 9,
+      "status": "occupied",
+      "patient": "PX-9876",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-10",
+      "unit": "ICU",
+      "number": 10,
+      "status": "occupied",
+      "patient": "PX-3734",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-11",
+      "unit": "ICU",
+      "number": 11,
+      "status": "occupied",
+      "patient": "PX-5353",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-12",
+      "unit": "ICU",
+      "number": 12,
+      "status": "occupied",
+      "patient": "PX-9496",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-13",
+      "unit": "ICU",
+      "number": 13,
+      "status": "occupied",
+      "patient": "PX-2115",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-14",
+      "unit": "ICU",
+      "number": 14,
+      "status": "occupied",
+      "patient": "PX-1210",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-15",
+      "unit": "ICU",
+      "number": 15,
+      "status": "occupied",
+      "patient": "PX-2829",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-16",
+      "unit": "ICU",
+      "number": 16,
+      "status": "occupied",
+      "patient": "PX-6972",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-17",
+      "unit": "ICU",
+      "number": 17,
+      "status": "occupied",
+      "patient": "PX-8591",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-18",
+      "unit": "ICU",
+      "number": 18,
+      "status": "occupied",
+      "patient": "PX-7686",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-19",
+      "unit": "ICU",
+      "number": 19,
+      "status": "occupied",
+      "patient": "PX-9305",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "ICU-20",
+      "unit": "ICU",
+      "number": 20,
+      "status": "occupied",
+      "patient": "PX-2797",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-21",
+      "unit": "ICU",
+      "number": 21,
+      "status": "cleaning",
+      "patient": null,
+      "isolation": false,
+      "age": 42
+    },
+    {
+      "id": "ICU-22",
+      "unit": "ICU",
+      "number": 22,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-23",
+      "unit": "ICU",
+      "number": 23,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "ICU-24",
+      "unit": "ICU",
+      "number": 24,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-01",
+      "unit": "SDU",
+      "number": 1,
+      "status": "occupied",
+      "patient": "PX-6939",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-02",
+      "unit": "SDU",
+      "number": 2,
+      "status": "occupied",
+      "patient": "PX-8558",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-03",
+      "unit": "SDU",
+      "number": 3,
+      "status": "occupied",
+      "patient": "PX-1177",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-04",
+      "unit": "SDU",
+      "number": 4,
+      "status": "occupied",
+      "patient": "PX-2796",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-05",
+      "unit": "SDU",
+      "number": 5,
+      "status": "occupied",
+      "patient": "PX-4415",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-06",
+      "unit": "SDU",
+      "number": 6,
+      "status": "occupied",
+      "patient": "PX-6034",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-07",
+      "unit": "SDU",
+      "number": 7,
+      "status": "occupied",
+      "patient": "PX-7653",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "SDU-08",
+      "unit": "SDU",
+      "number": 8,
+      "status": "occupied",
+      "patient": "PX-1368",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-09",
+      "unit": "SDU",
+      "number": 9,
+      "status": "occupied",
+      "patient": "PX-2987",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-10",
+      "unit": "SDU",
+      "number": 10,
+      "status": "occupied",
+      "patient": "PX-9129",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-11",
+      "unit": "SDU",
+      "number": 11,
+      "status": "occupied",
+      "patient": "PX-7510",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-12",
+      "unit": "SDU",
+      "number": 12,
+      "status": "occupied",
+      "patient": "PX-5891",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-13",
+      "unit": "SDU",
+      "number": 13,
+      "status": "occupied",
+      "patient": "PX-4272",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-14",
+      "unit": "SDU",
+      "number": 14,
+      "status": "occupied",
+      "patient": "PX-6605",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-15",
+      "unit": "SDU",
+      "number": 15,
+      "status": "occupied",
+      "patient": "PX-4986",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-16",
+      "unit": "SDU",
+      "number": 16,
+      "status": "occupied",
+      "patient": "PX-3367",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-17",
+      "unit": "SDU",
+      "number": 17,
+      "status": "occupied",
+      "patient": "PX-1748",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-18",
+      "unit": "SDU",
+      "number": 18,
+      "status": "occupied",
+      "patient": "PX-5177",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-19",
+      "unit": "SDU",
+      "number": 19,
+      "status": "occupied",
+      "patient": "PX-3558",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "SDU-20",
+      "unit": "SDU",
+      "number": 20,
+      "status": "occupied",
+      "patient": "PX-3938",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-21",
+      "unit": "SDU",
+      "number": 21,
+      "status": "occupied",
+      "patient": "PX-5557",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-22",
+      "unit": "SDU",
+      "number": 22,
+      "status": "occupied",
+      "patient": "PX-9700",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-23",
+      "unit": "SDU",
+      "number": 23,
+      "status": "occupied",
+      "patient": "PX-2319",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-24",
+      "unit": "SDU",
+      "number": 24,
+      "status": "occupied",
+      "patient": "PX-6462",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-25",
+      "unit": "SDU",
+      "number": 25,
+      "status": "occupied",
+      "patient": "PX-8081",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-26",
+      "unit": "SDU",
+      "number": 26,
+      "status": "occupied",
+      "patient": "PX-3224",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-27",
+      "unit": "SDU",
+      "number": 27,
+      "status": "hold",
+      "patient": null,
+      "isolation": false,
+      "age": 111
+    },
+    {
+      "id": "SDU-28",
+      "unit": "SDU",
+      "number": 28,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-29",
+      "unit": "SDU",
+      "number": 29,
+      "status": "maintenance",
+      "patient": null,
+      "isolation": false,
+      "age": 200
+    },
+    {
+      "id": "SDU-30",
+      "unit": "SDU",
+      "number": 30,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-31",
+      "unit": "SDU",
+      "number": 31,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SDU-32",
+      "unit": "SDU",
+      "number": 32,
+      "status": "cleaning",
+      "patient": null,
+      "isolation": false,
+      "age": 69
+    },
+    {
+      "id": "TEL-01",
+      "unit": "TEL",
+      "number": 1,
+      "status": "occupied",
+      "patient": "PX-3986",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-02",
+      "unit": "TEL",
+      "number": 2,
+      "status": "occupied",
+      "patient": "PX-2367",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-03",
+      "unit": "TEL",
+      "number": 3,
+      "status": "occupied",
+      "patient": "PX-9748",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-04",
+      "unit": "TEL",
+      "number": 4,
+      "status": "occupied",
+      "patient": "PX-8129",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-05",
+      "unit": "TEL",
+      "number": 5,
+      "status": "occupied",
+      "patient": "PX-6510",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-06",
+      "unit": "TEL",
+      "number": 6,
+      "status": "occupied",
+      "patient": "PX-4891",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-07",
+      "unit": "TEL",
+      "number": 7,
+      "status": "occupied",
+      "patient": "PX-3272",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-08",
+      "unit": "TEL",
+      "number": 8,
+      "status": "occupied",
+      "patient": "PX-1653",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-09",
+      "unit": "TEL",
+      "number": 9,
+      "status": "occupied",
+      "patient": "PX-9034",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-10",
+      "unit": "TEL",
+      "number": 10,
+      "status": "occupied",
+      "patient": "PX-1796",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-11",
+      "unit": "TEL",
+      "number": 11,
+      "status": "occupied",
+      "patient": "PX-3415",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-12",
+      "unit": "TEL",
+      "number": 12,
+      "status": "occupied",
+      "patient": "PX-5034",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-13",
+      "unit": "TEL",
+      "number": 13,
+      "status": "occupied",
+      "patient": "PX-6653",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-14",
+      "unit": "TEL",
+      "number": 14,
+      "status": "occupied",
+      "patient": "PX-4320",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-15",
+      "unit": "TEL",
+      "number": 15,
+      "status": "occupied",
+      "patient": "PX-5939",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-16",
+      "unit": "TEL",
+      "number": 16,
+      "status": "occupied",
+      "patient": "PX-7558",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-17",
+      "unit": "TEL",
+      "number": 17,
+      "status": "occupied",
+      "patient": "PX-9177",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-18",
+      "unit": "TEL",
+      "number": 18,
+      "status": "occupied",
+      "patient": "PX-6844",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-19",
+      "unit": "TEL",
+      "number": 19,
+      "status": "occupied",
+      "patient": "PX-8463",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-20",
+      "unit": "TEL",
+      "number": 20,
+      "status": "occupied",
+      "patient": "PX-6647",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-21",
+      "unit": "TEL",
+      "number": 21,
+      "status": "occupied",
+      "patient": "PX-5028",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-22",
+      "unit": "TEL",
+      "number": 22,
+      "status": "occupied",
+      "patient": "PX-9885",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-23",
+      "unit": "TEL",
+      "number": 23,
+      "status": "occupied",
+      "patient": "PX-8266",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-24",
+      "unit": "TEL",
+      "number": 24,
+      "status": "occupied",
+      "patient": "PX-9171",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "TEL-25",
+      "unit": "TEL",
+      "number": 25,
+      "status": "occupied",
+      "patient": "PX-7552",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-26",
+      "unit": "TEL",
+      "number": 26,
+      "status": "occupied",
+      "patient": "PX-3409",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-27",
+      "unit": "TEL",
+      "number": 27,
+      "status": "occupied",
+      "patient": "PX-1790",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-28",
+      "unit": "TEL",
+      "number": 28,
+      "status": "occupied",
+      "patient": "PX-1599",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-29",
+      "unit": "TEL",
+      "number": 29,
+      "status": "occupied",
+      "patient": "PX-8980",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-30",
+      "unit": "TEL",
+      "number": 30,
+      "status": "occupied",
+      "patient": "PX-2838",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-31",
+      "unit": "TEL",
+      "number": 31,
+      "status": "occupied",
+      "patient": "PX-4457",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-32",
+      "unit": "TEL",
+      "number": 32,
+      "status": "occupied",
+      "patient": "PX-8600",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-33",
+      "unit": "TEL",
+      "number": 33,
+      "status": "occupied",
+      "patient": "PX-1219",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-34",
+      "unit": "TEL",
+      "number": 34,
+      "status": "occupied",
+      "patient": "PX-9314",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-35",
+      "unit": "TEL",
+      "number": 35,
+      "status": "occupied",
+      "patient": "PX-1933",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-36",
+      "unit": "TEL",
+      "number": 36,
+      "status": "occupied",
+      "patient": "PX-6076",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-37",
+      "unit": "TEL",
+      "number": 37,
+      "status": "occupied",
+      "patient": "PX-7695",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-38",
+      "unit": "TEL",
+      "number": 38,
+      "status": "occupied",
+      "patient": "PX-6790",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-39",
+      "unit": "TEL",
+      "number": 39,
+      "status": "occupied",
+      "patient": "PX-8409",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-40",
+      "unit": "TEL",
+      "number": 40,
+      "status": "occupied",
+      "patient": "PX-4433",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-41",
+      "unit": "TEL",
+      "number": 41,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-42",
+      "unit": "TEL",
+      "number": 42,
+      "status": "hold",
+      "patient": null,
+      "isolation": false,
+      "age": 88
+    },
+    {
+      "id": "TEL-43",
+      "unit": "TEL",
+      "number": 43,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-44",
+      "unit": "TEL",
+      "number": 44,
+      "status": "maintenance",
+      "patient": null,
+      "isolation": false,
+      "age": 44
+    },
+    {
+      "id": "TEL-45",
+      "unit": "TEL",
+      "number": 45,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-46",
+      "unit": "TEL",
+      "number": 46,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "TEL-47",
+      "unit": "TEL",
+      "number": 47,
+      "status": "cleaning",
+      "patient": null,
+      "isolation": false,
+      "age": 44
+    },
+    {
+      "id": "TEL-48",
+      "unit": "TEL",
+      "number": 48,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-01",
+      "unit": "MSN",
+      "number": 1,
+      "status": "occupied",
+      "patient": "PX-6739",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-02",
+      "unit": "MSN",
+      "number": 2,
+      "status": "occupied",
+      "patient": "PX-8358",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-03",
+      "unit": "MSN",
+      "number": 3,
+      "status": "occupied",
+      "patient": "PX-9977",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-04",
+      "unit": "MSN",
+      "number": 4,
+      "status": "occupied",
+      "patient": "PX-2596",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-05",
+      "unit": "MSN",
+      "number": 5,
+      "status": "occupied",
+      "patient": "PX-4215",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-06",
+      "unit": "MSN",
+      "number": 6,
+      "status": "occupied",
+      "patient": "PX-9538",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-07",
+      "unit": "MSN",
+      "number": 7,
+      "status": "occupied",
+      "patient": "PX-2157",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-08",
+      "unit": "MSN",
+      "number": 8,
+      "status": "occupied",
+      "patient": "PX-3776",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-09",
+      "unit": "MSN",
+      "number": 9,
+      "status": "occupied",
+      "patient": "PX-5395",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-10",
+      "unit": "MSN",
+      "number": 10,
+      "status": "occupied",
+      "patient": "PX-3865",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-11",
+      "unit": "MSN",
+      "number": 11,
+      "status": "occupied",
+      "patient": "PX-2246",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-12",
+      "unit": "MSN",
+      "number": 12,
+      "status": "occupied",
+      "patient": "PX-9627",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-13",
+      "unit": "MSN",
+      "number": 13,
+      "status": "occupied",
+      "patient": "PX-8008",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-14",
+      "unit": "MSN",
+      "number": 14,
+      "status": "occupied",
+      "patient": "PX-1341",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-15",
+      "unit": "MSN",
+      "number": 15,
+      "status": "occupied",
+      "patient": "PX-8722",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-16",
+      "unit": "MSN",
+      "number": 16,
+      "status": "occupied",
+      "patient": "PX-7103",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-17",
+      "unit": "MSN",
+      "number": 17,
+      "status": "occupied",
+      "patient": "PX-5484",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-18",
+      "unit": "MSN",
+      "number": 18,
+      "status": "occupied",
+      "patient": "PX-7817",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-19",
+      "unit": "MSN",
+      "number": 19,
+      "status": "occupied",
+      "patient": "PX-6198",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-20",
+      "unit": "MSN",
+      "number": 20,
+      "status": "occupied",
+      "patient": "PX-7674",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-21",
+      "unit": "MSN",
+      "number": 21,
+      "status": "occupied",
+      "patient": "PX-9293",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-22",
+      "unit": "MSN",
+      "number": 22,
+      "status": "occupied",
+      "patient": "PX-4436",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-23",
+      "unit": "MSN",
+      "number": 23,
+      "status": "occupied",
+      "patient": "PX-6055",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-24",
+      "unit": "MSN",
+      "number": 24,
+      "status": "occupied",
+      "patient": "PX-1198",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-25",
+      "unit": "MSN",
+      "number": 25,
+      "status": "occupied",
+      "patient": "PX-2817",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-26",
+      "unit": "MSN",
+      "number": 26,
+      "status": "occupied",
+      "patient": "PX-6960",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-27",
+      "unit": "MSN",
+      "number": 27,
+      "status": "occupied",
+      "patient": "PX-8579",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-28",
+      "unit": "MSN",
+      "number": 28,
+      "status": "occupied",
+      "patient": "PX-2626",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-29",
+      "unit": "MSN",
+      "number": 29,
+      "status": "occupied",
+      "patient": "PX-4245",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-30",
+      "unit": "MSN",
+      "number": 30,
+      "status": "occupied",
+      "patient": "PX-2483",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-31",
+      "unit": "MSN",
+      "number": 31,
+      "status": "occupied",
+      "patient": "PX-9864",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-32",
+      "unit": "MSN",
+      "number": 32,
+      "status": "occupied",
+      "patient": "PX-5721",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-33",
+      "unit": "MSN",
+      "number": 33,
+      "status": "occupied",
+      "patient": "PX-4102",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-34",
+      "unit": "MSN",
+      "number": 34,
+      "status": "occupied",
+      "patient": "PX-8959",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-35",
+      "unit": "MSN",
+      "number": 35,
+      "status": "occupied",
+      "patient": "PX-7340",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-36",
+      "unit": "MSN",
+      "number": 36,
+      "status": "occupied",
+      "patient": "PX-3197",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-37",
+      "unit": "MSN",
+      "number": 37,
+      "status": "occupied",
+      "patient": "PX-1578",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-38",
+      "unit": "MSN",
+      "number": 38,
+      "status": "occupied",
+      "patient": "PX-7531",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-39",
+      "unit": "MSN",
+      "number": 39,
+      "status": "occupied",
+      "patient": "PX-5912",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-40",
+      "unit": "MSN",
+      "number": 40,
+      "status": "occupied",
+      "patient": "PX-6292",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-41",
+      "unit": "MSN",
+      "number": 41,
+      "status": "occupied",
+      "patient": "PX-7911",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-42",
+      "unit": "MSN",
+      "number": 42,
+      "status": "occupied",
+      "patient": "PX-9530",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-43",
+      "unit": "MSN",
+      "number": 43,
+      "status": "occupied",
+      "patient": "PX-2149",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-44",
+      "unit": "MSN",
+      "number": 44,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-45",
+      "unit": "MSN",
+      "number": 45,
+      "status": "maintenance",
+      "patient": null,
+      "isolation": false,
+      "age": 200
+    },
+    {
+      "id": "MSN-46",
+      "unit": "MSN",
+      "number": 46,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-47",
+      "unit": "MSN",
+      "number": 47,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-48",
+      "unit": "MSN",
+      "number": 48,
+      "status": "cleaning",
+      "patient": null,
+      "isolation": false,
+      "age": 54
+    },
+    {
+      "id": "MSN-49",
+      "unit": "MSN",
+      "number": 49,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-50",
+      "unit": "MSN",
+      "number": 50,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-51",
+      "unit": "MSN",
+      "number": 51,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSN-52",
+      "unit": "MSN",
+      "number": 52,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-01",
+      "unit": "MSS",
+      "number": 1,
+      "status": "occupied",
+      "patient": "PX-7158",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-02",
+      "unit": "MSS",
+      "number": 2,
+      "status": "occupied",
+      "patient": "PX-5539",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-03",
+      "unit": "MSS",
+      "number": 3,
+      "status": "occupied",
+      "patient": "PX-3920",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-04",
+      "unit": "MSS",
+      "number": 4,
+      "status": "occupied",
+      "patient": "PX-6253",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-05",
+      "unit": "MSS",
+      "number": 5,
+      "status": "occupied",
+      "patient": "PX-4634",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-06",
+      "unit": "MSS",
+      "number": 6,
+      "status": "occupied",
+      "patient": "PX-3015",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-07",
+      "unit": "MSS",
+      "number": 7,
+      "status": "occupied",
+      "patient": "PX-1396",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-08",
+      "unit": "MSS",
+      "number": 8,
+      "status": "occupied",
+      "patient": "PX-3729",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-09",
+      "unit": "MSS",
+      "number": 9,
+      "status": "occupied",
+      "patient": "PX-2110",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-10",
+      "unit": "MSS",
+      "number": 10,
+      "status": "occupied",
+      "patient": "PX-4968",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-11",
+      "unit": "MSS",
+      "number": 11,
+      "status": "occupied",
+      "patient": "PX-6587",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-12",
+      "unit": "MSS",
+      "number": 12,
+      "status": "occupied",
+      "patient": "PX-8206",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-13",
+      "unit": "MSS",
+      "number": 13,
+      "status": "occupied",
+      "patient": "PX-9825",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-14",
+      "unit": "MSS",
+      "number": 14,
+      "status": "occupied",
+      "patient": "PX-2444",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-15",
+      "unit": "MSS",
+      "number": 15,
+      "status": "occupied",
+      "patient": "PX-4063",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-16",
+      "unit": "MSS",
+      "number": 16,
+      "status": "occupied",
+      "patient": "PX-5682",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-17",
+      "unit": "MSS",
+      "number": 17,
+      "status": "occupied",
+      "patient": "PX-7301",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-18",
+      "unit": "MSS",
+      "number": 18,
+      "status": "occupied",
+      "patient": "PX-8920",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "MSS-19",
+      "unit": "MSS",
+      "number": 19,
+      "status": "occupied",
+      "patient": "PX-1539",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-20",
+      "unit": "MSS",
+      "number": 20,
+      "status": "occupied",
+      "patient": "PX-7627",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-21",
+      "unit": "MSS",
+      "number": 21,
+      "status": "occupied",
+      "patient": "PX-6008",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-22",
+      "unit": "MSS",
+      "number": 22,
+      "status": "occupied",
+      "patient": "PX-1865",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "MSS-23",
+      "unit": "MSS",
+      "number": 23,
+      "status": "occupied",
+      "patient": "PX-9246",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-24",
+      "unit": "MSS",
+      "number": 24,
+      "status": "occupied",
+      "patient": "PX-5103",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-25",
+      "unit": "MSS",
+      "number": 25,
+      "status": "occupied",
+      "patient": "PX-3484",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-26",
+      "unit": "MSS",
+      "number": 26,
+      "status": "occupied",
+      "patient": "PX-8341",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-27",
+      "unit": "MSS",
+      "number": 27,
+      "status": "occupied",
+      "patient": "PX-6722",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-28",
+      "unit": "MSS",
+      "number": 28,
+      "status": "occupied",
+      "patient": "PX-3675",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-29",
+      "unit": "MSS",
+      "number": 29,
+      "status": "occupied",
+      "patient": "PX-2056",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-30",
+      "unit": "MSS",
+      "number": 30,
+      "status": "occupied",
+      "patient": "PX-3818",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-31",
+      "unit": "MSS",
+      "number": 31,
+      "status": "occupied",
+      "patient": "PX-5437",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "MSS-32",
+      "unit": "MSS",
+      "number": 32,
+      "status": "occupied",
+      "patient": "PX-9580",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-33",
+      "unit": "MSS",
+      "number": 33,
+      "status": "occupied",
+      "patient": "PX-2199",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-34",
+      "unit": "MSS",
+      "number": 34,
+      "status": "occupied",
+      "patient": "PX-6342",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-35",
+      "unit": "MSS",
+      "number": 35,
+      "status": "occupied",
+      "patient": "PX-7961",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-36",
+      "unit": "MSS",
+      "number": 36,
+      "status": "occupied",
+      "patient": "PX-3104",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-37",
+      "unit": "MSS",
+      "number": 37,
+      "status": "occupied",
+      "patient": "PX-4723",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-38",
+      "unit": "MSS",
+      "number": 38,
+      "status": "occupied",
+      "patient": "PX-7770",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-39",
+      "unit": "MSS",
+      "number": 39,
+      "status": "occupied",
+      "patient": "PX-9389",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-40",
+      "unit": "MSS",
+      "number": 40,
+      "status": "occupied",
+      "patient": "PX-6245",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-41",
+      "unit": "MSS",
+      "number": 41,
+      "status": "occupied",
+      "patient": "PX-4626",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-42",
+      "unit": "MSS",
+      "number": 42,
+      "status": "occupied",
+      "patient": "PX-3007",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-43",
+      "unit": "MSS",
+      "number": 43,
+      "status": "cleaning",
+      "patient": null,
+      "isolation": false,
+      "age": 66
+    },
+    {
+      "id": "MSS-44",
+      "unit": "MSS",
+      "number": 44,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-45",
+      "unit": "MSS",
+      "number": 45,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-46",
+      "unit": "MSS",
+      "number": 46,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-47",
+      "unit": "MSS",
+      "number": 47,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-48",
+      "unit": "MSS",
+      "number": 48,
+      "status": "cleaning",
+      "patient": null,
+      "isolation": false,
+      "age": 39
+    },
+    {
+      "id": "MSS-49",
+      "unit": "MSS",
+      "number": 49,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-50",
+      "unit": "MSS",
+      "number": 50,
+      "status": "hold",
+      "patient": null,
+      "isolation": false,
+      "age": 79
+    },
+    {
+      "id": "MSS-51",
+      "unit": "MSS",
+      "number": 51,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "MSS-52",
+      "unit": "MSS",
+      "number": 52,
+      "status": "maintenance",
+      "patient": null,
+      "isolation": false,
+      "age": 159
+    },
+    {
+      "id": "SURG-01",
+      "unit": "SURG",
+      "number": 1,
+      "status": "occupied",
+      "patient": "PX-7262",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-02",
+      "unit": "SURG",
+      "number": 2,
+      "status": "occupied",
+      "patient": "PX-5643",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-03",
+      "unit": "SURG",
+      "number": 3,
+      "status": "occupied",
+      "patient": "PX-4024",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-04",
+      "unit": "SURG",
+      "number": 4,
+      "status": "occupied",
+      "patient": "PX-6357",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-05",
+      "unit": "SURG",
+      "number": 5,
+      "status": "occupied",
+      "patient": "PX-4738",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "SURG-06",
+      "unit": "SURG",
+      "number": 6,
+      "status": "occupied",
+      "patient": "PX-3119",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-07",
+      "unit": "SURG",
+      "number": 7,
+      "status": "occupied",
+      "patient": "PX-1500",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-08",
+      "unit": "SURG",
+      "number": 8,
+      "status": "occupied",
+      "patient": "PX-3833",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-09",
+      "unit": "SURG",
+      "number": 9,
+      "status": "occupied",
+      "patient": "PX-2214",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-10",
+      "unit": "SURG",
+      "number": 10,
+      "status": "occupied",
+      "patient": "PX-5072",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-11",
+      "unit": "SURG",
+      "number": 11,
+      "status": "occupied",
+      "patient": "PX-6691",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-12",
+      "unit": "SURG",
+      "number": 12,
+      "status": "occupied",
+      "patient": "PX-8310",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "SURG-13",
+      "unit": "SURG",
+      "number": 13,
+      "status": "occupied",
+      "patient": "PX-9929",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-14",
+      "unit": "SURG",
+      "number": 14,
+      "status": "occupied",
+      "patient": "PX-2548",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-15",
+      "unit": "SURG",
+      "number": 15,
+      "status": "occupied",
+      "patient": "PX-4167",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-16",
+      "unit": "SURG",
+      "number": 16,
+      "status": "occupied",
+      "patient": "PX-5786",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-17",
+      "unit": "SURG",
+      "number": 17,
+      "status": "occupied",
+      "patient": "PX-7405",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-18",
+      "unit": "SURG",
+      "number": 18,
+      "status": "occupied",
+      "patient": "PX-9024",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-19",
+      "unit": "SURG",
+      "number": 19,
+      "status": "occupied",
+      "patient": "PX-1643",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-20",
+      "unit": "SURG",
+      "number": 20,
+      "status": "occupied",
+      "patient": "PX-2435",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "SURG-21",
+      "unit": "SURG",
+      "number": 21,
+      "status": "occupied",
+      "patient": "PX-9816",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-22",
+      "unit": "SURG",
+      "number": 22,
+      "status": "occupied",
+      "patient": "PX-5673",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-23",
+      "unit": "SURG",
+      "number": 23,
+      "status": "occupied",
+      "patient": "PX-4054",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-24",
+      "unit": "SURG",
+      "number": 24,
+      "status": "occupied",
+      "patient": "PX-8911",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-25",
+      "unit": "SURG",
+      "number": 25,
+      "status": "occupied",
+      "patient": "PX-7292",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-26",
+      "unit": "SURG",
+      "number": 26,
+      "status": "occupied",
+      "patient": "PX-3149",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-27",
+      "unit": "SURG",
+      "number": 27,
+      "status": "occupied",
+      "patient": "PX-1530",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-28",
+      "unit": "SURG",
+      "number": 28,
+      "status": "occupied",
+      "patient": "PX-7483",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-29",
+      "unit": "SURG",
+      "number": 29,
+      "status": "occupied",
+      "patient": "PX-5864",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-30",
+      "unit": "SURG",
+      "number": 30,
+      "status": "occupied",
+      "patient": "PX-7626",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-31",
+      "unit": "SURG",
+      "number": 31,
+      "status": "occupied",
+      "patient": "PX-9245",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-32",
+      "unit": "SURG",
+      "number": 32,
+      "status": "occupied",
+      "patient": "PX-4388",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-33",
+      "unit": "SURG",
+      "number": 33,
+      "status": "occupied",
+      "patient": "PX-6007",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "SURG-34",
+      "unit": "SURG",
+      "number": 34,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-35",
+      "unit": "SURG",
+      "number": 35,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-36",
+      "unit": "SURG",
+      "number": 36,
+      "status": "cleaning",
+      "patient": null,
+      "isolation": false,
+      "age": 40
+    },
+    {
+      "id": "SURG-37",
+      "unit": "SURG",
+      "number": 37,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-38",
+      "unit": "SURG",
+      "number": 38,
+      "status": "hold",
+      "patient": null,
+      "isolation": false,
+      "age": 96
+    },
+    {
+      "id": "SURG-39",
+      "unit": "SURG",
+      "number": 39,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "SURG-40",
+      "unit": "SURG",
+      "number": 40,
+      "status": "maintenance",
+      "patient": null,
+      "isolation": false,
+      "age": 68
+    },
+    {
+      "id": "WC-01",
+      "unit": "WC",
+      "number": 1,
+      "status": "occupied",
+      "patient": "PX-8593",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-02",
+      "unit": "WC",
+      "number": 2,
+      "status": "occupied",
+      "patient": "PX-3736",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-03",
+      "unit": "WC",
+      "number": 3,
+      "status": "occupied",
+      "patient": "PX-5355",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-04",
+      "unit": "WC",
+      "number": 4,
+      "status": "occupied",
+      "patient": "PX-4450",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-05",
+      "unit": "WC",
+      "number": 5,
+      "status": "occupied",
+      "patient": "PX-6069",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-06",
+      "unit": "WC",
+      "number": 6,
+      "status": "occupied",
+      "patient": "PX-1212",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-07",
+      "unit": "WC",
+      "number": 7,
+      "status": "occupied",
+      "patient": "PX-2831",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-08",
+      "unit": "WC",
+      "number": 8,
+      "status": "occupied",
+      "patient": "PX-1926",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-09",
+      "unit": "WC",
+      "number": 9,
+      "status": "occupied",
+      "patient": "PX-3545",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-10",
+      "unit": "WC",
+      "number": 10,
+      "status": "occupied",
+      "patient": "PX-1783",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-11",
+      "unit": "WC",
+      "number": 11,
+      "status": "occupied",
+      "patient": "PX-9164",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-12",
+      "unit": "WC",
+      "number": 12,
+      "status": "occupied",
+      "patient": "PX-5021",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-13",
+      "unit": "WC",
+      "number": 13,
+      "status": "occupied",
+      "patient": "PX-3402",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-14",
+      "unit": "WC",
+      "number": 14,
+      "status": "occupied",
+      "patient": "PX-4307",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-15",
+      "unit": "WC",
+      "number": 15,
+      "status": "occupied",
+      "patient": "PX-2688",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-16",
+      "unit": "WC",
+      "number": 16,
+      "status": "occupied",
+      "patient": "PX-7545",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "WC-17",
+      "unit": "WC",
+      "number": 17,
+      "status": "occupied",
+      "patient": "PX-5926",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-18",
+      "unit": "WC",
+      "number": 18,
+      "status": "occupied",
+      "patient": "PX-5735",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-19",
+      "unit": "WC",
+      "number": 19,
+      "status": "occupied",
+      "patient": "PX-4116",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-20",
+      "unit": "WC",
+      "number": 20,
+      "status": "occupied",
+      "patient": "PX-5932",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-21",
+      "unit": "WC",
+      "number": 21,
+      "status": "occupied",
+      "patient": "PX-7551",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-22",
+      "unit": "WC",
+      "number": 22,
+      "status": "occupied",
+      "patient": "PX-9170",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-23",
+      "unit": "WC",
+      "number": 23,
+      "status": "occupied",
+      "patient": "PX-1789",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-24",
+      "unit": "WC",
+      "number": 24,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-25",
+      "unit": "WC",
+      "number": 25,
+      "status": "hold",
+      "patient": null,
+      "isolation": false,
+      "age": 93
+    },
+    {
+      "id": "WC-26",
+      "unit": "WC",
+      "number": 26,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "WC-27",
+      "unit": "WC",
+      "number": 27,
+      "status": "maintenance",
+      "patient": null,
+      "isolation": false,
+      "age": 88
+    },
+    {
+      "id": "WC-28",
+      "unit": "WC",
+      "number": 28,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-01",
+      "unit": "BH",
+      "number": 1,
+      "status": "occupied",
+      "patient": "PX-8145",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-02",
+      "unit": "BH",
+      "number": 2,
+      "status": "occupied",
+      "patient": "PX-3288",
+      "isolation": true,
+      "age": 0
+    },
+    {
+      "id": "BH-03",
+      "unit": "BH",
+      "number": 3,
+      "status": "occupied",
+      "patient": "PX-4907",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-04",
+      "unit": "BH",
+      "number": 4,
+      "status": "occupied",
+      "patient": "PX-4002",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-05",
+      "unit": "BH",
+      "number": 5,
+      "status": "occupied",
+      "patient": "PX-5621",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-06",
+      "unit": "BH",
+      "number": 6,
+      "status": "occupied",
+      "patient": "PX-9764",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-07",
+      "unit": "BH",
+      "number": 7,
+      "status": "occupied",
+      "patient": "PX-2383",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-08",
+      "unit": "BH",
+      "number": 8,
+      "status": "occupied",
+      "patient": "PX-2574",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-09",
+      "unit": "BH",
+      "number": 9,
+      "status": "occupied",
+      "patient": "PX-4193",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-10",
+      "unit": "BH",
+      "number": 10,
+      "status": "occupied",
+      "patient": "PX-5271",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-11",
+      "unit": "BH",
+      "number": 11,
+      "status": "occupied",
+      "patient": "PX-3652",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-12",
+      "unit": "BH",
+      "number": 12,
+      "status": "occupied",
+      "patient": "PX-8509",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-13",
+      "unit": "BH",
+      "number": 13,
+      "status": "occupied",
+      "patient": "PX-6890",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-14",
+      "unit": "BH",
+      "number": 14,
+      "status": "occupied",
+      "patient": "PX-7795",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-15",
+      "unit": "BH",
+      "number": 15,
+      "status": "occupied",
+      "patient": "PX-6176",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-16",
+      "unit": "BH",
+      "number": 16,
+      "status": "occupied",
+      "patient": "PX-2033",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-17",
+      "unit": "BH",
+      "number": 17,
+      "status": "occupied",
+      "patient": "PX-9414",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-18",
+      "unit": "BH",
+      "number": 18,
+      "status": "occupied",
+      "patient": "PX-1319",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-19",
+      "unit": "BH",
+      "number": 19,
+      "status": "occupied",
+      "patient": "PX-8700",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-20",
+      "unit": "BH",
+      "number": 20,
+      "status": "occupied",
+      "patient": "PX-7908",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-21",
+      "unit": "BH",
+      "number": 21,
+      "status": "occupied",
+      "patient": "PX-9527",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-22",
+      "unit": "BH",
+      "number": 22,
+      "status": "occupied",
+      "patient": "PX-2146",
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-23",
+      "unit": "BH",
+      "number": 23,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    },
+    {
+      "id": "BH-24",
+      "unit": "BH",
+      "number": 24,
+      "status": "ready",
+      "patient": null,
+      "isolation": false,
+      "age": 0
+    }
+  ],
+  "value_model": {
+    "inputs": {
+      "shiftsPerYear": 730,
+      "otBaseline": 110,
+      "otOptimized": 62,
+      "otPremium": 24,
+      "agencyBaseline": 72,
+      "agencyOptimized": 36,
+      "agencyPremium": 48,
+      "adminBaseline": 72,
+      "adminOptimized": 18,
+      "adminRate": 58,
+      "recoveredAdmissions": 26,
+      "admissionMargin": 5200,
+      "avoidedCancellations": 7,
+      "cancellationMargin": 7500,
+      "avoidedTransfers": 10,
+      "transferMargin": 4200,
+      "avoidedTurnover": 8,
+      "turnoverCost": 70000,
+      "annualSubscription": 850000,
+      "implementation": 950000,
+      "confidence": 82
+    },
+    "results": {
+      "streams": [
+        {
+          "key": "ot",
+          "label": "Overtime premium avoided",
+          "gross": 840960,
+          "equation": "(110 − 62) hr/shift × $24 × 730"
+        },
+        {
+          "key": "agency",
+          "label": "Agency premium avoided",
+          "gross": 1261440,
+          "equation": "(72 − 36) hr/shift × $48 × 730"
+        },
+        {
+          "key": "admin",
+          "label": "Scheduling administration recovered",
+          "gross": 162864,
+          "equation": "(72 − 18) hr/week × $58 × 52"
+        },
+        {
+          "key": "admissions",
+          "label": "Recovered admissions",
+          "gross": 1622400,
+          "equation": "26/month × $5,200 × 12"
+        },
+        {
+          "key": "cancellations",
+          "label": "Avoided procedure cancellations",
+          "gross": 630000,
+          "equation": "7/month × $7,500 × 12"
+        },
+        {
+          "key": "transfers",
+          "label": "Avoided outbound transfers",
+          "gross": 504000,
+          "equation": "10/month × $4,200 × 12"
+        },
+        {
+          "key": "turnover",
+          "label": "Avoided workforce turnover",
+          "gross": 560000,
+          "equation": "8/year × $70,000"
+        }
+      ],
+      "gross": 5581664,
+      "confidence": 0.82,
+      "adjusted": 4576964.4799999995,
+      "netSteady": 3726964.4799999995,
+      "roi": 4.384664094117647
+    }
+  },
+  "sources": [
+    {
+      "id": "ADT",
+      "name": "ADT / EHR Census",
+      "signal": "Admissions, discharges, transfers",
+      "owner": "Patient Access",
+      "limit": 2,
+      "unit": "min",
+      "age": 0.4,
+      "truth": 0.99,
+      "status": "CURRENT",
+      "classification": "Verified demo signal"
+    },
+    {
+      "id": "WFM",
+      "name": "Workforce Management",
+      "signal": "Availability, hours, pay class",
+      "owner": "Nursing Operations",
+      "limit": 5,
+      "unit": "min",
+      "age": 1.2,
+      "truth": 0.97,
+      "status": "CURRENT",
+      "classification": "Verified demo signal"
+    },
+    {
+      "id": "HR",
+      "name": "HR Credentialing",
+      "signal": "License, competency, expiration",
+      "owner": "Human Resources",
+      "limit": 24,
+      "unit": "hr",
+      "age": 2.5,
+      "truth": 0.96,
+      "status": "CURRENT",
+      "classification": "Verified demo signal"
+    },
+    {
+      "id": "EVS",
+      "name": "EVS Turnover",
+      "signal": "Dirty, cleaning, ready state",
+      "owner": "Environmental Services",
+      "limit": 3,
+      "unit": "min",
+      "age": 1.8,
+      "truth": 0.93,
+      "status": "CURRENT",
+      "classification": "Verified demo signal"
+    },
+    {
+      "id": "CMMS",
+      "name": "Biomedical / CMMS",
+      "signal": "Equipment and maintenance holds",
+      "owner": "Clinical Engineering",
+      "limit": 15,
+      "unit": "min",
+      "age": 7,
+      "truth": 0.91,
+      "status": "CURRENT",
+      "classification": "Verified demo signal"
+    },
+    {
+      "id": "ED",
+      "name": "ED Tracking",
+      "signal": "Boarders, arrivals, acuity",
+      "owner": "Emergency Services",
+      "limit": 2,
+      "unit": "min",
+      "age": 0.7,
+      "truth": 0.98,
+      "status": "CURRENT",
+      "classification": "Verified demo signal"
+    },
+    {
+      "id": "OR",
+      "name": "OR Schedule",
+      "signal": "Cases, recovery, bed demand",
+      "owner": "Perioperative Services",
+      "limit": 15,
+      "unit": "min",
+      "age": 5.2,
+      "truth": 0.94,
+      "status": "CURRENT",
+      "classification": "Verified demo signal"
+    },
+    {
+      "id": "FIN",
+      "name": "Finance / Payroll",
+      "signal": "Rates, premiums, contribution",
+      "owner": "Finance",
+      "limit": 24,
+      "unit": "hr",
+      "age": 3.1,
+      "truth": 0.95,
+      "status": "CURRENT",
+      "classification": "Modeled demo signal"
+    }
+  ],
+  "proof_chain": [
+    {
+      "time": "2026-08-07T00:45:30.675Z",
+      "event": "Demo policy pack loaded",
+      "classification": "Design Principle",
+      "actor": "APEX Demo Runtime",
+      "decision": "Synthetic, facility-editable policy loaded; legal review remains required.",
+      "evidence": {
+        "version": "APEX-HOSPITAL-DEMO-1.0.0",
+        "unitCount": 8
+      },
+      "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "da84ee14e3137207c04808afecfeffc4396d568636210b21504f6f41db2fbc2c"
+    },
+    {
+      "time": "2026-08-07T00:45:30.677Z",
+      "event": "Source reconciliation completed",
+      "classification": "Synthetic Demo Evidence",
+      "actor": "APEX Source Reconciler",
+      "decision": "All local demo sources scored for freshness and truth.",
+      "evidence": {
+        "truthScore": 0.95375,
+        "freshness": 1
+      },
+      "previousHash": "da84ee14e3137207c04808afecfeffc4396d568636210b21504f6f41db2fbc2c",
+      "hash": "b60d2b24443f4b70c238d41724ec5a091c49265a12e4a739e298590065a7c091"
+    },
+    {
+      "time": "2026-08-07T00:45:30.677Z",
+      "event": "Patient-driven schedule generated",
+      "classification": "Modeled Operational Proposal",
+      "actor": "APEX Scheduling Worker",
+      "decision": "Coverage proposal generated from planned patient demand and qualification filters.",
+      "evidence": {
+        "requiredPosts": 149,
+        "assigned": 149,
+        "gaps": 0
+      },
+      "previousHash": "b60d2b24443f4b70c238d41724ec5a091c49265a12e4a739e298590065a7c091",
+      "hash": "66c495652bb69e69402415098a1100e19acc73fb534a969b76ff698839db60f3"
+    },
+    {
+      "time": "2026-08-07T00:45:30.677Z",
+      "event": "Governor route issued",
+      "classification": "Synthetic Demo Evidence",
+      "actor": "APEX Governor",
+      "decision": "CORRECT",
+      "evidence": {
+        "failurePressure": 3.55,
+        "driftPressure": 2.77,
+        "readiness": 0.9721744186046511
+      },
+      "previousHash": "66c495652bb69e69402415098a1100e19acc73fb534a969b76ff698839db60f3",
+      "hash": "a8549770496d38ab4440179dd746f13e818c3b51b1ad93ec6380f403f45298e1"
+    }
+  ],
+  "limitations": [
+    "No live hospital integration",
+    "No PHI",
+    "No production authentication or authorization",
+    "No jurisdiction-specific legal validation",
+    "Economic values are editable modeled estimates, not guaranteed savings"
+  ],
+  "integrity": {
+    "algorithm": "SHA-256",
+    "scope": "All pack fields except integrity",
+    "hash": "4f3eb578e10711aaadecfd508872e786de66357b6fcca2c43c62c63ad97f21ab"
+  }
+}

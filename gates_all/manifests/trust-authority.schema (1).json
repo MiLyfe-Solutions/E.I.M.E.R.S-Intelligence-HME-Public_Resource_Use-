@@ -1,0 +1,460 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:apex:aos:schema:v1:trust-authority",
+  "title": "APEX Trust, Identity, and Authority Snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "evaluatedAt",
+    "subject",
+    "credentials",
+    "roleAssignments",
+    "delegations",
+    "effectivePermissions",
+    "authorizationDecision"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "evaluatedAt": {
+      "$ref": "urn:apex:aos:schema:v1:common#/$defs/Timestamp"
+    },
+    "subject": {
+      "allOf": [
+        {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/ObjectReferenceBase"
+        }
+      ],
+      "type": "object",
+      "unevaluatedProperties": false,
+      "required": [
+        "tenantId",
+        "objectId",
+        "objectType",
+        "partyType",
+        "displayName",
+        "status"
+      ],
+      "properties": {
+        "tenantId": {},
+        "objectId": {},
+        "objectType": {},
+        "naturalKey": {},
+        "partyType": {
+          "type": "string",
+          "enum": [
+            "person",
+            "organization",
+            "device",
+            "ai_agent",
+            "service_account",
+            "system"
+          ]
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "active",
+            "suspended",
+            "inactive",
+            "revoked"
+          ]
+        },
+        "trustLevel": {
+          "type": "string",
+          "enum": [
+            "untrusted",
+            "limited",
+            "standard",
+            "elevated",
+            "verified"
+          ]
+        }
+      }
+    },
+    "credentials": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Credential"
+      }
+    },
+    "roleAssignments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/RoleAssignment"
+      }
+    },
+    "delegations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Delegation"
+      }
+    },
+    "effectivePermissions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "urn:apex:aos:schema:v1:common#/$defs/Code"
+      }
+    },
+    "authorizationDecision": {
+      "$ref": "#/$defs/AuthorizationDecision"
+    }
+  },
+  "$defs": {
+    "Credential": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "credentialId",
+        "typeCode",
+        "status",
+        "issuedAt",
+        "validFrom",
+        "validTo",
+        "verifiedAt",
+        "capabilities",
+        "claims"
+      ],
+      "properties": {
+        "credentialId": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/UUID"
+        },
+        "typeCode": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/Code"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "active",
+            "suspended",
+            "expired",
+            "revoked"
+          ]
+        },
+        "issuerPartyId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uuid"
+        },
+        "issuedAt": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/Timestamp"
+        },
+        "validFrom": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/Timestamp"
+        },
+        "validTo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "verifiedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "capabilities": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "code",
+              "level"
+            ],
+            "properties": {
+              "code": {
+                "$ref": "urn:apex:aos:schema:v1:common#/$defs/Code"
+              },
+              "level": {
+                "type": "string",
+                "minLength": 1
+              },
+              "limitations": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "claims": {
+          "type": "object"
+        },
+        "revocation": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "revokedAt",
+            "reason"
+          ],
+          "properties": {
+            "revokedAt": {
+              "$ref": "urn:apex:aos:schema:v1:common#/$defs/Timestamp"
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "RoleAssignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assignmentId",
+        "roleCode",
+        "status",
+        "validFrom",
+        "validTo",
+        "scope"
+      ],
+      "properties": {
+        "assignmentId": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/UUID"
+        },
+        "roleCode": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/Code"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "active",
+            "suspended",
+            "ended",
+            "revoked"
+          ]
+        },
+        "validFrom": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/Timestamp"
+        },
+        "validTo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "scope": {
+          "oneOf": [
+            {
+              "$ref": "urn:apex:aos:schema:v1:common#/$defs/ObjectReference"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "conditions": {
+          "type": "object"
+        }
+      }
+    },
+    "Delegation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "delegationId",
+        "grantorPartyId",
+        "granteePartyId",
+        "grant",
+        "validFrom",
+        "validTo",
+        "status"
+      ],
+      "properties": {
+        "delegationId": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/UUID"
+        },
+        "grantorPartyId": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/UUID"
+        },
+        "granteePartyId": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/UUID"
+        },
+        "grant": {
+          "type": "object",
+          "additionalProperties": false,
+          "minProperties": 1,
+          "maxProperties": 1,
+          "properties": {
+            "permissionCode": {
+              "$ref": "urn:apex:aos:schema:v1:common#/$defs/Code"
+            },
+            "roleCode": {
+              "$ref": "urn:apex:aos:schema:v1:common#/$defs/Code"
+            }
+          }
+        },
+        "validFrom": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/Timestamp"
+        },
+        "validTo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "active",
+            "suspended",
+            "revoked",
+            "expired"
+          ]
+        },
+        "scope": {
+          "oneOf": [
+            {
+              "$ref": "urn:apex:aos:schema:v1:common#/$defs/ObjectReference"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "conditions": {
+          "type": "object"
+        }
+      }
+    },
+    "AuthorizationDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "permissionCode",
+        "action",
+        "resource",
+        "allowed",
+        "evaluatedAt",
+        "grants",
+        "denials",
+        "obligations"
+      ],
+      "properties": {
+        "permissionCode": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/Code"
+        },
+        "action": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/Code"
+        },
+        "resource": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/ObjectReference"
+        },
+        "allowed": {
+          "type": "boolean"
+        },
+        "evaluatedAt": {
+          "$ref": "urn:apex:aos:schema:v1:common#/$defs/Timestamp"
+        },
+        "grants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "sourceType",
+              "sourceId",
+              "effect"
+            ],
+            "properties": {
+              "sourceType": {
+                "type": "string",
+                "enum": [
+                  "role",
+                  "authorization",
+                  "delegation",
+                  "policy"
+                ]
+              },
+              "sourceId": {
+                "$ref": "urn:apex:aos:schema:v1:common#/$defs/UUID"
+              },
+              "effect": {
+                "const": "allow"
+              }
+            }
+          }
+        },
+        "denials": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "sourceType",
+              "sourceId",
+              "effect"
+            ],
+            "properties": {
+              "sourceType": {
+                "type": "string",
+                "enum": [
+                  "role",
+                  "authorization",
+                  "policy"
+                ]
+              },
+              "sourceId": {
+                "$ref": "urn:apex:aos:schema:v1:common#/$defs/UUID"
+              },
+              "effect": {
+                "const": "deny"
+              }
+            }
+          }
+        },
+        "obligations": {
+          "type": "array",
+          "items": {
+            "$ref": "urn:apex:aos:schema:v1:common#/$defs/Code"
+          }
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "allowed": {
+                "const": false
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "denials": {
+                "type": "array",
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

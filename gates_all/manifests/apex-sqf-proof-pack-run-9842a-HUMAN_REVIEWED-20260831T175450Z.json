@@ -1,0 +1,384 @@
+{
+  "schema_version": "1.0.0",
+  "proof_pack_type": "APEX_FOOD_SAFETY_GOVERNED_PROOF_PACK",
+  "evidence_classification": "HUMAN_REVIEWED",
+  "human_review_required": true,
+  "governor_approval_required": true,
+  "demo_data": true,
+  "certification_status": "NOT_CERTIFIED",
+  "proof_pack_id": "pack-run-9842a-20260831T175450Z",
+  "audit_run_id": "run-9842a",
+  "artifact_family_id": "family-run-9842a",
+  "tenant_id": "cust-apex-foods",
+  "customer_name": "Apex Foods Ltd.",
+  "site_name": "Chicago Plant 1",
+  "site_location": "Chicago, IL",
+  "food_sector_category": "FSC 10: Dairy Food Processing",
+  "process_scope": "Production and packaging of pasteurized liquid milk and premium yogurt.",
+  "standard_name": "SQF",
+  "standard_edition": "SQF Code Edition 9",
+  "regulatory_framework": "FDA FSMA / SQF Edition 9",
+  "run_status": "HUMAN_REVIEWED",
+  "readiness_score": 17,
+  "generated_at_utc": "2026-08-31T17:54:23.638Z",
+  "generated_by": "Joshua Eimers",
+  "operator": "Joshua Eimers",
+  "agent_version": "v2.1.0-governed",
+  "files_inventory": [
+    {
+      "id": "doc-001",
+      "filename": "APEX-SOP-Pest-Control-v2.pdf",
+      "title": "Integrated Pest Management Procedure",
+      "type": "Standard Operating Procedure (SOP)",
+      "owner": "Jane Miller (Quality Assurance Manager)",
+      "effectiveDate": "2025-01-15",
+      "expirationDate": "2026-01-15",
+      "revision": "Rev 2.0",
+      "signatures": [
+        "Jane Miller"
+      ],
+      "hash": "sha256-f8d2b3a9c7162985fe20108db3c48259ef028e08d29b1d9dca4718c39d84bf0e",
+      "size": 45210
+    },
+    {
+      "id": "doc-002",
+      "filename": "APEX-HACCP-Plan-Milk-v4.pdf",
+      "title": "HACCP Food Safety Plan: Pasteurized Liquid Milk",
+      "type": "Food Safety Plan / HACCP",
+      "owner": "Dr. Robert Chen (HACCP Team Leader)",
+      "effectiveDate": "2026-02-10",
+      "expirationDate": "2027-02-10",
+      "revision": "Rev 4.1",
+      "signatures": [
+        "Dr. Robert Chen",
+        "Marcus Vance (Plant Governor)"
+      ],
+      "hash": "sha256-a1b2c3d4e5f607182930415263748596a7b8c9d0e1f203142536475869707172",
+      "size": 182400
+    },
+    {
+      "id": "doc-003",
+      "filename": "APEX-TR-2026-Employee-Training.xlsx",
+      "title": "Employee Food Safety Training Log Q1 2026",
+      "type": "Training Record",
+      "owner": "Sarah Connor (HR Specialist)",
+      "effectiveDate": "2026-03-31",
+      "expirationDate": "2027-03-31",
+      "revision": "Rev 1.0",
+      "signatures": [
+        "Sarah Connor"
+      ],
+      "hash": "sha256-0a9b8c7d6e5f4e3d2c1b0a9b8c7d6e5f4e3d2c1b0a9b8c7d6e5f4e3d2c1b0a9b",
+      "size": 28400
+    },
+    {
+      "id": "doc-004",
+      "filename": "APEX-EMP-2026-Env-Monitoring.pdf",
+      "title": "Environmental Monitoring Program & Q1 Lab Reports",
+      "type": "Laboratory Records / Monitoring Logs",
+      "owner": "Jane Miller (Quality Assurance Manager)",
+      "effectiveDate": "2026-04-05",
+      "expirationDate": "2026-10-05",
+      "revision": "Rev 1.2",
+      "signatures": [],
+      "hash": "sha256-99887766554433221100abcdef1234567890abcdef1234567890abcdef1234",
+      "size": 94100
+    }
+  ],
+  "evidence_citations": [
+    {
+      "clause_id": "2.1.1",
+      "section": "Management Commitment",
+      "evidence_file_id": "doc-001",
+      "evidence_hash": "sha256-f8d2b3a9c7162985fe20108db3c48259ef028e08d29b1d9dca4718c39d84bf0e",
+      "evidence_location": "Section 4.0 Service Requirements / Footer",
+      "excerpt": "Executive Signoff: [PENDING - REQUIRED FOR ANNUAL ISSUANCE]",
+      "finding_reason": "The Integrated Pest Control SOP is missing the mandatory senior executive / plant governor sign-off signature, despite having QA department sign-off. SQF requires senior leadership involvement and approval. (Human verified: Verified onsite) (Governor Action: Approved. Details: Approved for site compliance pack)",
+      "confidence_score": 92
+    },
+    {
+      "clause_id": "2.4.2",
+      "section": "Food Safety Plan (HACCP)",
+      "evidence_file_id": "doc-002",
+      "evidence_hash": "sha256-a1b2c3d4e5f607182930415263748596a7b8c9d0e1f203142536475869707172",
+      "evidence_location": "Section 3.0 Hazard Analysis & Signatures",
+      "excerpt": "Critical Control Point (CCP1): HTST Pasteurizer temperature. Limit: Minimum 72.0°C (161.6°F) for at least 15 seconds. Approved by: Dr. Robert Chen, HACCP Leader. Executive Approval: Marcus Vance, VP Operations / Plant Governor",
+      "finding_reason": "Comprehensive HACCP plan is documented, defines critical control limits, scientific validations, and carries appropriate practitioner and senior plant manager approvals. Effective dates are current.",
+      "confidence_score": 98
+    },
+    {
+      "clause_id": "2.9.2",
+      "section": "Training Program",
+      "evidence_file_id": "doc-003",
+      "evidence_hash": "sha256-0a9b8c7d6e5f4e3d2c1b0a9b8c7d6e5f4e3d2c1b0a9b8c7d6e5f4e3d2c1b0a9b",
+      "evidence_location": "Attendees List & Verification",
+      "excerpt": "Trainee signatures: NOT COLLECTED - training was conducted via Zoom video presentation. Trainer Signature: Sarah Connor [Digitally Logged]",
+      "finding_reason": "Trainee signatures were not captured. Digital sign-offs or alternative individual confirmation records (such as completed quiz sheets or Zoom logs with attendee lists and timestamps) are required to satisfy the \"attendee signature\" or positive attendance confirmation mandate in SQF 2.9.2.3. (Human verified: Verified onsite)",
+      "confidence_score": 94
+    },
+    {
+      "clause_id": "11.2.9",
+      "section": "Pest Prevention",
+      "evidence_file_id": "doc-001",
+      "evidence_hash": "sha256-f8d2b3a9c7162985fe20108db3c48259ef028e08d29b1d9dca4718c39d84bf0e",
+      "evidence_location": "Document ID Block & Revision Block",
+      "excerpt": "Effective Date: January 15, 2025. Review Date: January 15, 2026",
+      "finding_reason": "The primary Integrated Pest Management SOP (APEX-SOP-Pest-Control-v2) has a specified Review Date of January 15, 2026. As the current audit date is July 10, 2026, this procedure is expired and has exceeded its mandated annual review cycle. (Human verified: Verified onsite)",
+      "confidence_score": 99
+    },
+    {
+      "clause_id": "11.5.1",
+      "section": "Environmental Monitoring",
+      "evidence_file_id": "doc-004",
+      "evidence_hash": "sha256-99887766554433221100abcdef1234567890abcdef1234567890abcdef1234",
+      "evidence_location": "Corrective Actions Tracking Block",
+      "excerpt": "Zone 3 (Drain adjacent to Yogurt Filling Line B) returned POSITIVE for Listeria species. ... Re-swabbing conducted on Feb 16, 2026. Result: PENDING FROM LAB.",
+      "finding_reason": "A positive Listeria pathogen result was identified on February 14, 2026, but the corrective action re-swab result is marked as \"PENDING\" in records from April 2026. This indicates an open, unresolved high-risk biological finding with inadequate record coverage and incomplete corrective actions. (Human verified: Verified onsite)",
+      "confidence_score": 96
+    }
+  ],
+  "clause_mappings": [
+    {
+      "id": "2.1.1",
+      "section": "Management Commitment",
+      "requirement": "Senior site management shall prepare a food safety policy statement, outline organizational reporting structure, define responsibilities for food safety and quality, and ensure annual reviews are conducted and signed.",
+      "status": "SIGNATURE_REQUIRED",
+      "evidenceFileId": "doc-001",
+      "evidenceHash": "sha256-f8d2b3a9c7162985fe20108db3c48259ef028e08d29b1d9dca4718c39d84bf0e",
+      "evidenceLocation": "Section 4.0 Service Requirements / Footer",
+      "excerpt": "Executive Signoff: [PENDING - REQUIRED FOR ANNUAL ISSUANCE]",
+      "findingReason": "The Integrated Pest Control SOP is missing the mandatory senior executive / plant governor sign-off signature, despite having QA department sign-off. SQF requires senior leadership involvement and approval. (Human verified: Verified onsite) (Governor Action: Approved. Details: Approved for site compliance pack)",
+      "confidenceScore": 92,
+      "reviewerRequired": true,
+      "humanReviewStatus": "REVIEWED",
+      "governorApprovalStatus": "APPROVED"
+    },
+    {
+      "id": "2.4.2",
+      "section": "Food Safety Plan (HACCP)",
+      "requirement": "A multi-disciplinary food safety team shall develop a food safety plan utilizing HACCP principles, defining CCPs, limits, monitoring, and validation procedures. Plan must be reviewed at least annually, and signed by the SQF practitioner.",
+      "status": "VERIFIED_DOCUMENTARY_EVIDENCE",
+      "evidenceFileId": "doc-002",
+      "evidenceHash": "sha256-a1b2c3d4e5f607182930415263748596a7b8c9d0e1f203142536475869707172",
+      "evidenceLocation": "Section 3.0 Hazard Analysis & Signatures",
+      "excerpt": "Critical Control Point (CCP1): HTST Pasteurizer temperature. Limit: Minimum 72.0°C (161.6°F) for at least 15 seconds. Approved by: Dr. Robert Chen, HACCP Leader. Executive Approval: Marcus Vance, VP Operations / Plant Governor",
+      "findingReason": "Comprehensive HACCP plan is documented, defines critical control limits, scientific validations, and carries appropriate practitioner and senior plant manager approvals. Effective dates are current.",
+      "confidenceScore": 98,
+      "reviewerRequired": false,
+      "humanReviewStatus": "PENDING",
+      "governorApprovalStatus": "PENDING"
+    },
+    {
+      "id": "2.9.2",
+      "section": "Training Program",
+      "requirement": "A training program shall be documented, mapping necessary competencies to operational tasks. Training records must be maintained, including dates, attendee signatures, competence evaluations, and trainer sign-offs.",
+      "status": "SIGNATURE_REQUIRED",
+      "evidenceFileId": "doc-003",
+      "evidenceHash": "sha256-0a9b8c7d6e5f4e3d2c1b0a9b8c7d6e5f4e3d2c1b0a9b8c7d6e5f4e3d2c1b0a9b",
+      "evidenceLocation": "Attendees List & Verification",
+      "excerpt": "Trainee signatures: NOT COLLECTED - training was conducted via Zoom video presentation. Trainer Signature: Sarah Connor [Digitally Logged]",
+      "findingReason": "Trainee signatures were not captured. Digital sign-offs or alternative individual confirmation records (such as completed quiz sheets or Zoom logs with attendee lists and timestamps) are required to satisfy the \"attendee signature\" or positive attendance confirmation mandate in SQF 2.9.2.3. (Human verified: Verified onsite)",
+      "confidenceScore": 94,
+      "reviewerRequired": true,
+      "humanReviewStatus": "REVIEWED",
+      "governorApprovalStatus": "PENDING"
+    },
+    {
+      "id": "11.2.9",
+      "section": "Pest Prevention",
+      "requirement": "The pest prevention program shall be documented, detailing bait mapping, chemical safety data sheets, applicator licensing, and inspection frequencies. Methods shall be effective in protecting food products from contamination.",
+      "status": "EXPIRED_EVIDENCE",
+      "evidenceFileId": "doc-001",
+      "evidenceHash": "sha256-f8d2b3a9c7162985fe20108db3c48259ef028e08d29b1d9dca4718c39d84bf0e",
+      "evidenceLocation": "Document ID Block & Revision Block",
+      "excerpt": "Effective Date: January 15, 2025. Review Date: January 15, 2026",
+      "findingReason": "The primary Integrated Pest Management SOP (APEX-SOP-Pest-Control-v2) has a specified Review Date of January 15, 2026. As the current audit date is July 10, 2026, this procedure is expired and has exceeded its mandated annual review cycle. (Human verified: Verified onsite)",
+      "confidenceScore": 99,
+      "reviewerRequired": true,
+      "humanReviewStatus": "REVIEWED",
+      "governorApprovalStatus": "PENDING"
+    },
+    {
+      "id": "11.3.1",
+      "section": "Water Supply",
+      "requirement": "Water and steam used in food processing must comply with local potability standards. Water safety must be verified at least annually through analytical laboratory microbiological and chemical testing.",
+      "status": "MISSING_EVIDENCE",
+      "evidenceFileId": "N/A",
+      "evidenceHash": "N/A",
+      "evidenceLocation": "N/A",
+      "excerpt": "N/A",
+      "findingReason": "No water potability test records, municipal water reports, or backflow preventer inspection certificates were found among the uploaded documents. Under SQF 11.3.1, annual laboratory testing is a mandatory compliance requirement and cannot be verified without documentary proof. (Human verified: Verified onsite)",
+      "confidenceScore": 100,
+      "reviewerRequired": true,
+      "humanReviewStatus": "REVIEWED",
+      "governorApprovalStatus": "PENDING"
+    },
+    {
+      "id": "11.5.1",
+      "section": "Environmental Monitoring",
+      "requirement": "An environmental monitoring program (EMP) shall be implemented for high-risk processing zones to monitor for pathogen presence. The program must specify sampling plans, corrective actions for positives, and continuous verification.",
+      "status": "CONFLICTING_EVIDENCE",
+      "evidenceFileId": "doc-004",
+      "evidenceHash": "sha256-99887766554433221100abcdef1234567890abcdef1234567890abcdef1234",
+      "evidenceLocation": "Corrective Actions Tracking Block",
+      "excerpt": "Zone 3 (Drain adjacent to Yogurt Filling Line B) returned POSITIVE for Listeria species. ... Re-swabbing conducted on Feb 16, 2026. Result: PENDING FROM LAB.",
+      "findingReason": "A positive Listeria pathogen result was identified on February 14, 2026, but the corrective action re-swab result is marked as \"PENDING\" in records from April 2026. This indicates an open, unresolved high-risk biological finding with inadequate record coverage and incomplete corrective actions. (Human verified: Verified onsite)",
+      "confidenceScore": 96,
+      "reviewerRequired": true,
+      "humanReviewStatus": "REVIEWED",
+      "governorApprovalStatus": "PENDING"
+    }
+  ],
+  "verified_clauses": [
+    "2.4.2"
+  ],
+  "expired_evidence": [
+    {
+      "clause_id": "11.2.9",
+      "file_id": "doc-001",
+      "hash": "sha256-f8d2b3a9c7162985fe20108db3c48259ef028e08d29b1d9dca4718c39d84bf0e"
+    }
+  ],
+  "missing_evidence": [
+    "11.3.1"
+  ],
+  "conflicting_evidence": [
+    {
+      "clause_id": "11.5.1",
+      "file_id": "doc-004",
+      "hash": "sha256-99887766554433221100abcdef1234567890abcdef1234567890abcdef1234"
+    }
+  ],
+  "signature_required_findings": [
+    "2.1.1",
+    "2.9.2"
+  ],
+  "unverified_physical_scope": [
+    {
+      "id": "phys-pest-traps",
+      "title": "Physical Pest Traps Map Check (Clause 11.2.9)",
+      "description": "Auditor must manually walk the plant perimeter and verify trap locations against bait maps."
+    },
+    {
+      "id": "phys-sanitizer-locks",
+      "title": "Sanitizer Chemical Cages Locks (Clause 11.5.1)",
+      "description": "Confirm chemical sanitization storage rooms are physically locked."
+    },
+    {
+      "id": "phys-gmp-hygiene",
+      "title": "On-Line Staff Hygiene & GMP Practices (Clause 2.9.2)",
+      "description": "Perform operational walkthrough observations of staff compliance (hand-washing, hairnets, jewelry)."
+    }
+  ],
+  "confidence_scores": {
+    "2.1.1": 92,
+    "2.4.2": 98,
+    "2.9.2": 94,
+    "11.2.9": 99,
+    "11.3.1": 100,
+    "11.5.1": 96
+  },
+  "ai_reasoning_summaries": {
+    "2.1.1": "The Integrated Pest Control SOP is missing the mandatory senior executive / plant governor sign-off signature, despite having QA department sign-off. SQF requires senior leadership involvement and approval. (Human verified: Verified onsite) (Governor Action: Approved. Details: Approved for site compliance pack)",
+    "2.4.2": "Comprehensive HACCP plan is documented, defines critical control limits, scientific validations, and carries appropriate practitioner and senior plant manager approvals. Effective dates are current.",
+    "2.9.2": "Trainee signatures were not captured. Digital sign-offs or alternative individual confirmation records (such as completed quiz sheets or Zoom logs with attendee lists and timestamps) are required to satisfy the \"attendee signature\" or positive attendance confirmation mandate in SQF 2.9.2.3. (Human verified: Verified onsite)",
+    "11.2.9": "The primary Integrated Pest Management SOP (APEX-SOP-Pest-Control-v2) has a specified Review Date of January 15, 2026. As the current audit date is July 10, 2026, this procedure is expired and has exceeded its mandated annual review cycle. (Human verified: Verified onsite)",
+    "11.3.1": "No water potability test records, municipal water reports, or backflow preventer inspection certificates were found among the uploaded documents. Under SQF 11.3.1, annual laboratory testing is a mandatory compliance requirement and cannot be verified without documentary proof. (Human verified: Verified onsite)",
+    "11.5.1": "A positive Listeria pathogen result was identified on February 14, 2026, but the corrective action re-swab result is marked as \"PENDING\" in records from April 2026. This indicates an open, unresolved high-risk biological finding with inadequate record coverage and incomplete corrective actions. (Human verified: Verified onsite)"
+  },
+  "corrective_actions": [
+    {
+      "id": "ca-001",
+      "gap_id": "gap-001",
+      "clause_id": "11.3.1",
+      "title": "Dispatch Water Samples for Lab Testing",
+      "description": "Collect water samples from primary processing taps and municipal intake, ship to accredited ISO 17025 lab for micro/chemical panels.",
+      "assignee": "Jane Miller (QA Manager)",
+      "due_date": "2026-07-17",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "ca-002",
+      "gap_id": "gap-002",
+      "clause_id": "11.5.1",
+      "title": "Retrieve Pending MicroSafe Lab Report",
+      "description": "Contact MicroSafe Analytics to locate the final lab report for the Feb 16 re-swabs of Line B drains.",
+      "assignee": "Jane Miller (QA Manager)",
+      "due_date": "2026-07-12",
+      "status": "OPEN"
+    },
+    {
+      "id": "ca-003",
+      "gap_id": "gap-003",
+      "clause_id": "11.2.9",
+      "title": "Review and Re-issue Pest Control SOP",
+      "description": "Conduct annual review of Pest Control SOP, update map list, routing, and submit to Executive VP for active authorization sign-off.",
+      "assignee": "Marcus Vance (VP Operations)",
+      "due_date": "2026-07-24",
+      "status": "OPEN"
+    }
+  ],
+  "assignees": [
+    "Jane Miller (QA Manager)",
+    "Marcus Vance (VP Operations)"
+  ],
+  "due_dates": [
+    "2026-07-17",
+    "2026-07-12",
+    "2026-07-24"
+  ],
+  "human_review_status": {
+    "2.1.1": "REVIEWED",
+    "2.4.2": "PENDING",
+    "2.9.2": "REVIEWED",
+    "11.2.9": "REVIEWED",
+    "11.3.1": "REVIEWED",
+    "11.5.1": "REVIEWED"
+  },
+  "practitioner_notes": {
+    "2.1.1": "Verified onsite",
+    "2.4.2": "",
+    "2.9.2": "Verified onsite",
+    "11.2.9": "Verified onsite",
+    "11.3.1": "Verified onsite",
+    "11.5.1": "Verified onsite"
+  },
+  "governor_approval_status": {
+    "2.1.1": "APPROVED",
+    "2.4.2": "PENDING",
+    "2.9.2": "PENDING",
+    "11.2.9": "PENDING",
+    "11.3.1": "PENDING",
+    "11.5.1": "PENDING"
+  },
+  "ledger_event_ids": [
+    "evt-2.1.1-0",
+    "evt-2.4.2-1",
+    "evt-2.9.2-2",
+    "evt-11.2.9-3",
+    "evt-11.3.1-4",
+    "evt-11.5.1-5",
+    "evt-2.9.2-6",
+    "evt-SYSTEM_EXPORT-7",
+    "evt-2.1.1-8",
+    "evt-SYSTEM_EXPORT-9",
+    "evt-11.2.9-10",
+    "evt-SYSTEM_EXPORT-11",
+    "evt-11.3.1-12",
+    "evt-SYSTEM_EXPORT-13",
+    "evt-11.5.1-14",
+    "evt-SYSTEM_EXPORT-15",
+    "evt-2.1.1-16"
+  ],
+  "previous_proof_pack_version": "1.0.5",
+  "artifact_hash": "d49ae6ef900f2b5845775aa7e433e1297130c6b7c3de9bce995d74066b294803",
+  "integrity_verification_result": "VERIFIED",
+  "demo_data_flag": true,
+  "limitations_and_governance_notice": "Automated AI assessments do not constitute professional certification. High-risk operational vectors require human practitioner validation.",
+  "artifact_integrity": {
+    "algorithm": "SHA-256",
+    "artifact_hash": "d49ae6ef900f2b5845775aa7e433e1297130c6b7c3de9bce995d74066b294803",
+    "calculated_at_utc": "2026-08-31T17:54:50.297Z",
+    "verification_status": "MATCH"
+  }
+}

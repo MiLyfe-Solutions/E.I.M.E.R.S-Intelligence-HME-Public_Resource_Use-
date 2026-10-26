@@ -1,0 +1,187 @@
+{
+  "combined_arithmetic_backed_mass_unchanged": "973497/1048576",
+  "common_prefix": {
+    "A": 6544422935497359190781,
+    "B": 17725876239305002191858,
+    "sum": 72,
+    "word": [
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      2,
+      4,
+      3,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      2,
+      3,
+      4,
+      3,
+      1
+    ]
+  },
+  "elapsed_seconds": 113.71912244599997,
+  "endpoint_diagnostics": 4805056,
+  "expected_rows": 4805056,
+  "failed_guard_counts": {
+    "BASE_AND_SLOPE": 4805056
+  },
+  "group_count": 66,
+  "hypothetical_extra_halvings_counts": {
+    "1": 1348864,
+    "3": 1578958,
+    "5": 1064978,
+    "6": 529543,
+    "8": 203684,
+    "9": 61616,
+    "11": 14493,
+    "12": 2569,
+    "14": 324,
+    "16": 26,
+    "17": 1
+  },
+  "interpretation": "Precision stop plus insufficient available bound, not proof of non-descent. Groups are scheduling metadata, not shared exact-word certificates. Hypothetical extra halvings are not established to be legal.",
+  "lean_status": "NOT_RUN",
+  "low20_block_occupancy_histogram": {
+    "0": 933266,
+    "13": 23701,
+    "38": 43033,
+    "56": 29211,
+    "63": 13487,
+    "64": 5878
+  },
+  "maximum_descendant_counts_not_closure_estimates": {
+    "q28": 19220224,
+    "q30": 76880896
+  },
+  "maximum_replay_valuation_checks": 140000000,
+  "mode": "READ_ONLY_RESIDUAL_DIAGNOSTIC",
+  "new_certificate_status": "NONE_CREATED",
+  "new_certification_enabled": false,
+  "new_discovery_successors": 0,
+  "newly_certified_mass": "0",
+  "overlaps": 0,
+  "parent": "3487011090801549639707 + 2^73*q, q>=0",
+  "prefix_length_counts": {
+    "16": 1348864,
+    "17": 1578958,
+    "18": 1064978,
+    "19": 529543,
+    "20": 203684,
+    "21": 61616,
+    "22": 14493,
+    "23": 2569,
+    "24": 324,
+    "25": 26,
+    "26": 1
+  },
+  "prefix_sum_counts": {
+    "16": 1,
+    "17": 17,
+    "18": 153,
+    "19": 964,
+    "20": 4743,
+    "21": 19365,
+    "22": 67941,
+    "23": 208126,
+    "24": 555230,
+    "25": 1316172,
+    "26": 2632344
+  },
+  "production_authority": "HOLD",
+  "q_precision": 26,
+  "reconstructed_stop_reasons": {
+    "PRECISION_LIMITED": 4805056
+  },
+  "recorded_stop_reasons": {
+    "PRECISION_CAP": 4805056
+  },
+  "replay_valuation_checks": 88214088,
+  "residual_is_union_of_complete_q20_cylinders": false,
+  "residual_mass": "75079/1048576",
+  "residual_rows": 4805056,
+  "residual_sha256_uncompressed_q26_membership": "96cd079f524eac0951a2259511b94e25bae0692ac4c6cf1c26a01c9c25bf4f5d",
+  "shards": [
+    {
+      "rows": 727648,
+      "seconds": 16.82193608100002,
+      "shard": 0
+    },
+    {
+      "rows": 729807,
+      "seconds": 18.08577441799997,
+      "shard": 1
+    },
+    {
+      "rows": 770912,
+      "seconds": 17.671495177999986,
+      "shard": 2
+    },
+    {
+      "rows": 746940,
+      "seconds": 17.689640879000024,
+      "shard": 3
+    },
+    {
+      "rows": 727470,
+      "seconds": 16.02153249600002,
+      "shard": 4
+    },
+    {
+      "rows": 728893,
+      "seconds": 16.729792379000003,
+      "shard": 5
+    },
+    {
+      "rows": 373386,
+      "seconds": 8.468165423000016,
+      "shard": 6
+    }
+  ],
+  "source_archive_sha256": "5c19f9c340acce3238c1c08c1970e32e0619f6e8b6fe97ba4ddc50a9356ee31f",
+  "source_members_verified": {
+    "shards/000/unresolved_q_cylinders.csv.gz": "9e2de3559540461f3bc05f5751da89a498195262c4d1db993c53f0ae10f32c02",
+    "shards/001/unresolved_q_cylinders.csv.gz": "0c7f9fda855f8ad1f12b681ea2d4ad2701f468fe0b3ac23f07f7698691bba6d0",
+    "shards/002/unresolved_q_cylinders.csv.gz": "e4599904a47d3b632ebec2599e4545ca98fcee6a97ed7545419a754d7a140584",
+    "shards/003/unresolved_q_cylinders.csv.gz": "2368b8c6b7fff940239e82e0399b3ae21e6ec9ead67f8222ab3a28ca6fa7fd45",
+    "shards/004/unresolved_q_cylinders.csv.gz": "38da64011d6386d0c2027f09496b2faf17efbcfd7fbabbbfc19dc23ab20abf16",
+    "shards/005/unresolved_q_cylinders.csv.gz": "5e926843a4917b1a14795a3c782121fc6fbce1a16fd52099f82979c5d84fd89f",
+    "shards/006/unresolved_q_cylinders.csv.gz": "f89fe340155506a41280e0fa69314198faae5079492237fb9b26ad84890bc99b"
+  },
+  "status": "RESIDUAL_DIAGNOSTIC_EXACT_ARITHMETIC_CHECKED",
+  "uniform_prefix_step_checks": 83409032,
+  "universal_collatz": "HOLD_UNPROVEN"
+}

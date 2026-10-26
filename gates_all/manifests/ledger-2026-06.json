@@ -1,0 +1,47 @@
+{
+  "chainStatus": "INTACT",
+  "activeLedger": "ledger-2026-06",
+  "recordCount": 1042,
+  "latestSequence": 1042,
+  "latestHash": "sha256:c17b…9de",
+  "recoveryAncestry": [
+    "ledger-2026-06 <- genesis"
+  ],
+  "records": [
+    {
+      "seq": 1042,
+      "type": "build.verified",
+      "evidence": "runtime",
+      "at": "2026-06-08T10:41:12Z",
+      "hash": "sha256:c17b…9de"
+    },
+    {
+      "seq": 1041,
+      "type": "build.output",
+      "evidence": "runtime",
+      "at": "2026-06-08T10:41:10Z",
+      "hash": "sha256:b0a2…41f"
+    },
+    {
+      "seq": 1039,
+      "type": "connection.verified",
+      "evidence": "provider-health",
+      "at": "2026-06-08T10:22:04Z",
+      "hash": "sha256:77de…2ac"
+    },
+    {
+      "seq": 1036,
+      "type": "git.verified",
+      "evidence": "runtime",
+      "at": "2026-06-08T09:58:41Z",
+      "hash": "sha256:3f10…8bb"
+    },
+    {
+      "seq": 1030,
+      "type": "job.created",
+      "evidence": "intent",
+      "at": "2026-06-08T09:40:00Z",
+      "hash": "sha256:1aa0…c02"
+    }
+  ]
+}

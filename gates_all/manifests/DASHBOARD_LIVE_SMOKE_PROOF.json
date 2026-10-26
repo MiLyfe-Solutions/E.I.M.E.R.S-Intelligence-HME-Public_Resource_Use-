@@ -1,0 +1,50 @@
+{
+  "dashboard_status": {
+    "status": "READY",
+    "mode": "ISOLATED_LOCAL_CHAOS_CELL",
+    "faults": [
+      "NETWORK_REQUEST_DROP",
+      "AUTH_FAIL",
+      "TENANT_ATTACK",
+      "STALE_POLICY",
+      "EVENT_OUT_OF_ORDER",
+      "DB_CRASH_PRECOMMIT",
+      "DB_CRASH_POSTCOMMIT_PREACK",
+      "NETWORK_ACK_LOSS",
+      "DUPLICATE_WRITE",
+      "ERP_FAILURE",
+      "INVENTORY_FAILURE",
+      "ACCOUNTING_FAILURE",
+      "PROCUREMENT_FAILURE",
+      "TRACEABILITY_FAILURE",
+      "RETENTION_FAILURE"
+    ],
+    "production_authority": false
+  },
+  "injected_fault": "DB_CRASH_POSTCOMMIT_PREACK",
+  "stages": [
+    "INJECTED",
+    "OBSERVED",
+    "PRESSURE_RISE",
+    "DETECTED",
+    "GOVERNOR_HOLD",
+    "ISOLATED",
+    "RECOVERY",
+    "RECOVERY",
+    "REPLAY",
+    "VERIFIED",
+    "PROOFED"
+  ],
+  "complete_verified": true,
+  "authoritative_commit_count": 1,
+  "adapter_commit_counts": {
+    "ERP": 1,
+    "INVENTORY": 1,
+    "ACCOUNTING": 1,
+    "PROCUREMENT": 1,
+    "TRACEABILITY": 1,
+    "RETENTION": 1
+  },
+  "proof_hash_sha256": "ef0d5d6b00a729fc63bd0b94b48cca0dada3681de8f29496a5b29b67175a65fc",
+  "production_authority_granted": false
+}

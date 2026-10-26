@@ -1,0 +1,8 @@
+{
+  "name": "milyfetechnologiesllc",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "firebase": "^11.x.x"
+  }
+}

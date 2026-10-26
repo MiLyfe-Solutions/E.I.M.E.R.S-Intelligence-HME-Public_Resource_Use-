@@ -1,0 +1,90 @@
+{
+  "total_scenarios": 10,
+  "passed": 10,
+  "failed": 0,
+  "success_rate": 100.0,
+  "provider_calls_allowed": 2,
+  "provider_calls_blocked": 8,
+  "test_cases": [
+    {
+      "scenario": 1,
+      "name": "Approve (review_required \u2192 accepted)",
+      "status": "EXECUTED",
+      "provider_called": true,
+      "expected_provider_call": true,
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "name": "Reject (review_required \u2192 rejected)",
+      "status": "REJECTED",
+      "provider_called": false,
+      "expected_provider_call": false,
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "name": "Return for Evidence (review_required \u2192 evidence_required)",
+      "status": "REJECTED",
+      "provider_called": false,
+      "expected_provider_call": false,
+      "passed": true
+    },
+    {
+      "scenario": 4,
+      "name": "Rerun Another (review_required \u2192 queued)",
+      "status": "REJECTED",
+      "provider_called": false,
+      "expected_provider_call": false,
+      "passed": true
+    },
+    {
+      "scenario": 5,
+      "name": "Approve After Evidence (evidence_required \u2192 accepted)",
+      "status": "EXECUTED",
+      "provider_called": true,
+      "expected_provider_call": true,
+      "passed": true
+    },
+    {
+      "scenario": 6,
+      "name": "Reject After Evidence (evidence_required \u2192 rejected)",
+      "status": "REJECTED",
+      "provider_called": false,
+      "expected_provider_call": false,
+      "passed": true
+    },
+    {
+      "scenario": 7,
+      "name": "Error - Cannot change ACCEPTED status",
+      "status": "ERROR",
+      "provider_called": false,
+      "expected_provider_call": false,
+      "passed": true
+    },
+    {
+      "scenario": 8,
+      "name": "Rejected primitives stay blocked",
+      "status": "REJECTED",
+      "provider_called": false,
+      "expected_provider_call": false,
+      "passed": true
+    },
+    {
+      "scenario": 9,
+      "name": "Queued primitives blocked",
+      "status": "REJECTED",
+      "provider_called": false,
+      "expected_provider_call": false,
+      "passed": true
+    },
+    {
+      "scenario": 10,
+      "name": "Missing decision blocks provider (FAIL-CLOSED)",
+      "status": "REJECTED",
+      "provider_called": false,
+      "expected_provider_call": false,
+      "passed": true
+    }
+  ]
+}

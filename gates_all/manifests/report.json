@@ -1,0 +1,9 @@
+{
+  "source_sha256": "2dc92c6a5decaa7c85d72b54825d05e510ed9c29975974c82a1dbd831f65bb51",
+  "sample_size": 24,
+  "sample_scope": "First 24 source CSV rows; exact integer replay on canonical representatives only.",
+  "shared_bytes": 9730,
+  "independent_bytes": 10589,
+  "lean_compilation": "NOT_RUN: lean and lake unavailable",
+  "warning": "Lean lemmas assume affine identities and inequalities. They do not prove valuation guards or full-cylinder claims."
+}

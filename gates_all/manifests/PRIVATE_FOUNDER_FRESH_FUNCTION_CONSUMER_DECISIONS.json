@@ -1,0 +1,416 @@
+{
+  "schema": "APEX_PRIVATE_FOUNDER_FRESH_FUNCTION_CONSUMER_DECISIONS_v9.2.0",
+  "version": "9.2.0",
+  "decision": "HOLD",
+  "production_authority": "NO",
+  "remediation_execution": "NOT_AUTHORIZED",
+  "role_provisioning": "NOT_AUTHORIZED",
+  "source_v911_safe_zip_sha256": "b25970668bc2fd1514cd7c776243e9ab62d20ba6976850840276e47888f6094c",
+  "source_v911_safe_report_sha256": "9cb5a077a87012c7416aaeb08179d9e4eec3ddd7d2c06dd967dcf5000f26df5a",
+  "source_private_sha256": {
+    "PRIVATE_FRESH_ACTIVE_CONSUMER_MATRIX_V9_1_1.json": "04f0339069cc5855ffa58d9ca187ba542a027dd7213fe37b724c160739000b06",
+    "PRIVATE_FRESH_PUBLIC_FUNCTION_MATRIX_V9_1_1.json": "53cdbafbd76cb37916c54e0f6fa675882315c18941b40460e455fbf176f80e0d",
+    "PRIVATE_V881_TO_V911_FUNCTION_CONSUMER_DIFF.json": "d48da1a079ca4d193a6c07550a289e406875375358c1a31cfc3a1566bfd663a0",
+    "PRIVATE_CANONICAL_SELECTION_EVIDENCE_V9_1_1.json": "87d6d5b0e31e02b6a8ff6c7874c30f32c714b5e5dcf9c14bbc1e71ad792dc0ed"
+  },
+  "session_id": "fresh-founder-review-20260924t001127z",
+  "reviewer": "joshua",
+  "acknowledgement": "I REVIEWED EVERY CURRENT ITEM AND EVERY HISTORICAL ABSENCE",
+  "exported_utc": "2026-09-24T03:35:11.327Z",
+  "consumer_decisions": [
+    {
+      "id": "consumer-f215acdb36c8c56243d1",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "consumer-18c53ae08347dbb29ca5",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "consumer-2e3eac6fa846a4c084f7",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "consumer-b619a16f28ab05dda3d9",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "consumer-20ffee55c34cbeed1aaf",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "consumer-d81dee3bb3b7343e1ad4",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "consumer-f2f41799df695edd65d7",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "consumer-04d88d645631eab58162",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "consumer-f1d1d5f5d49efc176a29",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "consumer-1e68726292e94ff3dccf",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "consumer-3c3e2dab6b688b30c1d2",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "consumer-143b776c9f7f1765f07d",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    }
+  ],
+  "function_decisions": [
+    {
+      "id": "function-a927fc6dcd7126944ceb",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-422cf1b53c5e017fa6c0",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-0220c82db656a15b5c0e",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-31f6559cb7672ce86ecd",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-01751cd02247989eb3c1",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-0e5b72f53a431613f264",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-fd1ec42336c6b713b1f3",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-339bba4d78238c0012b1",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-10bbd149bfee88cf3abe",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-d7c491e7bfc00bf12c4c",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-0269c1375181958136e2",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-beec289e011919d98b48",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-c26d5a38c34c8806d2bb",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-b2382a51f405d4cc1767",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-bd043bf2e093a798f8e2",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-3ddbaf40002a26d73498",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-5eddc2f436e3c5c6f239",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-424b020064c4279f32e5",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-f5bf62f876acaadc7f34",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-21ef219c14e1674ddeee",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-d14bdcf8b9c1581b8392",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-3a1effaeb1fd8a12a90a",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-81e21f5e3bf20cdfaede",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-82e11bdf44c6d01b413a",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-dbaef2de66dd88feb330",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-ba16a42f83f176bf0300",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-4082836750ab82c19135",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-3d31be2cd7e8b4916f00",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-53947312beadddc527f2",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-bdcf9e5502c26b2ed48f",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-fcf4a2a5c3aa9305ca14",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-e00c4f9d5a139cfde0ff",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-534364e78f502388aa13",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-28c19e7c1414bdaf7380",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-20c22c6693d75a45d6fc",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-b92c221bf2010e07ee5f",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-c0fde9f867f71fc41902",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "function-f4182d89247537eb251f",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    }
+  ],
+  "absence_decisions": [
+    {
+      "id": "absence-consumer-0068556c79e5607c8b7b",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-consumer-1ea89cb953352720e67e",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-consumer-615265e48c60a0ae460d",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-consumer-6f8ef8a1a4ce1cf13f98",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-consumer-83039e22903bf11c1403",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-consumer-a9f58608cade2cd2ec3a",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-consumer-b5e9b4a1d23bc3172028",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-function-0ba8d297762ee058fcc4",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-function-34b9823b0b7e199a9681",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-function-67e0a5f4d72d1b56ba5a",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-function-84fd5abded2f78fc16ab",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-function-c2b2bf4a235989b0bba2",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-function-e9f1e5759d38fb1ad85c",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-function-f0bcc3eaeddf06bda887",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    },
+    {
+      "id": "absence-function-fa7f364ad585ec364e39",
+      "disposition": "HOLD_REVIEW",
+      "note": "",
+      "reviewed": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "gate": 9,
+  "version": 1,
+  "title": "Actual Path to Exact Affine Endpoint",
+  "scope": "Generic ActualAccelPath endpoint identity sharing the same ContinuationWordData certificate used by Gates 8, 7, and 6.",
+  "claims": {
+    "actual_path_affine_endpoint": "LEAN_KERNEL_RECHECKED_IF_ALL_ZERO",
+    "actual_path_bound_and_affine_endpoint": "LEAN_KERNEL_RECHECKED_IF_ALL_ZERO",
+    "universal_collatz": "HOLD_UNPROVEN"
+  },
+  "next": "COMPOSE_INT_ENDPOINT_IDENTITY_WITH_GATE5_BUDGET_GUARDS"
+}

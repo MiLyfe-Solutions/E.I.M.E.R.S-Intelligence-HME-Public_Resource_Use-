@@ -1,0 +1,313 @@
+{
+  "schema": "APEX-PROOF-PACK-DEMO-1.1",
+  "classification": "LIVE ADAPTER OUTPUTS / UNATTESTED PROTOTYPE",
+  "request": "figure out what nfl team most likely to make it to the super bowl this year",
+  "constitution": "APEX Constitution v4.2.1",
+  "sop": "SOP-2026-Q3-Rev5",
+  "mode": "live",
+  "decision": "HOLD",
+  "generatedAt": "2026-10-16T16:45:44.161Z",
+  "evidence": {
+    "companyName": "",
+    "analysisPeriod": "",
+    "comparisonBasis": "Actual vs prior year",
+    "currency": "USD",
+    "materiality": "1.0% of revenue or 5.0% of EBITDA",
+    "evidenceDigest": "7bc6da61762015e78c03fdac5ae760fc6261ac30449a3b69f4069734781211a3",
+    "files": [],
+    "notesHash": null,
+    "rawEvidenceExcluded": true
+  },
+  "primitives": [
+    {
+      "id": "P01",
+      "title": "Confirm season scope and reference date",
+      "objective": "Determine which NFL season “this year” refers to and lock the evaluation date/timeframe to avoid mismatched projections.",
+      "capability": "Ask clarifying questions and establish analysis parameters (season year, current week, cutoff date).",
+      "complexity": "LOW",
+      "acceptance": [
+        "Season is explicitly defined (e.g., 2026 season / Super Bowl LXI).",
+        "Evaluation cutoff date is recorded (e.g., as of Week X / today’s date).",
+        "User confirms whether preseason, regular season, or postseason-only information should be considered."
+      ],
+      "dependencies": [],
+      "sop": "SOP-2026-Q3-Rev5",
+      "status": "blocked",
+      "progress": 100,
+      "drift": 0.1,
+      "driftSource": "heuristic",
+      "acceptanceState": "blocked",
+      "providerName": "OpenAI",
+      "model": "gpt-5.2",
+      "grade": "A1",
+      "result": "STATE: BLOCKED\n\n**Evidence (governed):**\n- User request: “what nfl team most likely to make it to the super bowl this year”\n- No season/year specified; no reference date; no indication of whether to use preseason/regular-season/postseason-only info.\n- Evidence manifest: no files attached; no machine-readable evidence provided.\n\n**Assumptions (none made):**\n- I am not assuming which NFL season “this year” refers to, nor assuming today’s date/week or what information scope to use.\n\n**Acceptance test (for P01):**\n1. Season explicitly defined (e.g., “2026 NFL season / Super Bowl LXI”) → **Not met**\n2. Evaluation cutoff date/timeframe recorded (e.g., “as of Week 7, 2026-10-16”) → **Not met**\n3. User confirms info scope (preseason vs regular season vs postseason-only) → **Not met**\n\n**Unresolved gaps (need user input to proceed):**\n1. Which season does “this year” mean?\n   - Options: **2025 season (Super Bowl LX)** or **2026 season (Super Bowl LXI)** (or specify another).\n2. What is the evaluation cutoff?\n   - Example: “**as of today (2026-10-16)**” or “as of **end of Week X**”.\n3. What information scope should I use?\n   - **Preseason+regular season to date**, **regular season only**, or **postseason-only** (once playoffs begin).",
+      "interventions": [
+        "Governed worker BLOCKED state preserved"
+      ],
+      "proof": {
+        "podId": "pod_P01_mvb758t3",
+        "inputHash": "3ad415981d148b485ac2dbbb8d7b9051d61116c95765b2a6e9313a6076fb557b",
+        "outputHash": "d50072aa980b738470b810d0986e61ded2f84dc0cc002def81a9c132603fc1d2",
+        "verifiedAt": "2026-10-16T16:43:12.471Z"
+      },
+      "provider": "openai"
+    },
+    {
+      "id": "P02",
+      "title": "Define prediction approach and allowable inputs",
+      "objective": "Select a defensible method for estimating Super Bowl appearance likelihood given no provided evidence/data.",
+      "capability": "Propose modeling approaches (market odds, Elo, power ratings, simulation) and specify required inputs and assumptions.",
+      "complexity": "MEDIUM",
+      "acceptance": [
+        "Chosen approach is stated (e.g., sportsbook implied probabilities; or ratings-based Monte Carlo).",
+        "List of required inputs is documented (team strength metric, schedule, injuries, playoff seeding rules).",
+        "Assumptions are explicit (independence, home-field adjustments, injury treatment)."
+      ],
+      "dependencies": [
+        "1"
+      ],
+      "sop": "SOP-2026-Q3-Rev5",
+      "status": "blocked",
+      "progress": 100,
+      "drift": 0,
+      "driftSource": "unmeasured",
+      "acceptanceState": "blocked",
+      "providerName": "OpenAI",
+      "model": "gpt-5.2",
+      "grade": "A1",
+      "result": "Dependency graph could not be satisfied: 1.",
+      "interventions": [
+        "Dependency graph HOLD"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "P03",
+      "title": "Acquire current probabilistic signals (odds/ratings) from approved sources",
+      "objective": "Collect up-to-date, machine-readable indicators needed to quantify Super Bowl appearance probability.",
+      "capability": "Identify and ingest external data sources (odds APIs, public power ratings) and normalize to comparable probabilities.",
+      "complexity": "HIGH",
+      "acceptance": [
+        "At least one primary source is selected (e.g., consensus futures odds) and timestamped.",
+        "If odds are used: odds are converted to implied probabilities with vigorish removal documented.",
+        "If ratings are used: team ratings and remaining schedule strength are captured in a structured table."
+      ],
+      "dependencies": [
+        "1",
+        "2"
+      ],
+      "sop": "SOP-2026-Q3-Rev5",
+      "status": "blocked",
+      "progress": 100,
+      "drift": 0,
+      "driftSource": "unmeasured",
+      "acceptanceState": "blocked",
+      "providerName": "OpenAI",
+      "model": "gpt-5.2",
+      "grade": "A1",
+      "result": "Dependency graph could not be satisfied: 1, 2.",
+      "interventions": [
+        "Dependency graph HOLD"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "P04",
+      "title": "Model playoff path and simulate conference outcomes",
+      "objective": "Estimate each team’s probability of reaching the Super Bowl by simulating remaining season, seeding, and playoff bracket.",
+      "capability": "Monte Carlo simulation or analytic bracket probability computation with NFL tiebreak/seeding logic.",
+      "complexity": "CRITICAL",
+      "acceptance": [
+        "Simulation covers regular season remainder (if applicable), produces playoff seeds, and applies current NFL playoff format.",
+        "At least 10,000 simulation runs (or justified analytic equivalent) completed with reproducible parameters.",
+        "Output includes per-team probability of winning conference (i.e., making the Super Bowl) and top-ranked team identified."
+      ],
+      "dependencies": [
+        "2",
+        "3"
+      ],
+      "sop": "SOP-2026-Q3-Rev5",
+      "status": "blocked",
+      "progress": 100,
+      "drift": 0,
+      "driftSource": "unmeasured",
+      "acceptanceState": "blocked",
+      "providerName": "OpenAI",
+      "model": "gpt-5.2",
+      "grade": "A1",
+      "result": "Dependency graph could not be satisfied: 2, 3.",
+      "interventions": [
+        "Dependency graph HOLD"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "P05",
+      "title": "Stress test and sensitivity analysis (injuries, QB status, home-field, variance)",
+      "objective": "Quantify how robust the top prediction is under plausible changes to key assumptions.",
+      "capability": "Scenario analysis, parameter sweeps, and uncertainty quantification.",
+      "complexity": "HIGH",
+      "acceptance": [
+        "At least 3 scenarios run (baseline, optimistic, pessimistic) for top 3 candidates.",
+        "Sensitivity results show probability ranges and main drivers (e.g., QB availability, strength rating ±X).",
+        "Any scenario that changes the top team is flagged and explained."
+      ],
+      "dependencies": [
+        "4"
+      ],
+      "sop": "SOP-2026-Q3-Rev5",
+      "status": "blocked",
+      "progress": 100,
+      "drift": 0,
+      "driftSource": "unmeasured",
+      "acceptanceState": "blocked",
+      "providerName": "OpenAI",
+      "model": "gpt-5.2",
+      "grade": "A1",
+      "result": "Dependency graph could not be satisfied: 4.",
+      "interventions": [
+        "Dependency graph HOLD"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "P06",
+      "title": "Deliver ranked answer with rationale and limitations",
+      "objective": "Provide the user a clear ‘most likely team’ plus runners-up, backed by quantified probabilities and transparent caveats.",
+      "capability": "Generate an executive summary from model outputs, including limitations due to data availability and timing.",
+      "complexity": "MEDIUM",
+      "acceptance": [
+        "Response names the single most likely team to make the Super Bowl and provides its estimated probability.",
+        "Includes a ranked list of top 5 teams with probabilities to make the Super Bowl.",
+        "Discloses data sources, timestamp, key assumptions, and limitations (no internal evidence provided in context)."
+      ],
+      "dependencies": [
+        "4",
+        "5"
+      ],
+      "sop": "SOP-2026-Q3-Rev5",
+      "status": "blocked",
+      "progress": 100,
+      "drift": 0,
+      "driftSource": "unmeasured",
+      "acceptanceState": "blocked",
+      "providerName": "OpenAI",
+      "model": "gpt-5.2",
+      "grade": "A1",
+      "result": "Dependency graph could not be satisfied: 4, 5.",
+      "interventions": [
+        "Dependency graph HOLD"
+      ],
+      "provider": "openai"
+    }
+  ],
+  "inspector": {
+    "assembly": "",
+    "assemblyHash": null
+  },
+  "verifier": {
+    "assessment": "",
+    "assessmentHash": null
+  },
+  "events": [
+    {
+      "id": "2d1d4e03-de8b-4f62-8065-724313aa813f",
+      "time": "16:43:12",
+      "actor": "GOVERNOR",
+      "message": "HOLD: 6 primitive(s) blocked. Missing work cannot be hidden by assembly.",
+      "tone": "bad"
+    },
+    {
+      "id": "7c698119-4d1c-4b38-8de0-3499f9c1944d",
+      "time": "16:43:12",
+      "actor": "ORCHESTRATOR",
+      "message": "P06 held because its dependency graph could not be satisfied.",
+      "tone": "bad"
+    },
+    {
+      "id": "05015604-7d12-4021-986f-f79d08cbbf94",
+      "time": "16:43:12",
+      "actor": "ORCHESTRATOR",
+      "message": "P05 held because its dependency graph could not be satisfied.",
+      "tone": "bad"
+    },
+    {
+      "id": "cc890e81-e659-4560-9a49-5303489a4bc9",
+      "time": "16:43:12",
+      "actor": "ORCHESTRATOR",
+      "message": "P04 held because its dependency graph could not be satisfied.",
+      "tone": "bad"
+    },
+    {
+      "id": "55b56af2-0252-4456-84e9-356f259fc74b",
+      "time": "16:43:12",
+      "actor": "ORCHESTRATOR",
+      "message": "P03 held because its dependency graph could not be satisfied.",
+      "tone": "bad"
+    },
+    {
+      "id": "76842ab2-e227-490e-a8b5-b97a392babc7",
+      "time": "16:43:12",
+      "actor": "ORCHESTRATOR",
+      "message": "P02 held because its dependency graph could not be satisfied.",
+      "tone": "bad"
+    },
+    {
+      "id": "5f98bbc4-18ff-47e5-b374-71290901be86",
+      "time": "16:43:12",
+      "actor": "INSPECTOR",
+      "message": "P01 Proof Pod sealed but excluded from reconstruction: worker reported missing evidence.",
+      "tone": "bad"
+    },
+    {
+      "id": "7e8a686b-c019-420d-bd61-a37b3384c71a",
+      "time": "16:43:05",
+      "actor": "OpenAI",
+      "message": "P01 accepted with SOP-2026-Q3-Rev5; worker authority locked to A1.",
+      "tone": "info"
+    },
+    {
+      "id": "68869543-c40e-4c61-a4cc-721b23fbca7f",
+      "time": "16:43:04",
+      "actor": "ORCHESTRATOR",
+      "message": "6 primitives assigned across 1 eligible model families.",
+      "tone": "good"
+    },
+    {
+      "id": "df2642c4-d7ee-49eb-b7e0-4001e94a0ba5",
+      "time": "16:43:04",
+      "actor": "ARCHITECT / SOSE",
+      "message": "Dependencies resolved. Capability, authority, grade, cost, and historical drift scored for assignment.",
+      "tone": "info"
+    },
+    {
+      "id": "093231d5-309b-4e17-a2cf-2bec0e76487f",
+      "time": "16:43:04",
+      "actor": "DECOMPOSER",
+      "message": "OpenAI produced 6 bounded primitive contracts.",
+      "tone": "good"
+    },
+    {
+      "id": "0ae3add8-3df8-44f4-b713-f289fb3767ac",
+      "time": "16:42:46",
+      "actor": "DECOMPOSER",
+      "message": "Reading the request across 24 task-root dimensions; generating executable primitive contracts.",
+      "tone": "info"
+    },
+    {
+      "id": "2c65ba1f-e1a5-416d-843f-d7e343ab0002",
+      "time": "16:42:45",
+      "actor": "EVIDENCE GATE",
+      "message": "0 file(s) registered; 0 machine-readable; 0 classified as financial data; inline/pasted dataset absent. Evidence hashes captured before decomposition.",
+      "tone": "good"
+    },
+    {
+      "id": "8cf8d8cb-215f-4669-bffe-90febdcd8ff4",
+      "time": "16:42:45",
+      "actor": "INTAKE",
+      "message": "Human request captured. Genealogy chain opened under IP-1.",
+      "tone": "good"
+    }
+  ],
+  "secretPolicy": "Provider credentials and raw uploaded evidence excluded by design."
+}

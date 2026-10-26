@@ -1,0 +1,51 @@
+{
+  "schema_version": "10.1",
+  "status": "SHADOW_DOCUMENTS_BOUND_POLICY_REGISTRATION_PENDING",
+  "customer_code": "APEX-INTERNAL",
+  "tenant_code": "APEX-TEMPLATE",
+  "department_code": null,
+  "proposed_module": {
+    "module_code": "DECISIONAL-STABILITY-SHADOW",
+    "module_name": "Decisional Stability Shadow",
+    "module_family": "stability_shadow",
+    "standalone_enabled": false
+  },
+  "constitution": {
+    "document_label": "v1.2",
+    "document_sha256": "b97555f5b97e84cba3a16574a17a2096720c2610f092a47a220dc1f3413fcb0e",
+    "api_integer_version": null,
+    "authoritative_mapping_reference": null,
+    "source_document": "constitution_v1_2.md",
+    "amendment_ledger_reference": "dbo.SOSE_Handoff; Category = 'AI Governor Constitution'",
+    "amendment_ledger_execution_verified": false
+  },
+  "sop": {
+    "api_integer_version": null,
+    "authoritative_mapping_reference": null,
+    "source_document": "SHADOW-VALIDATION-003.md",
+    "document_label": "3.0.0",
+    "job": "STABILITY-SHADOW-VALIDATION",
+    "document_sha256": "7ab5ea45dad7dfdbe1b90edf1874ef0c766f74e92ccdf66bfe3542b423f8052a",
+    "scope": "local deterministic synthetic shadow validation",
+    "production_execution_authorized": false
+  },
+  "founder_request": "Run the existing APEX decisional stability evaluation in shadow mode, preserve its source and evaluation logic, reconcile the resulting receipt and ledger, and hold operational execution until authoritative workflow bindings and approvals are verified.",
+  "idempotency_key": null,
+  "work_order_module_binding": null,
+  "worker_session_id": null,
+  "human_approval_id": null,
+  "governor_decision_id": null,
+  "verifier_assessment_ids": [],
+  "operational_key_registry_reference": null,
+  "production_authority": "HOLD",
+  "updated_at_utc": "2026-10-07T14:40:13.380138+00:00",
+  "builder": "Codex AI",
+  "unresolved": [
+    "authoritative Constitution integer API revision mapping",
+    "authoritative SOP integer API revision mapping",
+    "department ownership",
+    "work-order/module interface",
+    "real workflow identities and approvals",
+    "operational signing integration"
+  ]
+}

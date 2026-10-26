@@ -1,0 +1,6 @@
+import CPOQ.O58InfiniteClassLiftGate1
+
+#print axioms CPOQ.o58_segment33_infinite_transport_authorized
+#print axioms CPOQ.o58_segment33_residue_lattice_transport
+#print axioms CPOQ.segment_margin_transport_positive
+#print axioms CPOQ.o58_segment_guard_33

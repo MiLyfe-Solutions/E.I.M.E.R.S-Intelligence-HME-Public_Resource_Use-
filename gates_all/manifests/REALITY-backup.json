@@ -1,0 +1,1077 @@
+{
+  "format": "REALITY_LOCAL",
+  "version": 1,
+  "exportedAt": "2026-10-07T04:47:20.840Z",
+  "missions": [
+    {
+      "id": "3a07776e-51fb-419c-9415-a9d498fd3f21",
+      "schema": 1,
+      "title": "Get home after a canceled flight",
+      "key": "flight",
+      "category": "Travel",
+      "icon": "plane",
+      "problem": "My flight was canceled and I need to get home.",
+      "goal": "Replacement travel confirmed and any outstanding refund received.",
+      "demo": true,
+      "createdAt": "2026-10-07T04:46:01.480Z",
+      "deadline": "",
+      "priority": "Normal",
+      "archived": false,
+      "events": [
+        {
+          "id": "a00704a2-7b93-4cc8-b266-3a921887df47",
+          "time": "2026-10-07T04:46:01.483Z",
+          "title": "Mission created",
+          "detail": "Simulated example; no real-world action was performed."
+        },
+        {
+          "id": "b8c72506-d418-4f15-8785-afc33d3330b7",
+          "time": "2026-10-07T04:46:01.483Z",
+          "title": "Editable plan prepared",
+          "detail": "Local template selected. Outcome and requirements need your review."
+        },
+        {
+          "id": "19338794-2c1e-4993-874e-ac0bcfd0779d",
+          "time": "2026-10-07T04:46:01.483Z",
+          "title": "Simulated evidence review",
+          "detail": "Confirm the disruption"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "3b998d6a-dc41-4018-a64a-ce93d1a17721",
+          "nodeId": "975e74c8-488e-4a55-9df5-bb559732aee7",
+          "name": "Example: Reservation and cancellation notice",
+          "source": "Simulated scenario",
+          "notes": "Invented example evidence showing how a review unlocks dependent steps. No real event occurred.",
+          "time": "2026-10-07T04:46:01.483Z",
+          "simulated": true
+        }
+      ],
+      "reviews": [
+        {
+          "id": "5c6d37df-3534-47bc-b79b-46a690fb2099",
+          "evidenceId": "3b998d6a-dc41-4018-a64a-ce93d1a17721",
+          "nodeId": "975e74c8-488e-4a55-9df5-bb559732aee7",
+          "criterionId": null,
+          "status": "VERIFIED",
+          "time": "2026-10-07T04:46:01.483Z",
+          "reason": "Simulated review; for demonstration only."
+        }
+      ],
+      "notes": [],
+      "drafts": [],
+      "receipts": [],
+      "nodes": [
+        {
+          "id": "975e74c8-488e-4a55-9df5-bb559732aee7",
+          "title": "Confirm the disruption",
+          "actor": "YOU",
+          "stage": 0,
+          "proof": "Reservation and cancellation notice",
+          "deps": [],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "1ba7e951-4ab2-4af2-92b3-84edbb865e4b",
+          "title": "Compare replacement travel",
+          "actor": "YOU",
+          "stage": 1,
+          "proof": "Chosen route, total price, arrival time",
+          "deps": [
+            "975e74c8-488e-4a55-9df5-bb559732aee7"
+          ],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "e431c20a-e700-4788-90da-e6e576c208c5",
+          "title": "Request rebooking or refund",
+          "actor": "YOU",
+          "stage": 1,
+          "proof": "Submission or request confirmation",
+          "deps": [
+            "975e74c8-488e-4a55-9df5-bb559732aee7"
+          ],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "f40564c9-4b30-4075-a888-a262a49f34bb",
+          "title": "Confirm replacement booking",
+          "actor": "OUTSIDE WORLD",
+          "stage": 2,
+          "proof": "Ticket or booking confirmation",
+          "deps": [
+            "1ba7e951-4ab2-4af2-92b3-84edbb865e4b"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "6e39bf02-1fb2-48da-9d8a-c6d0dad62b6d"
+          ]
+        },
+        {
+          "id": "61755c6c-f319-4f3a-9e4d-42c0e5886777",
+          "title": "Verify money returned",
+          "actor": "OUTSIDE WORLD",
+          "stage": 2,
+          "proof": "Returned funds in transaction record",
+          "deps": [
+            "e431c20a-e700-4788-90da-e6e576c208c5"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "2994841a-3079-4355-b406-bf8c18825332"
+          ]
+        }
+      ],
+      "criteria": [
+        {
+          "id": "6e39bf02-1fb2-48da-9d8a-c6d0dad62b6d",
+          "label": "Replacement travel confirmed",
+          "weight": 65,
+          "nodeId": "f40564c9-4b30-4075-a888-a262a49f34bb",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.483Z"
+        },
+        {
+          "id": "2994841a-3079-4355-b406-bf8c18825332",
+          "label": "Any agreed refund received",
+          "weight": 35,
+          "nodeId": "61755c6c-f319-4f3a-9e4d-42c0e5886777",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.483Z"
+        }
+      ],
+      "permissions": []
+    },
+    {
+      "id": "361d609d-ab22-4527-af5b-4f5250365189",
+      "schema": 1,
+      "title": "Resolve an unfinished project",
+      "key": "contractor",
+      "category": "Home",
+      "icon": "home",
+      "problem": "My contractor took $8,000 and hasn't finished my bathroom.",
+      "goal": "Work completed to the agreed scope, or a resolution I accept documented.",
+      "demo": true,
+      "createdAt": "2026-10-07T04:46:01.496Z",
+      "deadline": "",
+      "priority": "Normal",
+      "archived": false,
+      "events": [
+        {
+          "id": "390eb8f1-8389-4c14-ae41-acd78d1dc8f7",
+          "time": "2026-10-07T04:46:01.496Z",
+          "title": "Mission created",
+          "detail": "Simulated example; no real-world action was performed."
+        },
+        {
+          "id": "9e1645eb-27de-4585-b279-ca04740d23c5",
+          "time": "2026-10-07T04:46:01.496Z",
+          "title": "Editable plan prepared",
+          "detail": "Local template selected. Outcome and requirements need your review."
+        },
+        {
+          "id": "42f5b4cd-c030-40a1-8981-6cca987ec585",
+          "time": "2026-10-07T04:46:01.496Z",
+          "title": "Simulated evidence review",
+          "detail": "Gather the agreement"
+        },
+        {
+          "id": "d3ada7da-7921-424e-ae15-1b5071a9553c",
+          "time": "2026-10-07T04:46:01.496Z",
+          "title": "Simulated evidence review",
+          "detail": "Record unfinished work"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "a0036195-0da5-44d2-8c9d-81a2bd663384",
+          "nodeId": "6f345f84-355d-45f0-99f9-16630a115461",
+          "name": "Example: Contract, invoice, or written agreement",
+          "source": "Simulated scenario",
+          "notes": "Invented example evidence showing how a review unlocks dependent steps. No real event occurred.",
+          "time": "2026-10-07T04:46:01.496Z",
+          "simulated": true
+        },
+        {
+          "id": "5995dadd-f67f-40a8-804d-96446cdb822e",
+          "nodeId": "3d481c29-18e9-49b1-b248-6d474e8cd9e6",
+          "name": "Example: Dated photos and scope comparison",
+          "source": "Simulated scenario",
+          "notes": "Invented example evidence showing how a review unlocks dependent steps. No real event occurred.",
+          "time": "2026-10-07T04:46:01.496Z",
+          "simulated": true
+        }
+      ],
+      "reviews": [
+        {
+          "id": "25c72cd1-809a-475e-a442-6cc6d211c378",
+          "evidenceId": "a0036195-0da5-44d2-8c9d-81a2bd663384",
+          "nodeId": "6f345f84-355d-45f0-99f9-16630a115461",
+          "criterionId": null,
+          "status": "VERIFIED",
+          "time": "2026-10-07T04:46:01.496Z",
+          "reason": "Simulated review; for demonstration only."
+        },
+        {
+          "id": "bcacfb1c-1158-4f90-8b1b-6b4b118be7a4",
+          "evidenceId": "5995dadd-f67f-40a8-804d-96446cdb822e",
+          "nodeId": "3d481c29-18e9-49b1-b248-6d474e8cd9e6",
+          "criterionId": null,
+          "status": "VERIFIED",
+          "time": "2026-10-07T04:46:01.496Z",
+          "reason": "Simulated review; for demonstration only."
+        }
+      ],
+      "notes": [],
+      "drafts": [],
+      "receipts": [],
+      "nodes": [
+        {
+          "id": "6f345f84-355d-45f0-99f9-16630a115461",
+          "title": "Gather the agreement",
+          "actor": "YOU",
+          "stage": 0,
+          "proof": "Contract, invoice, or written agreement",
+          "deps": [],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "3d481c29-18e9-49b1-b248-6d474e8cd9e6",
+          "title": "Record unfinished work",
+          "actor": "YOU",
+          "stage": 0,
+          "proof": "Dated photos and scope comparison",
+          "deps": [],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "4d504997-3112-419b-ab4f-0cc9a2b11e10",
+          "title": "Prepare a resolution request",
+          "actor": "REALITY",
+          "stage": 1,
+          "proof": "Draft for your review",
+          "deps": [
+            "6f345f84-355d-45f0-99f9-16630a115461",
+            "3d481c29-18e9-49b1-b248-6d474e8cd9e6"
+          ],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "0a85ac54-9512-4266-a1bb-fc5cc09ae691",
+          "title": "Agree a completion or settlement plan",
+          "actor": "OUTSIDE WORLD",
+          "stage": 2,
+          "proof": "Written agreement accepted by you",
+          "deps": [
+            "4d504997-3112-419b-ab4f-0cc9a2b11e10"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "26b83494-1d5d-4896-93d0-1aa64b7d824a"
+          ]
+        },
+        {
+          "id": "ba52adef-7816-4196-af15-8a17f318514c",
+          "title": "Confirm the agreed outcome",
+          "actor": "YOU",
+          "stage": 2,
+          "proof": "Completion review or settlement evidence",
+          "deps": [
+            "0a85ac54-9512-4266-a1bb-fc5cc09ae691"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "942d7c80-ad4b-4ed0-916f-292b04409abc"
+          ]
+        }
+      ],
+      "criteria": [
+        {
+          "id": "26b83494-1d5d-4896-93d0-1aa64b7d824a",
+          "label": "Written resolution agreed",
+          "weight": 25,
+          "nodeId": "0a85ac54-9512-4266-a1bb-fc5cc09ae691",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.496Z"
+        },
+        {
+          "id": "942d7c80-ad4b-4ed0-916f-292b04409abc",
+          "label": "Agreed outcome actually delivered",
+          "weight": 75,
+          "nodeId": "ba52adef-7816-4196-af15-8a17f318514c",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.496Z"
+        }
+      ],
+      "permissions": []
+    },
+    {
+      "id": "11151a66-834c-4efa-a0a5-f2e3ff836477",
+      "schema": 1,
+      "title": "Find my missing order",
+      "key": "order",
+      "category": "Shopping",
+      "icon": "package",
+      "problem": "My order says delivered, but I haven't received it.",
+      "goal": "The correct item received or an acceptable refund received.",
+      "demo": true,
+      "createdAt": "2026-10-07T04:46:01.500Z",
+      "deadline": "",
+      "priority": "Normal",
+      "archived": false,
+      "events": [
+        {
+          "id": "3a4144a1-7211-422f-a5c3-5dcf6c81e788",
+          "time": "2026-10-07T04:46:01.500Z",
+          "title": "Mission created",
+          "detail": "Simulated example; no real-world action was performed."
+        },
+        {
+          "id": "3fb262f8-18a1-4cbc-a56d-a2a913c539f5",
+          "time": "2026-10-07T04:46:01.500Z",
+          "title": "Editable plan prepared",
+          "detail": "Local template selected. Outcome and requirements need your review."
+        },
+        {
+          "id": "641a6d4e-32e3-4fb8-a3c4-4c39b8c4c706",
+          "time": "2026-10-07T04:46:01.500Z",
+          "title": "Simulated evidence review",
+          "detail": "Collect order details"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "6172be4c-b4b8-41e4-ac0f-3b96b3a14ebc",
+          "nodeId": "dd7e8ea0-2cfd-4235-aac2-e1d33cd57500",
+          "name": "Example: Order confirmation and delivery information",
+          "source": "Simulated scenario",
+          "notes": "Invented example evidence showing how a review unlocks dependent steps. No real event occurred.",
+          "time": "2026-10-07T04:46:01.500Z",
+          "simulated": true
+        }
+      ],
+      "reviews": [
+        {
+          "id": "2d172dc5-f38f-431a-99a1-330211d553d3",
+          "evidenceId": "6172be4c-b4b8-41e4-ac0f-3b96b3a14ebc",
+          "nodeId": "dd7e8ea0-2cfd-4235-aac2-e1d33cd57500",
+          "criterionId": null,
+          "status": "VERIFIED",
+          "time": "2026-10-07T04:46:01.500Z",
+          "reason": "Simulated review; for demonstration only."
+        }
+      ],
+      "notes": [],
+      "drafts": [],
+      "receipts": [],
+      "nodes": [
+        {
+          "id": "dd7e8ea0-2cfd-4235-aac2-e1d33cd57500",
+          "title": "Collect order details",
+          "actor": "YOU",
+          "stage": 0,
+          "proof": "Order confirmation and delivery information",
+          "deps": [],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "9df6a324-5150-4d77-bddb-87085202a19a",
+          "title": "Check available delivery evidence",
+          "actor": "YOU",
+          "stage": 1,
+          "proof": "Carrier information and delivery location",
+          "deps": [
+            "dd7e8ea0-2cfd-4235-aac2-e1d33cd57500"
+          ],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "6d864683-9d13-461d-9fc8-50a11ce08520",
+          "title": "Prepare a seller follow-up",
+          "actor": "REALITY",
+          "stage": 1,
+          "proof": "Draft describing the issue",
+          "deps": [
+            "dd7e8ea0-2cfd-4235-aac2-e1d33cd57500"
+          ],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "feb9415a-47e1-4c0b-851b-84ba6b36100a",
+          "title": "Agree replacement or refund",
+          "actor": "OUTSIDE WORLD",
+          "stage": 2,
+          "proof": "Seller confirmation",
+          "deps": [
+            "9df6a324-5150-4d77-bddb-87085202a19a",
+            "6d864683-9d13-461d-9fc8-50a11ce08520"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "2cb23a1c-1cdd-4cd8-8368-e51485053d72"
+          ]
+        },
+        {
+          "id": "7cd74fc6-0ada-4e16-8bb0-227723a4bd7f",
+          "title": "Confirm item or funds received",
+          "actor": "YOU",
+          "stage": 2,
+          "proof": "Delivery review or refund transaction",
+          "deps": [
+            "feb9415a-47e1-4c0b-851b-84ba6b36100a"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "d49854ab-49a0-4981-94ec-74674729350a"
+          ]
+        }
+      ],
+      "criteria": [
+        {
+          "id": "2cb23a1c-1cdd-4cd8-8368-e51485053d72",
+          "label": "Remedy confirmed by seller",
+          "weight": 20,
+          "nodeId": "feb9415a-47e1-4c0b-851b-84ba6b36100a",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.500Z"
+        },
+        {
+          "id": "d49854ab-49a0-4981-94ec-74674729350a",
+          "label": "Replacement or refund received",
+          "weight": 80,
+          "nodeId": "7cd74fc6-0ada-4e16-8bb0-227723a4bd7f",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.500Z"
+        }
+      ],
+      "permissions": []
+    },
+    {
+      "id": "e23fefd6-c0c2-48d5-a1d5-335eb548ed75",
+      "schema": 1,
+      "title": "Understand an unexpected medical bill",
+      "key": "medical",
+      "category": "Billing",
+      "icon": "heart",
+      "problem": "I received a medical bill I do not understand.",
+      "goal": "Charges understood and the bill resolved on terms I accept.",
+      "demo": true,
+      "createdAt": "2026-10-07T04:46:01.501Z",
+      "deadline": "",
+      "priority": "Normal",
+      "archived": false,
+      "events": [
+        {
+          "id": "145d3a24-ae55-4d10-be2d-7384dcf26c3a",
+          "time": "2026-10-07T04:46:01.501Z",
+          "title": "Mission created",
+          "detail": "Simulated example; no real-world action was performed."
+        },
+        {
+          "id": "2753fa51-a159-4422-a863-81ab85856674",
+          "time": "2026-10-07T04:46:01.501Z",
+          "title": "Editable plan prepared",
+          "detail": "Local template selected. Outcome and requirements need your review."
+        },
+        {
+          "id": "278cdcac-5df8-4ce2-9efd-ed2a8ea84133",
+          "time": "2026-10-07T04:46:01.501Z",
+          "title": "Simulated evidence review",
+          "detail": "Collect billing documents"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "d6e2bcd5-f51f-4352-acaa-a761885ac8e0",
+          "nodeId": "fe1d734b-0c64-4a21-ad50-468ad846c255",
+          "name": "Example: Itemized bill and applicable benefit statement",
+          "source": "Simulated scenario",
+          "notes": "Invented example evidence showing how a review unlocks dependent steps. No real event occurred.",
+          "time": "2026-10-07T04:46:01.501Z",
+          "simulated": true
+        }
+      ],
+      "reviews": [
+        {
+          "id": "cf643aa5-e8a4-442a-802f-9c2f3c080fdc",
+          "evidenceId": "d6e2bcd5-f51f-4352-acaa-a761885ac8e0",
+          "nodeId": "fe1d734b-0c64-4a21-ad50-468ad846c255",
+          "criterionId": null,
+          "status": "VERIFIED",
+          "time": "2026-10-07T04:46:01.501Z",
+          "reason": "Simulated review; for demonstration only."
+        }
+      ],
+      "notes": [],
+      "drafts": [],
+      "receipts": [],
+      "nodes": [
+        {
+          "id": "fe1d734b-0c64-4a21-ad50-468ad846c255",
+          "title": "Collect billing documents",
+          "actor": "YOU",
+          "stage": 0,
+          "proof": "Itemized bill and applicable benefit statement",
+          "deps": [],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "022a2c0d-3180-40a7-9e5b-f089d863776f",
+          "title": "Compare charges and questions",
+          "actor": "YOU",
+          "stage": 1,
+          "proof": "Documented comparison reviewed by you",
+          "deps": [
+            "fe1d734b-0c64-4a21-ad50-468ad846c255"
+          ],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "f06c65d6-9e0c-4942-9560-f2414549c0f1",
+          "title": "Prepare questions for billing",
+          "actor": "REALITY",
+          "stage": 1,
+          "proof": "Reviewable request for clarification",
+          "deps": [
+            "022a2c0d-3180-40a7-9e5b-f089d863776f"
+          ],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "9429c296-e2ed-4546-847d-88e6b9332e5c",
+          "title": "Receive a billing response",
+          "actor": "OUTSIDE WORLD",
+          "stage": 2,
+          "proof": "Provider or insurer response",
+          "deps": [
+            "f06c65d6-9e0c-4942-9560-f2414549c0f1"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "263dfcaa-6153-4680-bdd8-382e3f9a969b"
+          ]
+        },
+        {
+          "id": "425c5445-0f9f-4652-9c1b-64e6c1db7946",
+          "title": "Verify final bill resolution",
+          "actor": "YOU",
+          "stage": 2,
+          "proof": "Corrected balance, payment receipt, or agreement",
+          "deps": [
+            "9429c296-e2ed-4546-847d-88e6b9332e5c"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "54e09366-b16d-4d88-a12c-577b1398f6d7"
+          ]
+        }
+      ],
+      "criteria": [
+        {
+          "id": "263dfcaa-6153-4680-bdd8-382e3f9a969b",
+          "label": "Charges explained or corrected",
+          "weight": 40,
+          "nodeId": "9429c296-e2ed-4546-847d-88e6b9332e5c",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.501Z"
+        },
+        {
+          "id": "54e09366-b16d-4d88-a12c-577b1398f6d7",
+          "label": "Final balance or agreement verified",
+          "weight": 60,
+          "nodeId": "425c5445-0f9f-4652-9c1b-64e6c1db7946",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.501Z"
+        }
+      ],
+      "permissions": []
+    },
+    {
+      "id": "d7dc516f-8171-40b0-9c2a-6d3f382ba992",
+      "schema": 1,
+      "title": "Get my car moving again",
+      "key": "car",
+      "category": "Transport",
+      "icon": "car",
+      "problem": "My car won't start and I am stranded.",
+      "goal": "I am in a safe location and transport or repairs are confirmed.",
+      "demo": true,
+      "createdAt": "2026-10-07T04:46:01.506Z",
+      "deadline": "",
+      "priority": "Normal",
+      "archived": false,
+      "events": [
+        {
+          "id": "7fa3e98f-040f-42af-8cc1-c6f7ccc75fd0",
+          "time": "2026-10-07T04:46:01.506Z",
+          "title": "Mission created",
+          "detail": "Simulated example; no real-world action was performed."
+        },
+        {
+          "id": "3963ec72-5d38-46fe-bd7c-94ba5506925d",
+          "time": "2026-10-07T04:46:01.506Z",
+          "title": "Editable plan prepared",
+          "detail": "Local template selected. Outcome and requirements need your review."
+        },
+        {
+          "id": "c3306985-0722-4d66-8aab-cbe2c0c96cb3",
+          "time": "2026-10-07T04:46:01.506Z",
+          "title": "Simulated evidence review",
+          "detail": "Confirm immediate safety"
+        },
+        {
+          "id": "523bc23f-3bfc-4fb1-b6a3-3a29aad96f69",
+          "time": "2026-10-07T04:46:01.506Z",
+          "title": "Simulated evidence review",
+          "detail": "Record symptoms and location"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "f322814e-b011-4e33-9fc4-3876c29526e0",
+          "nodeId": "e5be91f2-cc4c-4c69-a4bd-a721feb084a2",
+          "name": "Example: Your safety confirmation",
+          "source": "Simulated scenario",
+          "notes": "Invented example evidence showing how a review unlocks dependent steps. No real event occurred.",
+          "time": "2026-10-07T04:46:01.506Z",
+          "simulated": true
+        },
+        {
+          "id": "8bd76957-99aa-4beb-bf90-ab636e07c708",
+          "nodeId": "98da9c3d-6b34-478f-bc3a-49c59fdc165f",
+          "name": "Example: Location and observed symptoms",
+          "source": "Simulated scenario",
+          "notes": "Invented example evidence showing how a review unlocks dependent steps. No real event occurred.",
+          "time": "2026-10-07T04:46:01.506Z",
+          "simulated": true
+        }
+      ],
+      "reviews": [
+        {
+          "id": "bbd37d89-f2e1-4aa8-a918-3cc6bfbf666a",
+          "evidenceId": "f322814e-b011-4e33-9fc4-3876c29526e0",
+          "nodeId": "e5be91f2-cc4c-4c69-a4bd-a721feb084a2",
+          "criterionId": "ea61c5dc-f098-40ad-afb5-b65349017bfb",
+          "status": "VERIFIED",
+          "time": "2026-10-07T04:46:01.506Z",
+          "reason": "Simulated review; for demonstration only."
+        },
+        {
+          "id": "6cc385c3-bcfc-4899-ad18-edccd6931f4a",
+          "evidenceId": "8bd76957-99aa-4beb-bf90-ab636e07c708",
+          "nodeId": "98da9c3d-6b34-478f-bc3a-49c59fdc165f",
+          "criterionId": null,
+          "status": "VERIFIED",
+          "time": "2026-10-07T04:46:01.506Z",
+          "reason": "Simulated review; for demonstration only."
+        }
+      ],
+      "notes": [],
+      "drafts": [],
+      "receipts": [],
+      "nodes": [
+        {
+          "id": "e5be91f2-cc4c-4c69-a4bd-a721feb084a2",
+          "title": "Confirm immediate safety",
+          "actor": "YOU",
+          "stage": 0,
+          "proof": "Your safety confirmation",
+          "deps": [],
+          "attempts": [],
+          "criterionIds": [
+            "ea61c5dc-f098-40ad-afb5-b65349017bfb"
+          ]
+        },
+        {
+          "id": "98da9c3d-6b34-478f-bc3a-49c59fdc165f",
+          "title": "Record symptoms and location",
+          "actor": "YOU",
+          "stage": 0,
+          "proof": "Location and observed symptoms",
+          "deps": [],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "03a72042-f0d6-4289-ae53-a1b8a5c2ee8b",
+          "title": "Choose help or transportation",
+          "actor": "YOU",
+          "stage": 1,
+          "proof": "Selected provider and cost reviewed",
+          "deps": [
+            "e5be91f2-cc4c-4c69-a4bd-a721feb084a2",
+            "98da9c3d-6b34-478f-bc3a-49c59fdc165f"
+          ],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "31e70fa2-1e9e-48f5-9bab-7541817539a8",
+          "title": "Confirm assistance arranged",
+          "actor": "OUTSIDE WORLD",
+          "stage": 2,
+          "proof": "Dispatch, booking, or appointment confirmation",
+          "deps": [
+            "03a72042-f0d6-4289-ae53-a1b8a5c2ee8b"
+          ],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "8bc31447-7deb-4537-9008-a4d02c99ec75",
+          "title": "Verify transport or repair",
+          "actor": "YOU",
+          "stage": 2,
+          "proof": "Arrival or completed repair confirmation",
+          "deps": [
+            "31e70fa2-1e9e-48f5-9bab-7541817539a8"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "6d6ca6fc-9107-43d5-8193-530484ebeb2e"
+          ]
+        }
+      ],
+      "criteria": [
+        {
+          "id": "ea61c5dc-f098-40ad-afb5-b65349017bfb",
+          "label": "Safe location confirmed",
+          "weight": 30,
+          "nodeId": "e5be91f2-cc4c-4c69-a4bd-a721feb084a2",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.506Z"
+        },
+        {
+          "id": "6d6ca6fc-9107-43d5-8193-530484ebeb2e",
+          "label": "Transport or repair completed",
+          "weight": 70,
+          "nodeId": "8bc31447-7deb-4537-9008-a4d02c99ec75",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.506Z"
+        }
+      ],
+      "permissions": []
+    },
+    {
+      "id": "d2545454-3744-4bba-8beb-7a388048ee2f",
+      "schema": 1,
+      "title": "Make the move happen",
+      "key": "move",
+      "category": "Life",
+      "icon": "move",
+      "problem": "I need to move to another state in three weeks.",
+      "goal": "Move completed, belongings received, and essential services ready.",
+      "demo": true,
+      "createdAt": "2026-10-07T04:46:01.507Z",
+      "deadline": "",
+      "priority": "Normal",
+      "archived": false,
+      "events": [
+        {
+          "id": "c575db16-cba5-4e01-a1a7-a4473f8b615f",
+          "time": "2026-10-07T04:46:01.509Z",
+          "title": "Mission created",
+          "detail": "Simulated example; no real-world action was performed."
+        },
+        {
+          "id": "a8a74dca-a9df-4a22-b444-f087e0406d9b",
+          "time": "2026-10-07T04:46:01.509Z",
+          "title": "Editable plan prepared",
+          "detail": "Local template selected. Outcome and requirements need your review."
+        },
+        {
+          "id": "d8931aeb-c88e-4a4f-b5ae-2001d8b43a61",
+          "time": "2026-10-07T04:46:01.509Z",
+          "title": "Simulated evidence review",
+          "detail": "Define the move requirements"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "e6f90a12-f043-4c8b-9f77-1461aaeea6b7",
+          "nodeId": "b116ade6-b597-4f4d-b451-ac4a702799bd",
+          "name": "Example: Dates, locations, inventory, and budget",
+          "source": "Simulated scenario",
+          "notes": "Invented example evidence showing how a review unlocks dependent steps. No real event occurred.",
+          "time": "2026-10-07T04:46:01.509Z",
+          "simulated": true
+        }
+      ],
+      "reviews": [
+        {
+          "id": "b773daa9-c99e-4b08-976a-4b15a18b9889",
+          "evidenceId": "e6f90a12-f043-4c8b-9f77-1461aaeea6b7",
+          "nodeId": "b116ade6-b597-4f4d-b451-ac4a702799bd",
+          "criterionId": null,
+          "status": "VERIFIED",
+          "time": "2026-10-07T04:46:01.509Z",
+          "reason": "Simulated review; for demonstration only."
+        }
+      ],
+      "notes": [],
+      "drafts": [],
+      "receipts": [],
+      "nodes": [
+        {
+          "id": "b116ade6-b597-4f4d-b451-ac4a702799bd",
+          "title": "Define the move requirements",
+          "actor": "YOU",
+          "stage": 0,
+          "proof": "Dates, locations, inventory, and budget",
+          "deps": [],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "d21fdd1c-fce6-437f-a3cb-4d094a4b8139",
+          "title": "Select a moving plan",
+          "actor": "YOU",
+          "stage": 1,
+          "proof": "Chosen approach and quotes reviewed",
+          "deps": [
+            "b116ade6-b597-4f4d-b451-ac4a702799bd"
+          ],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "5c121e02-34e3-49e0-a8dd-9686999b37c1",
+          "title": "Confirm transport and handover",
+          "actor": "OUTSIDE WORLD",
+          "stage": 2,
+          "proof": "Bookings and handover agreements",
+          "deps": [
+            "d21fdd1c-fce6-437f-a3cb-4d094a4b8139"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "214286d4-0c91-45f9-81af-74dad0ec9c42"
+          ]
+        },
+        {
+          "id": "e2522c63-279d-4459-b008-2711190e3b09",
+          "title": "Confirm belongings received",
+          "actor": "YOU",
+          "stage": 2,
+          "proof": "Receipt and inventory check",
+          "deps": [
+            "5c121e02-34e3-49e0-a8dd-9686999b37c1"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "3405ec15-a0c8-4bf5-9b7d-8fce4a950535"
+          ]
+        },
+        {
+          "id": "e0fcb6b1-71b7-4a5f-a3bc-7d5419224ba7",
+          "title": "Confirm essentials ready",
+          "actor": "YOU",
+          "stage": 2,
+          "proof": "Your review of housing and necessary services",
+          "deps": [
+            "5c121e02-34e3-49e0-a8dd-9686999b37c1"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "9da88a6b-6722-4027-8e67-dca9b7f055cb"
+          ]
+        }
+      ],
+      "criteria": [
+        {
+          "id": "214286d4-0c91-45f9-81af-74dad0ec9c42",
+          "label": "Transport and handover confirmed",
+          "weight": 20,
+          "nodeId": "5c121e02-34e3-49e0-a8dd-9686999b37c1",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.509Z"
+        },
+        {
+          "id": "3405ec15-a0c8-4bf5-9b7d-8fce4a950535",
+          "label": "Belongings received",
+          "weight": 45,
+          "nodeId": "e2522c63-279d-4459-b008-2711190e3b09",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.509Z"
+        },
+        {
+          "id": "9da88a6b-6722-4027-8e67-dca9b7f055cb",
+          "label": "Essential services ready",
+          "weight": 35,
+          "nodeId": "e0fcb6b1-71b7-4a5f-a3bc-7d5419224ba7",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.509Z"
+        }
+      ],
+      "permissions": []
+    },
+    {
+      "id": "d9ea0763-354e-4952-95f9-1503bed526ff",
+      "schema": 1,
+      "title": "Plan a small food business",
+      "key": "food",
+      "category": "Business",
+      "icon": "food",
+      "problem": "I want to start selling my homemade cookies.",
+      "goal": "Applicable requirements checked with authoritative sources and a launch plan reviewed.",
+      "demo": true,
+      "createdAt": "2026-10-07T04:46:01.512Z",
+      "deadline": "",
+      "priority": "Normal",
+      "archived": false,
+      "events": [
+        {
+          "id": "4cb77477-a250-4548-b9fe-0144b30adf51",
+          "time": "2026-10-07T04:46:01.512Z",
+          "title": "Mission created",
+          "detail": "Simulated example; no real-world action was performed."
+        },
+        {
+          "id": "4eaefce3-4073-4dde-87f9-1b69ec4cc359",
+          "time": "2026-10-07T04:46:01.512Z",
+          "title": "Editable plan prepared",
+          "detail": "Local template selected. Outcome and requirements need your review."
+        },
+        {
+          "id": "02866e1f-75b7-4bf0-ab15-b93c1b609651",
+          "time": "2026-10-07T04:46:01.512Z",
+          "title": "Simulated evidence review",
+          "detail": "Define products and sales channels"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "89d260e5-9fbb-4fb4-b63b-2a2a9be12ed4",
+          "nodeId": "95ebe293-1dda-4cf2-bd20-5af86914247f",
+          "name": "Example: Products, location, channels, and production plan",
+          "source": "Simulated scenario",
+          "notes": "Invented example evidence showing how a review unlocks dependent steps. No real event occurred.",
+          "time": "2026-10-07T04:46:01.512Z",
+          "simulated": true
+        }
+      ],
+      "reviews": [
+        {
+          "id": "458dd2ea-2c89-417b-b321-c06006b2eb3a",
+          "evidenceId": "89d260e5-9fbb-4fb4-b63b-2a2a9be12ed4",
+          "nodeId": "95ebe293-1dda-4cf2-bd20-5af86914247f",
+          "criterionId": null,
+          "status": "VERIFIED",
+          "time": "2026-10-07T04:46:01.512Z",
+          "reason": "Simulated review; for demonstration only."
+        }
+      ],
+      "notes": [],
+      "drafts": [],
+      "receipts": [],
+      "nodes": [
+        {
+          "id": "95ebe293-1dda-4cf2-bd20-5af86914247f",
+          "title": "Define products and sales channels",
+          "actor": "YOU",
+          "stage": 0,
+          "proof": "Products, location, channels, and production plan",
+          "deps": [],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "c5778dd9-b2ec-4828-9fd9-c1dd941d9c9f",
+          "title": "Check applicable requirements",
+          "actor": "YOU",
+          "stage": 1,
+          "proof": "Current official sources or qualified review",
+          "deps": [
+            "95ebe293-1dda-4cf2-bd20-5af86914247f"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "ccf13a24-44c7-4b7b-9ddd-febd842b05ea"
+          ]
+        },
+        {
+          "id": "041c8d79-738d-4c2a-a586-75f628fa3c63",
+          "title": "Prepare a launch plan",
+          "actor": "REALITY",
+          "stage": 1,
+          "proof": "Draft plan for your review",
+          "deps": [
+            "95ebe293-1dda-4cf2-bd20-5af86914247f"
+          ],
+          "attempts": [],
+          "criterionIds": []
+        },
+        {
+          "id": "4d4c2131-6802-4c07-9970-5bcfc53440df",
+          "title": "Confirm required permissions",
+          "actor": "OUTSIDE WORLD",
+          "stage": 2,
+          "proof": "Applicable permits or written determination",
+          "deps": [
+            "c5778dd9-b2ec-4828-9fd9-c1dd941d9c9f"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "f340e230-7ba4-4326-bf5a-983313559307"
+          ]
+        },
+        {
+          "id": "8fec5042-41a4-4b92-a84a-21181834361a",
+          "title": "Review readiness to launch",
+          "actor": "YOU",
+          "stage": 2,
+          "proof": "Documented review of applicable requirements",
+          "deps": [
+            "041c8d79-738d-4c2a-a586-75f628fa3c63",
+            "4d4c2131-6802-4c07-9970-5bcfc53440df"
+          ],
+          "attempts": [],
+          "criterionIds": [
+            "37730026-0567-41c3-be27-f487f008ce2b"
+          ]
+        }
+      ],
+      "criteria": [
+        {
+          "id": "ccf13a24-44c7-4b7b-9ddd-febd842b05ea",
+          "label": "Requirements checked against official sources",
+          "weight": 30,
+          "nodeId": "c5778dd9-b2ec-4828-9fd9-c1dd941d9c9f",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.512Z"
+        },
+        {
+          "id": "f340e230-7ba4-4326-bf5a-983313559307",
+          "label": "Applicable permissions confirmed",
+          "weight": 30,
+          "nodeId": "4d4c2131-6802-4c07-9970-5bcfc53440df",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.512Z"
+        },
+        {
+          "id": "37730026-0567-41c3-be27-f487f008ce2b",
+          "label": "Launch readiness reviewed",
+          "weight": 40,
+          "nodeId": "8fec5042-41a4-4b92-a84a-21181834361a",
+          "required": true,
+          "createdAt": "2026-10-07T04:46:01.512Z"
+        }
+      ],
+      "permissions": []
+    }
+  ],
+  "attachments": []
+}

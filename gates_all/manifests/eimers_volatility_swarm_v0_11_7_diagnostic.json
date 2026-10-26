@@ -1,0 +1,64 @@
+{
+  "authority": "SHADOW_ONLY_NO_PROMOTION",
+  "decision": "HOLD_DEVELOPMENT_SET_ALREADY_EXAMINED",
+  "external_availability_pace_weather_inputs": "NOT_PRESENT",
+  "inputs_sha256": {
+    "cache/schedules.csv": "4eb48e2e9674a7072b1253308ddf70d7939ce83214be1804a92be2b85a07b88a",
+    "data/penalty_team_game.csv": "fb261997c35bef2e6ca68ed11d741e49452190a44a06a38a75d1db13b91779ff",
+    "historical_replay.py": "809c6472ef3b948d4061633ee8862ee23bb46ed89965156842f79d82321ffb6c"
+  },
+  "method": "WALK_FORWARD_WEEKLY_FREEZE_PRIOR_ERRORS_ONLY",
+  "models": {
+    "context_risk": {
+      "classified": 272,
+      "high": {
+        "n": 72,
+        "rmse": 13.9931163603068,
+        "tail_rate": 0.16666666666666666
+      },
+      "low": {
+        "n": 200,
+        "rmse": 13.238231021631906,
+        "tail_rate": 0.145
+      },
+      "passes_diagnostic_gate": false,
+      "rmse_ratio": 1.0570231277457973
+    },
+    "linear_risk": {
+      "classified": 272,
+      "high": {
+        "n": 72,
+        "rmse": 11.721746090619725,
+        "tail_rate": 0.1111111111111111
+      },
+      "low": {
+        "n": 200,
+        "rmse": 14.009911892790157,
+        "tail_rate": 0.165
+      },
+      "passes_diagnostic_gate": false,
+      "rmse_ratio": 0.8366752182540149
+    },
+    "margin_risk": {
+      "classified": 272,
+      "high": {
+        "n": 72,
+        "rmse": 13.714387815016345,
+        "tail_rate": 0.1527777777777778
+      },
+      "low": {
+        "n": 200,
+        "rmse": 13.342825586125581,
+        "tail_rate": 0.15
+      },
+      "passes_diagnostic_gate": false,
+      "rmse_ratio": 1.0278473421159855
+    }
+  },
+  "note": "Multiple candidates examined on 2025; any apparent pass is discovery only, never confirmation.",
+  "reportable_source_leakage_flag_count": 0,
+  "schema": "eimers.swarm_volatility_diagnostic.v1",
+  "scope": "2025_DIAGNOSTIC_ONLY",
+  "source_timestamp_provenance_verified": false,
+  "withheld": []
+}

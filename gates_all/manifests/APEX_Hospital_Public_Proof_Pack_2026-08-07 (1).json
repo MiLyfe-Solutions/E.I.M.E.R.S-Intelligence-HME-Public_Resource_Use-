@@ -1,0 +1,716 @@
+{
+  "product": "APEX Hospital Staffing & Bed Control",
+  "demoVersion": "APEX-HOSPITAL-PUBLIC-DEMO-2.1.0",
+  "generatedAt": "2026-08-07T04:08:29.540Z",
+  "facility": {
+    "name": "NorthStar Regional Medical Center",
+    "jurisdiction": "Michigan demonstration",
+    "shift": "day"
+  },
+  "publicBoundary": {
+    "containsProprietaryDecisionLogic": false,
+    "containsPrivateEquations": false,
+    "containsPrivateWeights": false,
+    "privateDecisionServiceRequiredInProduction": true,
+    "statement": "Public proof contains decisions, authority, evidence references, outcomes, and integrity links only."
+  },
+  "operatingSummary": {
+    "shift": "day",
+    "licensedBeds": 306,
+    "occupiedBeds": 252,
+    "verifiedStaffedBeds": 265,
+    "openBeds": 13,
+    "patientsWaiting": 11,
+    "operatingStatus": "ACTION REQUIRED",
+    "requiredPosts": 147,
+    "assignedPosts": 147,
+    "openGaps": 0,
+    "activeReferencePack": "Federal + accreditation framework"
+  },
+  "floorRules": [
+    {
+      "id": "OBS",
+      "floor": "2",
+      "wing": "Central",
+      "name": "Emergency Observation",
+      "careType": "Observation",
+      "licensedBeds": 20,
+      "hospitalMaxPatientsPerRN": 4,
+      "maxPatientsPerCareTech": 8,
+      "chargeRNs": 1,
+      "rtPosts": 0,
+      "equipmentBeds": 20,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    },
+    {
+      "id": "MED-A",
+      "floor": "3",
+      "wing": "East",
+      "name": "Medical A",
+      "careType": "Medical / surgical",
+      "licensedBeds": 36,
+      "hospitalMaxPatientsPerRN": 5,
+      "maxPatientsPerCareTech": 8,
+      "chargeRNs": 1,
+      "rtPosts": 0,
+      "equipmentBeds": 36,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    },
+    {
+      "id": "MED-B",
+      "floor": "3",
+      "wing": "West",
+      "name": "Medical B",
+      "careType": "Medical / surgical",
+      "licensedBeds": 36,
+      "hospitalMaxPatientsPerRN": 5,
+      "maxPatientsPerCareTech": 8,
+      "chargeRNs": 1,
+      "rtPosts": 0,
+      "equipmentBeds": 36,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    },
+    {
+      "id": "SURG",
+      "floor": "4",
+      "wing": "Central",
+      "name": "Surgical / Orthopedic",
+      "careType": "Medical / surgical",
+      "licensedBeds": 36,
+      "hospitalMaxPatientsPerRN": 5,
+      "maxPatientsPerCareTech": 8,
+      "chargeRNs": 1,
+      "rtPosts": 0,
+      "equipmentBeds": 36,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    },
+    {
+      "id": "TEL",
+      "floor": "5",
+      "wing": "East",
+      "name": "Cardiac Telemetry",
+      "careType": "Telemetry / cardiac",
+      "licensedBeds": 32,
+      "hospitalMaxPatientsPerRN": 4,
+      "maxPatientsPerCareTech": 8,
+      "chargeRNs": 1,
+      "rtPosts": 0,
+      "equipmentBeds": 32,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    },
+    {
+      "id": "CSDU",
+      "floor": "5",
+      "wing": "West",
+      "name": "Cardiac Step-down",
+      "careType": "Step-down / progressive",
+      "licensedBeds": 20,
+      "hospitalMaxPatientsPerRN": 3,
+      "maxPatientsPerCareTech": 7,
+      "chargeRNs": 1,
+      "rtPosts": 1,
+      "equipmentBeds": 20,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    },
+    {
+      "id": "NEURO",
+      "floor": "6",
+      "wing": "Central",
+      "name": "Neurology / Stroke",
+      "careType": "Specialty care",
+      "licensedBeds": 30,
+      "hospitalMaxPatientsPerRN": 4,
+      "maxPatientsPerCareTech": 8,
+      "chargeRNs": 1,
+      "rtPosts": 0,
+      "equipmentBeds": 30,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    },
+    {
+      "id": "MICU",
+      "floor": "7",
+      "wing": "West",
+      "name": "Medical ICU",
+      "careType": "Critical care",
+      "licensedBeds": 12,
+      "hospitalMaxPatientsPerRN": 2,
+      "maxPatientsPerCareTech": 6,
+      "chargeRNs": 1,
+      "rtPosts": 1,
+      "equipmentBeds": 12,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    },
+    {
+      "id": "SICU",
+      "floor": "7",
+      "wing": "East",
+      "name": "Surgical ICU",
+      "careType": "Critical care",
+      "licensedBeds": 12,
+      "hospitalMaxPatientsPerRN": 2,
+      "maxPatientsPerCareTech": 6,
+      "chargeRNs": 1,
+      "rtPosts": 1,
+      "equipmentBeds": 12,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    },
+    {
+      "id": "NCCU",
+      "floor": "8",
+      "wing": "West",
+      "name": "Neuro ICU",
+      "careType": "Critical care",
+      "licensedBeds": 12,
+      "hospitalMaxPatientsPerRN": 2,
+      "maxPatientsPerCareTech": 6,
+      "chargeRNs": 1,
+      "rtPosts": 1,
+      "equipmentBeds": 12,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    },
+    {
+      "id": "CICU",
+      "floor": "8",
+      "wing": "East",
+      "name": "Cardiac ICU",
+      "careType": "Critical care",
+      "licensedBeds": 12,
+      "hospitalMaxPatientsPerRN": 2,
+      "maxPatientsPerCareTech": 6,
+      "chargeRNs": 1,
+      "rtPosts": 1,
+      "equipmentBeds": 12,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    },
+    {
+      "id": "WC",
+      "floor": "9",
+      "wing": "Central",
+      "name": "Women & Children",
+      "careType": "Women & children",
+      "licensedBeds": 24,
+      "hospitalMaxPatientsPerRN": 4,
+      "maxPatientsPerCareTech": 8,
+      "chargeRNs": 1,
+      "rtPosts": 0,
+      "equipmentBeds": 24,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    },
+    {
+      "id": "BH",
+      "floor": "10",
+      "wing": "Secure",
+      "name": "Behavioral Health",
+      "careType": "Behavioral health",
+      "licensedBeds": 24,
+      "hospitalMaxPatientsPerRN": 6,
+      "maxPatientsPerCareTech": 8,
+      "chargeRNs": 1,
+      "rtPosts": 0,
+      "equipmentBeds": 24,
+      "reference": {
+        "value": null,
+        "text": "Needs-based qualified staffing; no fixed federal number",
+        "source": "Federal / accreditation framework"
+      }
+    }
+  ],
+  "pods": [
+    {
+      "podId": "POD-20260807005922-0001",
+      "timestamp": "2026-08-07T00:59:22.177Z",
+      "hour": "2026-08-06T20:00",
+      "category": "System",
+      "action": "Hospital demo session opened",
+      "actor": "APEX Demo Runtime",
+      "authority": "Demo initialization",
+      "source": "Local synthetic dataset",
+      "status": "RECORDED",
+      "summary": "Loaded the synthetic hospital floor, staffing, bed, and source configuration.",
+      "before": null,
+      "after": null,
+      "privateRecordId": "PRIVATE-0637B2FE",
+      "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "c07d1e3938aa8fb7db22573de73bd7fc9d856d91fc793238479073385aa05bd5"
+    },
+    {
+      "podId": "POD-20260807010622-0002",
+      "timestamp": "2026-08-07T01:06:22.179Z",
+      "hour": "2026-08-06T21:00",
+      "category": "Patient Flow",
+      "action": "Patient location snapshot received",
+      "actor": "ADT Interface",
+      "authority": "Connected source",
+      "source": "Synthetic ADT snapshot",
+      "status": "CURRENT",
+      "summary": "Received the current patient census and unit location snapshot.",
+      "before": null,
+      "after": null,
+      "privateRecordId": "PRIVATE-BD441E43",
+      "previousHash": "c07d1e3938aa8fb7db22573de73bd7fc9d856d91fc793238479073385aa05bd5",
+      "hash": "69dbce369f84a917968a79459783c232c0857cb7208be659b276138dac56c228"
+    },
+    {
+      "podId": "POD-20260807011222-0003",
+      "timestamp": "2026-08-07T01:12:22.179Z",
+      "hour": "2026-08-06T21:00",
+      "category": "Staffing",
+      "action": "Workforce availability snapshot received",
+      "actor": "Workforce Interface",
+      "authority": "Connected source",
+      "source": "Synthetic workforce snapshot",
+      "status": "CURRENT",
+      "summary": "Received availability, hours, shift, and labor-class records.",
+      "before": null,
+      "after": null,
+      "privateRecordId": "PRIVATE-C6B61C8C",
+      "previousHash": "69dbce369f84a917968a79459783c232c0857cb7208be659b276138dac56c228",
+      "hash": "f892fb0318813e6081ea6e375a9e34defe570d1de1272a7f71d6b4db6170425b"
+    },
+    {
+      "podId": "POD-20260807011922-0004",
+      "timestamp": "2026-08-07T01:19:22.179Z",
+      "hour": "2026-08-06T21:00",
+      "category": "Staffing",
+      "action": "Credential status reconciled",
+      "actor": "Credentialing Interface",
+      "authority": "Connected source",
+      "source": "Synthetic credential registry",
+      "status": "CURRENT",
+      "summary": "Matched active licenses and unit competencies to the proposed roster.",
+      "before": null,
+      "after": null,
+      "privateRecordId": "PRIVATE-5D20506D",
+      "previousHash": "f892fb0318813e6081ea6e375a9e34defe570d1de1272a7f71d6b4db6170425b",
+      "hash": "7744f92dd1692aab58db9edf474d56b7852c3ea42d633cdea0fef017d0c5cfe6"
+    },
+    {
+      "podId": "POD-20260807012522-0005",
+      "timestamp": "2026-08-07T01:25:22.179Z",
+      "hour": "2026-08-06T21:00",
+      "category": "Bed Control",
+      "action": "Room readiness snapshot received",
+      "actor": "EVS Interface",
+      "authority": "Connected source",
+      "source": "Synthetic EVS status",
+      "status": "CURRENT",
+      "summary": "Received occupied, ready, cleaning, held, and maintenance room states.",
+      "before": null,
+      "after": null,
+      "privateRecordId": "PRIVATE-A5CD63DC",
+      "previousHash": "7744f92dd1692aab58db9edf474d56b7852c3ea42d633cdea0fef017d0c5cfe6",
+      "hash": "d8dfb42897dac76ea90cab945675480b4a916f8d8a11b4490e30ce544e3275a2"
+    },
+    {
+      "podId": "POD-20260807021722-0006",
+      "timestamp": "2026-08-07T02:17:22.180Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Proof",
+      "action": "Hourly POD collection sealed",
+      "actor": "Automated Proof Collector",
+      "authority": "Proof pack authority",
+      "source": "POD receipt chain",
+      "status": "SEALED",
+      "summary": "Sealed the open POD collection for 2026-08-06T21:00.",
+      "before": null,
+      "after": null,
+      "privateRecordId": "PRIVATE-87F8BE15",
+      "previousHash": "d8dfb42897dac76ea90cab945675480b4a916f8d8a11b4490e30ce544e3275a2",
+      "hash": "ada447edc686d79f32eceef456bf34000a034f578dac6dad73f9715cec77ab76"
+    },
+    {
+      "podId": "POD-20260807021722-0007",
+      "timestamp": "2026-08-07T02:17:22.180Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Staffing",
+      "action": "Staffing proposal generated",
+      "actor": "APEX Scheduling Service",
+      "authority": "Proposal only",
+      "source": "Approved floor rules and synthetic workforce records",
+      "status": "REVIEW",
+      "summary": "Generated a qualified staffing proposal. Human authorization remains required.",
+      "before": null,
+      "after": null,
+      "privateRecordId": "PRIVATE-F83883A9",
+      "previousHash": "ada447edc686d79f32eceef456bf34000a034f578dac6dad73f9715cec77ab76",
+      "hash": "a28f27f28704d6e8426cda592ca15be2f35ec101888e597802662548a9e2bf63"
+    },
+    {
+      "podId": "POD-20260807021722-0008",
+      "timestamp": "2026-08-07T02:17:22.180Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Patient Flow",
+      "action": "Bed placement view refreshed",
+      "actor": "APEX Bed Control Service",
+      "authority": "Recommendation only",
+      "source": "Synthetic patient and room records",
+      "status": "RECORDED",
+      "summary": "Ranked open rooms by floor capability and current operating status.",
+      "before": null,
+      "after": null,
+      "privateRecordId": "PRIVATE-290CD768",
+      "previousHash": "a28f27f28704d6e8426cda592ca15be2f35ec101888e597802662548a9e2bf63",
+      "hash": "15316e4831cc2d7829648d6e8cbf421a377ba0da9d7743bb35b2b8f76f14505d"
+    },
+    {
+      "podId": "POD-20260807022159-0009",
+      "timestamp": "2026-08-07T02:21:59.746Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Staffing",
+      "action": "RN call-off received",
+      "actor": "Demo Staffing Office",
+      "authority": "Call-off intake",
+      "source": "Synthetic workforce event",
+      "status": "ACTION REQUIRED",
+      "summary": "Casey Lee became unavailable on OBS; the staffing proposal was regenerated.",
+      "before": {
+        "employeeId": "EMP-0007",
+        "unit": "OBS",
+        "available": true
+      },
+      "after": {
+        "employeeId": "EMP-0007",
+        "unit": "OBS",
+        "available": false
+      },
+      "privateRecordId": "PRIVATE-574D6E68",
+      "previousHash": "15316e4831cc2d7829648d6e8cbf421a377ba0da9d7743bb35b2b8f76f14505d",
+      "hash": "b1ae236ac84d0b66cdc02870f4b1304bc84d20407545aecfd565419bbd1f704e"
+    },
+    {
+      "podId": "POD-20260807022201-0010",
+      "timestamp": "2026-08-07T02:22:01.604Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Staffing",
+      "action": "RN call-off received",
+      "actor": "Demo Staffing Office",
+      "authority": "Call-off intake",
+      "source": "Synthetic workforce event",
+      "status": "ACTION REQUIRED",
+      "summary": "Jordan Lee became unavailable on OBS; the staffing proposal was regenerated.",
+      "before": {
+        "employeeId": "EMP-0002",
+        "unit": "OBS",
+        "available": true
+      },
+      "after": {
+        "employeeId": "EMP-0002",
+        "unit": "OBS",
+        "available": false
+      },
+      "privateRecordId": "PRIVATE-EBC35D6F",
+      "previousHash": "b1ae236ac84d0b66cdc02870f4b1304bc84d20407545aecfd565419bbd1f704e",
+      "hash": "f426aa9137fa8af81150083223b9316d01f11371b0026e06f261c786c536eb9a"
+    },
+    {
+      "podId": "POD-20260807022203-0011",
+      "timestamp": "2026-08-07T02:22:03.073Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Staffing",
+      "action": "Staffing proposal regenerated",
+      "actor": "APEX Scheduling Service",
+      "authority": "Proposal only",
+      "source": "Approved floor rules and workforce records",
+      "status": "REVIEW",
+      "summary": "Rebuilt the staffing proposal using current patient demand, qualifications, availability, and cost options.",
+      "before": {
+        "run": 1
+      },
+      "after": {
+        "run": 2
+      },
+      "privateRecordId": "PRIVATE-6290817D",
+      "previousHash": "f426aa9137fa8af81150083223b9316d01f11371b0026e06f261c786c536eb9a",
+      "hash": "7b7155113f3f341a01bc5dfd7a751ee0aa7651eff1c2d4b4781cecf70ddc7963"
+    },
+    {
+      "podId": "POD-20260807022204-0012",
+      "timestamp": "2026-08-07T02:22:04.059Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Staffing",
+      "action": "RN call-off received",
+      "actor": "Demo Staffing Office",
+      "authority": "Call-off intake",
+      "source": "Synthetic workforce event",
+      "status": "ACTION REQUIRED",
+      "summary": "Drew Lee became unavailable on OBS; the staffing proposal was regenerated.",
+      "before": {
+        "employeeId": "EMP-0008",
+        "unit": "OBS",
+        "available": true
+      },
+      "after": {
+        "employeeId": "EMP-0008",
+        "unit": "OBS",
+        "available": false
+      },
+      "privateRecordId": "PRIVATE-1C6501DE",
+      "previousHash": "7b7155113f3f341a01bc5dfd7a751ee0aa7651eff1c2d4b4781cecf70ddc7963",
+      "hash": "49ca81481e438a2c727a105cc73485de5d0282edbaa63fe11c2a6d0325cbd7aa"
+    },
+    {
+      "podId": "POD-20260807022205-0013",
+      "timestamp": "2026-08-07T02:22:05.603Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Staffing",
+      "action": "RN call-off received",
+      "actor": "Demo Staffing Office",
+      "authority": "Call-off intake",
+      "source": "Synthetic workforce event",
+      "status": "ACTION REQUIRED",
+      "summary": "Morgan Lee became unavailable on OBS; the staffing proposal was regenerated.",
+      "before": {
+        "employeeId": "EMP-0003",
+        "unit": "OBS",
+        "available": true
+      },
+      "after": {
+        "employeeId": "EMP-0003",
+        "unit": "OBS",
+        "available": false
+      },
+      "privateRecordId": "PRIVATE-66ABEEC3",
+      "previousHash": "49ca81481e438a2c727a105cc73485de5d0282edbaa63fe11c2a6d0325cbd7aa",
+      "hash": "d186b974ec6d42f0553e69e8c305a77a37be3af886a90f44ad08f1c44eff797e"
+    },
+    {
+      "podId": "POD-20260807022206-0014",
+      "timestamp": "2026-08-07T02:22:06.106Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Staffing",
+      "action": "Proposed schedule exported",
+      "actor": "Demo Operator",
+      "authority": "Schedule export permission",
+      "source": "Proposed schedule",
+      "status": "RECORDED",
+      "summary": "Exported the proposed synthetic schedule as CSV.",
+      "before": null,
+      "after": null,
+      "privateRecordId": "PRIVATE-320995D8",
+      "previousHash": "d186b974ec6d42f0553e69e8c305a77a37be3af886a90f44ad08f1c44eff797e",
+      "hash": "5ec8f63e4ed4cbba3a2064a51bb6c49f1911040af2d9b139fe4e27911aceaa75"
+    },
+    {
+      "podId": "POD-20260807022251-0015",
+      "timestamp": "2026-08-07T02:22:51.232Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Staffing",
+      "action": "RN call-off received",
+      "actor": "Demo Staffing Office",
+      "authority": "Call-off intake",
+      "source": "Synthetic workforce event",
+      "status": "ACTION REQUIRED",
+      "summary": "Taylor Lee became unavailable on OBS; the staffing proposal was regenerated.",
+      "before": {
+        "employeeId": "EMP-0004",
+        "unit": "OBS",
+        "available": true
+      },
+      "after": {
+        "employeeId": "EMP-0004",
+        "unit": "OBS",
+        "available": false
+      },
+      "privateRecordId": "PRIVATE-031C9ED0",
+      "previousHash": "5ec8f63e4ed4cbba3a2064a51bb6c49f1911040af2d9b139fe4e27911aceaa75",
+      "hash": "81fdba91e0e15f9ff0a560dcb36cfffdc68ab71ad47c49d68e58b68fb7762788"
+    },
+    {
+      "podId": "POD-20260807022630-0016",
+      "timestamp": "2026-08-07T02:26:30.673Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Policy",
+      "action": "Hospital setup changed",
+      "actor": "Demo Policy Owner",
+      "authority": "Configuration permission",
+      "source": "Floor standards configuration",
+      "status": "REVIEW",
+      "summary": "Updated baselineWaiting; current floor rules require renewed approval.",
+      "before": {
+        "baselineWaiting": 9
+      },
+      "after": {
+        "baselineWaiting": 8
+      },
+      "privateRecordId": "PRIVATE-3A84AAD3",
+      "previousHash": "81fdba91e0e15f9ff0a560dcb36cfffdc68ab71ad47c49d68e58b68fb7762788",
+      "hash": "81c3c7114091ce09d83041d107f62c325e763a745181097d242c91009771e7e3"
+    },
+    {
+      "podId": "POD-20260807022803-0017",
+      "timestamp": "2026-08-07T02:28:03.346Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Policy",
+      "action": "Hospital setup changed",
+      "actor": "Demo Policy Owner",
+      "authority": "Configuration permission",
+      "source": "Floor standards configuration",
+      "status": "REVIEW",
+      "summary": "Updated referencePack; current floor rules require renewed approval.",
+      "before": {
+        "referencePack": "custom"
+      },
+      "after": {
+        "referencePack": "national"
+      },
+      "privateRecordId": "PRIVATE-0B89DECF",
+      "previousHash": "81c3c7114091ce09d83041d107f62c325e763a745181097d242c91009771e7e3",
+      "hash": "2f229faebd97be3fb07aa7bbedd0d7ac38e45a17ed61ccdb61383c59f86fad49"
+    },
+    {
+      "podId": "POD-20260807022809-0018",
+      "timestamp": "2026-08-07T02:28:09.373Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Policy",
+      "action": "Hospital setup changed",
+      "actor": "Demo Policy Owner",
+      "authority": "Configuration permission",
+      "source": "Floor standards configuration",
+      "status": "REVIEW",
+      "summary": "Updated baselineWaiting; current floor rules require renewed approval.",
+      "before": {
+        "baselineWaiting": 8
+      },
+      "after": {
+        "baselineWaiting": 9
+      },
+      "privateRecordId": "PRIVATE-B1DDB804",
+      "previousHash": "2f229faebd97be3fb07aa7bbedd0d7ac38e45a17ed61ccdb61383c59f86fad49",
+      "hash": "e243bc8370f278fa2dce7877a175b98689f68ef07227b55965860ed04c5de950"
+    },
+    {
+      "podId": "POD-20260807022815-0019",
+      "timestamp": "2026-08-07T02:28:15.055Z",
+      "hour": "2026-08-06T22:00",
+      "category": "System",
+      "action": "Demo scenario saved locally",
+      "actor": "Demo Operator",
+      "authority": "Local demo permission",
+      "source": "Browser storage",
+      "status": "RECORDED",
+      "summary": "Saved the current synthetic demo scenario in this browser.",
+      "before": null,
+      "after": null,
+      "privateRecordId": "PRIVATE-DE51B122",
+      "previousHash": "e243bc8370f278fa2dce7877a175b98689f68ef07227b55965860ed04c5de950",
+      "hash": "79b8f182f00a7429b6e69d950bfe7ef05e89c9879d534fbd1a7969f47c7ec5b5"
+    },
+    {
+      "podId": "POD-20260807022816-0020",
+      "timestamp": "2026-08-07T02:28:16.147Z",
+      "hour": "2026-08-06T22:00",
+      "category": "System",
+      "action": "Demo scenario saved locally",
+      "actor": "Demo Operator",
+      "authority": "Local demo permission",
+      "source": "Browser storage",
+      "status": "RECORDED",
+      "summary": "Saved the current synthetic demo scenario in this browser.",
+      "before": null,
+      "after": null,
+      "privateRecordId": "PRIVATE-CA3F53FF",
+      "previousHash": "79b8f182f00a7429b6e69d950bfe7ef05e89c9879d534fbd1a7969f47c7ec5b5",
+      "hash": "f05047c605a17d7b873d23607e5a8feaeeaed3e8348aa674d32e121899354511"
+    },
+    {
+      "podId": "POD-20260807022818-0021",
+      "timestamp": "2026-08-07T02:28:18.909Z",
+      "hour": "2026-08-06T22:00",
+      "category": "Proof",
+      "action": "Public proof pack exported",
+      "actor": "Demo Operator",
+      "authority": "Proof export permission",
+      "source": "Public POD chain",
+      "status": "RECORDED",
+      "summary": "Exported the public-safe proof pack. Private decision calculations were not included.",
+      "before": null,
+      "after": {
+        "publicPackHash": "ceff88c128546d925dc32ba7e3e25028a4c373339ec4112020959f8a243afb81"
+      },
+      "privateRecordId": "PRIVATE-B05A3779",
+      "previousHash": "f05047c605a17d7b873d23607e5a8feaeeaed3e8348aa674d32e121899354511",
+      "hash": "43743aa62d00d9d4423651aba077a45bea14a47711abb4987cffdc3bf27f838f"
+    }
+  ],
+  "hourlyPacks": [
+    {
+      "packId": "HP-202608062100-01",
+      "hour": "2026-08-06T21:00",
+      "sequence": 1,
+      "part": 1,
+      "podCount": 4,
+      "podIds": [
+        "POD-20260807010622-0002",
+        "POD-20260807011222-0003",
+        "POD-20260807011922-0004",
+        "POD-20260807012522-0005"
+      ],
+      "collectionRoot": "79a47a686b7e89a1e3407c993c84a93df55dd9e388455d1922f87d050e2a7d10",
+      "previousPackHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sealedAt": "2026-08-07T02:17:22.180Z",
+      "sealedBy": "Automated Proof Collector",
+      "status": "SEALED",
+      "packHash": "e42d269a35907a411115548ef86bfac05377d20b389d95596b20f598a75b9454"
+    }
+  ],
+  "verification": {
+    "podOk": true,
+    "packOk": true,
+    "ok": true
+  },
+  "valueModel": {
+    "confidenceAdjustedAnnualValue": 5137936.319999999,
+    "annualPlatform": 850000,
+    "implementation": 950000,
+    "disclaimer": "Modeled opportunity, not guaranteed savings"
+  },
+  "publicPackHash": "9959d6587cfbeaa939fbc56b9a7394705ac1ea3c4d93bc0fee1ea8ae2d583440"
+}

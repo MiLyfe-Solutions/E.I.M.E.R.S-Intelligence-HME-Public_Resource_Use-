@@ -1,0 +1,60 @@
+{
+  "scope": "V87/V88 local snapshot, NOT V100 live Mac frontier",
+  "utc": "2026-10-10T07:04:14.512042+00:00",
+  "results": [
+    {
+      "test": "record-identity",
+      "status": "PASS",
+      "evidence": "1024 unique records"
+    },
+    {
+      "test": "independent-arithmetic",
+      "status": "PASS",
+      "evidence": "1024 exact trajectory and affine identities"
+    },
+    {
+      "test": "false-certificate-gate",
+      "status": "PASS",
+      "evidence": "0 false certificates in fixed seven-step source"
+    },
+    {
+      "test": "lift-stability",
+      "status": "PASS",
+      "evidence": "566 stable congruence lifts"
+    },
+    {
+      "test": "malformed-input",
+      "status": "PASS",
+      "evidence": "6 invalid input types rejected"
+    },
+    {
+      "test": "partition-adversary",
+      "status": "PASS",
+      "evidence": "complete/omitted/duplicate child partition discrimination"
+    },
+    {
+      "test": "strict-certificate-inequality",
+      "status": "PASS",
+      "evidence": "all 1024 fail strict class-wide fixed-step descent"
+    },
+    {
+      "test": "frontier-coverage",
+      "status": "PASS",
+      "evidence": "complete odd [1,2047] subset (one quarter of integer residue universe mod 4096)"
+    },
+    {
+      "test": "ambiguity-witnesses",
+      "status": "PASS",
+      "evidence": "638 groups, 126 ambiguous sixth valuations"
+    },
+    {
+      "test": "source-integrity",
+      "status": "PASS",
+      "evidence": "dd5b733034bc5c8d6d625b8cfb7985fe81c0a721ece2befdad51ed405435bee3"
+    }
+  ],
+  "passed": 10,
+  "failed": 0,
+  "universal_theorem": "HOLD_UNPROVEN",
+  "v100_acceptance": "HOLD_REMOTE_ACCESS_BLOCKED"
+}

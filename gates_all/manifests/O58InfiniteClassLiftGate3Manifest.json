@@ -1,0 +1,78 @@
+{
+  "gate": "CPOQ Infinite-Class Lift - Gate 3",
+  "segment_guard": 33,
+  "parent_modulus_bits": 73,
+  "prefix_steps": 46,
+  "prefix_valuation_sum": 72,
+  "step47_refinement_depth": 12,
+  "partition_modulus": 4096,
+  "exact_branches": [
+    {
+      "valuation": 1,
+      "q_residue": 1,
+      "q_modulus": 2
+    },
+    {
+      "valuation": 2,
+      "q_residue": 2,
+      "q_modulus": 4
+    },
+    {
+      "valuation": 3,
+      "q_residue": 0,
+      "q_modulus": 8
+    },
+    {
+      "valuation": 4,
+      "q_residue": 4,
+      "q_modulus": 16
+    },
+    {
+      "valuation": 5,
+      "q_residue": 28,
+      "q_modulus": 32
+    },
+    {
+      "valuation": 6,
+      "q_residue": 44,
+      "q_modulus": 64
+    },
+    {
+      "valuation": 7,
+      "q_residue": 76,
+      "q_modulus": 128
+    },
+    {
+      "valuation": 8,
+      "q_residue": 12,
+      "q_modulus": 256
+    },
+    {
+      "valuation": 9,
+      "q_residue": 140,
+      "q_modulus": 512
+    },
+    {
+      "valuation": 10,
+      "q_residue": 908,
+      "q_modulus": 1024
+    },
+    {
+      "valuation": 11,
+      "q_residue": 1420,
+      "q_modulus": 2048
+    },
+    {
+      "valuation": 12,
+      "q_residue": 396,
+      "q_modulus": 4096
+    }
+  ],
+  "deep_branch": {
+    "q_residue": 2444,
+    "q_modulus": 4096,
+    "valuation_lower_bound": 13
+  },
+  "coverage": "complete over q mod 4096 at depth 12",
+  "universal_collatz": "HOLD_UNPROVEN"
+}

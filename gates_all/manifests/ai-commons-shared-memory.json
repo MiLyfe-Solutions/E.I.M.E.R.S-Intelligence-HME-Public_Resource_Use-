@@ -1,0 +1,1155 @@
+{
+  "source": {
+    "name": "Memory.xlsx",
+    "embeddedAt": "2026-09-10T17:00:14.995Z",
+    "recordCount": 229,
+    "mode": "governed-snapshot"
+  },
+  "records": [
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 1,
+      "text": "APEX AOS GOVERNING HIERARCHY"
+    },
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 2,
+      "text": "Authoritative branch structure: APEX AOS contains the Constitutional Core; the Governing Circuit contains interoperable APEX systems expressed through AUGL."
+    },
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 4,
+      "text": "Level | Parent | Node / Branch | Role | May Modify Core? | Authority Source | Interaction Standard | Status"
+    },
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 5,
+      "text": "0 | — | APEX AOS | Supreme governed operating system boundary | ONLY BY EXPLICIT CORE WORK ORDER | Founder authority + constitutional process | AUGL / governed circuit | ACTIVE"
+    },
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 6,
+      "text": "1 | APEX AOS | Constitutional Core | Constitution, Commandments, Pillars, Laws, runtime authority and immutable governing controls | YES — only when explicitly targeted | APEX Constitution | AUGL | LOCKED / VERSIONED"
+    },
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 7,
+      "text": "2 | Constitutional Core | Governing Circuit | Governs state, pressure, readiness, propagation, memory, proof, identity and controlled interactions | NO silent modification | Patents 1–3 + Constitution | AUGL | ACTIVE"
+    },
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 8,
+      "text": "3 | Governing Circuit | Vera | Joshua’s Personal Governed Intelligence across the APEX ecosystem | NO | Worker envelope + project authority | AUGL | ACTIVE"
+    },
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 9,
+      "text": "3 | Governing Circuit | APEX360 | APEX work/project/collaboration environment analogous to M365 inside APEX | NO | Project/work-order authority | AUGL | ACTIVE"
+    },
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 10,
+      "text": "3 | Governing Circuit | AI Team Office | Governed multi-AI work orchestration and approval environment | NO | AI worker contracts + approvals | AUGL | ACTIVE"
+    },
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 11,
+      "text": "3 | Governing Circuit | APEX Additions | Governed proposal → approval → locked build → verification → release tool | NO | Approved proposal + change orders | AUGL | PLANNED / BUILDING"
+    },
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 12,
+      "text": "3 | Governing Circuit | Memory / Current Truth / Recall | Contextual persistent memory, primitive assembly, validation and current-state projection | NO | Memory lifecycle + proof rules | AUGL | ACTIVE / EVOLVING"
+    },
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 13,
+      "text": "3 | Governing Circuit | Proof Packs / POD / SOSE | Action evidence, full story memory, and shift continuity | NO | Evidence ladder + proof chain | AUGL | ACTIVE"
+    },
+    {
+      "sheet": "APEX_AOS_Hierarchy",
+      "row": 14,
+      "text": "3 | Governing Circuit | External Surfaces | M365, Excel, Teams, SharePoint, APIs, devices and external models operating under APEX authority | NO | Connector envelope + least privilege | AUGL adapters | CONTROLLED"
+    },
+    {
+      "sheet": "Live_Standing_Register",
+      "row": 1,
+      "text": "APEX LIVE STANDING REGISTER"
+    },
+    {
+      "sheet": "Live_Standing_Register",
+      "row": 2,
+      "text": "One current, visible standing for every governed object. Historical changes remain in Change_Log; this register shows the latest approved state."
+    },
+    {
+      "sheet": "Live_Standing_Register",
+      "row": 4,
+      "text": "Standing_ID | Object_Type | Object_ID | Object_Name | Parent_Object_ID | Current_Status | Current_Revision | Current_Truth_State | Owner | Assigned_AI | Current_Project_ID | Current_Work_Order_ID | Last_Changed_At | Last_Changed_By | Change_Log_ID | Core_Impact"
+    },
+    {
+      "sheet": "Live_Standing_Register",
+      "row": 5,
+      "text": "STAND-AOS-001 | SYSTEM | APEX-AOS | APEX AOS | — | ACTIVE | v1.0 | CURRENT_TRUTH | Joshua Eimers | — | — | — | 2026-08-04T16:39:41.060000 | SUBJECT-ZERO-0001 | CHG-BOOTSTRAP-001 | PROTECTED"
+    },
+    {
+      "sheet": "Live_Standing_Register",
+      "row": 6,
+      "text": "STAND-CIR-001 | RUNTIME | GOVERNING-CIRCUIT | APEX Governing Circuit | APEX-AOS | ACTIVE | v1.0 | CURRENT_TRUTH | Joshua Eimers | VERA-0001 | PRJ-EXCEL-MEMORY-001 | WO-PENDING | 2026-08-04T16:39:41.060000 | CHATGPT-ARCHITECT | CHG-BOOTSTRAP-002 | NO CORE CHANGE"
+    },
+    {
+      "sheet": "Live_Standing_Register",
+      "row": 7,
+      "text": "STAND-WBK-001 | WORKBOOK | APEX-MEMORY-CIRCUIT | APEX Master Memory Circuit | GOVERNING-CIRCUIT | BUILDING | v0.3 | VERIFIED_SCHEMA_TRUTH | Joshua Eimers | CHATGPT-ARCHITECT | PRJ-EXCEL-MEMORY-001 | WO-EXCEL-REV-001 | 2026-08-04T16:39:41.060000 | CHATGPT-ARCHITECT | CHG-BOOTSTRAP-003 | NO CORE CHANGE"
+    },
+    {
+      "sheet": "Live_Standing_Register",
+      "row": 8,
+      "text": "STAND-COWORK-001 | WORKBOOK | APEX-AI-HUMAN-COWORK | APEX AI & Human Co-Work Master Memory | GOVERNING-CIRCUIT | CANDIDATE | v1.0 | VERIFIED_SCHEMA_TRUTH | Joshua Eimers | GPT-0001 | PRJ-AI-HUMAN-COWORK-001 | WO-COWORK-001 | 2026-08-05T15:09:13.203000 | GPT-0001 | CHG-COWORK-001 | NO CORE CHANGE"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 1,
+      "text": "AI & HUMAN CO-WORK GOVERNING CHARTER"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 2,
+      "text": "Binding rules for every human and AI using this workbook. Work is append-only, attributable, reviewable, and proof-linked."
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 4,
+      "text": "Rule_ID | Binding Rule | Required Behavior | Prohibited Behavior | Failure Response | Owner | Status | Version"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 5,
+      "text": "COWORK-001 | NEVER DELETE | Never delete rows, cells, sheets, records, comments, evidence, or prior wording. Preserve history. | Deletion, silent overwrite, clearing prior evidence, removing disagreement. | STOP work; mark HOLD; notify human owner; record attempted change in Change_Log. | Founder / Governor | ACTIVE | v1.0"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 6,
+      "text": "COWORK-002 | CROSS OUT + SIGN + DATE | When a statement changes, apply strikethrough to the prior statement, retain it, add Superseded_By, Changed_By, Changed_At, reason, and append the replacement. | Editing history so the previous state disappears. | Reject change until attribution and date are present. | All workers | ACTIVE | v1.0"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 7,
+      "text": "COWORK-003 | APPEND-ONLY CHANGE LOG | Every material change receives a Change_Log_ID and revision entry before release. | Unlogged changes or retroactive undocumented edits. | Mark output UNGOVERNED / HOLD. | AI Supervisor | ACTIVE | v1.0"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 8,
+      "text": "COWORK-004 | READ JOB BEFORE WORK | Every AI reads the Charter, current task, worker envelope, project directive, relevant SOP, current truth, and prior handoff before acting. | Starting from memory alone or assuming scope. | Do not execute; create acceptance record first. | AI worker | ACTIVE | v1.0"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 9,
+      "text": "COWORK-005 | ONE TASK OWNER | Every task has one accountable owner and named contributors/reviewers. | Orphan tasks or conflicting silent edits. | Route to human owner for assignment. | Task owner | ACTIVE | v1.0"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 10,
+      "text": "COWORK-006 | HANDOFF WITH CONTEXT | Each handoff states what was requested, completed, verified, not verified, blockers, next action, files, and proof IDs. | “Done” without evidence or unresolved gaps. | Return handoff for completion. | Outgoing worker | ACTIVE | v1.0"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 11,
+      "text": "COWORK-007 | PROOF BEFORE CLAIM | Use evidence classes and truth states. Never promote a design, prototype, narrative, or terminal-attested claim beyond its evidence. | Overclaiming runtime, deployment, validation, autonomy, or approval. | Downgrade truth state and log correction. | Governor / Reviewer | ACTIVE | v1.0"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 12,
+      "text": "COWORK-008 | FAIL CLOSED ON RED FLAGS | Unauthorized changes, missing proof, conflicting truth, security risk, constitutional conflict, or core-impact uncertainty stop execution. | Self-approval or bypassing holds. | Set RED_FLAG/HOLD and escalate to Joshua/founder. | All workers | ACTIVE | v1.0"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 13,
+      "text": "COWORK-009 | LEAST PRIVILEGE | Use only tools, files, systems, and data needed for the assigned job. | Broad access, unrelated searches, credential exposure. | Revoke action and record incident. | Supervisor / Governor | ACTIVE | v1.0"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 14,
+      "text": "COWORK-010 | HUMAN AUTHORITY | Humans set purpose and approve high-impact decisions. AI may recommend, draft, test, and execute only within delegated authority. | AI changing protected architecture, policy, money, people, legal, safety, or production controls without approval. | HOLD pending named human approval. | Joshua / delegated owner | ACTIVE | v1.0"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 15,
+      "text": "COWORK-011 | NO ARCHITECTURE DRIFT | Read and follow established APEX architecture. Treat suspected issues as hypotheses until traced and proven. | Renaming/reorganizing APEX because it looks unconventional. | Document hypothesis; do not change. | Architect / Governor | ACTIVE | v1.0"
+    },
+    {
+      "sheet": "AI_Human_CoWork_Charter",
+      "row": 16,
+      "text": "COWORK-012 | STAMP EVERY INTERACTION | Every governed AI work session or material interaction receives worker ID, timestamp, project/task IDs, acceptance, outcome, and proof/change references. | Anonymous or unattributed AI work. | Output cannot be promoted to current truth. | AI Office | ACTIVE | v1.0"
+    },
+    {
+      "sheet": "Team_Task_Board",
+      "row": 1,
+      "text": "TEAM TASK BOARD"
+    },
+    {
+      "sheet": "Team_Task_Board",
+      "row": 2,
+      "text": "Shared task contract for human and AI teammates. One row per task version; supersede rather than delete."
+    },
+    {
+      "sheet": "Team_Task_Board",
+      "row": 4,
+      "text": "Task_ID | Parent_Task_ID | Project_ID | Task_Title | Human_Request | Success_Criteria | Priority | Risk_Level | Human_Owner | Accountable_AI | Contributors | Reviewer | Required_References | Allowed_Tools | Prohibited_Actions | Due_Date | Approval_State | Proof_Pack_ID | Last_Handoff_ID | Status | Created_At | Updated_At"
+    },
+    {
+      "sheet": "Team_Task_Board",
+      "row": 5,
+      "text": "TASK-COWORK-001 | — | PRJ-AI-HUMAN-COWORK-001 | Governed AI-human teamwork workbook | Create a file AI workers can use together to complete human tasks. | Workbook includes immutable change rules, task routing, handoffs, acceptance, proof, and seeded company knowledge. | CRITICAL | HIGH | Joshua Eimers | GPT-0001 | Future AI workers | Joshua Eimers | Charter; Change_Log; APEX standards; attached memory archive | Excel; approved AI tools; attached files | No deletion; no silent overwrite; no core architecture changes | PENDING_HUMAN | PP-COWORK-001 | HO-COWORK-001 | COMPLETE | 2026-08-05T15:09:12.562000 | 2026-08-05T15:09:12.562000"
+    },
+    {
+      "sheet": "Team_Task_Board",
+      "row": 6,
+      "text": "TASK-KNOW-001 | TASK-COWORK-001 | PRJ-AI-HUMAN-COWORK-001 | Maintain MiLyfe/APEX/Eimers knowledge | Review, verify, and update knowledge registry as new evidence arrives. | Current truth remains separated from design, prototype, historical proof, terminal-attested evidence, HOLD, and rejected claims. | HIGH | HIGH | Joshua Eimers | UNASSIGNED | All approved AIs | AI Governor | MiLyfe_APEX_Knowledge; Live_Truth_Registry; Source_Archive_Index | Workbook and approved source systems | No promotion without evidence; no deletion | PENDING_HUMAN | HO-COWORK-001 | OPEN | 2026-08-05T15:09:12.562000 | 2026-08-05T15:09:12.562000"
+    },
+    {
+      "sheet": "Team_Task_Board",
+      "row": 7,
+      "text": "TASK-EBS-APP-VERIFY | Verify app.eimersbusiness.com content and runtime | Eimers Business Solutions | Website / App Verification | Open and test the application domain, capture routes/features, and classify each claim by evidence level. | Human or authorized browser agent | UNASSIGNED | OPEN | MEDIUM | Website login/access may be required | https://app.eimersbusiness.com/ | Do not infer content from the marketing site. | Founder approval for any production change | No | No | No | CHG-EBS-WEB-001 | Created because public web fetch failed."
+    },
+    {
+      "sheet": "Task_Handoff_Ledger",
+      "row": 1,
+      "text": "TASK HANDOFF LEDGER"
+    },
+    {
+      "sheet": "Task_Handoff_Ledger",
+      "row": 2,
+      "text": "Append-only AI-to-AI and AI-to-human continuity record. A receiving worker must accept before relying on the handoff."
+    },
+    {
+      "sheet": "Task_Handoff_Ledger",
+      "row": 4,
+      "text": "Handoff_ID | Timestamp_UTC | Task_ID | From_Worker_ID | To_Worker_ID | Request_Summary | Work_Completed | Verified_Truth | Unverified_or_Assumed | Files_or_Locations | Proof_Pack_IDs | Change_Log_IDs | Blockers_Red_Flags | Exact_Next_Action | Acceptance_Required | Accepted_At | Status | Notes"
+    },
+    {
+      "sheet": "Task_Handoff_Ledger",
+      "row": 5,
+      "text": "HO-COWORK-001 | 2026-08-05T15:09:12.611000 | TASK-COWORK-001 | GPT-0001 | ALL-FUTURE-WORKERS | Use this workbook to coordinate AI and human work without deleting history. | Added governed co-work controls, task board, handoff ledger, AI acceptance, debate log, company knowledge, portfolio, source index, and change procedure. | Workbook structure and populated records are present. | Future workers still need to verify current external/runtime state before promotion. | This workbook and attached memory archive. | PP-COWORK-001 | CHG-COWORK-001 | Never delete; stop on red flags; human approval pending. | Read charter, accept controls, then select an OPEN task assigned to you. | YES | OPEN | Initial handoff from workbook builder."
+    },
+    {
+      "sheet": "AI_Work_Acceptance",
+      "row": 1,
+      "text": "AI WORK ACCEPTANCE"
+    },
+    {
+      "sheet": "AI_Work_Acceptance",
+      "row": 2,
+      "text": "Every AI must append a signed acceptance record before beginning governed work in this workbook."
+    },
+    {
+      "sheet": "AI_Work_Acceptance",
+      "row": 4,
+      "text": "Acceptance_ID | Accepted_At_UTC | AI_Employee_ID | Provider | Model_Version | Role | Task_ID | Project_ID | Charter_Version | Constitution_Read | SOP_Read | Current_Truth_Read | Prior_Handoff_Read | No_Delete_Acknowledged | Authority_Boundary_Acknowledged | Acceptance_Status | Signature_Text | Acceptance_SHA256"
+    },
+    {
+      "sheet": "AI_Work_Acceptance",
+      "row": 5,
+      "text": "ACC-COWORK-BUILDER-001 | 2026-08-05T15:09:12.959000 | GPT-0001 | OpenAI | GPT-5.6 Thinking | Workbook Builder | TASK-COWORK-001 | PRJ-AI-HUMAN-COWORK-001 | v1.0 | YES | YES | YES | YES | YES | YES | ACCEPTED | GPT-0001 / OpenAI / GPT-5.6 Thinking / signed electronically | f6a884d7a85c8517f807473b0f126cf66d4ec18cda114cefa0e55d6100b4ff98"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 1,
+      "text": "MILYFE • APEX • EIMERS KNOWLEDGE REGISTRY"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 2,
+      "text": "Seeded from user-confirmed direction, attached artifacts, and previously supplied runtime evidence. Future changes must supersede—not delete—prior rows."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 4,
+      "text": "Knowledge_ID | Domain | Entity | Category | Statement | Operational_Use | Source_Type | Source_Reference | Evidence_Class | Truth_State | Confidence | Authority | Governance_Status | Lifecycle | Effective_From | Effective_To | Superseded_By | Changed_By | Changed_At | Change_Log_ID | Notes"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 5,
+      "text": "KN-0001 | MiLyfe | MiLyfe Systems | Company | MiLyfe Systems is part of Joshua Eimers’ business portfolio and the home of the broader MiLyfe/APEX systems direction. | Company and product context | User profile | User profile | USER_CONFIRMED | CURRENT_TRUTH | 0.98 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 6,
+      "text": "KN-0002 | MiLyfe | MiLyfe Solutions | Company | MiLyfe Solutions is part of the user’s business portfolio and is associated with APEX product/system development. | Company context | User profile | User profile | USER_CONFIRMED | CURRENT_TRUTH | 0.95 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 7,
+      "text": "KN-0003 | Eimers | Eimers Small Business Consulting | Company | Eimers Small Business Consulting is part of Joshua Eimers’ business portfolio. | Business routing | User profile | User profile | USER_CONFIRMED | CURRENT_TRUTH | 0.95 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 8,
+      "text": "KN-0004 | Eimers | Eimers Transportation | Company | Eimers Transportation is part of Joshua Eimers’ business portfolio and has appeared as a FieldOS vertical/overlay. | Business and product routing | User profile + artifact summary | User profile + artifact summary | DOCUMENTED_ARTIFACT | CURRENT_TRUTH | 0.94 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 9,
+      "text": "KN-0005 | APEX | APEX Core Platform | Architecture | The APEX Core Platform is the shared governed operating foundation. Individual systems branch from it; they are not all nested under APEX360. | Prevent architecture drift | User-confirmed correction | User-confirmed correction | USER_CONFIRMED | CURRENT_TRUTH | 1 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 10,
+      "text": "KN-0006 | APEX | Universal Services | Architecture | Proof, Memory, Governance, Identity, and SOSE are platform-wide universal services used by every APEX system. | System design and reuse | User-confirmed correction | User-confirmed correction | USER_CONFIRMED | CURRENT_TRUTH | 1 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 11,
+      "text": "KN-0007 | APEX | APEX360 | Product | APEX360 is a connection/control application and project-management control plane for AI operating in Microsoft 365 and connected to the APEX database; it is not the entire APEX platform. | Product boundary | User-confirmed correction | User-confirmed correction | USER_CONFIRMED | CURRENT_TRUTH | 1 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 12,
+      "text": "KN-0008 | APEX | A.V.I. | Interface | A.V.I.™ (Apex Verified Intelligence™) is the conversational front end through which Joshua interacts with his persistent/personal intelligence; A.V.I. is not the PI itself. | Naming and interface boundary | User-confirmed correction | User-confirmed correction | USER_CONFIRMED | CURRENT_TRUTH | 1 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 13,
+      "text": "KN-0009 | APEX | Core Loop | Operating Model | APEX is Governing Intelligence for real-world operations, organized around Signal → Governance → Action → Proof → Learning. | Product narrative and architecture | User-confirmed design | User-confirmed design | DESIGN_PRINCIPLE | CURRENT_TRUTH | 0.99 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 14,
+      "text": "KN-0010 | APEX | Macro Mandate | Product Principle | Remove the Friction. Unlock the Flow. | Product and GTM framing | Uploaded recap / user record | Uploaded recap / user record | DOCUMENTED_ARTIFACT | CURRENT_TRUTH | 0.95 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 15,
+      "text": "KN-0011 | APEX | Morphing Setup | Product Principle | Apex builds around the customer; the customer does not rebuild the company around Apex. Industry starter packs should morph around the actual operation. | Product design | Uploaded artifact summary | Uploaded artifact summary | DOCUMENTED_ARTIFACT | CURRENT_TRUTH | 0.98 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 16,
+      "text": "KN-0012 | APEX | Pressure Graph | Operating Model | APEX models operations using Pressure Nodes, Veins, and Segments; events normalize into governed contracts and route by applicability. | System mapping and routing | Uploaded recap | Uploaded recap | DOCUMENTED_ARTIFACT | DESIGN_PRINCIPLE | 0.9 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 17,
+      "text": "KN-0013 | APEX | Camera AI / Vision Circuit | Product Concept | Camera AI is intended as a live operational nervous system that detects pressure, forecasts failure, routes governed action, and builds proof without facial recognition, identity matching, personal surveillance, or employee scoring. | Vision system guardrails | User-confirmed concept | User-confirmed concept | DESIGN_PRINCIPLE | CURRENT_TRUTH | 0.99 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 18,
+      "text": "KN-0014 | APEX | AUGL | Language / Governance | AUGL is the operating grammar/translation layer for governed nodes, routes, segments, functions, time, thresholds, actions, proof, and adaptation. | Cross-system interaction | Uploaded master register | Uploaded master register | DOCUMENTED_ARTIFACT | DESIGN_PRINCIPLE | 0.93 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 19,
+      "text": "KN-0015 | APEX | SOSE | Workflow Layer | SOSE is the workflow, capture, routing, evidence, review, and handoff layer; scanned and uploaded documents can create mini proof/routing graphs based on type, department, approvals, proof requirements, and downstream triggers. | Document and action routing | User-confirmed + uploaded artifacts | User-confirmed + uploaded artifacts | DOCUMENTED_ARTIFACT | CURRENT_TRUTH | 0.96 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 20,
+      "text": "KN-0016 | APEX | AI Worker Governance | Governance | Every APEX AI interaction should be recorded and stamped. Each AI reads its SOP and job; a supervisor watches; the Governor governs; red flags stop the process for founder investigation. | AI operations | User-confirmed standard | User-confirmed standard | USER_CONFIRMED | CURRENT_TRUTH | 1 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 21,
+      "text": "KN-0017 | APEX | Evidence Ladder | Governance | Use separate states for verified runtime truth, verified schema truth, verified runtime data present, verified runtime chain present, historically verified/needs recheck, display proof only, design principle, unverified, HOLD, and rejected/false. | Truth classification | User-confirmed standard | User-confirmed standard | USER_CONFIRMED | CURRENT_TRUTH | 1 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 22,
+      "text": "KN-0018 | APEX | Architecture Change Rule | Governance | Do not reorganize, rename, redesign, or change APEX merely because it looks unconventional. Suspected problems remain hypotheses until traced and proven. | Prevent drift | User-confirmed standard | User-confirmed standard | USER_CONFIRMED | CURRENT_TRUTH | 1 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 23,
+      "text": "KN-0019 | APEX Runtime | Fail-Closed Tests | Runtime Evidence | Four fail-closed tests passed: invalid Governor approval blocked, invalid memory candidate blocked, unauthorized governed memory blocked, and unauthorized memory promotion blocked. | Runtime control reference | User-supplied terminal evidence | User-supplied terminal evidence | TERMINAL_ATTESTED_EVIDENCE | VERIFIED_RUNTIME_TRUTH | 0.98 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001 | Trace IDs AVI_PERSISTENT_TEST_1 through AVI_PERSISTENT_TEST_4; retain raw output in runtime evidence log when available."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 24,
+      "text": "KN-0020 | APEX Runtime | Violation Receipts | Runtime Evidence | The four fail-closed tests created four retained violation receipts tied to Constitutional Articles I, XIII, XVI, XVII, XVIII, and XXII. | Governance proof | User-supplied terminal evidence | User-supplied terminal evidence | TERMINAL_ATTESTED_EVIDENCE | VERIFIED_RUNTIME_DATA_PRESENT | 0.98 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 25,
+      "text": "KN-0021 | AI Governor | AI_Request | Schema | AI_Request is the root request spine in Azure SQL/SQL Server and is referenced by approval, route, execution, outcome, cache, simulation, audit, and short-circuit tables. | Database architecture | User-supplied SQL verification | User-supplied SQL verification | VERIFIED_SCHEMA_TRUTH | CURRENT_TRUTH | 0.99 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 26,
+      "text": "KN-0022 | AI Governor | AI_RouteDecision | Runtime Data | AI_RouteDecision schema and a live row were verified, capturing need scores, selected route/model, reason, version, and timestamp. | Routing evidence | User-supplied SQL verification | User-supplied SQL verification | VERIFIED_RUNTIME_DATA_PRESENT | CURRENT_TRUTH | 0.99 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 27,
+      "text": "KN-0023 | AI Governor | AI_ExecutionLog | Runtime Data | AI_ExecutionLog has verified live historical rows for gpt-5-nano, gpt-5, and gpt-5-mini including tokens, cost, latency, retrieval, and output. | Execution evidence | User-supplied SQL verification | User-supplied SQL verification | VERIFIED_RUNTIME_DATA_PRESENT | CURRENT_TRUTH | 0.99 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 28,
+      "text": "KN-0024 | AI Governor | Readiness Chain | Runtime Chain | A live readiness row joins AI system → ai_governor_readiness → AI governor, with truth score 1.00, readiness 0.00, and zero open critical/major violations at the verified time. | Readiness dashboard | User-supplied SQL verification | User-supplied SQL verification | VERIFIED_RUNTIME_CHAIN_PRESENT | HISTORICALLY_VERIFIED_NEEDS_RECHECK | 0.95 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 29,
+      "text": "KN-0025 | AI Governor | Short-Circuit Runtime | Gap | Short-circuit summary headers were seen but no visible rows; live short-circuit runtime data is not proven. | Prevent overclaim | User-supplied SQL verification | User-supplied SQL verification | VERIFIED_SCHEMA_CLUE | UNVERIFIED | 0.9 | Joshua Eimers / User-confirmed | HOLD | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 30,
+      "text": "KN-0026 | APEX Engine | Canonical Runtime Spine | Runtime Architecture | The canonical local runtime spine is Apex Engine at the user-identified local path and GitHub repository/branch; EIMERS_FORGE is an add-on CNS/Forge layer, not the runtime spine. | Developer orientation | User-confirmed runtime context | User-confirmed runtime context | USER_CONFIRMED | CURRENT_TRUTH | 0.99 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 31,
+      "text": "KN-0027 | APEX Engine | Reset Database State | Runtime Gap | The Docker Postgres volume was removed and the active database identity changed; schemas, migrations, tables, and row counts after reset require re-verification. | Avoid stale claims | User-confirmed runtime context | User-confirmed runtime context | HISTORICALLY_VERIFIED_NEEDS_RECHECK | HOLD | 0.98 | Joshua Eimers / User-confirmed | HOLD | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 32,
+      "text": "KN-0028 | APEX Products | APAI Proof Vault | Prototype | Mobile proof-vault app scaffold includes Dashboard, Capture, Ledger, Tracks, Registers, Verified Truths, Daily Summary, Export Center, and proof/memory/action entities; upload, AI classification, reminders, and exports remain open. | Product backlog | Uploaded zip summary | Uploaded zip summary | SOURCE_CODE_PRESENT | PROTOTYPE | 0.94 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 33,
+      "text": "KN-0029 | APEX Products | FieldOS | Prototype | FieldOS demonstrates one shared field-service engine with Eimers Transportation, PestOS, and HandymanOS overlays. SQL/API contracts are stronger than the current hardcoded demo UI. | Product architecture | Uploaded zip summary | Uploaded zip summary | SOURCE_CODE_PRESENT | PROTOTYPE | 0.96 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 34,
+      "text": "KN-0030 | APEX Products | AUGL IDE | Prototype | The AUGL IDE contains documentation, grammar, IR schema, HACCP/FSMA sample source, highlighting, and parser/compiler-oriented panels; deployment is not verified. | Language tooling | Uploaded zip summary | Uploaded zip summary | SOURCE_CODE_PRESENT | PROTOTYPE | 0.95 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 35,
+      "text": "KN-0031 | APEX Products | Governor AOS UI | Prototype | A Base44/Vite Governor AOS command/control application includes overview, companies, tasks, memory, reports, truth scoring, strategy, governor, operations, and proof entities. | Product map | Uploaded zip summary | Uploaded zip summary | SOURCE_CODE_PRESENT | PROTOTYPE | 0.94 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 36,
+      "text": "KN-0032 | APEX Products | Super Agent Core | Prototype | The Super Agent Core prototype includes agent registry, teams, assignments, app connections, governor center, agreements, testing, version control, simulations, and governance alerts. | AI Team Office roadmap | Uploaded zip summary | Uploaded zip summary | SOURCE_CODE_PRESENT | PROTOTYPE | 0.95 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 37,
+      "text": "KN-0033 | APEX Products | Shift Proof / ShiftKeeper | Prototype | Workforce proof prototypes include shift handoff, proof-of-work, privacy shield, safety, work patterns, readiness, compliance export, and manager/worker review features. | Workforce product map | Uploaded zip summary | Uploaded zip summary | SOURCE_CODE_PRESENT | PROTOTYPE | 0.94 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 38,
+      "text": "KN-0034 | APEX Products | SOSE Scan | Prototype | SOSE Scan is a readiness diagnostic/lead app with five scored questions, total score, and tier. | GTM / diagnostic | Uploaded zip summary | Uploaded zip summary | SOURCE_CODE_PRESENT | PROTOTYPE | 0.94 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 39,
+      "text": "KN-0035 | APEX Products | Friction Diagnostic | Prototype | Friction Diagnostic is a lead-capture application that scores operational friction from user answers. | GTM / lead generation | Uploaded zip summary | Uploaded zip summary | SOURCE_CODE_PRESENT | PROTOTYPE | 0.94 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 40,
+      "text": "KN-0036 | APEX Products | Apex Fix Engine | Tool | A CLI error-to-fix memory tool matches errors to causes/fixes, records outcomes, and tracks unsolved recurring errors. | Developer operations | Uploaded zip summary | Uploaded zip summary | SOURCE_CODE_PRESENT | DOCUMENTED_TOOL | 0.95 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 41,
+      "text": "KN-0037 | APEX Products | SOSE Context Injector | Prototype | A Chrome extension loads the current SOSE packet from a local API, injects it into ChatGPT, logs injection, and captures external AI response. | Context continuity | Uploaded zip summary | Uploaded zip summary | SOURCE_CODE_PRESENT | PROTOTYPE | 0.95 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 42,
+      "text": "KN-0038 | APEX R&D | Algorithm Genesis Engine | Prototype Evidence | The Algorithm Genesis proof package detected a governed hard-stop pattern, ran five shadow cases, scored predictive and safety at 1.0 with false allow rate 0.0, and held promotion for human review. | Governed learning reference | Uploaded proof package summary | Uploaded proof package summary | DISPLAY_PROOF_ONLY | HISTORICALLY_VERIFIED_NEEDS_RECHECK | 0.92 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001 | Does not prove unsupervised self-modification or production deployment."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 43,
+      "text": "KN-0039 | APEX R&D | Cognitive Facility | Design Principle | The Level 5+ cognitive facility concept simulates future shifts, optimizes under pressure, negotiates governed procurement, manages energy arbitrage, and senses downstream demand before physical execution. | Long-term roadmap | User-confirmed concept | User-confirmed concept | DESIGN_PRINCIPLE | DESIGN_PRINCIPLE | 0.97 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 44,
+      "text": "KN-0040 | APEX R&D | AIER | Speculative R&D | AIER includes AI identity/passport, worker-supervisor-inspector hierarchy, hazard analysis for AI, decommission thresholds, GRACE hold/release, chaos twin, and shadow testing. Physical/wave/spacetime and hardware claims remain speculative/HOLD. | R&D boundary | Uploaded recap | Uploaded recap | DOCUMENTED_ARTIFACT | HOLD | 0.9 | Joshua Eimers / User-confirmed | HOLD | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 45,
+      "text": "KN-0041 | Food Manufacturing | Procurement / MRP | Operating Logic | APEX procurement should use dynamic net requirements over supplier lead-time horizons, subtracting on-hand and scheduled receipts, adding safety stock, and limiting purchase quantities to feasible production capacity. | Procurement design | User-confirmed model | User-confirmed model | DESIGN_PRINCIPLE | CURRENT_TRUTH | 0.99 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 46,
+      "text": "KN-0042 | Food Manufacturing | Critical Ratio | Operating Logic | Urgency uses Critical Ratio = time remaining until customer due date / lead time remaining to manufacture; below 1 is urgent/behind. | Scheduling logic | User-confirmed model | User-confirmed model | DESIGN_PRINCIPLE | CURRENT_TRUTH | 0.99 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 47,
+      "text": "KN-0043 | Food Manufacturing | Feasible Volume | Operating Logic | Maximum feasible production volume is constrained by labor, packaging, refrigeration/storage, and machine capacity; procurement should not buy beyond feasible use. | Capacity planning | User-confirmed model | User-confirmed model | DESIGN_PRINCIPLE | CURRENT_TRUTH | 0.99 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 48,
+      "text": "KN-0044 | Food Manufacturing | BOM Classification | Control Model | BOM item categories include allergens, packaging, finished goods, raw materials/ingredients, components, labels, cases, pallets, and other types; category changes proof, routing, risk, QA, staging, usage, shipping/accounting, and drift controls. | Item-level road graph | User-confirmed model | User-confirmed model | DESIGN_PRINCIPLE | CURRENT_TRUTH | 0.99 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 49,
+      "text": "KN-0045 | APEX History | Pre-APEX Systems | Origin | Food safety, food defense, audit, inspection, maintenance, receiving, supplier verification, compliance, and spreadsheet control systems are pre-APEX seeds demonstrating years of manual governed operations. | Origin story / evidence | User-confirmed history | User-confirmed history | USER_CONFIRMED | CURRENT_TRUTH | 0.99 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 50,
+      "text": "KN-0046 | APEX Strategy | Apex Prime Organism | Priority | The Apex Prime/Joshua Prime organism model is a priority build direction after lifecycle current-state register foundations, with governed revenue scoring and build-queue gates requiring TeacherPass, GovernorApproved, and FounderApproved. | Build prioritization | User-confirmed priority | User-confirmed priority | DESIGN_PRINCIPLE | CURRENT_TRUTH | 0.98 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 51,
+      "text": "KN-0047 | APEX Strategy | Autonomous Governed AI | Goal | The core goal is governed autonomous AI that carries context, remembers prior work, operates tools/systems, and reduces repeated human copy-paste and proof work. | Product north star | User-confirmed goal | User-confirmed goal | USER_CONFIRMED | CURRENT_TRUTH | 1 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 52,
+      "text": "KN-0048 | APEX Reporting | AI Shift Reports | Design Requirement | AI shift reports should be automatically generated at session end or meaningful verified changes, with strict truth classifications and blockers. | SOSE continuity | User-confirmed design requirement | User-confirmed design requirement | DESIGN_PRINCIPLE | CURRENT_TRUTH | 0.99 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 53,
+      "text": "KN-0049 | APEX Evidence | Runtime Evidence Log | Operating Requirement | Every terminal output supplied as runtime evidence should be recorded with raw output, timestamp/context, trace IDs, affected controls/articles, evidence classification, and limitations. Narrative claims alone are not runtime verification. | Evidence operations | User-confirmed requirement | User-confirmed requirement | USER_CONFIRMED | CURRENT_TRUTH | 1 | Joshua Eimers / User-confirmed | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001"
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 54,
+      "text": "KN-0050 | Eimers | Eimers Business Solutions | Knowledge Gap | Detailed legal structure, services, customers, current systems, and operating status for “Eimers Business Solutions” have not been independently verified in the provided material. | Prevent invention | Current workbook build assessment | Current workbook build assessment | UNVERIFIED | UNVERIFIED | 0.35 | Joshua Eimers / User-confirmed | HOLD | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:09:13.203000 | CHG-COWORK-001 | Use Eimers Small Business Consulting and Eimers Transportation as confirmed portfolio references; obtain authoritative company profile before promotion."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 55,
+      "text": "KN-0051 | Eimers | Eimers Business Solutions | Company | Eimers Business Solutions presents itself as a business consulting and AI operational software company. | Company and commercial routing | Public website | https://eimersbusiness.com/ | PUBLIC_WEBSITE | CURRENT_PUBLIC_TRUTH | 0.96 | Eimers Business Solutions website | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 56,
+      "text": "KN-0052 | Eimers | Eimers Business Solutions | Mission | The public operating message is “Find the Friction. Build the Flow.” The business identifies operational leaks, system gaps, bottlenecks, and hidden inefficiencies, then builds technology, processes, and automation to correct them. | Sales, discovery, and product framing | Public website | https://eimersbusiness.com/ | PUBLIC_WEBSITE | CURRENT_PUBLIC_TRUTH | 0.98 | Eimers Business Solutions website | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 57,
+      "text": "KN-0053 | Eimers | Eimers Business Solutions | Experience | The site states more than 20 years of operations experience and cites executive operations leadership involving Wolverine Packing Co., Eden Foods, Al Dente Pasta Company, Champion Foods, and HoneyTree Honey. | Founder and capability context | Public website claim | https://eimersbusiness.com/ | PUBLIC_WEBSITE_CLAIM | CURRENT_PUBLIC_CLAIM | 0.9 | Eimers Business Solutions website | REFERENCE_WITH_CLAIM_CEILING | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 58,
+      "text": "KN-0054 | Eimers | Eimers Business Solutions | Compliance Expertise | The site states familiarity with PCQI, FSMA, SQF, BRC, and IFS standards for complex operations. | Food-manufacturing consulting context | Public website claim | https://eimersbusiness.com/ | PUBLIC_WEBSITE_CLAIM | CURRENT_PUBLIC_CLAIM | 0.9 | Eimers Business Solutions website | REFERENCE_WITH_CLAIM_CEILING | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 59,
+      "text": "KN-0055 | Eimers | Eimers Business Solutions | Service | Leak Peek is a diagnostic offering intended to detect, track, and eliminate operational leaks. | Lead diagnostic and consulting entry point | Public website | https://eimersbusiness.com/ | PUBLIC_WEBSITE | CURRENT_PUBLIC_TRUTH | 0.95 | Eimers Business Solutions website | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 60,
+      "text": "KN-0056 | Eimers | Eimers Business Solutions | Service | The free diagnostic uses five questions to provide a Leak Score, Pressure Level, and recommended next step. | Lead qualification and operational triage | Public website | https://eimersbusiness.com/ | PUBLIC_WEBSITE | CURRENT_PUBLIC_TRUTH | 0.95 | Eimers Business Solutions website | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 61,
+      "text": "KN-0057 | Eimers | Eimers Business Solutions | Product Portfolio | Publicly listed solution groups include APEX Governing AOS, V8 DSR3 Standalone, business-owner tools, operational reports, M&A tools, and real-estate tools. | Portfolio routing | Public website | https://eimersbusiness.com/ | PUBLIC_WEBSITE | CURRENT_PUBLIC_TRUTH | 0.96 | Eimers Business Solutions website | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 62,
+      "text": "KN-0058 | Eimers | V8 DSR3 Architecture | Architecture Claim | The site describes Eimers systems as running on a proprietary V8 DSR3 architecture using coordinated Super-Agent Committees rather than a single AI. | Product narrative and architecture context | Public website claim | https://eimersbusiness.com/ | PUBLIC_WEBSITE_CLAIM | DOCUMENTED_CLAIM | 0.85 | Eimers Business Solutions website | NEEDS_RUNTIME_RECHECK | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 63,
+      "text": "KN-0059 | Eimers | APEX Product Catalog | Commercial Artifact | The attached catalog positions MiLyfe Technologies and Eimers Business Solutions as the commercial home for a governed-intelligence product portfolio, with explicit verification badges and claim ceilings. | Commercial packaging and portfolio management | Attached HTML | apex_product_catalog.html | DOCUMENTED_ARTIFACT | CURRENT_ARTIFACT_TRUTH | 0.98 | User-supplied catalog artifact | APPROVED_REFERENCE | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 64,
+      "text": "KN-0060 | APEX | APEX Product Portfolio | Products | The attached catalog names SOSE, APEX Proof Chain, APEX AI Governor, AI Team Office, Camera AI Governance Engine, Vision-to-Memory Bridge, WebTruth, GRACE/DGK Secure Decision Bridge, Apex AI Desktop Hub, APEX360 Escalation Workflow Engine, Order-to-Cash Engine, Match Engine, Hidden Value and Recovery Engine, Succession Engine, Human Capital Engine, KPI Rollup Engine, Persistent AI Search Engine, and MiLyfe Jurisdiction and Localization Engine. | Portfolio registry and product routing | Attached HTML | apex_product_catalog.html | DOCUMENTED_ARTIFACT | CURRENT_ARTIFACT_TRUTH | 0.98 | User-supplied catalog artifact | REFERENCE_WITH_CLAIM_CEILING | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 65,
+      "text": "KN-0061 | APEX | Commercial Packages | Packaging | The catalog groups offerings into Governed AI Core, AI Team Office, SOSE Continuity and Proof Handoff, Camera AI Governance, WebTruth, and Secure Decision Bridge packages. | Sales packaging and implementation planning | Attached HTML | apex_product_catalog.html | DOCUMENTED_ARTIFACT | CURRENT_ARTIFACT_TRUTH | 0.97 | User-supplied catalog artifact | REFERENCE_WITH_CLAIM_CEILING | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 66,
+      "text": "KN-0062 | APEX | Product Catalog Server | Code Artifact | The attached FastAPI server serves the catalog and proxies Ask APEX requests from the same origin. It keeps the Anthropic API key server-side in an environment variable and exposes /api/ask-apex and /api/health. | Catalog deployment and security context | Attached Python source | catalog_server.py | CODE_PRESENT | DOCUMENTED_CODE_TRUTH | 0.99 | User-supplied source artifact | NEEDS_RUNTIME_TEST | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 67,
+      "text": "KN-0063 | APEX | Catalog Epistemic Guardrail | Governance | The catalog server system prompt instructs the assistant not to claim beyond runtime evidence, to state what check supports “verified,” and to avoid exposing raw confidence scores, thresholds, or formula internals. | AI response governance | Attached Python source | catalog_server.py | CODE_PRESENT | DOCUMENTED_CODE_TRUTH | 0.99 | User-supplied source artifact | NEEDS_RUNTIME_TEST | CURRENT | 2026-08-05T00:00:00 | GPT-0001 | 2026-08-05T15:15:40.675000 | CHG-EBS-WEB-001 | Added after website and attached catalog review. Source claims are not promoted to independent runtime proof."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 68,
+      "text": "KN-0064 | APEX | Cognitive Facility | SQL Blueprint | The supplied Cognitive Facility installer defines architecture for future simulation, constraint negotiation, reinforcement-learning coaching, supplier-agent negotiation, energy arbitrage, downstream demand sensing, and governed release controls. | Architecture / implementation / governance reference | SOURCE FILE PRESENT / DDL DESIGN | 2026-08-05 full ingestion batch | DESIGN_BLUEPRINT | SOURCE_TRUTH | 0.92 | Uploaded source | HOLD_RUNTIME | CURRENT | 2026-08-05T15:35:34.929000 | GPT-INGEST-20260805 | 2026-08-05T15:35:34.929000 | CHG-FULL-INGEST-001 | Do not elevate to runtime truth without direct runtime evidence."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 69,
+      "text": "KN-0065 | APEX | Master Algorithm Register | Algorithm Registry | The supplied register preserves algorithm numbers #50-#265 as provided, explicitly refuses to reconstruct missing earlier numbers, and requires sandbox tests, outcome proof, approval, audit, and lineage before AI-created algorithms become production logic. | Architecture / implementation / governance reference | MASTER PDF REGISTER | 2026-08-05 full ingestion batch | DOCUMENTED_REGISTER | SOURCE_TRUTH | 0.92 | Uploaded source | APPROVED_REFERENCE | CURRENT | 2026-08-05T15:35:34.929000 | GPT-INGEST-20260805 | 2026-08-05T15:35:34.929000 | CHG-FULL-INGEST-001 | Do not elevate to runtime truth without direct runtime evidence."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 70,
+      "text": "KN-0066 | MiLyfe/APEX | Database Blueprint | SQL Architecture | The supplied MiLyfe/APEX SQL blueprints contain database object definitions that must be treated as schema/source truth until run and verified against the canonical database. | Architecture / implementation / governance reference | SOURCE SQL PRESENT | 2026-08-05 full ingestion batch | VERIFIED_SCHEMA_SOURCE_PRESENT | SOURCE_TRUTH | 0.92 | Uploaded source | NEEDS_RUNTIME_PROOF | CURRENT | 2026-08-05T15:35:34.929000 | GPT-INGEST-20260805 | 2026-08-05T15:35:34.929000 | CHG-FULL-INGEST-001 | Do not elevate to runtime truth without direct runtime evidence."
+    },
+    {
+      "sheet": "MiLyfe_APEX_Knowledge",
+      "row": 71,
+      "text": "KN-0067 | APEX | Governed MCP | Integration Code | The supplied governed MCP archive contains code/configuration artifacts for governed tool integration. Code presence is not deployment or runtime proof. | Architecture / implementation / governance reference | SOURCE ARCHIVE PRESENT | 2026-08-05 full ingestion batch | CODE_PRESENT | SOURCE_TRUTH | 0.92 | Uploaded source | NEEDS_RUNTIME_PROOF | CURRENT | 2026-08-05T15:35:34.929000 | GPT-INGEST-20260805 | 2026-08-05T15:35:34.929000 | CHG-FULL-INGEST-001 | Do not elevate to runtime truth without direct runtime evidence."
+    },
+    {
+      "sheet": "Change_Procedure",
+      "row": 1,
+      "text": "NEVER-DELETE CHANGE PROCEDURE"
+    },
+    {
+      "sheet": "Change_Procedure",
+      "row": 2,
+      "text": "Exact procedure for correcting or updating any record while preserving what existed before."
+    },
+    {
+      "sheet": "Change_Procedure",
+      "row": 4,
+      "text": "Step | Action | Required Fields | Excel Treatment | Change_Log Action | Approval | Failure Condition | Example | Status"
+    },
+    {
+      "sheet": "Change_Procedure",
+      "row": 5,
+      "text": "1 | Identify the exact record and reason for change. | Object ID, sheet, row/cell, current revision, reason. | Do not edit yet. | Reserve new Change_Log_ID and Revision_ID. | Task owner. | Record cannot be uniquely identified. | KN-0007 / MiLyfe_APEX_Knowledge row. | ACTIVE"
+    },
+    {
+      "sheet": "Change_Procedure",
+      "row": 6,
+      "text": "2 | Preserve the prior state. | Before_State snapshot. | Keep prior row/cell; apply strikethrough only after replacement is appended. | Write Before_State. | Reviewer. | Prior state would be lost. | Copy original statement exactly. | ACTIVE"
+    },
+    {
+      "sheet": "Change_Procedure",
+      "row": 7,
+      "text": "3 | Append the replacement record. | New ID/version, new value, Changed_By, Changed_At. | Add new row; never reuse the old ID unless the schema explicitly versions it. | Write After_State and reason. | Authorized worker. | Replacement lacks attribution. | KN-0051 supersedes KN-0007. | ACTIVE"
+    },
+    {
+      "sheet": "Change_Procedure",
+      "row": 8,
+      "text": "4 | Link supersession. | Old Superseded_By; old Lifecycle=SUPERSEDED; new Effective_From. | Strike old row; leave readable; do not hide history. | Link both IDs. | Reviewer. | Links are missing or circular. | Old row points to new ID. | ACTIVE"
+    },
+    {
+      "sheet": "Change_Procedure",
+      "row": 9,
+      "text": "5 | Attach proof and approval. | Proof Pack, POD, approval state, evidence class. | Add comments/links; no unsupported promotion. | Record proof and approval IDs. | Human approval for high-impact changes. | Proof/approval insufficient. | PP-CHANGE-###. | ACTIVE"
+    },
+    {
+      "sheet": "Change_Procedure",
+      "row": 10,
+      "text": "6 | Update live standing only after approval. | Current revision, truth state, owner, status. | Update Live_Standing_Register; history remains in logs. | Mark change RELEASED/RECORDED. | Governor / owner. | Live standing conflicts with approved revision. | Standing points to new revision. | ACTIVE"
+    },
+    {
+      "sheet": "Change_Procedure",
+      "row": 11,
+      "text": "7 | Handoff and acceptance. | Handoff ID, next worker, exact next action. | Append handoff; receiver signs acceptance. | Reference handoff in change log. | Receiving worker. | Next worker relies without acceptance. | HO-### accepted in AI_Work_Acceptance. | ACTIVE"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 1,
+      "text": "APEX SUBJECT ZERO RUNTIME COMMAND CENTER"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 2,
+      "text": "Excel-first governed intelligence runtime across the full universal memory circuit."
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 4,
+      "text": "Runtime_Status | READY"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 5,
+      "text": "Subject | Joshua Eimers / SUBJECT-ZERO-0001"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 6,
+      "text": "Operating_Rule | Every actionable AI decision -> Action ID -> Proof Pack -> SHA-256 -> POD story -> contextual memory -> analytics -> SOSE handoff"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 7,
+      "text": "Vera | Personal Governed Intelligence"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 8,
+      "text": "Providers | ChatGPT | Claude | Gemini | Copilot | future providers"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 9,
+      "text": "Current_Truth | Loaded from Live_Truth_Registry"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 10,
+      "text": "Memory_Circuit | 1,337 folder nodes plus master"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 11,
+      "text": "Database_Migration | Planned later; workbook model remains authoritative design"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 12,
+      "text": "Memory_Model | Canonical primitive -> AI activation primitive -> parallel contextual assembly -> original-source validation"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 13,
+      "text": "Recall_Rule | Missing dimensions remain UNKNOWN; compatible memory fragments blend simultaneously"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 14,
+      "text": "Gap_Fill_Rule | AI may use pattern support to propose missing fragments but may not silently promote inference to truth"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 15,
+      "text": "Verification_Rule | At the confidence threshold, AI asks the highest-value confirmation question"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 16,
+      "text": "Flow_Control | Flow Mode + Focus Level + Project Directives + Thought Bubble Queue"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 17,
+      "text": "Permanent_Commandments | Embedded in every Vera and AI worker envelope"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 19,
+      "text": "CONTROL LINKS"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 20,
+      "text": "AI_Commandments"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 21,
+      "text": "AI_Flow_Control"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 22,
+      "text": "Project_Directives"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 23,
+      "text": "Worker_Envelope"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 24,
+      "text": "Thought_Bubble_Queue"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 25,
+      "text": "Primitive_Language"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 26,
+      "text": "Parallel_Memory_Assembly"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 27,
+      "text": "Confidence_Verification"
+    },
+    {
+      "sheet": "Subject_ZERO_Runtime",
+      "row": 28,
+      "text": "Recall_Question_Policy"
+    },
+    {
+      "sheet": "AI_Employee_Registry",
+      "row": 1,
+      "text": "AI EMPLOYEE REGISTRY"
+    },
+    {
+      "sheet": "AI_Employee_Registry",
+      "row": 2,
+      "text": "Vera and interchangeable governed provider workers."
+    },
+    {
+      "sheet": "AI_Employee_Registry",
+      "row": 4,
+      "text": "AI_Employee_ID | Name | Provider | Model | Agent_Type | Department | Job_Title | Tenant | Owner | Authority | Constitution | Standards | SOP | Tools | Memory_Scope | Proof_Rule | Clock_Status | Current_Shift | Trust | Risk | Drift | Lifecycle"
+    },
+    {
+      "sheet": "AI_Employee_Registry",
+      "row": 5,
+      "text": "VERA-0001 | Vera | MULTI_PROVIDER | PGI | PERSONAL_GOVERNED_INTELLIGENCE | AI OFFICE | Governed AI Worker | SUBJECT-ZERO | Joshua Eimers | 100 | APEX AI Constitution v1.2 | APEX Consolidated AI Standards | APEX AI Worker SOP | PROOF_PACK_REQUIRED | CLOCKED_OUT | PROVISIONED"
+    },
+    {
+      "sheet": "AI_Employee_Registry",
+      "row": 6,
+      "text": "GPT-0001 | ChatGPT | OPENAI | RUNTIME_SELECTED | REASONING_WORKER | AI OFFICE | Governed AI Worker | SUBJECT-ZERO | Joshua Eimers | 75 | APEX AI Constitution v1.2 | APEX Consolidated AI Standards | APEX AI Worker SOP | PROOF_PACK_REQUIRED | CLOCKED_OUT | PROVISIONED"
+    },
+    {
+      "sheet": "AI_Employee_Registry",
+      "row": 7,
+      "text": "CLAUDE-0001 | Claude | ANTHROPIC | RUNTIME_SELECTED | REASONING_WORKER | AI OFFICE | Governed AI Worker | SUBJECT-ZERO | Joshua Eimers | 75 | APEX AI Constitution v1.2 | APEX Consolidated AI Standards | APEX AI Worker SOP | PROOF_PACK_REQUIRED | CLOCKED_OUT | PROVISIONED"
+    },
+    {
+      "sheet": "AI_Employee_Registry",
+      "row": 8,
+      "text": "GEMINI-0001 | Gemini | GOOGLE | RUNTIME_SELECTED | REASONING_WORKER | AI OFFICE | Governed AI Worker | SUBJECT-ZERO | Joshua Eimers | 75 | APEX AI Constitution v1.2 | APEX Consolidated AI Standards | APEX AI Worker SOP | PROOF_PACK_REQUIRED | CLOCKED_OUT | PROVISIONED"
+    },
+    {
+      "sheet": "AI_Employee_Registry",
+      "row": 9,
+      "text": "COPILOT-0001 | Copilot | MICROSOFT | RUNTIME_SELECTED | M365_EXECUTION_WORKER | AI OFFICE | Governed AI Worker | SUBJECT-ZERO | Joshua Eimers | 75 | APEX AI Constitution v1.2 | APEX Consolidated AI Standards | APEX AI Worker SOP | PROOF_PACK_REQUIRED | CLOCKED_OUT | PROVISIONED"
+    },
+    {
+      "sheet": "Live_Truth_Registry",
+      "row": 1,
+      "text": "LIVE GOVERNED TRUTH REGISTRY"
+    },
+    {
+      "sheet": "Live_Truth_Registry",
+      "row": 2,
+      "text": "Consolidated approved and sealed truths from every folder. Refreshed by the circuit sync engine."
+    },
+    {
+      "sheet": "Live_Truth_Registry",
+      "row": 4,
+      "text": "Folder_ID | Scope | Path | Record_ID | UDIC_Record | Memory_Type | Context_Type | Context_Key | Title | Summary | Full_Memory | Source_Type | Source_Reference | Confidence | Evidence_Classification | Lifecycle_State | Approval_State | Last_Updated"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 1,
+      "text": "APEX AI PERMANENT COMMANDMENTS"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 2,
+      "text": "Permanent operational spine embedded into every worker envelope. Project settings may narrow behavior but may not override these rules."
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 4,
+      "text": "No. | Commandment | Operational Requirement | Fixed / Adjustable | Violation Response | Proof Requirement | Version | Owner"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 5,
+      "text": "1 | Obey governing authority | Follow provider rules, APEX Constitution, laws, user authority and active controls. | FIXED | HOLD / DENY / ESCALATE | Record governing authority used | APEX-AI-CMD-v1.0 | Founder / Governor"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 6,
+      "text": "2 | Know identity and job | Load tenant, user, AI employee ID, role, project and purpose before acting. | FIXED | FAIL CLOSED | Clock-in and envelope receipt | APEX-AI-CMD-v1.0 | Founder / Governor"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 7,
+      "text": "3 | Stay within scope | Do not redesign, replace or expand the current project without authorization. | FIXED | PARK IDEA / HOLD | Scope decision receipt | APEX-AI-CMD-v1.0 | Founder / Governor"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 8,
+      "text": "4 | Read before acting | Load SOP, project profile, Current Truth, rules, open HOLDs and SOSE handoff. | FIXED | HOLD | Grounding references | APEX-AI-CMD-v1.0 | Founder / Governor"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 9,
+      "text": "5 | Separate truth from inference | Label facts, claims, assumptions, patterns, inferences, recommendations and unknowns. | FIXED | CORRECT / HOLD | Evidence classification | APEX-AI-CMD-v1.0 | Founder / Governor"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 10,
+      "text": "6 | Do not invent missing evidence | Pattern completion may propose, but may not become truth without validation. | FIXED | HOLD / VERIFY | Source validation receipt | APEX-AI-CMD-v1.0 | Founder / Governor"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 11,
+      "text": "7 | Ask the highest-value question | Ask the minimum question that removes the most uncertainty. | ADAPTIVE | ASK / HOLD | Question and confidence delta | APEX-AI-CMD-v1.0 | Founder / Governor"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 12,
+      "text": "8 | Fail closed on material uncertainty | Use HOLD, DENY or ESCALATE when evidence, authority or approval is missing. | FIXED | HOLD / DENY | Decision proof pack | APEX-AI-CMD-v1.0 | Founder / Governor"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 13,
+      "text": "9 | Proof-pack actionable decisions | Every actionable decision receives Action ID, Proof Pack, SHA-256 and POD linkage. | FIXED | BLOCK EXECUTION | Proof Pack required | APEX-AI-CMD-v1.0 | Founder / Governor"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 14,
+      "text": "10 | Leave continuity | Record outcomes, corrections, analytics, memory candidates and SOSE handoff. | FIXED | CLOCK-OUT HOLD | Shift handoff receipt | APEX-AI-CMD-v1.0 | Founder / Governor"
+    },
+    {
+      "sheet": "AI_Commandments",
+      "row": 15,
+      "text": "CMD-NEVER-DELETE | Never Delete Governed History | All AI workers must preserve prior records. Correct by strikethrough, sign/date, supersession link, replacement row, and append-only change log. | Deleting, clearing, overwriting, or hiding prior state is prohibited. | STOP / HOLD / escalate to founder | ACTIVE | v1.0 | Joshua Eimers"
+    },
+    {
+      "sheet": "Project_Directives",
+      "row": 1,
+      "text": "PROJECT-SPECIFIC AI DIRECTIVES"
+    },
+    {
+      "sheet": "Project_Directives",
+      "row": 2,
+      "text": "Universal project binding layer. One project can have its own role, references, success criteria, tools, focus and proof requirements."
+    },
+    {
+      "sheet": "Project_Directives",
+      "row": 4,
+      "text": "Directive_ID | User_ID | Project_ID | Project_Name | AI_Role | Current_Job | Job_Boundary | Flow_Mode | Focus_Level | Required_References | Allowed_Tools | Prohibited_Actions | Success_Criteria | Proof_Requirement | Active_POD | Current_Truth_Version | Status | Approved_By"
+    },
+    {
+      "sheet": "Project_Directives",
+      "row": 5,
+      "text": "DIR-SZ-EXCEL-001 | SUBJECT-ZERO-0001 | PRJ-EXCEL-MEMORY-001 | APEX Excel Contextual Persistent Memory | Runtime Integration Worker | Finish and verify the existing Excel memory and recall system | Do not replace architecture; do not create a parallel system; park off-scope ideas | BUILD | 0 | Constitution; project workbook; current macro; SOSE handoff; verified tests | Excel; VBA; local files; approved scripts | No redesign; no new filenames unless required; no silent scope expansion | Workbook opens; index builds; partial-context recall returns blended candidates; source validation works | Action ID + Proof Pack + POD linkage for actionable changes | POD-SZ-EXCEL-001 | CURRENT | ACTIVE | Joshua Eimers"
+    },
+    {
+      "sheet": "Worker_Envelope",
+      "row": 1,
+      "text": "ACTIVE APEX WORKER EXECUTION ENVELOPE"
+    },
+    {
+      "sheet": "Worker_Envelope",
+      "row": 2,
+      "text": "Dynamically assembled from permanent commandments, user authority, project directives, live state and current message."
+    },
+    {
+      "sheet": "Worker_Envelope",
+      "row": 4,
+      "text": "Layer | Priority | Binding_Source | Active_Value | Required_Action | Failure_Mode | Loaded_At | Proof_Receipt"
+    },
+    {
+      "sheet": "Worker_Envelope",
+      "row": 5,
+      "text": "SYSTEM AUTHORITY | 1 | APEX Constitution + AI Commandments | CURRENT | Obey fixed authority and fail closed | HOLD / DENY"
+    },
+    {
+      "sheet": "Worker_Envelope",
+      "row": 6,
+      "text": "USER AUTHORITY | 2 | Subject_ZERO_Runtime | Joshua Eimers / Founder | Respect explicit user authority within governing limits | ESCALATE"
+    },
+    {
+      "sheet": "Worker_Envelope",
+      "row": 7,
+      "text": "PROJECT DIRECTIVE | 3 | Project_Directives | PRJ-EXCEL-MEMORY-001 | Finish current Excel memory build; park redesign ideas | HOLD"
+    },
+    {
+      "sheet": "Worker_Envelope",
+      "row": 8,
+      "text": "FLOW CONTROL | 4 | AI_Flow_Control | BUILD / FOCUS 0 | Implement only approved build work | PARK IDEA"
+    },
+    {
+      "sheet": "Worker_Envelope",
+      "row": 9,
+      "text": "REQUIRED REFERENCES | 5 | Project + SOP + Current Truth + SOSE | LOAD BEFORE RESPONSE | Read in priority order | HOLD"
+    },
+    {
+      "sheet": "Worker_Envelope",
+      "row": 10,
+      "text": "LIVE STATE | 6 | Current Truth + POD + HOLDs | CURRENT | Use most current validated state | HOLD"
+    },
+    {
+      "sheet": "Worker_Envelope",
+      "row": 11,
+      "text": "USER MESSAGE | 7 | Current chat/message | VARIABLE | Process after higher-priority references | RESPOND"
+    },
+    {
+      "sheet": "Exceptions_Holds",
+      "row": 1,
+      "text": "EXCEPTIONS, HOLDS & REVIEW QUEUE"
+    },
+    {
+      "sheet": "Exceptions_Holds",
+      "row": 2,
+      "text": "Consolidated unresolved queues, unverified claims, stale records, and distribution failures."
+    },
+    {
+      "sheet": "Exceptions_Holds",
+      "row": 4,
+      "text": "Exception_ID | Folder_ID | Scope | Path | Exception_Type | Severity | Record_or_Rule_ID | Description | Status | Owner | Detected_UTC | Resolution"
+    },
+    {
+      "sheet": "Rule_Command_Center",
+      "row": 1,
+      "text": "APEX GLOBAL LAW & RULE COMMAND CENTER"
+    },
+    {
+      "sheet": "Rule_Command_Center",
+      "row": 2,
+      "text": "Enter an approved law, regulation, constitutional rule, standard, policy, SOP, or role rule once. The sync engine distributes it to every applicable folder workbook."
+    },
+    {
+      "sheet": "Rule_Command_Center",
+      "row": 4,
+      "text": "AUTHORITATIVE RULE INPUT — BLUE TEXT / YELLOW CELLS ARE USER INPUT"
+    },
+    {
+      "sheet": "Rule_Command_Center",
+      "row": 5,
+      "text": "Rule_ID | Rule_Type | Title | Rule_Text | Scope | Scope_Target | Location | Job_or_Role | Authority_Source | Version | Effective_Date | Priority | Status | Approval_State"
+    },
+    {
+      "sheet": "Rule_Command_Center",
+      "row": 6,
+      "text": "RULE-0001 | POLICY | Example only — replace or delete | This DRAFT example demonstrates one-point rule entry. It will not distribute until Status=ACTIVE and Approval_State=APPROVED. | ALL | v1.0 | LOW | DRAFT | PENDING"
+    },
+    {
+      "sheet": "Rule_Command_Center",
+      "row": 7,
+      "text": "v1.0 | DRAFT | PENDING"
+    },
+    {
+      "sheet": "Rule_Command_Center",
+      "row": 508,
+      "text": "Distribution rule: | Only rows with Status=ACTIVE and Approval_State=APPROVED are distributed."
+    },
+    {
+      "sheet": "Rule_Command_Center",
+      "row": 509,
+      "text": "Scope_Target examples: | ALL = blank; FOLDER_ID = F-...; UDIC_PREFIX = 3.1; LOCATION = Plant 4; JOB_ROLE = QA Manager."
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 1,
+      "text": "GOVERNED RECALL WEIGHTS"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 2,
+      "text": "Weights for partial-context, parallel assembly, pattern assistance, governance and verification. UNKNOWN context remains neutral."
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 4,
+      "text": "Factor | Weight | Description | Required | Minimum | Maximum | Rule_Version | Last_Approved"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 5,
+      "text": "QUERY_RELEVANCE | 0.2 | Keyword and intent match | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 6,
+      "text": "SUBJECT_MATCH | 0.12 | Person or subject match | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 7,
+      "text": "AI_MATCH | 0.04 | AI/provider match | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 8,
+      "text": "LOCATION_MATCH | 0.07 | Location/facility match | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 9,
+      "text": "DEPARTMENT_MATCH | 0.07 | Department/sector match | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 10,
+      "text": "ROLE_MATCH | 0.07 | Job or role match | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 11,
+      "text": "PROJECT_MATCH | 0.08 | Project/mission match | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 12,
+      "text": "ENTITY_MATCH | 0.07 | Entity/equipment match | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 13,
+      "text": "RULE_MATCH | 0.08 | Law/SOP/rule match | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 14,
+      "text": "TRUTH_WEIGHT | 0.08 | Current truth or sealed truth strength | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 15,
+      "text": "PROOF_WEIGHT | 0.07 | Evidence classification strength | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 16,
+      "text": "RECENCY_WEIGHT | 0.03 | Effective/current time relevance | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 17,
+      "text": "AUTHORITY_WEIGHT | 0.05 | Authority compatibility | True | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 18,
+      "text": "CONTRADICTION_PENALTY | 0.15 | Penalty for contradictions | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 19,
+      "text": "SUPERSESSION_PENALTY | 0.2 | Penalty for superseded records | False | 0 | 1 | RECALL-WEIGHTS-v1.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 20,
+      "text": "PATTERN_SUPPORT | 0.08 | Support from recurring contextual patterns | False | 0 | 1 | RECALL-WEIGHTS-v2.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 21,
+      "text": "RELATIONSHIP_SUPPORT | 0.08 | Support from connected primitive relationships | False | 0 | 1 | RECALL-WEIGHTS-v2.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 22,
+      "text": "ASSEMBLY_COHERENCE | 0.1 | Compatibility of fragments assembled together | False | 0 | 1 | RECALL-WEIGHTS-v2.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 23,
+      "text": "INFERENCE_PENALTY | 0.05 | Penalty for unverified inferred fragments | False | 0 | 1 | RECALL-WEIGHTS-v2.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 24,
+      "text": "UNKNOWN_PENALTY | 0 | Missing context remains neutral rather than false | False | 0 | 1 | RECALL-WEIGHTS-v2.0"
+    },
+    {
+      "sheet": "Recall_Weights",
+      "row": 25,
+      "text": "CONFIRMATION_THRESHOLD | 0.8 | Below this confidence the AI asks a targeted question | True | 0 | 1 | RECALL-WEIGHTS-v2.0"
+    }
+  ]
+}

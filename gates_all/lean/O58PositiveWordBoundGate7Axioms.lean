@@ -1,0 +1,7 @@
+import CPOQ.O58PositiveWordBoundGate7
+#print axioms CPOQ.positiveWordEnvelope_normalized_mono
+#print axioms CPOQ.positiveContinuation_const_le_envelope
+#print axioms CPOQ.positiveContinuation_normalized_constant_bound
+#print axioms CPOQ.positiveContinuation_to_gate6_normalized_bound
+#print axioms CPOQ.gate7_envelope_l01
+#print axioms CPOQ.gate7_envelope_l12

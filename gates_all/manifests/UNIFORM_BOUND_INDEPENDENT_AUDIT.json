@@ -1,0 +1,112 @@
+{
+  "all_boundary_bases_at_least_global_base": true,
+  "boundary_leaf_records": 2112,
+  "boundary_per_root": {
+    "48569": 528,
+    "49768": 528,
+    "6049": 528,
+    "65540": 528
+  },
+  "fixed_word_validity_and_complete_partition_remain_separate_proof_obligations": true,
+  "global_sufficient_base": "17179869184",
+  "independently_reconciled_pair_witnesses": 3168,
+  "independently_reconciled_wrap_segment_guards": 69,
+  "minimum_observed_boundary_base": "3487011090801549639707",
+  "native_governance": "UNVERIFIED",
+  "nine_parameter_classes": [
+    {
+      "S": 73,
+      "boundary_leaf_count_across_4_roots": 4,
+      "coefficient_D": "581794846086789331463",
+      "k": 46,
+      "margin_lower_bound_at_2pow34": "8805595939316837144227345334272",
+      "minimum_n_from_guard": "2044644116",
+      "universal_C_upper_bound": "1189563408379617880873810001920"
+    },
+    {
+      "S": 75,
+      "boundary_leaf_count_across_4_roots": 4,
+      "coefficient_D": "11190117503999658421781",
+      "k": 47,
+      "margin_lower_bound_at_2pow34": "185107374403135555250160035430400",
+      "minimum_n_from_guard": "637828912",
+      "universal_C_upper_bound": "7137380469167173216721440866304"
+    },
+    {
+      "S": 77,
+      "boundary_leaf_count_across_4_roots": 8,
+      "coefficient_D": "71349284374956136974911",
+      "k": 48,
+      "margin_lower_bound_at_2pow34": "1182947089043200735940713501425664",
+      "minimum_n_from_guard": "600206201",
+      "universal_C_upper_bound": "42824282890560903026242968616960"
+    },
+    {
+      "S": 78,
+      "boundary_leaf_count_across_4_roots": 20,
+      "coefficient_D": "62932125673039764086461",
+      "k": 49,
+      "margin_lower_bound_at_2pow34": "952692837711072666105063692828672",
+      "minimum_n_from_guard": "2041450968",
+      "universal_C_upper_bound": "128472848822798436530557552689152"
+    },
+    {
+      "S": 80,
+      "boundary_leaf_count_across_4_roots": 36,
+      "coefficient_D": "491027831922776585935927",
+      "k": 50,
+      "margin_lower_bound_at_2pow34": "7664956824595187407446700162285568",
+      "minimum_n_from_guard": "1569843996",
+      "universal_C_upper_bound": "770837093541253528990659903488000"
+    },
+    {
+      "S": 81,
+      "boundary_leaf_count_across_4_roots": 92,
+      "coefficient_D": "264157676153700583101605",
+      "k": 51,
+      "margin_lower_bound_at_2pow34": "2225683038437325888603485995270144",
+      "minimum_n_from_guard": "8754283864",
+      "universal_C_upper_bound": "2312511281832686406586608885170176"
+    },
+    {
+      "S": 83,
+      "boundary_leaf_count_across_4_roots": 172,
+      "coefficient_D": "3210324667690360098717167",
+      "k": 52,
+      "margin_lower_bound_at_2pow34": "41277890133256836195836085265235968",
+      "minimum_n_from_guard": "4322013856",
+      "universal_C_upper_bound": "13875067695831821717978170009845760"
+    },
+    {
+      "S": 85,
+      "boundary_leaf_count_across_4_roots": 452,
+      "coefficient_D": "19302380559988113693800909",
+      "k": 53,
+      "margin_lower_bound_at_2pow34": "248361966766046714432715561505914880",
+      "minimum_n_from_guard": "4312960567",
+      "universal_C_upper_bound": "83250406194333743421703086854373376"
+    },
+    {
+      "S": 86,
+      "boundary_leaf_count_across_4_roots": 1324,
+      "coefficient_D": "19221515452296207490805095",
+      "k": 54,
+      "margin_lower_bound_at_2pow34": "80471902366996580618575020786974720",
+      "minimum_n_from_guard": "12993315707",
+      "universal_C_upper_bound": "249751218621686856492777394153717760"
+    }
+  ],
+  "not_lean_kernel_checked": true,
+  "production": "HOLD",
+  "sha256_input_pins": {
+    "guards": "5b686d9969974e5f3a4e64dae0711462ef6f8231ee40ffc8f9a1504837835b45",
+    "source": "c5fc8725938281acb254dbd2d3736c0f01be0194ffea28b5edc4a7c5038fa32d",
+    "spec": "efc99dfb49af6907545487cf97cedeb73dba05326fb925ca8e3713dd8813087e",
+    "witness": "4650954dac6650a9480b6dd77c1b29d8290a05eae4950187c7c38fd0fee791ea"
+  },
+  "status": "INDEPENDENT_EXACT_ARITHMETIC_REPLAY_PASS",
+  "stronger_guard_count_exclusive_of_word_validity": 9,
+  "tested_small_valuation_words": 5460,
+  "universal_collatz": "HOLD_UNPROVEN",
+  "unresolved_leaf_records_left_open": 6508
+}

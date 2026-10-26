@@ -1,0 +1,52 @@
+{
+  "artifact": "CPOQ O5/8 Infinite-Class Lift Gate 1",
+  "version": "v1",
+  "target_segment_guard": 33,
+  "segment_metadata": {
+    "source_root": 6049,
+    "target_root": 65540,
+    "k": 54,
+    "S": 86,
+    "wrap": false,
+    "finite_witness_count": 311
+  },
+  "transport_constants": {
+    "M": "77371252455336267181195264",
+    "A": "58149737003040059690390169",
+    "T": "4869997505073799665549312",
+    "dC": "8430432401778095394127872",
+    "L": "248567718207939398477346995546745342780487237632"
+  },
+  "observed_source_residue_structure": {
+    "modulus_bits": 73,
+    "modulus": "9444732965739290427392",
+    "n_residue": "3487011090801549639707",
+    "C_residue": "4882462854978472446429",
+    "all_311_match_n_residue": true,
+    "all_311_match_C_residue": true,
+    "observed_q_min": 1,
+    "observed_q_max": 7671,
+    "observed_p_min": 18476,
+    "observed_p_max": 27515
+  },
+  "formal_target": {
+    "name": "o58_segment33_infinite_transport_authorized",
+    "scope": "all integer n,C satisfying the certified source-margin lower bound",
+    "status": "LEAN_SOURCE_PREPARED_REQUIRES_LOCAL_REPLAY"
+  },
+  "residue_lattice_wrapper": {
+    "name": "o58_segment33_residue_lattice_transport",
+    "scope": "all Nat q,p in the observed mod-2^73 source residue lattice, conditional on the same source-margin lower bound",
+    "status": "LEAN_SOURCE_PREPARED_REQUIRES_LOCAL_REPLAY"
+  },
+  "open_obligation": {
+    "name": "O58_SEG33_FULL_COLLATZ_CYLINDER_WORD",
+    "status": "OPEN",
+    "reason": "Current cohort package does not include a proof that every n = r + 2^73 q follows one exact 54-step valuation word, nor a proved function C(q) tying the margin constant to that Collatz cylinder."
+  },
+  "source_zip": {
+    "path_basename": "CPOQ_O58_Cohort3168_v1.zip",
+    "sha256": "2d4aad1a20be5f95983aedcd3b4b7605ff8e8fe0bed11c9c842376a83711af00"
+  },
+  "universal_collatz": "HOLD_UNPROVEN"
+}

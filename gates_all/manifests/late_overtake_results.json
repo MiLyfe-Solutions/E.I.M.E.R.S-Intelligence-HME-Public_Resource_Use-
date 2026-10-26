@@ -1,0 +1,26 @@
+{
+  "source_sha256": "cf98aa24bc4d25fe50d12e3462f7e4c7571c08d84b4072a52baba91a75f4cf25",
+  "cap_per_population": 1000,
+  "populations": {
+    "new_descent_depth24.csv": {
+      "csv_sha256": "19fa9596a3507f10f4ffa134ace597a8cb770d3f8539c69ea5eb45d4bc379832",
+      "counts": {
+        "valid": 1000,
+        "checkpoints": 33290,
+        "no_late_overtake": 1000,
+        "common_maximizer": 1000
+      },
+      "examples": []
+    },
+    "adaptive_frontier_depth24.csv": {
+      "csv_sha256": "47343f9e009b522a50bc86a67859e9f680b547898cc9df0ccb9ba1b066725c33",
+      "counts": {
+        "valid": 1000,
+        "checkpoints": 39178,
+        "no_late_overtake": 1000,
+        "common_maximizer": 1000
+      },
+      "examples": []
+    }
+  }
+}

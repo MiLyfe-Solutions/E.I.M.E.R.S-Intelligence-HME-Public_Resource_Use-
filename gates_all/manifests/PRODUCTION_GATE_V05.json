@@ -1,0 +1,146 @@
+{
+  "timestamp_utc": "2026-10-07T01:14:16.679542+00:00",
+  "release": "E.I.M.E.R.S. Sports Intelligence v0.5",
+  "runtime_release_decision": "CONDITIONAL_APPROVE_PRODUCTION_SHADOW_RC",
+  "runtime_authority": "SHADOW_ONLY",
+  "prediction_authority": "SHADOW_ONLY",
+  "autonomous_financial_or_wagering_authority": "DENIED",
+  "checks": [
+    {
+      "name": "100B governing-circuit conformance",
+      "status": "PASS",
+      "evidence": "proof/EIMERS_SPORTS_100B_AGGREGATE.json",
+      "detail": null,
+      "impact": "release"
+    },
+    {
+      "name": "8/8 mutation controls detected",
+      "status": "PASS",
+      "evidence": "proof/EIMERS_SPORTS_MUTATION_RESULT.txt",
+      "detail": null,
+      "impact": "release"
+    },
+    {
+      "name": "Expanded rolling historical Oracle",
+      "status": "PASS",
+      "evidence": "proof/v05_regression_rolling/proof.json",
+      "detail": "rows=200 AUC=0.8476 Brier=0.1269 ECE=0.0627",
+      "impact": "release"
+    },
+    {
+      "name": "Strict later-fold calibration Oracle",
+      "status": "PASS",
+      "evidence": "proof/v04_model_build.json",
+      "detail": "beta Brier=0.1255 ECE=0.0801 AUC=0.8584",
+      "impact": "release"
+    },
+    {
+      "name": "Node authority registry enforced",
+      "status": "PASS",
+      "evidence": "proof/v05_node_registry.json",
+      "detail": null,
+      "impact": "release"
+    },
+    {
+      "name": "Source registry/rights boundary enforced",
+      "status": "PASS",
+      "evidence": "proof/v05_source_registry.json",
+      "detail": null,
+      "impact": "release"
+    },
+    {
+      "name": "Canonical 100-event prospective ledger valid",
+      "status": "PASS",
+      "evidence": "proof/prospective_ledger_v05.jsonl",
+      "detail": "{'valid': True, 'events': 100, 'root': 'a1739583d6b19ecde8b6740d79c041b67712772feda742e58c9dd318035bd9dd', 'legacy_events': 0}",
+      "impact": "release"
+    },
+    {
+      "name": "Prospective gate cannot self-promote",
+      "status": "PASS",
+      "evidence": "proof/v05_prospective_performance_gate.json",
+      "detail": "PROSPECTIVE_OUTCOMES_PENDING",
+      "impact": "release"
+    },
+    {
+      "name": "Market gate fails closed without real baseline",
+      "status": "PASS",
+      "evidence": "proof/v05_market_baseline_gate.json",
+      "detail": null,
+      "impact": "release"
+    },
+    {
+      "name": "v0.5 automated/adversarial tests",
+      "status": "PASS",
+      "evidence": "proof/v05_final_tests.txt",
+      "detail": "51 passed",
+      "impact": "release"
+    },
+    {
+      "name": "Production-like HTTP runtime proof",
+      "status": "PASS",
+      "evidence": "proof/v05_runtime_proof.txt",
+      "detail": null,
+      "impact": "release"
+    },
+    {
+      "name": "Representative burst/concurrency probe",
+      "status": "PASS",
+      "evidence": "proof/v05_performance_probe.json",
+      "detail": "forecast p95=1226.8ms",
+      "impact": "release"
+    },
+    {
+      "name": "Recovery drill",
+      "status": "PASS",
+      "evidence": "proof/v05_recovery_drill.json",
+      "detail": null,
+      "impact": "release"
+    },
+    {
+      "name": "Recognized credential secret scan",
+      "status": "PASS",
+      "evidence": "proof/v05_secret_scan.txt",
+      "detail": null,
+      "impact": "release"
+    },
+    {
+      "name": "Exact runtime dependency pins",
+      "status": "PASS",
+      "evidence": "requirements.txt",
+      "detail": null,
+      "impact": "release"
+    },
+    {
+      "name": "CI pipeline includes tests and container build",
+      "status": "PASS",
+      "evidence": ".github/workflows/ci.yml",
+      "detail": null,
+      "impact": "release"
+    },
+    {
+      "name": "Compile/syntax gate",
+      "status": "PASS",
+      "evidence": "proof/v05_compileall.txt",
+      "detail": null,
+      "impact": "release"
+    }
+  ],
+  "runtime_deployment_conditions": [
+    "CONTAINER_BUILD_NOT_EXECUTED_IN_CURRENT_ENV",
+    "EXTERNAL_STAGING_DEPLOYMENT_NOT_EXECUTED"
+  ],
+  "predictive_authority_blockers": [
+    "PROSPECTIVE_2026_OUTCOMES_PENDING",
+    "TIME_ALIGNED_MARKET_BASELINE_PENDING",
+    "ADVANCED_PLAYER_DNA_HISTORY_PENDING",
+    "SOURCE_POPULATION_STILL_RANK_LIMITED",
+    "FANTASYBOT_STANDALONE_BACKEND_CONTRACT_UNVERIFIED",
+    "DEEP_SOURCE_LICENSE_REVIEW_PENDING",
+    "INDEPENDENT_CALIBRATION_FOLDS_LIMITED"
+  ],
+  "evidence_level": "Runtime Verified",
+  "external_production_deployment_proven": false,
+  "production_predictive_edge_proven": false,
+  "receipt_sha256": "556d758a70da4d554f2fc8377ac333454925da4ddee39b5df9494c25a35f0782"
+}

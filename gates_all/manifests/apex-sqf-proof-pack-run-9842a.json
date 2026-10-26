@@ -1,0 +1,101 @@
+{
+  "audit_run_id": "run-9842a",
+  "customer_name": "Apex Food Inc.",
+  "site_name": "Flint, Mi",
+  "sqf_code_edition": "FSMA Foreign Supplier Verification Program (21 CFR Part 1 Subpart L)",
+  "food_sector_category": "dry pasta ",
+  "overall_readiness_score": 20,
+  "run_status": "AI_ASSESSED",
+  "files_inventory": [
+    {
+      "filename": "APEX-SOP-Pest-Control-v2.pdf",
+      "title": "Integrated Pest Management Procedure",
+      "hash": "sha256-f8d2b3a9c7162985fe20108db3c48259ef028e08d29b1d9dca4718c39d84bf0e",
+      "revision": "Rev 2.0",
+      "expiration": "2026-01-15"
+    },
+    {
+      "filename": "APEX-HACCP-Plan-Milk-v4.pdf",
+      "title": "HACCP Food Safety Plan: Pasteurized Liquid Milk",
+      "hash": "sha256-a1b2c3d4e5f607182930415263748596a7b8c9d0e1f203142536475869707172",
+      "revision": "Rev 4.1",
+      "expiration": "2027-02-10"
+    },
+    {
+      "filename": "APEX-TR-2026-Employee-Training.xlsx",
+      "title": "ANNUAL GMP & ALLERGEN TRAINING RECORD - Q1 2026",
+      "hash": "sha256-0a9b8c7d6e5f4e3d2c1b0a9b8c7d6e5f4e3d2c1b0a9b8c7d6e5f4e3d2c1b0a9b",
+      "revision": "Q1 2026",
+      "expiration": "Not Specified"
+    },
+    {
+      "filename": "APEX-EMP-2026-Env-Monitoring.pdf",
+      "title": "ENVIRONMENTAL MONITORING PROGRAM - Q1 2026 LAB ANALYSIS REPORT",
+      "hash": "sha256-99887766554433221100abcdef1234567890abcdef1234567890abcdef1234",
+      "revision": "N/A",
+      "expiration": "None"
+    }
+  ],
+  "findings": [
+    {
+      "clause_id": "1.504",
+      "section": "Supplier Hazard Analysis",
+      "status": "VERIFIED_DOCUMENTARY_EVIDENCE",
+      "confidence_score": 95,
+      "excerpt": "Hazard analysis conducted for raw milk receiving, storage, pasteurization, and filling.",
+      "file_id": "doc-002",
+      "governance": {
+        "human_review_status": "PENDING",
+        "governor_approval_status": "PENDING"
+      }
+    },
+    {
+      "clause_id": "1.505",
+      "section": "Supplier Performance Evaluation",
+      "status": "EXPIRED_EVIDENCE",
+      "confidence_score": 98,
+      "excerpt": "Review Date: January 15, 2026",
+      "file_id": "doc-001",
+      "governance": {
+        "human_review_status": "PENDING",
+        "governor_approval_status": "PENDING"
+      }
+    },
+    {
+      "clause_id": "1.506",
+      "section": "Supplier Verification Activities",
+      "status": "MISSING_EVIDENCE",
+      "confidence_score": 100,
+      "excerpt": "N/A",
+      "file_id": "N/A",
+      "governance": {
+        "human_review_status": "PENDING",
+        "governor_approval_status": "PENDING"
+      }
+    },
+    {
+      "clause_id": "1.508",
+      "section": "Supplier Corrective Actions",
+      "status": "CONFLICTING_EVIDENCE",
+      "confidence_score": 96,
+      "excerpt": "Zone 3 (Drain adjacent to Yogurt Filling Line B) positive Listeria... Re-swab Feb 16: PENDING",
+      "file_id": "doc-004",
+      "governance": {
+        "human_review_status": "PENDING",
+        "governor_approval_status": "PENDING"
+      }
+    },
+    {
+      "clause_id": "1.510",
+      "section": "FSVP Records Maintenance",
+      "status": "SIGNATURE_REQUIRED",
+      "confidence_score": 90,
+      "excerpt": "Executive Signoff: [PENDING - REQUIRED FOR ANNUAL ISSUANCE]",
+      "file_id": "doc-001",
+      "governance": {
+        "human_review_status": "PENDING",
+        "governor_approval_status": "PENDING"
+      }
+    }
+  ]
+}
