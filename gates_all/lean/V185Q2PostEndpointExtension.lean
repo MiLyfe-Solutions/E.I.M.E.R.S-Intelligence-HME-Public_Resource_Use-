@@ -1,8 +1,9 @@
 import V185PostEndpointExtension
 
 /-!
-Candidate Lean extension for the V185 q = 2 (mod 2^22) subfamily.
-This file has not yet been compiled in the current workspace.
+Corrected Lean extension for the V185 q = 2 (mod 2^22) subfamily.
+The earlier candidate had a proof-composition type mismatch. This version
+rewrites the V185 endpoint equality before composing the two descent facts.
 -/
 
 namespace EimersV185Q2Extension
@@ -62,8 +63,10 @@ theorem v185_q2_24_descent (t : Nat) :
         iterateA 1 (iterateA 23 (start (q2Param t))) := by
     simpa using hcomp
   rw [h24, q2_endpoint_eq t]
-  exact lt_trans (q2_post_step_descent t)
-    (V185_finite_descent (q2Param t))
+  have hV185 : q2Endpoint t < start (q2Param t) := by
+    rw [← q2_endpoint_eq t]
+    exact V185_finite_descent (q2Param t)
+  exact lt_trans (q2_post_step_descent t) hV185
 
 end EimersV185Q2Extension
 

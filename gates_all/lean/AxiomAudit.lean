@@ -1,0 +1,2 @@
+import H28ReverseGeneral
+#print axioms H28Affine.affine_implies_wordTrace

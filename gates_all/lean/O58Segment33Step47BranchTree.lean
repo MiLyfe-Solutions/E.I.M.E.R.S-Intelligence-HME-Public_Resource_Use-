@@ -83,20 +83,6 @@ theorem seg33_step47_branch_partition (q : Nat) :
     (∃ t, q = 76 + 128*t) ∨
     (∃ t, q = 12 + 256*t) ∨
     (∃ t, q = 140 + 256*t) := by
-  have ex : ∀ m r : Nat, q % m = r → ∃ t, q = r + m*t := by
-    intro m r h
-    exact ⟨q / m, by have := Nat.mod_add_div q m; omega⟩
-  have hcases : q % 2 = 1 ∨ q % 4 = 2 ∨ q % 8 = 0 ∨ q % 16 = 4 ∨ q % 32 = 28 ∨
-      q % 64 = 44 ∨ q % 128 = 76 ∨ q % 256 = 12 ∨ q % 256 = 140 := by omega
-  rcases hcases with h | h | h | h | h | h | h | h | h
-  · exact Or.inl (ex 2 1 h)
-  · exact Or.inr (Or.inl (ex 4 2 h))
-  · exact Or.inr (Or.inr (Or.inl (ex 8 0 h)))
-  · exact Or.inr (Or.inr (Or.inr (Or.inl (ex 16 4 h))))
-  · exact Or.inr (Or.inr (Or.inr (Or.inr (Or.inl (ex 32 28 h)))))
-  · exact Or.inr (Or.inr (Or.inr (Or.inr (Or.inr (Or.inl (ex 64 44 h))))))
-  · exact Or.inr (Or.inr (Or.inr (Or.inr (Or.inr (Or.inr (Or.inl (ex 128 76 h)))))))
-  · exact Or.inr (Or.inr (Or.inr (Or.inr (Or.inr (Or.inr (Or.inr (Or.inl (ex 256 12 h))))))))
-  · exact Or.inr (Or.inr (Or.inr (Or.inr (Or.inr (Or.inr (Or.inr (Or.inr (ex 256 140 h))))))))
+  omega
 
 end CPOQ

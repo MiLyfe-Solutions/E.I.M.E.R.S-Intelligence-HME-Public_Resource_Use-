@@ -123,3 +123,5 @@ theorem terminal_divisibility_lifts
 #print axioms terminal_divisibility_lifts
 
 end EimersCollatz
+
+[executed on device: Joshuas-MacBook-Pro.local (d9b9b762-5cf1-40bc-a132-47385a99d657)]

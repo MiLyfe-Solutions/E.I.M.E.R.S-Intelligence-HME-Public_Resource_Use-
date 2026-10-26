@@ -1,0 +1,2 @@
+import V185TrunkScan18Incremental
+#check CollatzResearch.WordTrace

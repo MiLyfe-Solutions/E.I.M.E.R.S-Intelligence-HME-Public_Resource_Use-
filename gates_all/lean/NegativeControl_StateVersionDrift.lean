@@ -1,0 +1,18 @@
+import CPOQFormalTheoryV2
+open CPOQ
+
+def stateDecision : DecisionBinding := {
+  principal := 1001, tenantId := 7, operationLevel := 2, environmentLevel := 1,
+  requestId := 9001, stateVersion := 100, dependencyEpoch := 40, authorityEpoch := 42,
+  receiptId := 7001, nonce := 5001
+}
+
+def stateDriftAttempt : ExecutionAttempt := {
+  principal := 1001, tenantId := 7, operationLevel := 2, environmentLevel := 1,
+  requestId := 9001, stateVersion := 101, dependencyEpoch := 40, authorityEpoch := 42,
+  receiptId := 7001, nonce := 5001, nonceUnused := true
+}
+
+example : ExecutionBoundToDecision stateDecision stateDriftAttempt := by
+  unfold ExecutionBoundToDecision
+  decide

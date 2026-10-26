@@ -34,7 +34,7 @@ theorem step_transport (x y v d : Nat) (h : ExactStep x y v) :
 theorem word_transport {vs : List Nat} {x y : Nat}
     (h : Word vs x y) (d : Nat) :
     Word vs (x + 2^(vs.sum+1)*d) (y + 2*3^vs.length*d) := by
-  induction h with
+  induction h generalizing d with
   | nil x =>
       simp only [List.sum_nil, List.length_nil, pow_zero, pow_one]
       convert Word.nil (x + 2*d) using 1 <;> ring

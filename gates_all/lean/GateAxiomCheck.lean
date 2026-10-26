@@ -1,0 +1,7 @@
+import CPOQ.O58Depth24CertificatesGate13
+import CPOQ.O58AdaptiveFrontierCertificatesGate11
+open CPOQ
+#print axioms gate13NewDepth24DescentLeafCount_exact
+#print axioms gate11AdaptiveDescentLeafCount_exact
+#print axioms o58_depth24_leaf_000000_strict_descent
+#print axioms o58_adaptive_leaf_00000_strict_descent

@@ -68,8 +68,8 @@ theorem two_pow_lt_three_pow (k : Nat) : 2 ^ (k + 1) < 3 ^ (k + 1) := by
   induction k with
   | zero => decide
   | succ j ih =>
-      have e2 : 2 ^ (j + 1 + 1) = 2 ^ (j + 1) * 2 := by rw [Nat.pow_succ]
-      have e3 : 3 ^ (j + 1 + 1) = 3 ^ (j + 1) * 3 := by rw [Nat.pow_succ]
+      have e2 : 2 ^ (j + 1 + 1) = 2 ^ (j + 1) * 2 := Nat.pow_succ
+      have e3 : 3 ^ (j + 1 + 1) = 3 ^ (j + 1) * 3 := Nat.pow_succ
       rw [e2, e3]
       generalize 2 ^ (j + 1) = A at ih ⊢
       generalize 3 ^ (j + 1) = B at ih ⊢

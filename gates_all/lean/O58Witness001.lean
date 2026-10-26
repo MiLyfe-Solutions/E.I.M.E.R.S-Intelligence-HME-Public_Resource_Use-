@@ -18,19 +18,19 @@ theorem o58_witness_001_target_margin_positive :
         (8209377573671194853403 : Int)
         (21967197859099783683773 : Int)
       = (4776173561942372855695891794986152876834816 : Int) := by
-    native_decide
+    decide
 
   have hT :
       (8209377573671194853403 : Int)
         + 24511111187941566709760
       = 32720488761612761563163 := by
-    native_decide
+    decide
 
   have hC :
       (21967197859099783683773 : Int)
         + (-788598309151083331584 : Int)
       = 21178599549948700352189 := by
-    native_decide
+    decide
 
   have hdefect :
       defect
@@ -39,7 +39,7 @@ theorem o58_witness_001_target_margin_positive :
         (24511111187941566709760 : Int)
         (-788598309151083331584 : Int)
       = (14260438161004643814321042817118038040510464 : Int) := by
-    native_decide
+    decide
 
   have hpositive :
       margin
@@ -55,7 +55,7 @@ theorem o58_witness_001_target_margin_positive :
           (-788598309151083331584 : Int)
       > 0 := by
     rw [hsource, hdefect]
-    native_decide
+    decide
 
   have htransport :=
     affine_margin_transport_positive
