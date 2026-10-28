@@ -12,7 +12,7 @@ private theorem strip_le (n : Nat) : stripTwosPower n <= n := by
         · have hlt : n / 2 < n := by omega
           have hrec := ih (n / 2) hlt
           rw [stripTwosPower]
-          simp only [if_neg hz, if_pos he]
+          simp only [ite_eq_right hz, ite_eq_left he]
           omega
         · simp [stripTwosPower, hz, he]
 

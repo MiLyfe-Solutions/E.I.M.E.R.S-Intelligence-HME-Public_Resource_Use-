@@ -31,7 +31,7 @@ theorem T_step (j c : Nat) (hc : 0 < c) :
   generalize hx : 2 ^ j * c = x at hp ⊢
   have hodd : (2 * x - 1) % 2 ≠ 0 := by omega
   unfold T
-  rw [if_neg hodd]
+  rw [ite_eq_right hodd]
   omega
 
 /-- The all-ones climb: j straight up-steps, exact endpoint. -/

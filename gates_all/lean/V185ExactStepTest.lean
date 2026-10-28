@@ -20,7 +20,7 @@ private theorem strip_double (n : Nat) (hn : 0 < n) :
   have heven : (2 * n) % 2 = 0 := by omega
   have hdiv : (2 * n) / 2 = n := by omega
   rw [stripTwosPower]
-  simp only [if_neg hnonzero, if_pos heven, hdiv]
+  simp only [ite_eq_right hnonzero, ite_eq_left heven, hdiv]
 
 theorem strip_pow_two (a y : Nat) (hy : y % 2 = 1) :
     stripTwosPower (2 ^ a * y) = y := by

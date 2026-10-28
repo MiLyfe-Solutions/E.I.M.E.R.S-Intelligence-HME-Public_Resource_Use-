@@ -18,7 +18,7 @@ theorem strip_le' (n : Nat) : stripTwosPower n <= n := by
         · have hlt : n / 2 < n := by omega
           have hrec := ih (n / 2) hlt
           rw [stripTwosPower]
-          simp only [if_neg hz, if_pos he]
+          simp only [ite_eq_right hz, ite_eq_left he]
           omega
         · simp [stripTwosPower, hz, he]
 
@@ -40,7 +40,7 @@ theorem endpoint_le_y (q : Nat) :
         have hnz : 2 * (2 ^ a * y) ≠ 0 := by omega
         have hev : (2 * (2 ^ a * y)) % 2 = 0 := by omega
         have hd : (2 * (2 ^ a * y)) / 2 = 2 ^ a * y := by omega
-        simp only [if_neg hnz, if_pos hev, hd]
+        simp only [ite_eq_right hnz, ite_eq_left hev, hd]
         exact ih
   simpa only [show (2:Nat)^8 = 256 by norm_num] using
     key 8 (38265777571 + q * 94143178827) hy
