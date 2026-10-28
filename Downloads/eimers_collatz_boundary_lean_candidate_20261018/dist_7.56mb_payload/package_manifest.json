@@ -1,0 +1,13 @@
+{
+  "payload_name": "APEX_AOS_Zero_Trust_Boundary19_Payload",
+  "sync_date_utc": "2026-10-28T06:54:00Z",
+  "engine_invariants": {
+    "zero_axiom_verification": "ACTIVE",
+    "target_mass": "44,070 Horizon Lots",
+    "structural_reduction": "99.2321%"
+  },
+  "trusted_axioms_profile": [
+    "propext",
+    "Quot.sound"
+  ]
+}
