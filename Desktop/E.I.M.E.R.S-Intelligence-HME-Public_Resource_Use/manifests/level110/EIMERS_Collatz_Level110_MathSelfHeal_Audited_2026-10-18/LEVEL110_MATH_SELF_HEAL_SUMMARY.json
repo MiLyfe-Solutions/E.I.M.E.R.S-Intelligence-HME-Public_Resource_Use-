@@ -1,0 +1,77 @@
+{
+  "status": "INDEPENDENT_LEVEL110_MATH_SELF_HEAL_AUDIT_PASS",
+  "audit_problems": [],
+  "baseline_level": 100,
+  "processed_levels": [
+    101,
+    110
+  ],
+  "parent_interval_checked": [
+    19350,
+    21930
+  ],
+  "new_frontier_counts": {
+    "exact": 196,
+    "boundary": 485,
+    "certified_children": 681,
+    "b82_parent_closures": 196
+  },
+  "frontier": {
+    "source_parents": 21930,
+    "source_child_equivalents": 43860,
+    "kernel_certified_child_equivalents": 5659,
+    "unresolved_child_equivalents": 38201,
+    "certified_mass": "5659/43860",
+    "kernel_certified_exact_word_child_families": 1575,
+    "kernel_certified_boundary_halving_child_families": 4084,
+    "kernel_certified_b82_parent_closures": 1575,
+    "next_parent_index": 21930
+  },
+  "historical_recursive_counts": {
+    "b82": 1575,
+    "b81": 1575,
+    "b80": 517,
+    "b79": 183,
+    "b78": 183,
+    "b77": 56,
+    "b76": 22,
+    "b75": 22,
+    "b74": 8,
+    "b73": 3,
+    "b72": 1
+  },
+  "math_healed_additions": {
+    "b74": 1
+  },
+  "augmented_complete_family_counts": {
+    "b82": 1575,
+    "b81": 1575,
+    "b80": 517,
+    "b79": 183,
+    "b78": 183,
+    "b77": 56,
+    "b76": 22,
+    "b75": 22,
+    "b74": 9,
+    "b73": 3,
+    "b72": 1
+  },
+  "new_math_healed_theorem": {
+    "source_level": 106,
+    "left_q": 35557,
+    "output_original_modulus_bits": 74,
+    "theorem": "CollatzResearch.mathheal_parent_q35557_b74_finite_descent",
+    "receipt_sha256": "060afd30b64e12e2a9a526bea48bf861fa07d5e7a46e23aa5119a069525b9533",
+    "build_sha256": "7e2c04b7e93307421d379f0a45d4bda57385006e89eb47e86b4aaf94117e439b"
+  },
+  "rejected_level106_attempt": {
+    "status": "REJECTED_SORRYAX_BUILD",
+    "reason": "fixed-horizon sibling theorem was not wrapped as existential steps for the variable-step merge",
+    "preserved": true
+  },
+  "canonical_audit_sha256": "776b70d9ebded7bfeeb8f12581d63391834444a7710c34b4f38a5489e5abe1c3",
+  "canonical_report_sha256": "222c7f9ae23afabc7135f700d3821ecee29fc0c5b5904794e9a7d9228c14eb64",
+  "universal_status": "HOLD_UNPROVEN",
+  "native_governance_enforcement": "UNVERIFIED",
+  "production_authority": "HOLD"
+}
